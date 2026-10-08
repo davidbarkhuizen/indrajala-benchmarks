@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  # tools/check_archive.py: every record against FORMAT.md, every profile snapshot against
+  # indrajala-ml's schema of its schema_version, and on a PR, that nothing merged changed.
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          path: archive
+          fetch-depth: 0
+
+      # with its history: each profile is validated against the schema of its schema_version
+      - uses: actions/checkout@v7
+        with:
+          repository: davidbarkhuizen/indrajala-ml
+          path: indrajala-ml
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.14"
+
+      - name: Install jsonschema
+        run: pip install jsonschema
+
+      - name: Check the archive
+        working-directory: archive
+        env:
+          BASE: ${{ github.event.pull_request.base.sha }}
+        run: python tools/check_archive.py --indrajala-ml ../indrajala-ml ${BASE:+--base "$BASE"}
