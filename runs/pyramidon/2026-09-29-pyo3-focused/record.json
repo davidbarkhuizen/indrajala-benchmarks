@@ -1,0 +1,33 @@
+{
+ "format": 1,
+ "kind": "run",
+ "host": "pyramidon",
+ "name": "2026-09-29-pyo3-focused",
+ "archived_at": "2026-10-09T06:30:56+02:00",
+ "reason": "#468: the pyo3 0.29 upgrade's A/Bs (epoch ops, focused benchmark, boundary probe)",
+ "replaces": null,
+ "profile": "machines/pyramidon/20261008T171257Z-profile.json",
+ "profile_source": "assigned",
+ "formats": {
+  "ab_manifest": 1,
+  "profile_schema": 4
+ },
+ "rendered_by": {
+  "indrajala_ml": "ad4a5c234a770ad4f293755e9bc584a8fd7b42bf"
+ },
+ "files": [
+  "manifest.json",
+  "pass-01-old.json",
+  "pass-02-new.json",
+  "pass-03-new.json",
+  "pass-04-old.json",
+  "pass-05-old.json",
+  "pass-06-new.json",
+  "pass-07-new.json",
+  "pass-08-old.json"
+ ],
+ "reports": [
+  "brief.txt",
+  "report.md"
+ ]
+}

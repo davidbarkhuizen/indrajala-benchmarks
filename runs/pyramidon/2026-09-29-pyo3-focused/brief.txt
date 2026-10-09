@@ -1,0 +1,5 @@
+pyo3-focused: old 25a3a03 vs new a6419a6, passes ONNOONNO (4 old, 4 new), focused_benchmark --backend rust --shape dense 10 x 30 --shape dense 30 x 784 --batch-sizes 1 --passes 1
+profile: not recorded; busy processes: none
+controls: none (--control-backend reads the other backend's rows as controls)
+shifted: pass 1 (old, fast -13.5%), pass 2 (new, fast -11.6%); balanced
+30 rows within noise, max |Δ| 20.0%
