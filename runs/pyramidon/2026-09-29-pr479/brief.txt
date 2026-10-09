@@ -1,0 +1,6 @@
+pr479: old 0f85c93 vs new 501f6b1, passes ONNO (2 old, 2 new), prepared_dataset_timing --repeats 5
+profile: not recorded; busy processes: none
+CONTROL MOVED: 1 of 8 control rows consistent, e.g. prepare / dense B=32 / rust +0.8%: changes about that size can't be resolved here (next: epoch_op_profile.py)
+consistent: epoch, loader / conv single / rust +2.8% (0.635 -> 0.653 s)
+consistent: epoch / dense B=32 / rust +0.5% (1.292 -> 1.299 s)
+14 rows within noise (6 separated inside their spread), max |Δ| 3.3%
