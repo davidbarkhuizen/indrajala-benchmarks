@@ -32,7 +32,8 @@ reviewer, so it checks everything that can be checked:
 - each profile snapshot matches indrajala-ml's machine profile schema of its `schema_version`;
 - each golden file's hash matches its note;
 - every archived run's reports re-render identically with indrajala-ml's current `ab.py`, so a
-  change there that can no longer read old runs fails here;
+  change there that can no longer read old runs fails here (a replaced run is skipped: its
+  correction is reproduced instead);
 - nothing already merged changed. A record is immutable; a correction is a new record that names
   the one it replaces.
 

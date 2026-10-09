@@ -71,6 +71,7 @@ class Checker:
         self.problems: list[str] = []
         self.index_entries: dict[str, tuple[str, str, str]] = {}  # path -> (date, host, kind)
         self.schemas: dict[object, tuple[str, dict[str, Any]] | None] = {}  # by schema_version
+        self.replaced: set[str] = set()  # records a later record corrects
 
     def problem(self, where: Path | str, text: str) -> None:
         path = where.relative_to(ROOT) if isinstance(where, Path) else where
@@ -184,8 +185,10 @@ class Checker:
         profile = ROOT / str(record["profile"])
         if not (profile.parent.parent.name == "machines" and profile.parent.name == host and profile.is_file()):
             self.problem(where, f"profile {record['profile']!r} isn't a snapshot of host {host}")
-        if record["replaces"] is not None and not (ROOT / str(record["replaces"])).exists():
-            self.problem(where, f"replaces {record['replaces']!r}, which doesn't exist")
+        if record["replaces"] is not None:
+            self.replaced.add(str(record["replaces"]))
+            if not (ROOT / str(record["replaces"])).exists():
+                self.problem(where, f"replaces {record['replaces']!r}, which doesn't exist")
 
     def reproduce(self, run: Path) -> None:
         manifest = self.json(run / "manifest.json")
@@ -346,8 +349,10 @@ def main() -> int:
     if args.base:
         checker.check_unchanged(args.base)
     if args.reproduce:
+        # a replaced record keeps the reports it was archived with; its correction is reproduced
         for run in sorted((ROOT / "runs").glob("*/*")):
-            checker.reproduce(run)
+            if str(run.relative_to(ROOT)) not in checker.replaced:
+                checker.reproduce(run)
     for problem in checker.problems:
         print(problem)
     records = len(checker.index_entries)
