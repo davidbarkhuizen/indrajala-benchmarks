@@ -27,7 +27,7 @@ RECORD_DIRS = ("machines", "golden", "runs")
 FORMAT = 1
 CAPTURED = re.compile(r"^\d{8}T\d{6}Z(-\d+)?-profile\.json$")
 RUN_DIR = re.compile(r"^\d{4}-\d{2}-\d{2}-[A-Za-z0-9._-]+$")
-GOLDEN = re.compile(r"^(\d{4}-\d{2}-\d{2})-([0-9a-f]{7})\.(json\.gz|md)$")
+GOLDEN = re.compile(r"^((\d{4}-\d{2}-\d{2})-([0-9a-f]{7})(?:-\d+)?)\.(json\.gz|md)$")
 INDEX_LINE = re.compile(r"^- (\d{4}-\d{2}-\d{2}) · ([^ ]+) · (run|golden|profile) · \[([^\]]+)\]\(([^)]+)\) · (.+)$")
 RUN_FIELDS = {
     "format",
@@ -228,9 +228,9 @@ class Checker:
         for path in host_dir.iterdir():
             match = GOLDEN.match(path.name)
             if not match:
-                self.problem(path, "not named <date>-<commit7>.json.gz or .md")
+                self.problem(path, "not named <date>-<commit7>[-<n>].json.gz or .md")
                 continue
-            stems.setdefault(f"{match[1]}-{match[2]}", set()).add(match[3])
+            stems.setdefault(match[1], set()).add(match[4])
         for stem, suffixes in sorted(stems.items()):
             if suffixes != {"json.gz", "md"}:
                 self.problem(host_dir / stem, "needs both .json.gz and .md")
@@ -247,8 +247,12 @@ class Checker:
                 continue
             if meta["format"] != FORMAT or meta["kind"] != "golden" or meta["host"] != host_dir.name:
                 self.problem(where, "not a format 1 golden record of this host")
-            if f"{meta['date']}-{meta['commit'][:7]}" != stem:
+            version = f"{meta['date']}-{meta['commit'][:7]}"
+            if stem != version and not stem.startswith(f"{version}-"):
                 self.problem(where, "date or commit doesn't match its name")
+            elif stem != version and not str(meta["replaces"] or "").startswith(f"golden/{host_dir.name}/{version}"):
+                # a correction of a record of the same date and commit takes the next free name
+                self.problem(where, f"named {stem}, but doesn't replace a record of {version}")
             if meta["reason"] not in ("material", "new-functionality"):
                 self.problem(where, f"reason {meta['reason']!r}")
             if meta["reason"] == "new-functionality" and (meta["moved"] or meta["removed"]):
