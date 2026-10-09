@@ -1,0 +1,5 @@
+pyo3-epoch: old 25a3a03 vs new a6419a6, passes ONNOONNO (4 old, 4 new), epoch_op_profile --architectures conv --repeats 3
+profile: not recorded; busy processes: none
+controls: none (Rust only; read the profiled total's share)
+shifted: pass 6 (new, fast -6.9%), pass 8 (old, slow +12.1%); unbalanced, next: ab.py extend --order ONNO
+28 rows within noise (1 separated inside their spread), max |Δ| 16.2%
