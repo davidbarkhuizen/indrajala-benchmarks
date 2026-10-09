@@ -43,6 +43,9 @@ fixtures may lack some of them. Beside them, written at archive time:
 
 ## Golden runs: `golden/<hostname>/<date>-<commit7>.json.gz` and `.md`
 
+A correction of a record with the same date and commit takes the next free name,
+`<date>-<commit7>-2`, and so on, and names that record in `replaces`.
+
 The golden file `scripts/golden_training_run.py record` wrote, gzipped without a timestamp. The
 `.md` is its note: the commit pair it was recorded at (indrajala-ml and its `rust/` crate), why
 (`material`: an owner-approved correctness change moved entries; `new-functionality`: entries were
