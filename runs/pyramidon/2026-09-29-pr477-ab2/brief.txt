@@ -1,0 +1,5 @@
+pr477-ab2: old 0afa901 vs new 5c85b3e, passes ONNO (2 old, 2 new), prepared_dataset_timing --repeats 5
+profile: not recorded; busy processes: none
+controls: 8 rows, all within noise
+consistent: epoch / dense B=32 / numpy -0.4% (2.325 -> 2.314 s)
+15 rows within noise (4 separated inside their spread), max |Δ| 3.4%

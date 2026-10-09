@@ -1,0 +1,129 @@
+{
+  "schema_version": 4,
+  "identity": {
+    "cpu": {
+      "vendor": "AuthenticAMD",
+      "model_name": "AMD Ryzen 7 3700U with Radeon Vega Mobile Gfx",
+      "architecture": "x86_64",
+      "sockets": 1,
+      "physical_cores": 4,
+      "logical_cpus": 8,
+      "threads_per_core": 2,
+      "caches": [
+        {
+          "level": 1,
+          "type": "Data",
+          "size_kib": 32,
+          "shared_by_logical_cpus": 2,
+          "instances": 4
+        },
+        {
+          "level": 1,
+          "type": "Instruction",
+          "size_kib": 64,
+          "shared_by_logical_cpus": 2,
+          "instances": 4
+        },
+        {
+          "level": 2,
+          "type": "Unified",
+          "size_kib": 512,
+          "shared_by_logical_cpus": 2,
+          "instances": 4
+        },
+        {
+          "level": 3,
+          "type": "Unified",
+          "size_kib": 4096,
+          "shared_by_logical_cpus": 8,
+          "instances": 1
+        }
+      ],
+      "isa": {
+        "sse4_2": true,
+        "avx": true,
+        "avx2": true,
+        "fma": true,
+        "avx512f": false
+      },
+      "frequency": {
+        "driver": "acpi-cpufreq",
+        "governor": "schedutil",
+        "min_mhz": 1400,
+        "max_mhz": 2300,
+        "boost_enabled": true,
+        "energy_performance_preference": null,
+        "intel_pstate_status": null
+      },
+      "power_limits": null
+    },
+    "memory": {
+      "total_mib": 5353,
+      "swap_total_mib": 4095
+    },
+    "gpus": [
+      {
+        "class": "VGA compatible controller",
+        "vendor": "Advanced Micro Devices, Inc. [AMD/ATI]",
+        "device": "Picasso/Raven 2 [Radeon Vega Series / Radeon Vega Mobile Series]"
+      }
+    ],
+    "os": {
+      "system": "Linux",
+      "kernel_release": "7.0.0-38-generic",
+      "distribution": "Ubuntu 26.04.1 LTS",
+      "perf_event_paranoid": 2
+    },
+    "software": {
+      "python": {
+        "implementation": "CPython",
+        "version": "3.14.4"
+      },
+      "numpy": {
+        "version": "2.5.3",
+        "blas": {
+          "name": "scipy-openblas",
+          "version": "0.3.34.106.0",
+          "configuration": "OpenBLAS 0.3.34.106.0  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=64"
+        }
+      },
+      "rustc": "rustc 1.98.1 (48a229cea 2026-09-01)",
+      "crate_release_profile": "default",
+      "thread_env": {
+        "OPENBLAS_NUM_THREADS": null,
+        "OMP_NUM_THREADS": null,
+        "MKL_NUM_THREADS": null,
+        "RAYON_NUM_THREADS": null
+      }
+    }
+  },
+  "state": {
+    "captured_at": "2026-10-08T17:12:57Z",
+    "hostname": "pyramidon",
+    "load_average": [
+      1.08,
+      0.56,
+      0.59
+    ],
+    "memory_available_mib": 3295,
+    "cpu_mhz_now": {
+      "min": 1400,
+      "max": 3729
+    },
+    "power": {
+      "on_ac": true,
+      "battery_percent": 85
+    },
+    "commits": {
+      "repo": "321d688f34ba0a6cce6353476ab4c0e2977e8ab8",
+      "repo_dirty": false,
+      "rust": "66ecc0de6fd2419d5ee886ee20d18406edcf61c4"
+    }
+  },
+  "noise_rules": {
+    "shifted_pass": 0.05,
+    "high_load": 1.5,
+    "small_consistent": 0.0,
+    "measured_by": "the rules measurement.md had for the Ryzen laptop before per-machine rules (whole passes shifted 5-15%, #477-#480); stage 5's laptop runs (D11) may revise them"
+  }
+}

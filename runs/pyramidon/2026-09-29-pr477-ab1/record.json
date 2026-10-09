@@ -1,0 +1,29 @@
+{
+ "format": 1,
+ "kind": "run",
+ "host": "pyramidon",
+ "name": "2026-09-29-pr477-ab1",
+ "archived_at": "2026-10-09T06:28:34+02:00",
+ "reason": "#477: the two A/Bs of the Protocol refactor (the first found a 5-8% regression from a runtime cast)",
+ "replaces": null,
+ "profile": "machines/pyramidon/20261008T171257Z-profile.json",
+ "profile_source": "assigned",
+ "formats": {
+  "ab_manifest": 1,
+  "profile_schema": 4
+ },
+ "rendered_by": {
+  "indrajala_ml": "ad4a5c234a770ad4f293755e9bc584a8fd7b42bf"
+ },
+ "files": [
+  "manifest.json",
+  "pass-01-old.json",
+  "pass-02-new.json",
+  "pass-03-new.json",
+  "pass-04-old.json"
+ ],
+ "reports": [
+  "brief.txt",
+  "report.md"
+ ]
+}
