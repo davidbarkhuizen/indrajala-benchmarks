@@ -10,3 +10,4 @@ One line per record, newest first ([FORMAT.md](FORMAT.md)).
 - 2026-10-08 · jebel · run · [2026-10-08-baseline-aa-focused_benchmark](runs/jebel/2026-10-08-baseline-aa-focused_benchmark) · the i7's A/A baseline (benchmark machine workplan, stage 4; #585)
 - 2026-10-08 · jebel · run · [2026-10-08-baseline-aa-op_call_timing](runs/jebel/2026-10-08-baseline-aa-op_call_timing) · the i7's A/A baseline (benchmark machine workplan, stage 4; #585)
 - 2026-10-08 · jebel · run · [2026-10-08-baseline-aa-prepared_dataset_timing](runs/jebel/2026-10-08-baseline-aa-prepared_dataset_timing) · the i7's A/A baseline (benchmark machine workplan, stage 4; #585)
+- 2026-10-07 · jebel · golden · [2026-10-07-46adf46.json.gz](golden/jebel/2026-10-07-46adf46.json.gz) · material: jebel's first golden run, recorded at 46adf46 (main at the benchmark machine workplan's stage 0); bit-identical to the laptop's (D5 of that workplan)
