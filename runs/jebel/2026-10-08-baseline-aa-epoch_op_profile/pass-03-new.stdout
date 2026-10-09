@@ -1,0 +1,166 @@
+Rust op seconds in one profiled training run, min-max over 3 processes
+
+| architecture | trainer | op | seconds | calls |
+|---|---|---|---|---|
+| conv | single-example | (profiled total) | 0.558-0.559 | |
+| conv | single-example | layer_forward | 0.1302-0.1305 | 12000 |
+| conv | single-example | conv_forward_batch | 0.1291-0.1304 | 6000 |
+| conv | single-example | layer_sgd_step | 0.1190-0.1195 | 4000 |
+| conv | single-example | layer_downstream | 0.0439-0.0443 | 2000 |
+| conv | single-example | conv_accumulate_gradient_batch | 0.0337-0.0340 | 2000 |
+| conv | single-example | array_relu_mask | 0.0045-0.0046 | 2000 |
+| conv | single-example | Array.row | 0.0045-0.0046 | 6000 |
+| conv | single-example | layer_hidden_delta | 0.0009-0.0010 | 2000 |
+| conv | single-example | layer_apply_accumulated_gradient | 0.0009-0.0010 | 2000 |
+| conv | single-example | argmax | 0.0006-0.0007 | 4000 |
+| conv | single-example | layer_output_delta | 0.0005-0.0005 | 2000 |
+| conv | single-example | Array.copy | 0.0002-0.0002 | 18 |
+| conv | single-example | default_rng | 0.0000-0.0000 | 1 |
+| conv | mini-batch (32) | (profiled total) | 0.353-0.373 | |
+| conv | mini-batch (32) | conv_forward_batch | 0.1280-0.1285 | 4063 |
+| conv | mini-batch (32) | layer_forward | 0.0787-0.0939 | 8000 |
+| conv | mini-batch (32) | conv_accumulate_gradient_batch | 0.0353-0.0360 | 63 |
+| conv | mini-batch (32) | layer_forward_batch | 0.0227-0.0252 | 126 |
+| conv | mini-batch (32) | layer_accumulate_gradient_batch | 0.0188-0.0195 | 126 |
+| conv | mini-batch (32) | layer_downstream_batch | 0.0139-0.0143 | 63 |
+| conv | mini-batch (32) | layer_apply_accumulated_gradient | 0.0053-0.0056 | 189 |
+| conv | mini-batch (32) | array_relu_mask | 0.0052-0.0055 | 63 |
+| conv | mini-batch (32) | Array.row | 0.0028-0.0029 | 4000 |
+| conv | mini-batch (32) | Array.take_rows | 0.0012-0.0012 | 63 |
+| conv | mini-batch (32) | argmax | 0.0005-0.0007 | 4000 |
+| conv | mini-batch (32) | Array.copy | 0.0003-0.0003 | 24 |
+| conv | mini-batch (32) | layer_hidden_delta_batch | 0.0001-0.0001 | 63 |
+| conv | mini-batch (32) | layer_output_delta | 0.0000-0.0000 | 63 |
+| conv | mini-batch (32) | default_rng | 0.0000-0.0000 | 1 |
+| conv-pool-conv | single-example | (profiled total) | 0.566-0.571 | |
+| conv-pool-conv | single-example | conv_forward_batch | 0.2597-0.2603 | 12000 |
+| conv-pool-conv | single-example | conv_accumulate_gradient_batch | 0.0465-0.0469 | 4000 |
+| conv-pool-conv | single-example | layer_forward | 0.0305-0.0319 | 12000 |
+| conv-pool-conv | single-example | conv_downstream_batch | 0.0252-0.0258 | 2000 |
+| conv-pool-conv | single-example | max_pool_forward_batch | 0.0237-0.0239 | 6000 |
+| conv-pool-conv | single-example | layer_sgd_step | 0.0217-0.0225 | 4000 |
+| conv-pool-conv | single-example | max_pool_downstream_batch | 0.0110-0.0110 | 2000 |
+| conv-pool-conv | single-example | layer_downstream | 0.0082-0.0085 | 2000 |
+| conv-pool-conv | single-example | array_relu_mask | 0.0051-0.0053 | 4000 |
+| conv-pool-conv | single-example | Array.row | 0.0044-0.0047 | 6000 |
+| conv-pool-conv | single-example | layer_apply_accumulated_gradient | 0.0025-0.0026 | 4000 |
+| conv-pool-conv | single-example | layer_hidden_delta | 0.0009-0.0010 | 2000 |
+| conv-pool-conv | single-example | argmax | 0.0006-0.0007 | 4000 |
+| conv-pool-conv | single-example | layer_output_delta | 0.0006-0.0006 | 2000 |
+| conv-pool-conv | single-example | Array.copy | 0.0001-0.0001 | 24 |
+| conv-pool-conv | single-example | default_rng | 0.0000-0.0000 | 1 |
+| conv-pool-conv | mini-batch (32) | (profiled total) | 0.459-0.462 | |
+| conv-pool-conv | mini-batch (32) | conv_forward_batch | 0.2586-0.2592 | 8126 |
+| conv-pool-conv | mini-batch (32) | conv_accumulate_gradient_batch | 0.0507-0.0513 | 126 |
+| conv-pool-conv | mini-batch (32) | conv_downstream_batch | 0.0277-0.0281 | 63 |
+| conv-pool-conv | mini-batch (32) | max_pool_forward_batch | 0.0233-0.0235 | 4063 |
+| conv-pool-conv | mini-batch (32) | layer_forward | 0.0195-0.0202 | 8000 |
+| conv-pool-conv | mini-batch (32) | max_pool_downstream_batch | 0.0106-0.0106 | 63 |
+| conv-pool-conv | mini-batch (32) | array_relu_mask | 0.0073-0.0075 | 126 |
+| conv-pool-conv | mini-batch (32) | layer_forward_batch | 0.0043-0.0044 | 126 |
+| conv-pool-conv | mini-batch (32) | layer_accumulate_gradient_batch | 0.0041-0.0042 | 126 |
+| conv-pool-conv | mini-batch (32) | Array.row | 0.0030-0.0030 | 4000 |
+| conv-pool-conv | mini-batch (32) | layer_downstream_batch | 0.0027-0.0028 | 63 |
+| conv-pool-conv | mini-batch (32) | Array.take_rows | 0.0013-0.0013 | 63 |
+| conv-pool-conv | mini-batch (32) | layer_apply_accumulated_gradient | 0.0013-0.0013 | 252 |
+| conv-pool-conv | mini-batch (32) | argmax | 0.0006-0.0007 | 4000 |
+| conv-pool-conv | mini-batch (32) | layer_hidden_delta_batch | 0.0001-0.0001 | 63 |
+| conv-pool-conv | mini-batch (32) | Array.copy | 0.0001-0.0001 | 32 |
+| conv-pool-conv | mini-batch (32) | layer_output_delta | 0.0000-0.0000 | 63 |
+| conv-pool-conv | mini-batch (32) | default_rng | 0.0000-0.0000 | 1 |
+| conv-conv-stride2 | single-example | (profiled total) | 0.552-0.562 | |
+| conv-conv-stride2 | single-example | conv_forward_batch | 0.2811-0.2822 | 12000 |
+| conv-conv-stride2 | single-example | conv_accumulate_gradient_batch | 0.0480-0.0490 | 4000 |
+| conv-conv-stride2 | single-example | layer_forward | 0.0330-0.0368 | 12000 |
+| conv-conv-stride2 | single-example | conv_downstream_batch | 0.0306-0.0311 | 2000 |
+| conv-conv-stride2 | single-example | layer_sgd_step | 0.0249-0.0261 | 4000 |
+| conv-conv-stride2 | single-example | layer_downstream | 0.0090-0.0103 | 2000 |
+| conv-conv-stride2 | single-example | array_relu_mask | 0.0053-0.0054 | 4000 |
+| conv-conv-stride2 | single-example | Array.row | 0.0044-0.0045 | 6000 |
+| conv-conv-stride2 | single-example | layer_apply_accumulated_gradient | 0.0024-0.0025 | 4000 |
+| conv-conv-stride2 | single-example | layer_hidden_delta | 0.0009-0.0010 | 2000 |
+| conv-conv-stride2 | single-example | argmax | 0.0006-0.0007 | 4000 |
+| conv-conv-stride2 | single-example | layer_output_delta | 0.0006-0.0006 | 2000 |
+| conv-conv-stride2 | single-example | Array.copy | 0.0001-0.0001 | 24 |
+| conv-conv-stride2 | single-example | default_rng | 0.0000-0.0000 | 1 |
+| conv-conv-stride2 | mini-batch (32) | (profiled total) | 0.466-0.472 | |
+| conv-conv-stride2 | mini-batch (32) | conv_forward_batch | 0.2844-0.2855 | 8126 |
+| conv-conv-stride2 | mini-batch (32) | conv_accumulate_gradient_batch | 0.0533-0.0538 | 126 |
+| conv-conv-stride2 | mini-batch (32) | conv_downstream_batch | 0.0393-0.0399 | 63 |
+| conv-conv-stride2 | mini-batch (32) | layer_forward | 0.0224-0.0238 | 8000 |
+| conv-conv-stride2 | mini-batch (32) | array_relu_mask | 0.0069-0.0072 | 126 |
+| conv-conv-stride2 | mini-batch (32) | layer_forward_batch | 0.0050-0.0051 | 126 |
+| conv-conv-stride2 | mini-batch (32) | layer_accumulate_gradient_batch | 0.0048-0.0049 | 126 |
+| conv-conv-stride2 | mini-batch (32) | layer_downstream_batch | 0.0033-0.0033 | 63 |
+| conv-conv-stride2 | mini-batch (32) | Array.row | 0.0028-0.0029 | 4000 |
+| conv-conv-stride2 | mini-batch (32) | layer_apply_accumulated_gradient | 0.0015-0.0015 | 252 |
+| conv-conv-stride2 | mini-batch (32) | Array.take_rows | 0.0013-0.0013 | 63 |
+| conv-conv-stride2 | mini-batch (32) | argmax | 0.0006-0.0007 | 4000 |
+| conv-conv-stride2 | mini-batch (32) | layer_hidden_delta_batch | 0.0001-0.0001 | 63 |
+| conv-conv-stride2 | mini-batch (32) | Array.copy | 0.0001-0.0001 | 24 |
+| conv-conv-stride2 | mini-batch (32) | layer_output_delta | 0.0000-0.0000 | 63 |
+| conv-conv-stride2 | mini-batch (32) | default_rng | 0.0000-0.0000 | 1 |
+| conv-conv | single-example | (profiled total) | 1.331-1.352 | |
+| conv-conv | single-example | conv_forward_batch | 0.7179-0.7201 | 12000 |
+| conv-conv | single-example | layer_forward | 0.1264-0.1363 | 12000 |
+| conv-conv | single-example | conv_downstream_batch | 0.1146-0.1170 | 2000 |
+| conv-conv | single-example | layer_sgd_step | 0.1012-0.1039 | 4000 |
+| conv-conv | single-example | conv_accumulate_gradient_batch | 0.0849-0.0866 | 4000 |
+| conv-conv | single-example | layer_downstream | 0.0477-0.0514 | 2000 |
+| conv-conv | single-example | array_relu_mask | 0.0084-0.0088 | 4000 |
+| conv-conv | single-example | Array.row | 0.0047-0.0047 | 6000 |
+| conv-conv | single-example | layer_apply_accumulated_gradient | 0.0024-0.0025 | 4000 |
+| conv-conv | single-example | layer_hidden_delta | 0.0009-0.0010 | 2000 |
+| conv-conv | single-example | argmax | 0.0006-0.0007 | 4000 |
+| conv-conv | single-example | layer_output_delta | 0.0006-0.0006 | 2000 |
+| conv-conv | single-example | Array.copy | 0.0002-0.0003 | 24 |
+| conv-conv | single-example | default_rng | 0.0000-0.0000 | 1 |
+| conv-conv | mini-batch (32) | (profiled total) | 1.296-1.304 | |
+| conv-conv | mini-batch (32) | conv_forward_batch | 0.7681-0.7707 | 8126 |
+| conv-conv | mini-batch (32) | conv_downstream_batch | 0.1819-0.1838 | 63 |
+| conv-conv | mini-batch (32) | conv_accumulate_gradient_batch | 0.0989-0.0997 | 126 |
+| conv-conv | mini-batch (32) | layer_forward | 0.0765-0.0840 | 8000 |
+| conv-conv | mini-batch (32) | layer_accumulate_gradient_batch | 0.0282-0.0287 | 126 |
+| conv-conv | mini-batch (32) | layer_forward_batch | 0.0252-0.0258 | 126 |
+| conv-conv | mini-batch (32) | layer_downstream_batch | 0.0201-0.0209 | 63 |
+| conv-conv | mini-batch (32) | array_relu_mask | 0.0164-0.0167 | 126 |
+| conv-conv | mini-batch (32) | layer_apply_accumulated_gradient | 0.0076-0.0079 | 252 |
+| conv-conv | mini-batch (32) | Array.row | 0.0029-0.0030 | 4000 |
+| conv-conv | mini-batch (32) | Array.take_rows | 0.0016-0.0017 | 63 |
+| conv-conv | mini-batch (32) | Array.copy | 0.0007-0.0007 | 24 |
+| conv-conv | mini-batch (32) | argmax | 0.0006-0.0007 | 4000 |
+| conv-conv | mini-batch (32) | layer_hidden_delta_batch | 0.0002-0.0002 | 63 |
+| conv-conv | mini-batch (32) | layer_output_delta | 0.0001-0.0001 | 63 |
+| conv-conv | mini-batch (32) | default_rng | 0.0000-0.0000 | 1 |
+| conv-conv16 | single-example | (profiled total) | 1.695-1.738 | |
+| conv-conv16 | single-example | conv_forward_batch | 0.6905-0.6924 | 12000 |
+| conv-conv16 | single-example | layer_forward | 0.2423-0.2647 | 12000 |
+| conv-conv16 | single-example | layer_sgd_step | 0.2270-0.2350 | 4000 |
+| conv-conv16 | single-example | conv_downstream_batch | 0.1611-0.1640 | 2000 |
+| conv-conv16 | single-example | conv_accumulate_gradient_batch | 0.1274-0.1294 | 4000 |
+| conv-conv16 | single-example | layer_downstream | 0.0951-0.1012 | 2000 |
+| conv-conv16 | single-example | array_relu_mask | 0.0123-0.0129 | 4000 |
+| conv-conv16 | single-example | Array.row | 0.0045-0.0047 | 6000 |
+| conv-conv16 | single-example | layer_apply_accumulated_gradient | 0.0031-0.0032 | 4000 |
+| conv-conv16 | single-example | Array.copy | 0.0009-0.0010 | 24 |
+| conv-conv16 | single-example | layer_hidden_delta | 0.0009-0.0010 | 2000 |
+| conv-conv16 | single-example | argmax | 0.0007-0.0007 | 4000 |
+| conv-conv16 | single-example | layer_output_delta | 0.0006-0.0006 | 2000 |
+| conv-conv16 | single-example | default_rng | 0.0000-0.0000 | 1 |
+| conv-conv16 | mini-batch (32) | (profiled total) | 1.362-1.386 | |
+| conv-conv16 | mini-batch (32) | conv_forward_batch | 0.7017-0.7154 | 8126 |
+| conv-conv16 | mini-batch (32) | conv_downstream_batch | 0.1923-0.1942 | 63 |
+| conv-conv16 | mini-batch (32) | layer_forward | 0.1572-0.1655 | 8000 |
+| conv-conv16 | mini-batch (32) | conv_accumulate_gradient_batch | 0.1185-0.1201 | 126 |
+| conv-conv16 | mini-batch (32) | layer_accumulate_gradient_batch | 0.0285-0.0292 | 126 |
+| conv-conv16 | mini-batch (32) | layer_forward_batch | 0.0265-0.0276 | 126 |
+| conv-conv16 | mini-batch (32) | layer_downstream_batch | 0.0248-0.0257 | 63 |
+| conv-conv16 | mini-batch (32) | array_relu_mask | 0.0242-0.0243 | 126 |
+| conv-conv16 | mini-batch (32) | layer_apply_accumulated_gradient | 0.0171-0.0173 | 252 |
+| conv-conv16 | mini-batch (32) | Array.row | 0.0029-0.0030 | 4000 |
+| conv-conv16 | mini-batch (32) | Array.take_rows | 0.0017-0.0018 | 63 |
+| conv-conv16 | mini-batch (32) | Array.copy | 0.0009-0.0010 | 24 |
+| conv-conv16 | mini-batch (32) | argmax | 0.0007-0.0007 | 4000 |
+| conv-conv16 | mini-batch (32) | layer_hidden_delta_batch | 0.0002-0.0002 | 63 |
+| conv-conv16 | mini-batch (32) | layer_output_delta | 0.0001-0.0001 | 63 |
+| conv-conv16 | mini-batch (32) | default_rng | 0.0000-0.0000 | 1 |

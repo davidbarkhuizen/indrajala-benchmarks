@@ -1,0 +1,10 @@
+2026-10-08-baseline-aa-focused_benchmark: old 6f0e9de vs new 6f0e9de, passes ONNONO (3 old, 3 new), focused_benchmark
+profile: identity matches; max 1-min load 0.87; busy processes: none
+controls: none (--control-backend reads the other backend's rows as controls)
+consistent: per call / conv 26x26x8/2, 8 ch downstream / numpy -1.7% (58.91 -> 57.93 µs)
+consistent: per call / conv 26x26x8, 8 ch accumulate_gradient_batch b32 / numpy +1.6% (2980 -> 3028 µs)
+consistent: per call / conv 26x26x8, 8 ch accumulate_gradient_batch b512 / rust -1.5% (1.22e+04 -> 1.201e+04 µs)
+consistent: per call / dense 30 x 784 apply_accumulated_gradient / numpy -1.5% (31.42 -> 30.94 µs)
+consistent: per call / dense 10 x 30 bare downstream b512 / rust -1.5% (15.66 -> 15.42 µs)
+consistent: per call / dense 10 x 30 sum_axis0 b512 / numpy +1.1% (8.973 -> 9.074 µs)
+252 rows within noise (23 separated inside their spread), max |Δ| 7.1%

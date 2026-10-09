@@ -1,0 +1,227 @@
+{
+ "version": 1,
+ "name": "2026-10-08-baseline-aa-accuracy_pass_timing",
+ "created": "2026-10-08T14:34:52+02:00",
+ "state": "done",
+ "pid": 1120322,
+ "repo": "/home/david/code/indrajala-ml",
+ "bench": "accuracy_pass_timing",
+ "args": [
+  "--repeats",
+  "5"
+ ],
+ "smoke_args": [
+  "--networks",
+  "conv",
+  "--repeats",
+  "1"
+ ],
+ "script_from": "new",
+ "control_backend": null,
+ "order": "ONNONO",
+ "python": "/home/david/code/indrajala-ml/.venv/bin/python",
+ "cwd": "/home/david/code/ab-runs/2026-10-08-baseline-aa-accuracy_pass_timing",
+ "extension": {
+  "file": "/home/david/code/indrajala-ml/.venv/lib/python3.14/site-packages/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+  "sha256": "f31e318a10d79f974db08691a68dbadd1e9a668edb46da6ab16d65b3805c5b23"
+ },
+ "passes": [
+  {
+   "number": 1,
+   "side": "old",
+   "stem": "pass-01-old",
+   "status": "ok",
+   "start": "2026-10-08T14:35:03+02:00",
+   "load": [
+    2.09033203125,
+    1.984375,
+    2.0224609375
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/code/ab-worktrees/6f0e9de/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/indrajala-ml/.venv/lib/python3.14/site-packages/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "f31e318a10d79f974db08691a68dbadd1e9a668edb46da6ab16d65b3805c5b23"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/code/ab-worktrees/6f0e9de/scripts/accuracy_pass_timing.py",
+    "time",
+    "--repeats",
+    "5",
+    "--out",
+    "/home/david/code/ab-runs/2026-10-08-baseline-aa-accuracy_pass_timing/pass-01-old.json"
+   ],
+   "end": "2026-10-08T14:41:12+02:00"
+  },
+  {
+   "number": 2,
+   "side": "new",
+   "stem": "pass-02-new",
+   "status": "ok",
+   "start": "2026-10-08T14:41:12+02:00",
+   "load": [
+    2.44677734375,
+    2.36474609375,
+    2.181640625
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/code/ab-worktrees/6f0e9de/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/indrajala-ml/.venv/lib/python3.14/site-packages/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "f31e318a10d79f974db08691a68dbadd1e9a668edb46da6ab16d65b3805c5b23"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/code/ab-worktrees/6f0e9de/scripts/accuracy_pass_timing.py",
+    "time",
+    "--repeats",
+    "5",
+    "--out",
+    "/home/david/code/ab-runs/2026-10-08-baseline-aa-accuracy_pass_timing/pass-02-new.json"
+   ],
+   "end": "2026-10-08T14:47:25+02:00"
+  },
+  {
+   "number": 3,
+   "side": "new",
+   "stem": "pass-03-new",
+   "status": "ok",
+   "start": "2026-10-08T14:47:25+02:00",
+   "load": [
+    2.259765625,
+    2.5361328125,
+    2.35009765625
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/code/ab-worktrees/6f0e9de/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/indrajala-ml/.venv/lib/python3.14/site-packages/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "f31e318a10d79f974db08691a68dbadd1e9a668edb46da6ab16d65b3805c5b23"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/code/ab-worktrees/6f0e9de/scripts/accuracy_pass_timing.py",
+    "time",
+    "--repeats",
+    "5",
+    "--out",
+    "/home/david/code/ab-runs/2026-10-08-baseline-aa-accuracy_pass_timing/pass-03-new.json"
+   ],
+   "end": "2026-10-08T14:53:32+02:00"
+  },
+  {
+   "number": 4,
+   "side": "old",
+   "stem": "pass-04-old",
+   "status": "ok",
+   "start": "2026-10-08T14:53:32+02:00",
+   "load": [
+    2.55078125,
+    2.58154296875,
+    2.41943359375
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/code/ab-worktrees/6f0e9de/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/indrajala-ml/.venv/lib/python3.14/site-packages/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "f31e318a10d79f974db08691a68dbadd1e9a668edb46da6ab16d65b3805c5b23"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/code/ab-worktrees/6f0e9de/scripts/accuracy_pass_timing.py",
+    "time",
+    "--repeats",
+    "5",
+    "--out",
+    "/home/david/code/ab-runs/2026-10-08-baseline-aa-accuracy_pass_timing/pass-04-old.json"
+   ],
+   "end": "2026-10-08T14:59:39+02:00"
+  },
+  {
+   "number": 5,
+   "side": "new",
+   "stem": "pass-05-new",
+   "status": "ok",
+   "start": "2026-10-08T14:59:39+02:00",
+   "load": [
+    2.59375,
+    2.42041015625,
+    2.37939453125
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/code/ab-worktrees/6f0e9de/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/indrajala-ml/.venv/lib/python3.14/site-packages/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "f31e318a10d79f974db08691a68dbadd1e9a668edb46da6ab16d65b3805c5b23"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/code/ab-worktrees/6f0e9de/scripts/accuracy_pass_timing.py",
+    "time",
+    "--repeats",
+    "5",
+    "--out",
+    "/home/david/code/ab-runs/2026-10-08-baseline-aa-accuracy_pass_timing/pass-05-new.json"
+   ],
+   "end": "2026-10-08T15:05:47+02:00"
+  },
+  {
+   "number": 6,
+   "side": "old",
+   "stem": "pass-06-old",
+   "status": "ok",
+   "start": "2026-10-08T15:05:47+02:00",
+   "load": [
+    2.6103515625,
+    2.484375,
+    2.40380859375
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/code/ab-worktrees/6f0e9de/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/indrajala-ml/.venv/lib/python3.14/site-packages/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "f31e318a10d79f974db08691a68dbadd1e9a668edb46da6ab16d65b3805c5b23"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/code/ab-worktrees/6f0e9de/scripts/accuracy_pass_timing.py",
+    "time",
+    "--repeats",
+    "5",
+    "--out",
+    "/home/david/code/ab-runs/2026-10-08-baseline-aa-accuracy_pass_timing/pass-06-old.json"
+   ],
+   "end": "2026-10-08T15:11:54+02:00"
+  }
+ ],
+ "extends": [],
+ "old": {
+  "ref": "baseline-i7-9700k",
+  "commit": "6f0e9de52aa2703bc095571245d7872ce048c44a",
+  "crate": "66ecc0de6fd2419d5ee886ee20d18406edcf61c4",
+  "tree": "/home/david/code/ab-worktrees/6f0e9de"
+ },
+ "new": {
+  "ref": "baseline-i7-9700k",
+  "commit": "6f0e9de52aa2703bc095571245d7872ce048c44a",
+  "crate": "66ecc0de6fd2419d5ee886ee20d18406edcf61c4",
+  "tree": "/home/david/code/ab-worktrees/6f0e9de"
+ },
+ "preflight": {
+  "at": "2026-10-08T14:34:52+02:00",
+  "load": [
+   0.92919921875,
+   1.76220703125,
+   1.95166015625
+  ],
+  "busy": [],
+  "threads": {
+   "OPENBLAS_NUM_THREADS": null,
+   "OMP_NUM_THREADS": null,
+   "MKL_NUM_THREADS": null
+  },
+  "profile": "identity matches",
+  "after_builds": []
+ }
+}

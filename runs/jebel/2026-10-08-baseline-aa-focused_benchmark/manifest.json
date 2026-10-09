@@ -1,0 +1,212 @@
+{
+ "version": 1,
+ "name": "2026-10-08-baseline-aa-focused_benchmark",
+ "created": "2026-10-08T14:12:18+02:00",
+ "state": "done",
+ "pid": 596693,
+ "repo": "/home/david/code/indrajala-ml",
+ "bench": "focused_benchmark",
+ "args": [],
+ "smoke_args": [
+  "--shape",
+  "dense 10 x 30",
+  "--op",
+  "forward",
+  "--batch-sizes",
+  "32",
+  "--passes",
+  "1",
+  "--loops",
+  "1"
+ ],
+ "script_from": "new",
+ "control_backend": null,
+ "order": "ONNONO",
+ "python": "/home/david/code/indrajala-ml/.venv/bin/python",
+ "cwd": "/home/david/code/ab-runs/2026-10-08-baseline-aa-focused_benchmark",
+ "extension": {
+  "file": "/home/david/code/indrajala-ml/.venv/lib/python3.14/site-packages/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+  "sha256": "f31e318a10d79f974db08691a68dbadd1e9a668edb46da6ab16d65b3805c5b23"
+ },
+ "passes": [
+  {
+   "number": 1,
+   "side": "old",
+   "stem": "pass-01-old",
+   "status": "ok",
+   "start": "2026-10-08T14:12:21+02:00",
+   "load": [
+    1.44384765625,
+    1.31591796875,
+    1.12109375
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/code/ab-worktrees/6f0e9de/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/indrajala-ml/.venv/lib/python3.14/site-packages/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "f31e318a10d79f974db08691a68dbadd1e9a668edb46da6ab16d65b3805c5b23"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/code/ab-worktrees/6f0e9de/scripts/focused_benchmark.py",
+    "--json",
+    "/home/david/code/ab-runs/2026-10-08-baseline-aa-focused_benchmark/pass-01-old.json"
+   ],
+   "end": "2026-10-08T14:15:12+02:00"
+  },
+  {
+   "number": 2,
+   "side": "new",
+   "stem": "pass-02-new",
+   "status": "ok",
+   "start": "2026-10-08T14:15:12+02:00",
+   "load": [
+    2.5029296875,
+    1.9326171875,
+    1.39501953125
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/code/ab-worktrees/6f0e9de/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/indrajala-ml/.venv/lib/python3.14/site-packages/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "f31e318a10d79f974db08691a68dbadd1e9a668edb46da6ab16d65b3805c5b23"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/code/ab-worktrees/6f0e9de/scripts/focused_benchmark.py",
+    "--json",
+    "/home/david/code/ab-runs/2026-10-08-baseline-aa-focused_benchmark/pass-02-new.json"
+   ],
+   "end": "2026-10-08T14:18:04+02:00"
+  },
+  {
+   "number": 3,
+   "side": "new",
+   "stem": "pass-03-new",
+   "status": "ok",
+   "start": "2026-10-08T14:18:04+02:00",
+   "load": [
+    2.9990234375,
+    2.20849609375,
+    1.57958984375
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/code/ab-worktrees/6f0e9de/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/indrajala-ml/.venv/lib/python3.14/site-packages/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "f31e318a10d79f974db08691a68dbadd1e9a668edb46da6ab16d65b3805c5b23"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/code/ab-worktrees/6f0e9de/scripts/focused_benchmark.py",
+    "--json",
+    "/home/david/code/ab-runs/2026-10-08-baseline-aa-focused_benchmark/pass-03-new.json"
+   ],
+   "end": "2026-10-08T14:20:57+02:00"
+  },
+  {
+   "number": 4,
+   "side": "old",
+   "stem": "pass-04-old",
+   "status": "ok",
+   "start": "2026-10-08T14:20:57+02:00",
+   "load": [
+    2.42578125,
+    2.42041015625,
+    1.7724609375
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/code/ab-worktrees/6f0e9de/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/indrajala-ml/.venv/lib/python3.14/site-packages/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "f31e318a10d79f974db08691a68dbadd1e9a668edb46da6ab16d65b3805c5b23"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/code/ab-worktrees/6f0e9de/scripts/focused_benchmark.py",
+    "--json",
+    "/home/david/code/ab-runs/2026-10-08-baseline-aa-focused_benchmark/pass-04-old.json"
+   ],
+   "end": "2026-10-08T14:23:49+02:00"
+  },
+  {
+   "number": 5,
+   "side": "new",
+   "stem": "pass-05-new",
+   "status": "ok",
+   "start": "2026-10-08T14:23:49+02:00",
+   "load": [
+    2.8583984375,
+    2.5830078125,
+    1.947265625
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/code/ab-worktrees/6f0e9de/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/indrajala-ml/.venv/lib/python3.14/site-packages/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "f31e318a10d79f974db08691a68dbadd1e9a668edb46da6ab16d65b3805c5b23"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/code/ab-worktrees/6f0e9de/scripts/focused_benchmark.py",
+    "--json",
+    "/home/david/code/ab-runs/2026-10-08-baseline-aa-focused_benchmark/pass-05-new.json"
+   ],
+   "end": "2026-10-08T14:26:41+02:00"
+  },
+  {
+   "number": 6,
+   "side": "old",
+   "stem": "pass-06-old",
+   "status": "ok",
+   "start": "2026-10-08T14:26:41+02:00",
+   "load": [
+    2.59375,
+    2.85107421875,
+    2.16943359375
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/code/ab-worktrees/6f0e9de/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/indrajala-ml/.venv/lib/python3.14/site-packages/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "f31e318a10d79f974db08691a68dbadd1e9a668edb46da6ab16d65b3805c5b23"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/code/ab-worktrees/6f0e9de/scripts/focused_benchmark.py",
+    "--json",
+    "/home/david/code/ab-runs/2026-10-08-baseline-aa-focused_benchmark/pass-06-old.json"
+   ],
+   "end": "2026-10-08T14:29:34+02:00"
+  }
+ ],
+ "extends": [],
+ "old": {
+  "ref": "baseline-i7-9700k",
+  "commit": "6f0e9de52aa2703bc095571245d7872ce048c44a",
+  "crate": "66ecc0de6fd2419d5ee886ee20d18406edcf61c4",
+  "tree": "/home/david/code/ab-worktrees/6f0e9de"
+ },
+ "new": {
+  "ref": "baseline-i7-9700k",
+  "commit": "6f0e9de52aa2703bc095571245d7872ce048c44a",
+  "crate": "66ecc0de6fd2419d5ee886ee20d18406edcf61c4",
+  "tree": "/home/david/code/ab-worktrees/6f0e9de"
+ },
+ "preflight": {
+  "at": "2026-10-08T14:12:18+02:00",
+  "load": [
+   0.873046875,
+   1.20263671875,
+   1.08349609375
+  ],
+  "busy": [],
+  "threads": {
+   "OPENBLAS_NUM_THREADS": null,
+   "OMP_NUM_THREADS": null,
+   "MKL_NUM_THREADS": null
+  },
+  "profile": "identity matches",
+  "after_builds": []
+ }
+}

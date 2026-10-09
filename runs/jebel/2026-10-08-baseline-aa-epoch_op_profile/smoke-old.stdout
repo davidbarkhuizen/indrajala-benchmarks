@@ -1,0 +1,20 @@
+Rust op seconds in one profiled training run, min-max over 1 processes
+
+| architecture | trainer | op | seconds | calls |
+|---|---|---|---|---|
+| conv | mini-batch (32) | (profiled total) | 0.374-0.374 | |
+| conv | mini-batch (32) | conv_forward_batch | 0.1291-0.1291 | 4063 |
+| conv | mini-batch (32) | layer_forward | 0.0930-0.0930 | 8000 |
+| conv | mini-batch (32) | conv_accumulate_gradient_batch | 0.0360-0.0360 | 63 |
+| conv | mini-batch (32) | layer_forward_batch | 0.0253-0.0253 | 126 |
+| conv | mini-batch (32) | layer_accumulate_gradient_batch | 0.0195-0.0195 | 126 |
+| conv | mini-batch (32) | layer_downstream_batch | 0.0144-0.0144 | 63 |
+| conv | mini-batch (32) | layer_apply_accumulated_gradient | 0.0056-0.0056 | 189 |
+| conv | mini-batch (32) | array_relu_mask | 0.0055-0.0055 | 63 |
+| conv | mini-batch (32) | Array.row | 0.0029-0.0029 | 4000 |
+| conv | mini-batch (32) | Array.take_rows | 0.0012-0.0012 | 63 |
+| conv | mini-batch (32) | argmax | 0.0007-0.0007 | 4000 |
+| conv | mini-batch (32) | Array.copy | 0.0003-0.0003 | 24 |
+| conv | mini-batch (32) | layer_hidden_delta_batch | 0.0001-0.0001 | 63 |
+| conv | mini-batch (32) | layer_output_delta | 0.0000-0.0000 | 63 |
+| conv | mini-batch (32) | default_rng | 0.0000-0.0000 | 1 |

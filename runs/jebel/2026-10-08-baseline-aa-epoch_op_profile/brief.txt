@@ -1,0 +1,5 @@
+2026-10-08-baseline-aa-epoch_op_profile: old 6f0e9de vs new 6f0e9de, passes ONNONO (3 old, 3 new), epoch_op_profile
+profile: identity matches; max 1-min load 0.80; busy processes: none
+controls: none (Rust only; read the profiled total's share)
+consistent: seconds in the run / conv-conv / mini-batch (32) (profiled total) -0.3% (1.302 -> 1.298 s)
+161 rows within noise (15 separated inside their spread), max |Δ| 23.7%

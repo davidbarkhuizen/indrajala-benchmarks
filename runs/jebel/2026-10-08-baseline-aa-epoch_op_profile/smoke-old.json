@@ -1,0 +1,73 @@
+{
+ "label": "",
+ "runs": {
+  "conv / mini-batch (32)": [
+   {
+    "epochs": 1,
+    "total": 0.374372209,
+    "ops": {
+     "conv_forward_batch": [
+      0.12914476900000002,
+      4063
+     ],
+     "layer_forward": [
+      0.092995191,
+      8000
+     ],
+     "conv_accumulate_gradient_batch": [
+      0.035976541,
+      63
+     ],
+     "layer_forward_batch": [
+      0.025277998000000003,
+      126
+     ],
+     "layer_accumulate_gradient_batch": [
+      0.019486706000000003,
+      126
+     ],
+     "layer_downstream_batch": [
+      0.014398801000000001,
+      63
+     ],
+     "layer_apply_accumulated_gradient": [
+      0.005586304,
+      189
+     ],
+     "array_relu_mask": [
+      0.005516667,
+      63
+     ],
+     "Array.row": [
+      0.002919922,
+      4000
+     ],
+     "Array.take_rows": [
+      0.001230184,
+      63
+     ],
+     "argmax": [
+      0.000734216,
+      4000
+     ],
+     "Array.copy": [
+      0.00033175200000000005,
+      24
+     ],
+     "layer_hidden_delta_batch": [
+      0.00010487900000000001,
+      63
+     ],
+     "layer_output_delta": [
+      4.6492e-05,
+      63
+     ],
+     "default_rng": [
+      1.3203e-05,
+      1
+     ]
+    }
+   }
+  ]
+ }
+}

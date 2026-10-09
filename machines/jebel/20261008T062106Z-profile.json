@@ -1,0 +1,132 @@
+{
+  "schema_version": 4,
+  "identity": {
+    "cpu": {
+      "vendor": "GenuineIntel",
+      "model_name": "Intel(R) Core(TM) i7-9700K CPU @ 3.60GHz",
+      "architecture": "x86_64",
+      "sockets": 1,
+      "physical_cores": 8,
+      "logical_cpus": 8,
+      "threads_per_core": 1,
+      "caches": [
+        {
+          "level": 1,
+          "type": "Data",
+          "size_kib": 32,
+          "shared_by_logical_cpus": 1,
+          "instances": 8
+        },
+        {
+          "level": 1,
+          "type": "Instruction",
+          "size_kib": 32,
+          "shared_by_logical_cpus": 1,
+          "instances": 8
+        },
+        {
+          "level": 2,
+          "type": "Unified",
+          "size_kib": 256,
+          "shared_by_logical_cpus": 1,
+          "instances": 8
+        },
+        {
+          "level": 3,
+          "type": "Unified",
+          "size_kib": 12288,
+          "shared_by_logical_cpus": 8,
+          "instances": 1
+        }
+      ],
+      "isa": {
+        "sse4_2": true,
+        "avx": true,
+        "avx2": true,
+        "fma": true,
+        "avx512f": false
+      },
+      "frequency": {
+        "driver": "intel_pstate",
+        "governor": "powersave",
+        "min_mhz": 800,
+        "max_mhz": 4900,
+        "boost_enabled": true,
+        "energy_performance_preference": "balance_performance",
+        "intel_pstate_status": "active"
+      },
+      "power_limits": {
+        "long_term_w": 65,
+        "short_term_w": 120
+      }
+    },
+    "memory": {
+      "total_mib": 31442,
+      "swap_total_mib": 8191
+    },
+    "gpus": [
+      {
+        "class": "VGA compatible controller",
+        "vendor": "Intel Corporation",
+        "device": "CoffeeLake-S GT2 [UHD Graphics 630]"
+      }
+    ],
+    "os": {
+      "system": "Linux",
+      "kernel_release": "7.0.0-38-generic",
+      "distribution": "Ubuntu 26.04.1 LTS",
+      "perf_event_paranoid": 2
+    },
+    "software": {
+      "python": {
+        "implementation": "CPython",
+        "version": "3.14.4"
+      },
+      "numpy": {
+        "version": "2.5.3",
+        "blas": {
+          "name": "scipy-openblas",
+          "version": "0.3.34.106.0",
+          "configuration": "OpenBLAS 0.3.34.106.0  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=64"
+        }
+      },
+      "rustc": "rustc 1.98.1 (48a229cea 2026-09-01)",
+      "crate_release_profile": "default",
+      "thread_env": {
+        "OPENBLAS_NUM_THREADS": null,
+        "OMP_NUM_THREADS": null,
+        "MKL_NUM_THREADS": null,
+        "RAYON_NUM_THREADS": null
+      }
+    }
+  },
+  "state": {
+    "captured_at": "2026-10-08T06:21:06Z",
+    "hostname": "jebel",
+    "load_average": [
+      3.3,
+      5.86,
+      3.74
+    ],
+    "memory_available_mib": 29283,
+    "cpu_mhz_now": {
+      "min": 800,
+      "max": 4793
+    },
+    "power": {
+      "on_ac": null,
+      "battery_percent": null
+    },
+    "commits": {
+      "repo": "c6f7e0993d26dc9bedb6f9b72450fb17972b7d1c",
+      "repo_dirty": false,
+      "rust": "66ecc0de6fd2419d5ee886ee20d18406edcf61c4"
+    }
+  },
+  "noise_rules": {
+    "shifted_pass": 0.02,
+    "high_load": 1.5,
+    "small_consistent": 0.02,
+    "measured_by": "benchmark machine workplan, stage 4 (2026-10-08): six A/As at baseline-i7-9700k; no pass of 36 shifted more than 0.9%, and 7 of 591 rows were consistent by chance, all under 2%"
+  }
+}

@@ -1,0 +1,7 @@
+µs per call inside one Rust training run, median (min-max over 1 processes), threads training's
+
+| architecture | trainer | overrides | op | argument shapes | calls | median µs | s in run |
+|---|---|---|---|---|---|---|---|
+| conv | mini-batch (32) | 0:0 | (whole run, s) | | | 0.342 (0.342-0.342) | |
+| conv | mini-batch (32) | 0:0 | conv_accumulate_gradient_batch | (32, 5408) (21632, 9) (8, 9) (8,) | 62 | 578 (578-578) | 0.036-0.036 |
+| conv | mini-batch (32) | 0:0 | conv_accumulate_gradient_batch | (16, 5408) (10816, 9) (8, 9) (8,) | 1 | 280 (280-280) | 0.000-0.000 |

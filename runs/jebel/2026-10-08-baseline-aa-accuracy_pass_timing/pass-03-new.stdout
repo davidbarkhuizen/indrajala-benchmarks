@@ -1,0 +1,45 @@
+median of 5 processes (each measure the median of 3 runs), seconds
+
+| network / backend | per row | forward 32 | forward 512 | batched 32 | batched 512 | epoch B=32 | epoch single |
+|---|---|---|---|---|---|---|---|
+| dense / numpy | 1.027 | 0.097 | 0.039 | 0.104 | 0.041 | 0.588 | 5.928 |
+| dense / rust | 0.256 | 0.114 | 0.072 | 0.141 | 0.102 | 0.552 | 1.219 |
+| conv / numpy | 0.189 | 0.075 | 0.082 | 0.075 | 0.083 | 0.381 | 1.114 |
+| conv / rust | 0.090 | 0.065 | 0.055 | 0.067 | 0.056 | 0.331 | 0.486 |
+| conv-pool-conv / numpy | 0.427 | 0.191 | 0.214 | 0.185 | 0.218 | 0.781 | 1.441 |
+| conv-pool-conv / rust | 0.108 | 0.097 | 0.125 | 0.098 | 0.110 | 0.424 | 0.473 |
+| conv-conv-stride2 / numpy | 0.269 | 0.132 | 0.151 | 0.134 | 0.154 | 0.601 | 1.125 |
+| conv-conv-stride2 / rust | 0.109 | 0.096 | 0.155 | 0.097 | 0.143 | 0.425 | 0.473 |
+| conv-conv / numpy | 0.447 | 0.316 | 0.371 | 0.316 | 0.373 | 1.684 | 2.326 |
+| conv-conv / rust | 0.280 | 0.267 | 0.428 | 0.267 | 0.430 | 1.212 | 1.214 |
+| conv-conv16 / numpy | 0.522 | 0.369 | 0.400 | 0.370 | 0.396 | 2.025 | 3.248 |
+| conv-conv16 / rust | 0.313 | 0.283 | 0.428 | 0.282 | 0.424 | 1.313 | 1.563 |
+
+the saving from batching, as a share of an epoch, and mismatched rows
+
+| network / backend | chunk | saved per pass | one-epoch B=32 | one-epoch single | long-run B=32 | long-run single | mismatches |
+|---|---|---|---|---|---|---|---|
+| dense / numpy | 32 | 0.922 | 313% | 31% | -211% | 19% | 0 |
+| dense / numpy | 512 | 0.986 | 335% | 33% | -225% | 20% | 0 |
+| dense / rust | 32 | 0.115 | 42% | 19% | 39% | 12% | 0 |
+| dense / rust | 512 | 0.154 | 56% | 25% | 52% | 16% | 0 |
+| conv / numpy | 32 | 0.114 | 60% | 20% | 59% | 12% | 0 |
+| conv / numpy | 512 | 0.105 | 55% | 19% | 55% | 11% | 0 |
+| conv / rust | 32 | 0.023 | 14% | 9% | 10% | 6% | 0 |
+| conv / rust | 512 | 0.034 | 21% | 14% | 14% | 9% | 0 |
+| conv-pool-conv / numpy | 32 | 0.242 | 62% | 34% | 69% | 24% | 0 |
+| conv-pool-conv / numpy | 512 | 0.209 | 54% | 29% | 59% | 21% | 0 |
+| conv-pool-conv / rust | 32 | 0.010 | 5% | 4% | 3% | 3% | 0 |
+| conv-pool-conv / rust | 512 | -0.002 | -1% | -1% | -1% | -1% | 0 |
+| conv-conv-stride2 / numpy | 32 | 0.135 | 45% | 24% | 41% | 16% | 0 |
+| conv-conv-stride2 / numpy | 512 | 0.115 | 38% | 20% | 35% | 13% | 0 |
+| conv-conv-stride2 / rust | 32 | 0.012 | 6% | 5% | 4% | 3% | 0 |
+| conv-conv-stride2 / rust | 512 | -0.034 | -16% | -14% | -11% | -9% | 0 |
+| conv-conv / numpy | 32 | 0.131 | 16% | 11% | 11% | 7% | 0 |
+| conv-conv / numpy | 512 | 0.074 | 9% | 6% | 6% | 4% | 0 |
+| conv-conv / rust | 32 | 0.013 | 2% | 2% | 1% | 1% | 0 |
+| conv-conv / rust | 512 | -0.149 | -25% | -25% | -16% | -16% | 0 |
+| conv-conv16 / numpy | 32 | 0.152 | 15% | 9% | 10% | 6% | 0 |
+| conv-conv16 / numpy | 512 | 0.126 | 12% | 8% | 8% | 5% | 0 |
+| conv-conv16 / rust | 32 | 0.030 | 5% | 4% | 3% | 2% | 0 |
+| conv-conv16 / rust | 512 | -0.111 | -17% | -14% | -11% | -9% | 0 |
