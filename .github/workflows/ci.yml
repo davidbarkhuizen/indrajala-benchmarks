@@ -7,7 +7,8 @@ on:
 
 jobs:
   # tools/check_archive.py: every record against FORMAT.md, every profile snapshot against
-  # indrajala-ml's schema of its schema_version, and on a PR, that nothing merged changed.
+  # indrajala-ml's schema of its schema_version, every run's reports re-rendered with
+  # indrajala-ml main's ab.py, and on a PR, that nothing merged changed.
   check:
     runs-on: ubuntu-latest
     steps:
@@ -34,4 +35,4 @@ jobs:
         working-directory: archive
         env:
           BASE: ${{ github.event.pull_request.base.sha }}
-        run: python tools/check_archive.py --indrajala-ml ../indrajala-ml ${BASE:+--base "$BASE"}
+        run: python tools/check_archive.py --indrajala-ml ../indrajala-ml --reproduce ${BASE:+--base "$BASE"}
