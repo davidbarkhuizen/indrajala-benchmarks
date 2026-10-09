@@ -1,0 +1,9 @@
+pyo3-probe: old 25a3a03 vs new a6419a6, passes ONNOONNO (4 old, 4 new), boundary_probe.py
+profile: not recorded; busy processes: none
+controls: none (a probe row can carry "control": true)
+shifted: pass 1 (old, fast -8.3%), pass 2 (new, fast -5.8%), pass 8 (old, slow +5.6%); unbalanced, next: ab.py extend --order NO
+consistent: per call / Array.from_rows(10x30) -41.3% (3485 -> 2047 ns)
+consistent: per call / v.tolist() 30 -28.7% (545.2 -> 388.6 ns)
+consistent: per call / 0.5 * a (reflected) -25.3% (466 -> 348.3 ns)
+consistent: per call / a * 0.5 (scalar operand) -22.4% (392.7 -> 304.8 ns)
+13 rows within noise (9 separated inside their spread), max |Δ| 33.9%
