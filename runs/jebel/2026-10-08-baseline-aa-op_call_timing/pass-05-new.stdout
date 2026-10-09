@@ -1,0 +1,27 @@
+µs per call inside one Rust training run, median (min-max over 2 processes), threads training's
+
+| architecture | trainer | overrides | op | argument shapes | calls | median µs | s in run |
+|---|---|---|---|---|---|---|---|
+| conv | mini-batch (32) | 0:0 | (whole run, s) | | | 0.334 (0.329-0.339) | |
+| conv | mini-batch (32) | 0:0 | conv_accumulate_gradient_batch | (32, 5408) (21632, 9) (8, 9) (8,) | 62 | 572 (570-574) | 0.036-0.036 |
+| conv | mini-batch (32) | 0:0 | conv_accumulate_gradient_batch | (16, 5408) (10816, 9) (8, 9) (8,) | 1 | 280 (280-280) | 0.000-0.000 |
+| conv-pool-conv | mini-batch (32) | 0:0 | (whole run, s) | | | 0.437 (0.436-0.437) | |
+| conv-pool-conv | mini-batch (32) | 0:0 | conv_accumulate_gradient_batch | (32, 5408) (21632, 9) (8, 9) (8,) | 62 | 583 (581-584) | 0.036-0.036 |
+| conv-pool-conv | mini-batch (32) | 0:0 | conv_accumulate_gradient_batch | (32, 968) (3872, 72) (8, 72) (8,) | 62 | 236 (234-238) | 0.015-0.015 |
+| conv-pool-conv | mini-batch (32) | 0:0 | conv_accumulate_gradient_batch | (16, 5408) (10816, 9) (8, 9) (8,) | 1 | 298 (281-315) | 0.000-0.000 |
+| conv-pool-conv | mini-batch (32) | 0:0 | conv_accumulate_gradient_batch | (16, 968) (1936, 72) (8, 72) (8,) | 1 | 97 (96-98) | 0.000-0.000 |
+| conv-conv-stride2 | mini-batch (32) | 0:0 | (whole run, s) | | | 0.450 (0.449-0.450) | |
+| conv-conv-stride2 | mini-batch (32) | 0:0 | conv_accumulate_gradient_batch | (32, 5408) (21632, 9) (8, 9) (8,) | 62 | 574 (573-576) | 0.036-0.036 |
+| conv-conv-stride2 | mini-batch (32) | 0:0 | conv_accumulate_gradient_batch | (32, 1152) (4608, 72) (8, 72) (8,) | 62 | 289 (288-290) | 0.018-0.018 |
+| conv-conv-stride2 | mini-batch (32) | 0:0 | conv_accumulate_gradient_batch | (16, 5408) (10816, 9) (8, 9) (8,) | 1 | 300 (278-322) | 0.000-0.000 |
+| conv-conv-stride2 | mini-batch (32) | 0:0 | conv_accumulate_gradient_batch | (16, 1152) (2304, 72) (8, 72) (8,) | 1 | 129 (128-130) | 0.000-0.000 |
+| conv-conv | mini-batch (32) | 0:0 | (whole run, s) | | | 1.285 (1.280-1.290) | |
+| conv-conv | mini-batch (32) | 0:0 | conv_accumulate_gradient_batch | (32, 5408) (21632, 9) (8, 9) (8,) | 62 | 699 (696-702) | 0.043-0.043 |
+| conv-conv | mini-batch (32) | 0:0 | conv_accumulate_gradient_batch | (32, 4608) (18432, 72) (8, 72) (8,) | 62 | 939 (938-939) | 0.058-0.058 |
+| conv-conv | mini-batch (32) | 0:0 | conv_accumulate_gradient_batch | (16, 5408) (10816, 9) (8, 9) (8,) | 1 | 326 (317-336) | 0.000-0.000 |
+| conv-conv | mini-batch (32) | 0:0 | conv_accumulate_gradient_batch | (16, 4608) (9216, 72) (8, 72) (8,) | 1 | 736 (732-740) | 0.001-0.001 |
+| conv-conv16 | mini-batch (32) | 0:0 | (whole run, s) | | | 1.354 (1.353-1.355) | |
+| conv-conv16 | mini-batch (32) | 0:0 | conv_accumulate_gradient_batch | (32, 5408) (21632, 9) (8, 9) (8,) | 62 | 676 (674-677) | 0.042-0.042 |
+| conv-conv16 | mini-batch (32) | 0:0 | conv_accumulate_gradient_batch | (32, 9216) (18432, 72) (16, 72) (16,) | 62 | 1270 (1269-1270) | 0.078-0.079 |
+| conv-conv16 | mini-batch (32) | 0:0 | conv_accumulate_gradient_batch | (16, 5408) (10816, 9) (8, 9) (8,) | 1 | 329 (326-333) | 0.000-0.000 |
+| conv-conv16 | mini-batch (32) | 0:0 | conv_accumulate_gradient_batch | (16, 9216) (9216, 72) (16, 72) (16,) | 1 | 781 (773-788) | 0.001-0.001 |

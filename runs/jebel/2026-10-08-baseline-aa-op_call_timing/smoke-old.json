@@ -1,0 +1,37 @@
+{
+ "settings": {
+  "architectures": [
+   "conv"
+  ],
+  "trainers": [
+   "mini-batch (32)"
+  ],
+  "op": [],
+  "rust_threads": null,
+  "kernel_overrides": [
+   "0:0"
+  ],
+  "repeats": 1,
+  "json": "/home/david/code/ab-runs/2026-10-08-baseline-aa-op_call_timing/smoke-old.json",
+  "worker": null
+ },
+ "runs": {
+  "conv / mini-batch (32) / 0:0": [
+   {
+    "run_s": 0.34199181299482007,
+    "conv_accumulate_gradient_batch": {
+     "(32, 5408) (21632, 9) (8, 9) (8,)": {
+      "calls": 62,
+      "median_us": 577.6774996775202,
+      "total_s": 0.03609169698029291
+     },
+     "(16, 5408) (10816, 9) (8, 9) (8,)": {
+      "calls": 1,
+      "median_us": 279.52800155617297,
+      "total_s": 0.00027952800155617297
+     }
+    }
+   }
+  ]
+ }
+}

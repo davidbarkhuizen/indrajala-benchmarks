@@ -1,0 +1,12 @@
+median of 1, seconds per epoch (one process per measurement)
+
+| B | backend | epoch | steps | accuracy pass | batch conversion | row conversion | steps % of epoch | accuracy passes % of epoch |
+|---|---|---|---|---|---|---|---|---|
+| 1024 | numpy | 1.44 | 1.32 | 2.17 | 1.327 | 1.33 | 91% | 300% |
+| 1024 | rust | 0.65 | 0.89 | 0.68 | 0.672 | 0.42 | 136% | 208% |
+
+Rust / numpy ratio of medians
+
+| B | epoch | steps | accuracy pass |
+|---|---|---|---|
+| 1024 | 0.45 | 0.67 | 0.31 |

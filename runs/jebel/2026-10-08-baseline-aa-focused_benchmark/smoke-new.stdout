@@ -1,0 +1,7 @@
+2 cases x 2 backends x 1 passes, rust threads default, OpenBLAS threads default, malloc default, kernel overrides default
+median (min-max) µs per call over 1 loops of ~20 ms; faults = minor page faults per call
+pass shape                op                         batch backend malloc     median           min-max  faults
+   1 dense 10 x 30        forward                        - numpy   default       4.6           4.6-4.6     0.0
+   1 dense 10 x 30        forward                        - rust    default       0.3           0.3-0.3     0.0
+   1 dense 10 x 30        forward_batch                 32 numpy   default       9.9           9.9-9.9     0.0
+   1 dense 10 x 30        forward_batch                 32 rust    default       3.1           3.1-3.1     0.0

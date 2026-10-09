@@ -1,0 +1,15 @@
+median of 1 processes (each measure the median of 3 runs), seconds
+
+| network / backend | per row | forward 32 | forward 512 | batched 32 | batched 512 | epoch B=32 | epoch single |
+|---|---|---|---|---|---|---|---|
+| conv / numpy | 0.190 | 0.075 | 0.080 | 0.075 | 0.077 | 0.372 | 1.118 |
+| conv / rust | 0.086 | 0.064 | 0.055 | 0.066 | 0.055 | 0.322 | 0.473 |
+
+the saving from batching, as a share of an epoch, and mismatched rows
+
+| network / backend | chunk | saved per pass | one-epoch B=32 | one-epoch single | long-run B=32 | long-run single | mismatches |
+|---|---|---|---|---|---|---|---|
+| conv / numpy | 32 | 0.115 | 62% | 21% | 63% | 12% | 0 |
+| conv / numpy | 512 | 0.113 | 61% | 20% | 62% | 12% | 0 |
+| conv / rust | 32 | 0.020 | 12% | 8% | 8% | 5% | 0 |
+| conv / rust | 512 | 0.031 | 19% | 13% | 13% | 8% | 0 |
