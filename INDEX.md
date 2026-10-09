@@ -12,6 +12,7 @@ One line per record, newest first ([FORMAT.md](FORMAT.md)).
 - 2026-10-08 · jebel · run · [2026-10-08-baseline-aa-op_call_timing](runs/jebel/2026-10-08-baseline-aa-op_call_timing) · the i7's A/A baseline (benchmark machine workplan, stage 4; #585)
 - 2026-10-08 · jebel · run · [2026-10-08-baseline-aa-prepared_dataset_timing](runs/jebel/2026-10-08-baseline-aa-prepared_dataset_timing) · the i7's A/A baseline (benchmark machine workplan, stage 4; #585)
 - 2026-10-07 · jebel · golden · [2026-10-07-46adf46.json.gz](golden/jebel/2026-10-07-46adf46.json.gz) · material: jebel's first golden run, recorded at 46adf46 (main at the benchmark machine workplan's stage 0); bit-identical to the laptop's (D5 of that workplan)
+- 2026-09-29 · pyramidon · run · [2026-09-29-pyo3-probe-r2](runs/pyramidon/2026-09-29-pyo3-probe-r2) · #468: the pyo3 0.29 upgrade's boundary probe, its report re-rendered after #594 (the original's protocol paragraph named the probe by the archiving host's cwd)
 - 2026-09-29 · pyramidon · run · [2026-09-29-pyo3-epoch](runs/pyramidon/2026-09-29-pyo3-epoch) · #468: the pyo3 0.29 upgrade's A/Bs (epoch ops, focused benchmark, boundary probe)
 - 2026-09-29 · pyramidon · run · [2026-09-29-pyo3-focused](runs/pyramidon/2026-09-29-pyo3-focused) · #468: the pyo3 0.29 upgrade's A/Bs (epoch ops, focused benchmark, boundary probe)
 - 2026-09-29 · pyramidon · run · [2026-09-29-pyo3-probe](runs/pyramidon/2026-09-29-pyo3-probe) · #468: the pyo3 0.29 upgrade's A/Bs (epoch ops, focused benchmark, boundary probe)
