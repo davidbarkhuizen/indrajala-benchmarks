@@ -2,6 +2,7 @@
 
 One line per record, newest first ([FORMAT.md](FORMAT.md)).
 
+- 2026-10-09 · jebel · golden · [2026-10-09-4d15b23.json.gz](golden/jebel/2026-10-09-4d15b23.json.gz) · new-functionality: #632: a causal sequence model per implementation (a causal transformer over Tiny Shakespeare's first 84 characters, 12 windows of 6 ids, under Adam), the sequence task workplan, stage 7; the 109 earlier entries unchanged
 - 2026-10-09 · pyramidon · golden · [2026-10-09-13db8dd.json.gz](golden/pyramidon/2026-10-09-13db8dd.json.gz) · new-functionality: #612: a multi-head patch model per implementation (four heads of 3 over 4-wide tokens, under Adam), the multi-head attention workplan, stage 6; the 106 earlier entries unchanged
 - 2026-10-09 · jebel · golden · [2026-10-09-13db8dd.json.gz](golden/jebel/2026-10-09-13db8dd.json.gz) · new-functionality: #612: a multi-head patch model per implementation (four heads of 3 over 4-wide tokens, under Adam), the multi-head attention workplan, stage 6; the 106 earlier entries unchanged
 - 2026-10-09 · pyramidon · golden · [2026-10-09-3f681e6.json.gz](golden/pyramidon/2026-10-09-3f681e6.json.gz) · material: pyramidon's first archived golden run, recorded at 3f681e6 as it became the development host (benchmark archive workplan, stage 5); byte-identical to jebel's 2026-10-07-46adf46
