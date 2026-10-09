@@ -2,6 +2,7 @@
 
 One line per record, newest first ([FORMAT.md](FORMAT.md)).
 
+- 2026-10-09 · pyramidon · golden · [2026-10-09-3f681e6.json.gz](golden/pyramidon/2026-10-09-3f681e6.json.gz) · material: pyramidon's first archived golden run, recorded at 3f681e6 as it became the development host (benchmark archive workplan, stage 5); byte-identical to jebel's 2026-10-07-46adf46
 - 2026-10-08 · pyramidon · profile · [20261008T171257Z-profile.json](machines/pyramidon/20261008T171257Z-profile.json) · cited by a record
 - 2026-10-08 · jebel · run · [2026-10-08-baseline-aa-prepared_dataset_timing-pl1-reset](runs/jebel/2026-10-08-baseline-aa-prepared_dataset_timing-pl1-reset) · failed: the first record of ab.py's per-pass policy check catching a PL1 reset mid-run (benchmark machine workplan, stage 4)
 - 2026-10-08 · jebel · run · [2026-10-08-baseline-aa-accuracy_pass_timing](runs/jebel/2026-10-08-baseline-aa-accuracy_pass_timing) · the i7's A/A baseline (benchmark machine workplan, stage 4; #585)
