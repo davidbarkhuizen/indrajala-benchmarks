@@ -2,6 +2,7 @@
 
 One line per record, newest first ([FORMAT.md](FORMAT.md)).
 
+- 2026-10-10 · jebel · golden · [2026-10-10-ff68d38.json.gz](golden/jebel/2026-10-10-ff68d38.json.gz) · new-functionality: #659: attention dropout entries (the sequence model with GPT's three dropouts at 0.1, in each implementation); the 112 earlier entries bit-identical
 - 2026-10-10 · pyramidon · golden · [2026-10-10-ff68d38.json.gz](golden/pyramidon/2026-10-10-ff68d38.json.gz) · new-functionality: #659: attention dropout entries (the sequence model with GPT's three dropouts at 0.1, in each implementation); the 112 earlier entries bit-identical
 - 2026-10-10 · jebel · golden · [2026-10-10-0a0d341.json.gz](golden/jebel/2026-10-10-0a0d341.json.gz) · material: #650: RNG draw order stage 3: pure-Python dropout networks draw numpy's masks (layer-major); the two pure-Python entries with two dropout layers move
 - 2026-10-10 · pyramidon · golden · [2026-10-10-0a0d341.json.gz](golden/pyramidon/2026-10-10-0a0d341.json.gz) · material: #650: RNG draw order stage 3: pure-Python dropout networks draw numpy's masks (layer-major); the two pure-Python entries with two dropout layers move
