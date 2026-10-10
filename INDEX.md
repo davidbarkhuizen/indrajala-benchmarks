@@ -2,6 +2,7 @@
 
 One line per record, newest first ([FORMAT.md](FORMAT.md)).
 
+- 2026-10-10 · pyramidon · golden · [2026-10-10-0a0d341.json.gz](golden/pyramidon/2026-10-10-0a0d341.json.gz) · material: #650: RNG draw order stage 3: pure-Python dropout networks draw numpy's masks (layer-major); the two pure-Python entries with two dropout layers move
 - 2026-10-09 · pyramidon · golden · [2026-10-09-4d15b23-2.json.gz](golden/pyramidon/2026-10-09-4d15b23-2.json.gz) · new-functionality: #632: a causal sequence model per implementation (a causal transformer over Tiny Shakespeare's first 84 characters, 12 windows of 6 ids, under Adam), the sequence task workplan, stage 7; the 109 earlier entries unchanged. Corrects 2026-10-09-4d15b23, which was compared with 3f681e6, not 13db8dd (#633)
 - 2026-10-09 · pyramidon · golden · [2026-10-09-4d15b23.json.gz](golden/pyramidon/2026-10-09-4d15b23.json.gz) · new-functionality: #632: a causal sequence model per implementation (a causal transformer over Tiny Shakespeare's first 84 characters, 12 windows of 6 ids, under Adam), the sequence task workplan, stage 7; the 109 earlier entries unchanged
 - 2026-10-09 · jebel · golden · [2026-10-09-4d15b23.json.gz](golden/jebel/2026-10-09-4d15b23.json.gz) · new-functionality: #632: a causal sequence model per implementation (a causal transformer over Tiny Shakespeare's first 84 characters, 12 windows of 6 ids, under Adam), the sequence task workplan, stage 7; the 109 earlier entries unchanged
