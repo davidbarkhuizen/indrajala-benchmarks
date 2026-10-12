@@ -2,6 +2,7 @@
 
 One line per record, newest first ([FORMAT.md](FORMAT.md)).
 
+- 2026-10-12 · jebel · golden · [2026-10-12-0c4adc1.json.gz](golden/jebel/2026-10-12-0c4adc1.json.gz) · new-functionality: #681: rotary-positions stage 7, three rotary sequence models (numpy, rust, python); the 115 earlier entries bit-identical
 - 2026-10-12 · pyramidon · golden · [2026-10-12-0c4adc1.json.gz](golden/pyramidon/2026-10-12-0c4adc1.json.gz) · new-functionality: #681: rotary-positions stage 7, three rotary sequence models (numpy, rust, python); the 115 earlier entries bit-identical
 - 2026-10-10 · jebel · golden · [2026-10-10-ff68d38.json.gz](golden/jebel/2026-10-10-ff68d38.json.gz) · new-functionality: #659: attention dropout entries (the sequence model with GPT's three dropouts at 0.1, in each implementation); the 112 earlier entries bit-identical
 - 2026-10-10 · pyramidon · golden · [2026-10-10-ff68d38.json.gz](golden/pyramidon/2026-10-10-ff68d38.json.gz) · new-functionality: #659: attention dropout entries (the sequence model with GPT's three dropouts at 0.1, in each implementation); the 112 earlier entries bit-identical
