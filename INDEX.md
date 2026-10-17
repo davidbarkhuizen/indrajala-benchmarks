@@ -2,6 +2,7 @@
 
 One line per record, newest first ([FORMAT.md](FORMAT.md)).
 
+- 2026-10-17 · jebel · run · [2026-10-17-window-program-stage1-cmd](runs/jebel/2026-10-17-window-program-stage1-cmd) · #800: window program stage 1, the long test 36% faster
 - 2026-10-13 · jebel · golden · [2026-10-13-25f307b.json.gz](golden/jebel/2026-10-13-25f307b.json.gz) · new-functionality: Stage 4 of the window-recurrent claims workplan (#705): three continuous window model entries added (numpy, rust, python); the 121 earlier entries bit-identical
 - 2026-10-13 · pyramidon · golden · [2026-10-13-25f307b.json.gz](golden/pyramidon/2026-10-13-25f307b.json.gz) · new-functionality: Stage 4 of the window-recurrent claims workplan (#705): three continuous window model entries added (numpy, rust, python); the 121 earlier entries bit-identical
 - 2026-10-12 · jebel · golden · [2026-10-12-fc6150c.json.gz](golden/jebel/2026-10-12-fc6150c.json.gz) · new-functionality: #693: the window-recurrent network's three entries (window-recurrent adder stage 7); the 118 earlier entries bit-identical
