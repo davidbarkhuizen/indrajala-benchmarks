@@ -1,0 +1,8 @@
+2026-10-17-window-program-stage3-cmd: old e19f36b vs new 57a7d13, passes ONNONO (3 old, 3 new), scripts/window_recurrent_timing.py --cases long-test-family-p7-f32-U1-n1024-c1023 forward-linear-k1-s16-m16-n1024 forward-family-p7-f32-n1024 learn-linear-k1-s16-m16-B64-W19; crate old 81ab9a6 (.so abcba3d7a30e) vs new 2eb0b2a (.so 6a7c33aaa894)
+profile: identity matches (i7-9700k.json); max 1-min load 0.08 (measured just after this run's crate builds); busy processes: none
+controls: 1 rows, all within noise
+consistent: per step / forward linear k1 s16 m16 n1024 -24.6% (1.651 -> 1.245 s)
+consistent: per step / forward family p7 f32 n1024 -14.2% (4.318 -> 3.705 s)
+consistent: per step / long test family p7 f32 U1 n1024 c1023 -14.1% (13.610 -> 11.689 s)
+consistent, small: per step / learn linear k1 s16 m16 B64 W19 +1.0% (0.005 -> 0.005 s)
+0 rows within noise
