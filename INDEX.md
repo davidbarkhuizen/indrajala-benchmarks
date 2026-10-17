@@ -2,6 +2,7 @@
 
 One line per record, newest first ([FORMAT.md](FORMAT.md)).
 
+- 2026-10-17 · jebel · run · [2026-10-17-window-program-close-cmd](runs/jebel/2026-10-17-window-program-close-cmd) · #804: the window program's cumulative result, e958c2b against its end
 - 2026-10-17 · jebel · run · [2026-10-17-window-program-stage5-cmd](runs/jebel/2026-10-17-window-program-stage5-cmd) · #802: window program stage 5, training through the program (training steps 31-46% faster)
 - 2026-10-17 · jebel · run · [2026-10-17-window-program-stage3-cmd](runs/jebel/2026-10-17-window-program-stage3-cmd) · #801: window program stage 3, inference through the program (long test 14% faster)
 - 2026-10-17 · jebel · run · [2026-10-17-window-program-stage1-cmd](runs/jebel/2026-10-17-window-program-stage1-cmd) · #800: window program stage 1, the long test 36% faster

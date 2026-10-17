@@ -1,0 +1,8 @@
+2026-10-17-window-program-close-cmd: old e958c2b vs new 95bd7a0, passes ONNONO (3 old, 3 new), scripts/window_recurrent_timing.py --repeats 2 --cases long-test-family-p7-f32-U1-n1024-c1023 learn-linear-k1-s16-m16-B64-W19 learn-family-p7-f32-B64-W16 study-family-p5-f16-e40; crate old 81ab9a6 (.so abcba3d7a30e) vs new ddc5e42 (.so 147d423f2b89)
+profile: identity matches (i7-9700k.json); max 1-min load 0.00; busy processes: none
+controls: 1 rows, all within noise
+consistent: per step / long test family p7 f32 U1 n1024 c1023 -46.6% (21.071 -> 11.253 s)
+consistent: per step / learn linear k1 s16 m16 B64 W19 -43.9% (0.005 -> 0.003 s)
+consistent: per step / learn family p7 f32 B64 W16 -34.1% (0.034 -> 0.023 s)
+consistent: per step / study family p5 f16 e40 -32.9% (138.786 -> 93.146 s)
+0 rows within noise
