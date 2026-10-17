@@ -1,0 +1,42 @@
+{
+ "format": 1,
+ "kind": "run",
+ "host": "jebel",
+ "name": "2026-10-17-window-program-stage5-cmd",
+ "archived_at": "2026-10-17T14:36:30+02:00",
+ "reason": "#802: window program stage 5, training through the program (training steps 31-46% faster)",
+ "replaces": null,
+ "profile": "machines/jebel/20261008T062106Z-profile.json",
+ "profile_source": "checked",
+ "formats": {
+  "ab_manifest": 1,
+  "profile_schema": 4
+ },
+ "rendered_by": {
+  "indrajala_ml": "413922910086225ba4d57e3699120d28aef9a052"
+ },
+ "files": [
+  "manifest.json",
+  "pass-01-old.stderr",
+  "pass-01-old.stdout",
+  "pass-02-new.stderr",
+  "pass-02-new.stdout",
+  "pass-03-new.stderr",
+  "pass-03-new.stdout",
+  "pass-04-old.stderr",
+  "pass-04-old.stdout",
+  "pass-05-new.stderr",
+  "pass-05-new.stdout",
+  "pass-06-old.stderr",
+  "pass-06-old.stdout",
+  "progress.jsonl",
+  "smoke-new.stderr",
+  "smoke-new.stdout",
+  "smoke-old.stderr",
+  "smoke-old.stdout"
+ ],
+ "reports": [
+  "brief.txt",
+  "report.md"
+ ]
+}

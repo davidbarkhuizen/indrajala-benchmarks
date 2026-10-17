@@ -1,0 +1,240 @@
+{
+ "version": 1,
+ "name": "2026-10-17-window-program-stage5-cmd",
+ "created": "2026-10-17T14:19:49+02:00",
+ "state": "done",
+ "pid": 129900,
+ "repo": "/home/david/code/indrajala-ml",
+ "bench": "cmd",
+ "args": [
+  "scripts/window_recurrent_timing.py",
+  "--cases",
+  "learn-linear-k1-s16-m16-B64-W19",
+  "learn-family-p7-f32-B64-W16",
+  "long-test-family-p7-f32-U1-n1024-c1023"
+ ],
+ "smoke_args": [
+  "scripts/window_recurrent_timing.py",
+  "--cases",
+  "learn-linear-k1-s16-m16-B64-W19",
+  "learn-family-p7-f32-B64-W16",
+  "long-test-family-p7-f32-U1-n1024-c1023"
+ ],
+ "script_from": "new",
+ "control_backend": null,
+ "order": "ONNONO",
+ "python": "/home/david/code/indrajala-ml/.venv/bin/python",
+ "cwd": "/home/david/code/ab-runs/2026-10-17-window-program-stage5-cmd",
+ "extension": null,
+ "passes": [
+  {
+   "number": 1,
+   "side": "old",
+   "stem": "pass-01-old",
+   "status": "ok",
+   "start": "2026-10-17T14:22:21+02:00",
+   "load": [
+    0.953125,
+    0.43310546875,
+    0.17333984375
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/code/ab-worktrees/4139229/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/ab-runs/wheels/2eb0b2a9320d01df55ca5aa2b8561ee655ad605b/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "6a7c33aaa89491886ab247c76e7b3cb7b698dc84e63994b308f73e95c2297d32"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/code/ab-worktrees/a9891b0/scripts/window_recurrent_timing.py",
+    "--cases",
+    "learn-linear-k1-s16-m16-B64-W19",
+    "learn-family-p7-f32-B64-W16",
+    "long-test-family-p7-f32-U1-n1024-c1023"
+   ],
+   "end": "2026-10-17T14:23:38+02:00"
+  },
+  {
+   "number": 2,
+   "side": "new",
+   "stem": "pass-02-new",
+   "status": "ok",
+   "start": "2026-10-17T14:23:38+02:00",
+   "load": [
+    0.9892578125,
+    0.56201171875,
+    0.240234375
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/code/ab-worktrees/a9891b0/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/ab-runs/wheels/ddc5e420fa2f7e28eb648ba61b044cc23d208e47/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "147d423f2b894e6d156fd73114ba1e31564164662f74c8d43482be8e136d465e"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/code/ab-worktrees/a9891b0/scripts/window_recurrent_timing.py",
+    "--cases",
+    "learn-linear-k1-s16-m16-B64-W19",
+    "learn-family-p7-f32-B64-W16",
+    "long-test-family-p7-f32-U1-n1024-c1023"
+   ],
+   "end": "2026-10-17T14:24:49+02:00"
+  },
+  {
+   "number": 3,
+   "side": "new",
+   "stem": "pass-03-new",
+   "status": "ok",
+   "start": "2026-10-17T14:24:49+02:00",
+   "load": [
+    0.99853515625,
+    0.65625,
+    0.298828125
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/code/ab-worktrees/a9891b0/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/ab-runs/wheels/ddc5e420fa2f7e28eb648ba61b044cc23d208e47/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "147d423f2b894e6d156fd73114ba1e31564164662f74c8d43482be8e136d465e"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/code/ab-worktrees/a9891b0/scripts/window_recurrent_timing.py",
+    "--cases",
+    "learn-linear-k1-s16-m16-B64-W19",
+    "learn-family-p7-f32-B64-W16",
+    "long-test-family-p7-f32-U1-n1024-c1023"
+   ],
+   "end": "2026-10-17T14:25:59+02:00"
+  },
+  {
+   "number": 4,
+   "side": "old",
+   "stem": "pass-04-old",
+   "status": "ok",
+   "start": "2026-10-17T14:25:59+02:00",
+   "load": [
+    1.0,
+    0.73095703125,
+    0.353515625
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/code/ab-worktrees/4139229/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/ab-runs/wheels/2eb0b2a9320d01df55ca5aa2b8561ee655ad605b/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "6a7c33aaa89491886ab247c76e7b3cb7b698dc84e63994b308f73e95c2297d32"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/code/ab-worktrees/a9891b0/scripts/window_recurrent_timing.py",
+    "--cases",
+    "learn-linear-k1-s16-m16-B64-W19",
+    "learn-family-p7-f32-B64-W16",
+    "long-test-family-p7-f32-U1-n1024-c1023"
+   ],
+   "end": "2026-10-17T14:27:15+02:00"
+  },
+  {
+   "number": 5,
+   "side": "new",
+   "stem": "pass-05-new",
+   "status": "ok",
+   "start": "2026-10-17T14:27:15+02:00",
+   "load": [
+    1.66357421875,
+    0.943359375,
+    0.45751953125
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/code/ab-worktrees/a9891b0/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/ab-runs/wheels/ddc5e420fa2f7e28eb648ba61b044cc23d208e47/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "147d423f2b894e6d156fd73114ba1e31564164662f74c8d43482be8e136d465e"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/code/ab-worktrees/a9891b0/scripts/window_recurrent_timing.py",
+    "--cases",
+    "learn-linear-k1-s16-m16-B64-W19",
+    "learn-family-p7-f32-B64-W16",
+    "long-test-family-p7-f32-U1-n1024-c1023"
+   ],
+   "end": "2026-10-17T14:28:26+02:00"
+  },
+  {
+   "number": 6,
+   "side": "old",
+   "stem": "pass-06-old",
+   "status": "ok",
+   "start": "2026-10-17T14:28:26+02:00",
+   "load": [
+    1.2041015625,
+    0.95703125,
+    0.49853515625
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/code/ab-worktrees/4139229/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/ab-runs/wheels/2eb0b2a9320d01df55ca5aa2b8561ee655ad605b/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "6a7c33aaa89491886ab247c76e7b3cb7b698dc84e63994b308f73e95c2297d32"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/code/ab-worktrees/a9891b0/scripts/window_recurrent_timing.py",
+    "--cases",
+    "learn-linear-k1-s16-m16-B64-W19",
+    "learn-family-p7-f32-B64-W16",
+    "long-test-family-p7-f32-U1-n1024-c1023"
+   ],
+   "end": "2026-10-17T14:29:41+02:00"
+  }
+ ],
+ "extends": [],
+ "old": {
+  "ref": "413922910086225ba4d57e3699120d28aef9a052",
+  "commit": "413922910086225ba4d57e3699120d28aef9a052",
+  "crate": "2eb0b2a9320d01df55ca5aa2b8561ee655ad605b",
+  "tree": "/home/david/code/ab-worktrees/4139229",
+  "site": "/home/david/code/ab-runs/wheels/2eb0b2a9320d01df55ca5aa2b8561ee655ad605b/site",
+  "extension_sha": "6a7c33aaa89491886ab247c76e7b3cb7b698dc84e63994b308f73e95c2297d32"
+ },
+ "new": {
+  "ref": "a9891b0f66171450b0e96df7ec079a1c3466d7e2",
+  "commit": "a9891b0f66171450b0e96df7ec079a1c3466d7e2",
+  "crate": "ddc5e420fa2f7e28eb648ba61b044cc23d208e47",
+  "tree": "/home/david/code/ab-worktrees/a9891b0",
+  "site": "/home/david/code/ab-runs/wheels/ddc5e420fa2f7e28eb648ba61b044cc23d208e47/site",
+  "extension_sha": "147d423f2b894e6d156fd73114ba1e31564164662f74c8d43482be8e136d465e"
+ },
+ "noise_rules": {
+  "shifted_pass": 0.02,
+  "high_load": 1.5,
+  "small_consistent": 0.02
+ },
+ "preflight": {
+  "at": "2026-10-17T14:19:55+02:00",
+  "load": [
+   0.2216796875,
+   0.04931640625,
+   0.02001953125
+  ],
+  "busy": [],
+  "threads": {
+   "OPENBLAS_NUM_THREADS": null,
+   "OMP_NUM_THREADS": null,
+   "MKL_NUM_THREADS": null
+  },
+  "hostname": "jebel",
+  "profile_path": "docs/machine_profiles/i7-9700k.json",
+  "profile_identity": "26bd574a3a6cf2a7c5aaa22b0a6cdc457afc9de5e9ddd03605c7f38871471bf5",
+  "profile": "identity matches",
+  "quiet": {
+   "load": 0.2216796875,
+   "waited_s": 0
+  },
+  "after_builds": [
+   "ddc5e420fa2f7e28eb648ba61b044cc23d208e47"
+  ]
+ }
+}
