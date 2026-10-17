@@ -2,6 +2,7 @@
 
 One line per record, newest first ([FORMAT.md](FORMAT.md)).
 
+- 2026-10-17 · jebel · golden · [2026-10-17-6a460c0.json.gz](golden/jebel/2026-10-17-6a460c0.json.gz) · material: aarch64 stage 2: correctly rounded exp (CORE-MATH cr_exp) and the scalar rules (relu, softmax max, Adam powi); approved by D1 (measurement.md §8)
 - 2026-10-17 · pyramidon · golden · [2026-10-17-6a460c0.json.gz](golden/pyramidon/2026-10-17-6a460c0.json.gz) · material: aarch64 stage 2: correctly rounded exp (CORE-MATH cr_exp) and the scalar rules (relu, softmax max, Adam powi); approved by D1 (measurement.md §8)
 - 2026-10-17 · jebel · run · [2026-10-17-window-program-close-cmd](runs/jebel/2026-10-17-window-program-close-cmd) · #804: the window program's cumulative result, e958c2b against its end
 - 2026-10-17 · jebel · run · [2026-10-17-window-program-stage5-cmd](runs/jebel/2026-10-17-window-program-stage5-cmd) · #802: window program stage 5, training through the program (training steps 31-46% faster)
