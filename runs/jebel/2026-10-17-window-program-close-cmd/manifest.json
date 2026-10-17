@@ -1,0 +1,262 @@
+{
+ "version": 1,
+ "name": "2026-10-17-window-program-close-cmd",
+ "created": "2026-10-17T14:47:55+02:00",
+ "state": "done",
+ "pid": 139974,
+ "repo": "/home/david/code/indrajala-ml",
+ "bench": "cmd",
+ "args": [
+  "scripts/window_recurrent_timing.py",
+  "--repeats",
+  "2",
+  "--cases",
+  "long-test-family-p7-f32-U1-n1024-c1023",
+  "learn-linear-k1-s16-m16-B64-W19",
+  "learn-family-p7-f32-B64-W16",
+  "study-family-p5-f16-e40"
+ ],
+ "smoke_args": [
+  "scripts/window_recurrent_timing.py",
+  "--repeats",
+  "2",
+  "--cases",
+  "long-test-family-p7-f32-U1-n1024-c1023",
+  "learn-linear-k1-s16-m16-B64-W19",
+  "learn-family-p7-f32-B64-W16",
+  "study-family-p5-f16-e40"
+ ],
+ "script_from": "new",
+ "control_backend": null,
+ "order": "ONNONO",
+ "python": "/home/david/code/indrajala-ml/.venv/bin/python",
+ "cwd": "/home/david/code/ab-runs/2026-10-17-window-program-close-cmd",
+ "extension": null,
+ "passes": [
+  {
+   "number": 1,
+   "side": "old",
+   "stem": "pass-01-old",
+   "status": "ok",
+   "start": "2026-10-17T15:01:22+02:00",
+   "load": [
+    1.0,
+    0.94677734375,
+    0.666015625
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/code/ab-worktrees/e958c2b/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/ab-runs/wheels/81ab9a6c27f478d1e1ed00a742b530458790f1a6/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "abcba3d7a30e022112d8c021ab9baf48d1aff3bc67c6063a58cfb2d1dd004708"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/code/ab-worktrees/95bd7a0/scripts/window_recurrent_timing.py",
+    "--repeats",
+    "2",
+    "--cases",
+    "long-test-family-p7-f32-U1-n1024-c1023",
+    "learn-linear-k1-s16-m16-B64-W19",
+    "learn-family-p7-f32-B64-W16",
+    "study-family-p5-f16-e40"
+   ],
+   "end": "2026-10-17T15:09:25+02:00"
+  },
+  {
+   "number": 2,
+   "side": "new",
+   "stem": "pass-02-new",
+   "status": "ok",
+   "start": "2026-10-17T15:09:25+02:00",
+   "load": [
+    1.0,
+    1.0,
+    0.8212890625
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/code/ab-worktrees/95bd7a0/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/ab-runs/wheels/ddc5e420fa2f7e28eb648ba61b044cc23d208e47/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "147d423f2b894e6d156fd73114ba1e31564164662f74c8d43482be8e136d465e"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/code/ab-worktrees/95bd7a0/scripts/window_recurrent_timing.py",
+    "--repeats",
+    "2",
+    "--cases",
+    "long-test-family-p7-f32-U1-n1024-c1023",
+    "learn-linear-k1-s16-m16-B64-W19",
+    "learn-family-p7-f32-B64-W16",
+    "study-family-p5-f16-e40"
+   ],
+   "end": "2026-10-17T15:14:38+02:00"
+  },
+  {
+   "number": 3,
+   "side": "new",
+   "stem": "pass-03-new",
+   "status": "ok",
+   "start": "2026-10-17T15:14:38+02:00",
+   "load": [
+    1.0,
+    1.0,
+    0.8828125
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/code/ab-worktrees/95bd7a0/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/ab-runs/wheels/ddc5e420fa2f7e28eb648ba61b044cc23d208e47/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "147d423f2b894e6d156fd73114ba1e31564164662f74c8d43482be8e136d465e"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/code/ab-worktrees/95bd7a0/scripts/window_recurrent_timing.py",
+    "--repeats",
+    "2",
+    "--cases",
+    "long-test-family-p7-f32-U1-n1024-c1023",
+    "learn-linear-k1-s16-m16-B64-W19",
+    "learn-family-p7-f32-B64-W16",
+    "study-family-p5-f16-e40"
+   ],
+   "end": "2026-10-17T15:19:54+02:00"
+  },
+  {
+   "number": 4,
+   "side": "old",
+   "stem": "pass-04-old",
+   "status": "ok",
+   "start": "2026-10-17T15:19:54+02:00",
+   "load": [
+    1.0,
+    1.0,
+    0.9267578125
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/code/ab-worktrees/e958c2b/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/ab-runs/wheels/81ab9a6c27f478d1e1ed00a742b530458790f1a6/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "abcba3d7a30e022112d8c021ab9baf48d1aff3bc67c6063a58cfb2d1dd004708"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/code/ab-worktrees/95bd7a0/scripts/window_recurrent_timing.py",
+    "--repeats",
+    "2",
+    "--cases",
+    "long-test-family-p7-f32-U1-n1024-c1023",
+    "learn-linear-k1-s16-m16-B64-W19",
+    "learn-family-p7-f32-B64-W16",
+    "study-family-p5-f16-e40"
+   ],
+   "end": "2026-10-17T15:27:59+02:00"
+  },
+  {
+   "number": 5,
+   "side": "new",
+   "stem": "pass-05-new",
+   "status": "ok",
+   "start": "2026-10-17T15:27:59+02:00",
+   "load": [
+    1.01220703125,
+    1.0068359375,
+    0.9794921875
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/code/ab-worktrees/95bd7a0/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/ab-runs/wheels/ddc5e420fa2f7e28eb648ba61b044cc23d208e47/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "147d423f2b894e6d156fd73114ba1e31564164662f74c8d43482be8e136d465e"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/code/ab-worktrees/95bd7a0/scripts/window_recurrent_timing.py",
+    "--repeats",
+    "2",
+    "--cases",
+    "long-test-family-p7-f32-U1-n1024-c1023",
+    "learn-linear-k1-s16-m16-B64-W19",
+    "learn-family-p7-f32-B64-W16",
+    "study-family-p5-f16-e40"
+   ],
+   "end": "2026-10-17T15:33:22+02:00"
+  },
+  {
+   "number": 6,
+   "side": "old",
+   "stem": "pass-06-old",
+   "status": "ok",
+   "start": "2026-10-17T15:33:22+02:00",
+   "load": [
+    1.00341796875,
+    1.00146484375,
+    1.0
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/code/ab-worktrees/e958c2b/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/ab-runs/wheels/81ab9a6c27f478d1e1ed00a742b530458790f1a6/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "abcba3d7a30e022112d8c021ab9baf48d1aff3bc67c6063a58cfb2d1dd004708"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/code/ab-worktrees/95bd7a0/scripts/window_recurrent_timing.py",
+    "--repeats",
+    "2",
+    "--cases",
+    "long-test-family-p7-f32-U1-n1024-c1023",
+    "learn-linear-k1-s16-m16-B64-W19",
+    "learn-family-p7-f32-B64-W16",
+    "study-family-p5-f16-e40"
+   ],
+   "end": "2026-10-17T15:41:24+02:00"
+  }
+ ],
+ "extends": [],
+ "old": {
+  "ref": "e958c2bdbf3a55b620218dc5c1207a1d5dacb709",
+  "commit": "e958c2bdbf3a55b620218dc5c1207a1d5dacb709",
+  "crate": "81ab9a6c27f478d1e1ed00a742b530458790f1a6",
+  "tree": "/home/david/code/ab-worktrees/e958c2b",
+  "site": "/home/david/code/ab-runs/wheels/81ab9a6c27f478d1e1ed00a742b530458790f1a6/site",
+  "extension_sha": "abcba3d7a30e022112d8c021ab9baf48d1aff3bc67c6063a58cfb2d1dd004708"
+ },
+ "new": {
+  "ref": "95bd7a0711c863e9c148739678a5951d3a4b5959",
+  "commit": "95bd7a0711c863e9c148739678a5951d3a4b5959",
+  "crate": "ddc5e420fa2f7e28eb648ba61b044cc23d208e47",
+  "tree": "/home/david/code/ab-worktrees/95bd7a0",
+  "site": "/home/david/code/ab-runs/wheels/ddc5e420fa2f7e28eb648ba61b044cc23d208e47/site",
+  "extension_sha": "147d423f2b894e6d156fd73114ba1e31564164662f74c8d43482be8e136d465e"
+ },
+ "noise_rules": {
+  "shifted_pass": 0.02,
+  "high_load": 1.5,
+  "small_consistent": 0.02
+ },
+ "preflight": {
+  "at": "2026-10-17T14:47:55+02:00",
+  "load": [
+   0.0,
+   0.017578125,
+   0.1455078125
+  ],
+  "busy": [],
+  "threads": {
+   "OPENBLAS_NUM_THREADS": null,
+   "OMP_NUM_THREADS": null,
+   "MKL_NUM_THREADS": null
+  },
+  "hostname": "jebel",
+  "profile_path": "docs/machine_profiles/i7-9700k.json",
+  "profile_identity": "26bd574a3a6cf2a7c5aaa22b0a6cdc457afc9de5e9ddd03605c7f38871471bf5",
+  "profile": "identity matches",
+  "quiet": {
+   "load": 0.0,
+   "waited_s": 0
+  },
+  "after_builds": []
+ }
+}

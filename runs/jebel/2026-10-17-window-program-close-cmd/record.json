@@ -1,0 +1,42 @@
+{
+ "format": 1,
+ "kind": "run",
+ "host": "jebel",
+ "name": "2026-10-17-window-program-close-cmd",
+ "archived_at": "2026-10-17T16:23:28+02:00",
+ "reason": "#804: the window program's cumulative result, e958c2b against its end",
+ "replaces": null,
+ "profile": "machines/jebel/20261008T062106Z-profile.json",
+ "profile_source": "checked",
+ "formats": {
+  "ab_manifest": 1,
+  "profile_schema": 4
+ },
+ "rendered_by": {
+  "indrajala_ml": "ad651d80b8efef51218114207611a43a696d788c"
+ },
+ "files": [
+  "manifest.json",
+  "pass-01-old.stderr",
+  "pass-01-old.stdout",
+  "pass-02-new.stderr",
+  "pass-02-new.stdout",
+  "pass-03-new.stderr",
+  "pass-03-new.stdout",
+  "pass-04-old.stderr",
+  "pass-04-old.stdout",
+  "pass-05-new.stderr",
+  "pass-05-new.stdout",
+  "pass-06-old.stderr",
+  "pass-06-old.stdout",
+  "progress.jsonl",
+  "smoke-new.stderr",
+  "smoke-new.stdout",
+  "smoke-old.stderr",
+  "smoke-old.stdout"
+ ],
+ "reports": [
+  "brief.txt",
+  "report.md"
+ ]
+}
