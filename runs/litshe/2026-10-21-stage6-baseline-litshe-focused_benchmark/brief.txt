@@ -1,0 +1,6 @@
+2026-10-21-stage6-baseline-litshe-focused_benchmark: old 69bf104 vs new 69bf104, passes ONNONO (3 old, 3 new), focused_benchmark
+profile: identity matches (raspberry-pi-5.json); passes peaked at 45.8-56.8 C; max 1-min load 1.02; busy processes: none
+controls: none (--control-backend reads the other backend's rows as controls)
+consistent: per call / dense 30 x 784 hidden_delta_batch b512 / rust -14.6% (3588 -> 3065 µs)
+consistent, small: per call / conv 13x13x8, 8 ch downstream / rust -0.4% (33.54 -> 33.4 µs)
+268 rows within noise (23 separated inside their spread), max |Δ| 283.4%

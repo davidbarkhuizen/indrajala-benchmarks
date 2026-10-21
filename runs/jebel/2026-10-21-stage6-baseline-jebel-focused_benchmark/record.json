@@ -1,0 +1,51 @@
+{
+ "format": 1,
+ "kind": "run",
+ "host": "jebel",
+ "name": "2026-10-21-stage6-baseline-jebel-focused_benchmark",
+ "archived_at": "2026-10-21T16:00:16+02:00",
+ "reason": "aarch64 workplan stage 6: the crate-over-numpy baseline (indrajala-ml #902)",
+ "replaces": null,
+ "profile": "machines/jebel/20261008T062106Z-2-profile.json",
+ "profile_source": "checked",
+ "formats": {
+  "ab_manifest": 1,
+  "profile_schema": 5
+ },
+ "rendered_by": {
+  "indrajala_ml": "7d2b4eb8969dbb70ef744193e8e901d8cb152839"
+ },
+ "files": [
+  "manifest.json",
+  "pass-01-old.json",
+  "pass-01-old.stderr",
+  "pass-01-old.stdout",
+  "pass-02-new.json",
+  "pass-02-new.stderr",
+  "pass-02-new.stdout",
+  "pass-03-new.json",
+  "pass-03-new.stderr",
+  "pass-03-new.stdout",
+  "pass-04-old.json",
+  "pass-04-old.stderr",
+  "pass-04-old.stdout",
+  "pass-05-new.json",
+  "pass-05-new.stderr",
+  "pass-05-new.stdout",
+  "pass-06-old.json",
+  "pass-06-old.stderr",
+  "pass-06-old.stdout",
+  "progress.jsonl",
+  "smoke-new.json",
+  "smoke-new.stderr",
+  "smoke-new.stdout",
+  "smoke-old.json",
+  "smoke-old.stderr",
+  "smoke-old.stdout"
+ ],
+ "reports": [
+  "brief.txt",
+  "pooled.md",
+  "report.md"
+ ]
+}

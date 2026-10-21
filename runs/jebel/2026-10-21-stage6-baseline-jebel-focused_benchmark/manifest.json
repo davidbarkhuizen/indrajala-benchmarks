@@ -1,0 +1,225 @@
+{
+ "version": 1,
+ "name": "2026-10-21-stage6-baseline-jebel-focused_benchmark",
+ "created": "2026-10-21T14:56:44+02:00",
+ "state": "done",
+ "pid": 66400,
+ "repo": "/home/david/code/indrajala-ml",
+ "bench": "focused_benchmark",
+ "args": [],
+ "smoke_args": [
+  "--shape",
+  "dense 10 x 30",
+  "--op",
+  "forward",
+  "--batch-sizes",
+  "32",
+  "--passes",
+  "1",
+  "--loops",
+  "1"
+ ],
+ "script_from": "new",
+ "control_backend": null,
+ "order": "ONNONO",
+ "python": "/home/david/code/indrajala-ml/.venv/bin/python",
+ "cwd": "/home/david/code/ab-runs/2026-10-21-stage6-baseline-jebel-focused_benchmark",
+ "extension": {
+  "file": "/home/david/code/indrajala-ml/.venv/lib/python3.14/site-packages/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+  "sha256": "5d47987e03dd8a45d4d392d16f6649c029b8fd3f05a73b2f8a5a0ac436e55996"
+ },
+ "passes": [
+  {
+   "number": 1,
+   "side": "old",
+   "stem": "pass-01-old",
+   "status": "ok",
+   "start": "2026-10-21T14:56:47+02:00",
+   "load": [
+    0.15380859375,
+    0.033203125,
+    0.0107421875
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/code/ab-worktrees/69bf104/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/indrajala-ml/.venv/lib/python3.14/site-packages/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "5d47987e03dd8a45d4d392d16f6649c029b8fd3f05a73b2f8a5a0ac436e55996"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/code/ab-worktrees/69bf104/scripts/focused_benchmark.py",
+    "--json",
+    "/home/david/code/ab-runs/2026-10-21-stage6-baseline-jebel-focused_benchmark/pass-01-old.json"
+   ],
+   "end": "2026-10-21T14:59:53+02:00"
+  },
+  {
+   "number": 2,
+   "side": "new",
+   "stem": "pass-02-new",
+   "status": "ok",
+   "start": "2026-10-21T14:59:53+02:00",
+   "load": [
+    3.2529296875,
+    1.55615234375,
+    0.60888671875
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/code/ab-worktrees/69bf104/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/indrajala-ml/.venv/lib/python3.14/site-packages/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "5d47987e03dd8a45d4d392d16f6649c029b8fd3f05a73b2f8a5a0ac436e55996"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/code/ab-worktrees/69bf104/scripts/focused_benchmark.py",
+    "--json",
+    "/home/david/code/ab-runs/2026-10-21-stage6-baseline-jebel-focused_benchmark/pass-02-new.json"
+   ],
+   "end": "2026-10-21T15:03:00+02:00"
+  },
+  {
+   "number": 3,
+   "side": "new",
+   "stem": "pass-03-new",
+   "status": "ok",
+   "start": "2026-10-21T15:03:00+02:00",
+   "load": [
+    3.328125,
+    2.31787109375,
+    1.09228515625
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/code/ab-worktrees/69bf104/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/indrajala-ml/.venv/lib/python3.14/site-packages/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "5d47987e03dd8a45d4d392d16f6649c029b8fd3f05a73b2f8a5a0ac436e55996"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/code/ab-worktrees/69bf104/scripts/focused_benchmark.py",
+    "--json",
+    "/home/david/code/ab-runs/2026-10-21-stage6-baseline-jebel-focused_benchmark/pass-03-new.json"
+   ],
+   "end": "2026-10-21T15:06:08+02:00"
+  },
+  {
+   "number": 4,
+   "side": "old",
+   "stem": "pass-04-old",
+   "status": "ok",
+   "start": "2026-10-21T15:06:08+02:00",
+   "load": [
+    3.3515625,
+    2.7197265625,
+    1.462890625
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/code/ab-worktrees/69bf104/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/indrajala-ml/.venv/lib/python3.14/site-packages/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "5d47987e03dd8a45d4d392d16f6649c029b8fd3f05a73b2f8a5a0ac436e55996"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/code/ab-worktrees/69bf104/scripts/focused_benchmark.py",
+    "--json",
+    "/home/david/code/ab-runs/2026-10-21-stage6-baseline-jebel-focused_benchmark/pass-04-old.json"
+   ],
+   "end": "2026-10-21T15:09:15+02:00"
+  },
+  {
+   "number": 5,
+   "side": "new",
+   "stem": "pass-05-new",
+   "status": "ok",
+   "start": "2026-10-21T15:09:15+02:00",
+   "load": [
+    4.00537109375,
+    3.0830078125,
+    1.8095703125
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/code/ab-worktrees/69bf104/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/indrajala-ml/.venv/lib/python3.14/site-packages/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "5d47987e03dd8a45d4d392d16f6649c029b8fd3f05a73b2f8a5a0ac436e55996"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/code/ab-worktrees/69bf104/scripts/focused_benchmark.py",
+    "--json",
+    "/home/david/code/ab-runs/2026-10-21-stage6-baseline-jebel-focused_benchmark/pass-05-new.json"
+   ],
+   "end": "2026-10-21T15:12:23+02:00"
+  },
+  {
+   "number": 6,
+   "side": "old",
+   "stem": "pass-06-old",
+   "status": "ok",
+   "start": "2026-10-21T15:12:23+02:00",
+   "load": [
+    2.859375,
+    3.1318359375,
+    2.0673828125
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/code/ab-worktrees/69bf104/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/indrajala-ml/.venv/lib/python3.14/site-packages/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "5d47987e03dd8a45d4d392d16f6649c029b8fd3f05a73b2f8a5a0ac436e55996"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/code/ab-worktrees/69bf104/scripts/focused_benchmark.py",
+    "--json",
+    "/home/david/code/ab-runs/2026-10-21-stage6-baseline-jebel-focused_benchmark/pass-06-old.json"
+   ],
+   "end": "2026-10-21T15:15:30+02:00"
+  }
+ ],
+ "extends": [],
+ "old": {
+  "ref": "69bf104998f868b9e7a3c4db6007f05d17ddffb4",
+  "commit": "69bf104998f868b9e7a3c4db6007f05d17ddffb4",
+  "crate": "5689b2a00ce3ebce834ef8fbccfd230304559a99",
+  "tree": "/home/david/code/ab-worktrees/69bf104"
+ },
+ "new": {
+  "ref": "69bf104998f868b9e7a3c4db6007f05d17ddffb4",
+  "commit": "69bf104998f868b9e7a3c4db6007f05d17ddffb4",
+  "crate": "5689b2a00ce3ebce834ef8fbccfd230304559a99",
+  "tree": "/home/david/code/ab-worktrees/69bf104"
+ },
+ "noise_rules": {
+  "shifted_pass": 0.02,
+  "high_load": 1.5,
+  "small_consistent": 0.02
+ },
+ "thermal": null,
+ "preflight": {
+  "at": "2026-10-21T14:56:44+02:00",
+  "load": [
+   0.080078125,
+   0.0166015625,
+   0.00537109375
+  ],
+  "busy": [],
+  "threads": {
+   "OPENBLAS_NUM_THREADS": null,
+   "OMP_NUM_THREADS": null,
+   "MKL_NUM_THREADS": null
+  },
+  "hostname": "jebel",
+  "profile_path": "docs/machine_profiles/i7-9700k.json",
+  "profile_identity": "4389a39319d7c5026d6575af33cfb98c60719f335a2df4aa956243873897bc21",
+  "profile": "identity matches",
+  "quiet": {
+   "load": 0.15380859375,
+   "waited_s": 0
+  },
+  "after_builds": []
+ }
+}

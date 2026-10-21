@@ -1,0 +1,7 @@
+2026-10-21-stage6-baseline-jebel-focused_benchmark: old 69bf104 vs new 69bf104, passes ONNONO (3 old, 3 new), focused_benchmark
+profile: identity matches (i7-9700k.json); max 1-min load 0.08; busy processes: none
+controls: none (--control-backend reads the other backend's rows as controls)
+consistent: per call / conv 28x28, 8 ch downstream_batch b32 / numpy -5.6% (615.3 -> 580.7 µs)
+consistent: per call / dense 10 x 30 forward / rust +3.1% (0.3456 -> 0.3564 µs)
+consistent, small: per call / dense 10 x 30 accumulate_gradient_batch b512 / rust -1.8% (33.48 -> 32.86 µs)
+267 rows within noise (31 separated inside their spread), max |Δ| 9.1%
