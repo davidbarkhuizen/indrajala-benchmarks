@@ -1,0 +1,51 @@
+{
+ "format": 1,
+ "kind": "run",
+ "host": "litshe",
+ "name": "2026-10-21-stage6-baseline-litshe-focused_benchmark",
+ "archived_at": "2026-10-21T15:40:19+02:00",
+ "reason": "aarch64 workplan stage 6: the crate-over-numpy baseline (indrajala-ml #902)",
+ "replaces": null,
+ "profile": "machines/litshe/20261018T133556Z-profile.json",
+ "profile_source": "checked",
+ "formats": {
+  "ab_manifest": 1,
+  "profile_schema": 5
+ },
+ "rendered_by": {
+  "indrajala_ml": "a1a246dede5d2afaf20ae522092c477096c4d6f8"
+ },
+ "files": [
+  "manifest.json",
+  "pass-01-old.json",
+  "pass-01-old.stderr",
+  "pass-01-old.stdout",
+  "pass-02-new.json",
+  "pass-02-new.stderr",
+  "pass-02-new.stdout",
+  "pass-03-new.json",
+  "pass-03-new.stderr",
+  "pass-03-new.stdout",
+  "pass-04-old.json",
+  "pass-04-old.stderr",
+  "pass-04-old.stdout",
+  "pass-05-new.json",
+  "pass-05-new.stderr",
+  "pass-05-new.stdout",
+  "pass-06-old.json",
+  "pass-06-old.stderr",
+  "pass-06-old.stdout",
+  "progress.jsonl",
+  "smoke-new.json",
+  "smoke-new.stderr",
+  "smoke-new.stdout",
+  "smoke-old.json",
+  "smoke-old.stderr",
+  "smoke-old.stdout"
+ ],
+ "reports": [
+  "brief.txt",
+  "pooled.md",
+  "report.md"
+ ]
+}
