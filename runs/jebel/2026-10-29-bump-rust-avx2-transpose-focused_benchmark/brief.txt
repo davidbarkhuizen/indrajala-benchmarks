@@ -1,0 +1,15 @@
+2026-10-29-bump-rust-avx2-transpose-focused_benchmark: old 19bea85 vs new fe99369, passes ONNONO (3 old, 3 new), focused_benchmark; crate old 10dfec9 (.so 7d70efbe6dbd) vs new 37da6f1 (.so 7cbf8ede1ba5)
+profile: identity matches (i7-9700k.json); max 1-min load 1.79 (HIGH) (measured just after this run's crate builds); busy processes: none
+controls: none (--control-backend reads the other backend's rows as controls)
+consistent: per call / dense 10 x 30 transpose b512 / rust +52.0% (3.993 -> 6.069 µs)
+consistent: per call / conv tail 32 x 5408 transpose b32 / rust -35.9% (0.8518 -> 0.546 µs)
+consistent: per call / dense 30 x 784 transpose b32 / rust -32.9% (0.8312 -> 0.5575 µs)
+consistent: per call / dense 10 x 30 sum_axis0 b512 / rust +27.6% (2.577 -> 3.288 µs)
+consistent: per call / attention 16 x 32 accumulate_gradient_batch b32 / rust +21.6% (202.6 -> 246.3 µs)
+consistent: per call / pool 26x26, 8 ch forward / rust -19.0% (3.787 -> 3.069 µs)
+consistent: per call / pool 26x26, 8 ch forward_batch b32 / rust -18.1% (112.2 -> 91.84 µs)
+consistent: per call / dense 30 x 784 add b32 / numpy +18.1% (9.026 -> 10.66 µs)
+consistent: per call / dense 10 x 30 transpose b32 / rust -18.1% (0.3867 -> 0.3166 µs)
+consistent: per call / conv 8x8, 8 ch forward_batch b512 / rust +15.3% (487.7 -> 562.6 µs)
+... 34 more consistent rows (report --md)
+226 rows within noise (41 separated inside their spread), max |Δ| 10.1%

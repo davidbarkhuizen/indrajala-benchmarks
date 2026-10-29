@@ -2,6 +2,8 @@
 
 One line per record, newest first ([FORMAT.md](FORMAT.md)).
 
+- 2026-10-29 · jebel · run · [2026-10-29-bump-rust-avx2-transpose-focused_benchmark](runs/jebel/2026-10-29-bump-rust-avx2-transpose-focused_benchmark) · #1089: the AVX2 transpose, no consistent gain (4K aliasing); the aligned run rules out placement
+- 2026-10-29 · jebel · run · [2026-10-29-avx2-transpose-aligned](runs/jebel/2026-10-29-avx2-transpose-aligned) · #1089: the AVX2 transpose, no consistent gain (4K aliasing); the aligned run rules out placement
 - 2026-10-22 · litshe · run · [2026-10-22-neon-transpose](runs/litshe/2026-10-22-neon-transpose) · #926: crate #71, the NEON transpose (aarch64 stage 7)
 - 2026-10-21 · jebel · run · [2026-10-21-stage6-baseline-jebel-focused_benchmark](runs/jebel/2026-10-21-stage6-baseline-jebel-focused_benchmark) · aarch64 workplan stage 6: the crate-over-numpy baseline (indrajala-ml #902)
 - 2026-10-21 · litshe · run · [2026-10-21-stage6-baseline-litshe-focused_benchmark](runs/litshe/2026-10-21-stage6-baseline-litshe-focused_benchmark) · aarch64 workplan stage 6: the crate-over-numpy baseline (indrajala-ml #902)

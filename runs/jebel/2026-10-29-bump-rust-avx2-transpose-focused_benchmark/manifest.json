@@ -1,0 +1,229 @@
+{
+ "version": 1,
+ "name": "2026-10-29-bump-rust-avx2-transpose-focused_benchmark",
+ "created": "2026-10-29T15:29:00+02:00",
+ "state": "done",
+ "pid": 131762,
+ "repo": "/home/david/code/indrajala-ml",
+ "bench": "focused_benchmark",
+ "args": [],
+ "smoke_args": [
+  "--shape",
+  "dense 10 x 30",
+  "--op",
+  "forward",
+  "--batch-sizes",
+  "32",
+  "--passes",
+  "1",
+  "--loops",
+  "1"
+ ],
+ "script_from": "new",
+ "control_backend": null,
+ "order": "ONNONO",
+ "python": "/home/david/code/indrajala-ml/.venv/bin/python",
+ "cwd": "/home/david/data/indrajala-ml/runs/ab/runs/2026-10-29-bump-rust-avx2-transpose-focused_benchmark",
+ "extension": null,
+ "passes": [
+  {
+   "number": 1,
+   "side": "old",
+   "stem": "pass-01-old",
+   "status": "ok",
+   "start": "2026-10-29T15:29:29+02:00",
+   "load": [
+    1.9248046875,
+    0.544921875,
+    0.18603515625
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/19bea85/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/10dfec9ea8539c4798c82321f7449b438dbb664f/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "7d70efbe6dbd605f2cccd65685af6bddd7beceef6945379c83af9a5a9246c849"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/fe99369/scripts/measurement/focused_benchmark.py",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-10-29-bump-rust-avx2-transpose-focused_benchmark/pass-01-old.json"
+   ],
+   "end": "2026-10-29T15:32:37+02:00"
+  },
+  {
+   "number": 2,
+   "side": "new",
+   "stem": "pass-02-new",
+   "status": "ok",
+   "start": "2026-10-29T15:32:37+02:00",
+   "load": [
+    3.400390625,
+    1.99755859375,
+    0.8388671875
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/fe99369/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/37da6f1c5cc31c35b141fa42223fc172aadc2d28/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "7cbf8ede1ba5d5216e973badfa8ffac2c741f86241aa2f6b2a4e16f75bcee67b"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/fe99369/scripts/measurement/focused_benchmark.py",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-10-29-bump-rust-avx2-transpose-focused_benchmark/pass-02-new.json"
+   ],
+   "end": "2026-10-29T15:35:45+02:00"
+  },
+  {
+   "number": 3,
+   "side": "new",
+   "stem": "pass-03-new",
+   "status": "ok",
+   "start": "2026-10-29T15:35:45+02:00",
+   "load": [
+    2.76416015625,
+    2.2587890625,
+    1.15234375
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/fe99369/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/37da6f1c5cc31c35b141fa42223fc172aadc2d28/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "7cbf8ede1ba5d5216e973badfa8ffac2c741f86241aa2f6b2a4e16f75bcee67b"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/fe99369/scripts/measurement/focused_benchmark.py",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-10-29-bump-rust-avx2-transpose-focused_benchmark/pass-03-new.json"
+   ],
+   "end": "2026-10-29T15:38:54+02:00"
+  },
+  {
+   "number": 4,
+   "side": "old",
+   "stem": "pass-04-old",
+   "status": "ok",
+   "start": "2026-10-29T15:38:54+02:00",
+   "load": [
+    2.048828125,
+    2.34521484375,
+    1.3994140625
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/19bea85/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/10dfec9ea8539c4798c82321f7449b438dbb664f/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "7d70efbe6dbd605f2cccd65685af6bddd7beceef6945379c83af9a5a9246c849"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/fe99369/scripts/measurement/focused_benchmark.py",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-10-29-bump-rust-avx2-transpose-focused_benchmark/pass-04-old.json"
+   ],
+   "end": "2026-10-29T15:42:02+02:00"
+  },
+  {
+   "number": 5,
+   "side": "new",
+   "stem": "pass-05-new",
+   "status": "ok",
+   "start": "2026-10-29T15:42:02+02:00",
+   "load": [
+    2.658203125,
+    2.61328125,
+    1.685546875
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/fe99369/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/37da6f1c5cc31c35b141fa42223fc172aadc2d28/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "7cbf8ede1ba5d5216e973badfa8ffac2c741f86241aa2f6b2a4e16f75bcee67b"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/fe99369/scripts/measurement/focused_benchmark.py",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-10-29-bump-rust-avx2-transpose-focused_benchmark/pass-05-new.json"
+   ],
+   "end": "2026-10-29T15:45:11+02:00"
+  },
+  {
+   "number": 6,
+   "side": "old",
+   "stem": "pass-06-old",
+   "status": "ok",
+   "start": "2026-10-29T15:45:11+02:00",
+   "load": [
+    3.18359375,
+    2.76513671875,
+    1.908203125
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/19bea85/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/10dfec9ea8539c4798c82321f7449b438dbb664f/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "7d70efbe6dbd605f2cccd65685af6bddd7beceef6945379c83af9a5a9246c849"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/fe99369/scripts/measurement/focused_benchmark.py",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-10-29-bump-rust-avx2-transpose-focused_benchmark/pass-06-old.json"
+   ],
+   "end": "2026-10-29T15:48:20+02:00"
+  }
+ ],
+ "extends": [],
+ "old": {
+  "ref": "19bea851be63595e3779aa2f014aaf07439fdc87",
+  "commit": "19bea851be63595e3779aa2f014aaf07439fdc87",
+  "crate": "10dfec9ea8539c4798c82321f7449b438dbb664f",
+  "tree": "/home/david/data/indrajala-ml/runs/ab/worktrees/19bea85",
+  "site": "/home/david/data/indrajala-ml/runs/ab/wheels/10dfec9ea8539c4798c82321f7449b438dbb664f/site",
+  "extension_sha": "7d70efbe6dbd605f2cccd65685af6bddd7beceef6945379c83af9a5a9246c849"
+ },
+ "new": {
+  "ref": "fe993696101053d2139ab30eda3c6673ba99f4ea",
+  "commit": "fe993696101053d2139ab30eda3c6673ba99f4ea",
+  "crate": "37da6f1c5cc31c35b141fa42223fc172aadc2d28",
+  "tree": "/home/david/data/indrajala-ml/runs/ab/worktrees/fe99369",
+  "site": "/home/david/data/indrajala-ml/runs/ab/wheels/37da6f1c5cc31c35b141fa42223fc172aadc2d28/site",
+  "extension_sha": "7cbf8ede1ba5d5216e973badfa8ffac2c741f86241aa2f6b2a4e16f75bcee67b"
+ },
+ "noise_rules": {
+  "shifted_pass": 0.02,
+  "high_load": 1.5,
+  "small_consistent": 0.02
+ },
+ "thermal": null,
+ "preflight": {
+  "at": "2026-10-29T15:29:12+02:00",
+  "load": [
+   1.79345703125,
+   0.44140625,
+   0.146484375
+  ],
+  "busy": [],
+  "threads": {
+   "OPENBLAS_NUM_THREADS": null,
+   "OMP_NUM_THREADS": null,
+   "MKL_NUM_THREADS": null
+  },
+  "hostname": "jebel",
+  "profile_path": "docs/machine_profiles/i7-9700k.json",
+  "profile_identity": "4389a39319d7c5026d6575af33cfb98c60719f335a2df4aa956243873897bc21",
+  "profile": "identity matches",
+  "quiet": {
+   "load": 1.3955078125,
+   "waited_s": 15
+  },
+  "after_builds": [
+   "10dfec9ea8539c4798c82321f7449b438dbb664f",
+   "37da6f1c5cc31c35b141fa42223fc172aadc2d28"
+  ]
+ }
+}

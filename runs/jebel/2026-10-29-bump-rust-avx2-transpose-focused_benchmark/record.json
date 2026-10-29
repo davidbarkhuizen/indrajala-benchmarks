@@ -1,0 +1,50 @@
+{
+ "format": 1,
+ "kind": "run",
+ "host": "jebel",
+ "name": "2026-10-29-bump-rust-avx2-transpose-focused_benchmark",
+ "archived_at": "2026-10-29T16:20:50+02:00",
+ "reason": "#1089: the AVX2 transpose, no consistent gain (4K aliasing); the aligned run rules out placement",
+ "replaces": null,
+ "profile": "machines/jebel/20261008T062106Z-2-profile.json",
+ "profile_source": "checked",
+ "formats": {
+  "ab_manifest": 1,
+  "profile_schema": 5
+ },
+ "rendered_by": {
+  "indrajala_ml": "700723fd408cc24b3341adc09170d25a93a68e4c"
+ },
+ "files": [
+  "manifest.json",
+  "pass-01-old.json",
+  "pass-01-old.stderr",
+  "pass-01-old.stdout",
+  "pass-02-new.json",
+  "pass-02-new.stderr",
+  "pass-02-new.stdout",
+  "pass-03-new.json",
+  "pass-03-new.stderr",
+  "pass-03-new.stdout",
+  "pass-04-old.json",
+  "pass-04-old.stderr",
+  "pass-04-old.stdout",
+  "pass-05-new.json",
+  "pass-05-new.stderr",
+  "pass-05-new.stdout",
+  "pass-06-old.json",
+  "pass-06-old.stderr",
+  "pass-06-old.stdout",
+  "progress.jsonl",
+  "smoke-new.json",
+  "smoke-new.stderr",
+  "smoke-new.stdout",
+  "smoke-old.json",
+  "smoke-old.stderr",
+  "smoke-old.stdout"
+ ],
+ "reports": [
+  "brief.txt",
+  "report.md"
+ ]
+}
