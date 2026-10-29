@@ -1,0 +1,81 @@
+{
+ "settings": {
+  "shape": [
+   "dense 10 x 30"
+  ],
+  "op": [
+   "forward"
+  ],
+  "batch": [],
+  "batch_sizes": [
+   32
+  ],
+  "matmul": [],
+  "only_matmul": false,
+  "backend": [],
+  "passes": 1,
+  "loops": 1,
+  "target_ms": 20.0,
+  "rust_threads": null,
+  "openblas_threads": null,
+  "kernel_overrides": null,
+  "malloc": "default",
+  "json": "/home/david/code/ab-runs/2026-10-18-neon-tiled-row-range-2/smoke-new.json",
+  "worker": null,
+  "backend_to_run": null
+ },
+ "results": [
+  {
+   "pass": 1,
+   "shape": "dense 10 x 30",
+   "op": "forward",
+   "batch": null,
+   "backend": "numpy",
+   "malloc": "default",
+   "calls": 2490,
+   "median_us": 8.035163855274586,
+   "min_us": 8.035163855274586,
+   "max_us": 8.035163855274586,
+   "faults_per_call": 0.0
+  },
+  {
+   "pass": 1,
+   "shape": "dense 10 x 30",
+   "op": "forward",
+   "batch": null,
+   "backend": "rust",
+   "malloc": "default",
+   "calls": 23259,
+   "median_us": 0.8586227266905134,
+   "min_us": 0.8586227266905134,
+   "max_us": 0.8586227266905134,
+   "faults_per_call": 0.0
+  },
+  {
+   "pass": 1,
+   "shape": "dense 10 x 30",
+   "op": "forward_batch",
+   "batch": 32,
+   "backend": "numpy",
+   "malloc": "default",
+   "calls": 1029,
+   "median_us": 19.45853838673742,
+   "min_us": 19.45853838673742,
+   "max_us": 19.45853838673742,
+   "faults_per_call": 0.0
+  },
+  {
+   "pass": 1,
+   "shape": "dense 10 x 30",
+   "op": "forward_batch",
+   "batch": 32,
+   "backend": "rust",
+   "malloc": "default",
+   "calls": 1303,
+   "median_us": 15.198660015503977,
+   "min_us": 15.198660015503977,
+   "max_us": 15.198660015503977,
+   "faults_per_call": 0.0
+  }
+ ]
+}

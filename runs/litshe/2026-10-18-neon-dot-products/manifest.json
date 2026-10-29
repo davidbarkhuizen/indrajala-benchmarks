@@ -1,0 +1,257 @@
+{
+ "version": 1,
+ "name": "2026-10-18-neon-dot-products",
+ "created": "2026-10-18T18:10:11+02:00",
+ "state": "done",
+ "pid": 105169,
+ "repo": "/mnt/data/code/indrajala-ml",
+ "bench": "focused_benchmark",
+ "args": [],
+ "smoke_args": [
+  "--shape",
+  "dense 10 x 30",
+  "--op",
+  "forward",
+  "--batch-sizes",
+  "32",
+  "--passes",
+  "1",
+  "--loops",
+  "1"
+ ],
+ "script_from": "new",
+ "control_backend": null,
+ "order": "ONNONO",
+ "python": "/mnt/data/code/indrajala-ml/.venv/bin/python",
+ "cwd": "/home/david/code/ab-runs/2026-10-18-neon-dot-products",
+ "extension": null,
+ "passes": [
+  {
+   "number": 1,
+   "side": "old",
+   "stem": "pass-01-old",
+   "status": "ok",
+   "start": "2026-10-18T18:10:59+02:00",
+   "load": [
+    0.82861328125,
+    0.45849609375,
+    0.56103515625
+   ],
+   "busy": [],
+   "cooled": {
+    "temp_c": 49.6,
+    "waited_s": 15
+   },
+   "provenance": {
+    "train": "/home/david/code/ab-worktrees/e54cd1d/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/ab-runs/wheels/2eb9311d10a3a2e801d2c83cf5ec9832980f17d5/site/indrajala_math_rust/indrajala_math_rust.cpython-314-aarch64-linux-gnu.so",
+    "sha256": "694886c704e29d6648be1dc8f328335a9b2574630de3dae688dc0aec32a0ff16"
+   },
+   "command": [
+    "/mnt/data/code/indrajala-ml/.venv/bin/python",
+    "/home/david/code/ab-worktrees/b900778/scripts/focused_benchmark.py",
+    "--json",
+    "/home/david/code/ab-runs/2026-10-18-neon-dot-products/pass-01-old.json"
+   ],
+   "end": "2026-10-18T18:16:36+02:00"
+  },
+  {
+   "number": 2,
+   "side": "new",
+   "stem": "pass-02-new",
+   "status": "ok",
+   "start": "2026-10-18T18:20:37+02:00",
+   "load": [
+    1.4677734375,
+    1.51220703125,
+    1.0732421875
+   ],
+   "busy": [],
+   "cooled": {
+    "temp_c": 49.6,
+    "waited_s": 240
+   },
+   "provenance": {
+    "train": "/home/david/code/ab-worktrees/b900778/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/ab-runs/wheels/0a6910b1a596cf88057717c0b164521316dc3efd/site/indrajala_math_rust/indrajala_math_rust.cpython-314-aarch64-linux-gnu.so",
+    "sha256": "efb050f9ebfe4846b539df14a94b6e7109ca721d32ac10cb3523b95f83e3983d"
+   },
+   "command": [
+    "/mnt/data/code/indrajala-ml/.venv/bin/python",
+    "/home/david/code/ab-worktrees/b900778/scripts/focused_benchmark.py",
+    "--json",
+    "/home/david/code/ab-runs/2026-10-18-neon-dot-products/pass-02-new.json"
+   ],
+   "end": "2026-10-18T18:25:58+02:00"
+  },
+  {
+   "number": 3,
+   "side": "new",
+   "stem": "pass-03-new",
+   "status": "ok",
+   "start": "2026-10-18T18:28:59+02:00",
+   "load": [
+    2.0380859375,
+    1.39501953125,
+    1.09033203125
+   ],
+   "busy": [],
+   "cooled": {
+    "temp_c": 49.6,
+    "waited_s": 180
+   },
+   "provenance": {
+    "train": "/home/david/code/ab-worktrees/b900778/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/ab-runs/wheels/0a6910b1a596cf88057717c0b164521316dc3efd/site/indrajala_math_rust/indrajala_math_rust.cpython-314-aarch64-linux-gnu.so",
+    "sha256": "efb050f9ebfe4846b539df14a94b6e7109ca721d32ac10cb3523b95f83e3983d"
+   },
+   "command": [
+    "/mnt/data/code/indrajala-ml/.venv/bin/python",
+    "/home/david/code/ab-worktrees/b900778/scripts/focused_benchmark.py",
+    "--json",
+    "/home/david/code/ab-runs/2026-10-18-neon-dot-products/pass-03-new.json"
+   ],
+   "end": "2026-10-18T18:34:19+02:00"
+  },
+  {
+   "number": 4,
+   "side": "old",
+   "stem": "pass-04-old",
+   "status": "ok",
+   "start": "2026-10-18T18:41:05+02:00",
+   "load": [
+    2.05810546875,
+    1.490234375,
+    1.1787109375
+   ],
+   "busy": [],
+   "cooled": {
+    "temp_c": 49.6,
+    "waited_s": 405
+   },
+   "provenance": {
+    "train": "/home/david/code/ab-worktrees/e54cd1d/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/ab-runs/wheels/2eb9311d10a3a2e801d2c83cf5ec9832980f17d5/site/indrajala_math_rust/indrajala_math_rust.cpython-314-aarch64-linux-gnu.so",
+    "sha256": "694886c704e29d6648be1dc8f328335a9b2574630de3dae688dc0aec32a0ff16"
+   },
+   "command": [
+    "/mnt/data/code/indrajala-ml/.venv/bin/python",
+    "/home/david/code/ab-worktrees/b900778/scripts/focused_benchmark.py",
+    "--json",
+    "/home/david/code/ab-runs/2026-10-18-neon-dot-products/pass-04-old.json"
+   ],
+   "end": "2026-10-18T18:46:24+02:00"
+  },
+  {
+   "number": 5,
+   "side": "new",
+   "stem": "pass-05-new",
+   "status": "ok",
+   "start": "2026-10-18T18:51:39+02:00",
+   "load": [
+    1.8291015625,
+    1.40869140625,
+    1.1044921875
+   ],
+   "busy": [],
+   "cooled": {
+    "temp_c": 49.6,
+    "waited_s": 315
+   },
+   "provenance": {
+    "train": "/home/david/code/ab-worktrees/b900778/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/ab-runs/wheels/0a6910b1a596cf88057717c0b164521316dc3efd/site/indrajala_math_rust/indrajala_math_rust.cpython-314-aarch64-linux-gnu.so",
+    "sha256": "efb050f9ebfe4846b539df14a94b6e7109ca721d32ac10cb3523b95f83e3983d"
+   },
+   "command": [
+    "/mnt/data/code/indrajala-ml/.venv/bin/python",
+    "/home/david/code/ab-worktrees/b900778/scripts/focused_benchmark.py",
+    "--json",
+    "/home/david/code/ab-runs/2026-10-18-neon-dot-products/pass-05-new.json"
+   ],
+   "end": "2026-10-18T18:56:58+02:00"
+  },
+  {
+   "number": 6,
+   "side": "old",
+   "stem": "pass-06-old",
+   "status": "ok",
+   "start": "2026-10-18T19:01:58+02:00",
+   "load": [
+    2.0419921875,
+    1.43798828125,
+    1.1123046875
+   ],
+   "busy": [],
+   "cooled": {
+    "temp_c": 49.6,
+    "waited_s": 300
+   },
+   "provenance": {
+    "train": "/home/david/code/ab-worktrees/e54cd1d/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/ab-runs/wheels/2eb9311d10a3a2e801d2c83cf5ec9832980f17d5/site/indrajala_math_rust/indrajala_math_rust.cpython-314-aarch64-linux-gnu.so",
+    "sha256": "694886c704e29d6648be1dc8f328335a9b2574630de3dae688dc0aec32a0ff16"
+   },
+   "command": [
+    "/mnt/data/code/indrajala-ml/.venv/bin/python",
+    "/home/david/code/ab-worktrees/b900778/scripts/focused_benchmark.py",
+    "--json",
+    "/home/david/code/ab-runs/2026-10-18-neon-dot-products/pass-06-old.json"
+   ],
+   "end": "2026-10-18T19:07:23+02:00"
+  }
+ ],
+ "extends": [],
+ "old": {
+  "ref": "e54cd1d066d14e792112a7e879643966fc985238",
+  "commit": "e54cd1d066d14e792112a7e879643966fc985238",
+  "crate": "2eb9311d10a3a2e801d2c83cf5ec9832980f17d5",
+  "tree": "/home/david/code/ab-worktrees/e54cd1d",
+  "site": "/home/david/code/ab-runs/wheels/2eb9311d10a3a2e801d2c83cf5ec9832980f17d5/site",
+  "extension_sha": "694886c704e29d6648be1dc8f328335a9b2574630de3dae688dc0aec32a0ff16"
+ },
+ "new": {
+  "ref": "b900778a44790f3e98157780a6326c949373c4f1",
+  "commit": "b900778a44790f3e98157780a6326c949373c4f1",
+  "crate": "0a6910b1a596cf88057717c0b164521316dc3efd",
+  "tree": "/home/david/code/ab-worktrees/b900778",
+  "site": "/home/david/code/ab-runs/wheels/0a6910b1a596cf88057717c0b164521316dc3efd/site",
+  "extension_sha": "efb050f9ebfe4846b539df14a94b6e7109ca721d32ac10cb3523b95f83e3983d"
+ },
+ "noise_rules": {
+  "shifted_pass": 0.02,
+  "high_load": 1.5,
+  "small_consistent": 0.01
+ },
+ "thermal": {
+  "max_c": 65,
+  "abort_c": 70,
+  "start_below_c": 50,
+  "set_by": "the owner, 2026-10-18, for the Raspberry Pi 5: at most 70 C inclusive, ideally at most 65 C; start_below_c from its idle 44-50 C (the aarch64 workplan, stage 5)"
+ },
+ "preflight": {
+  "at": "2026-10-18T18:10:37+02:00",
+  "load": [
+   0.46533203125,
+   0.38134765625,
+   0.53662109375
+  ],
+  "busy": [],
+  "threads": {
+   "OPENBLAS_NUM_THREADS": null,
+   "OMP_NUM_THREADS": null,
+   "MKL_NUM_THREADS": null
+  },
+  "hostname": "litshe",
+  "profile_path": "docs/machine_profiles/raspberry-pi-5.json",
+  "profile_identity": "6b5732880337771e838e99faf9f66444158142d58f2347bc61d410285caead00",
+  "profile": "identity matches",
+  "quiet": {
+   "load": 0.46533203125,
+   "waited_s": 0
+  },
+  "after_builds": [
+   "0a6910b1a596cf88057717c0b164521316dc3efd"
+  ]
+ }
+}

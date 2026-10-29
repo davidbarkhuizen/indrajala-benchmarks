@@ -1,0 +1,15 @@
+2026-10-18-neon-tiled-row-range-2: old d6a4d25 vs new e54cd1d, passes ONNONO (3 old, 3 new), focused_benchmark; crate old 40a2761 (.so b307f197fdc7) vs new 2eb9311 (.so 694886c704e2)
+profile: identity matches (raspberry-pi-5.json); max 1-min load 4.09 (HIGH) (measured just after this run's crate builds); busy processes: none
+controls: none (--control-backend reads the other backend's rows as controls)
+consistent: per call / attention 16 x 32 accumulate_gradient_batch b32 / rust -86.6% (3817 -> 509.8 µs)
+consistent: per call / conv tail 32 x 5408 accumulate_gradient_batch b512 / rust -83.6% (1.2e+05 -> 1.969e+04 µs)
+consistent: per call / conv tail 32 x 5408 bare accumulate b32 / rust -83.4% (7308 -> 1211 µs)
+consistent: per call / dense 30 x 784 bare accumulate b32 / rust -83.1% (745 -> 125.9 µs)
+consistent: per call / dense 30 x 784 bare downstream b32 / rust -83.1% (748.4 -> 126.6 µs)
+consistent: per call / dense 30 x 784 downstream_batch b32 / rust -83.0% (747.3 -> 127 µs)
+consistent: per call / conv tail 32 x 5408 downstream_batch b32 / rust -82.8% (7553 -> 1296 µs)
+consistent: per call / conv tail 32 x 5408 bare accumulate b512 / rust -82.4% (1.109e+05 -> 1.956e+04 µs)
+consistent: per call / conv tail 32 x 5408 bare downstream b32 / rust -82.0% (7431 -> 1338 µs)
+consistent: per call / dense 30 x 784 accumulate_gradient_batch b32 / rust -81.6% (760 -> 140 µs)
+... 87 more consistent rows (report --md)
+173 rows within noise (18 separated inside their spread), max |Δ| 388.3%
