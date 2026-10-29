@@ -1,0 +1,13 @@
+2026-10-29-avx2-transpose-aligned: old 700723f vs new 700723f, passes ONNONO (3 old, 3 new), focused_benchmark --op transpose --op accumulate_gradient_batch --op sum_axis0; crate old be14eac (.so f80c18214fe4) vs new bcee60e (.so 0b41a45954b8)
+profile: identity matches (i7-9700k.json); max 1-min load 2.14 (HIGH) (measured just after this run's crate builds); busy processes: none
+controls: none (--control-backend reads the other backend's rows as controls)
+consistent: per call / dense 10 x 30 transpose b512 / rust +49.3% (4.061 -> 6.062 µs)
+consistent: per call / conv tail 32 x 5408 transpose b32 / rust -26.2% (0.8234 -> 0.608 µs)
+consistent: per call / dense 30 x 784 transpose b32 / rust -21.3% (0.8021 -> 0.6316 µs)
+consistent: per call / attention 16 x 32 accumulate_gradient_batch b32 / rust +13.4% (219.6 -> 249 µs)
+consistent: per call / dense 10 x 30 transpose b32 / rust -12.4% (0.3742 -> 0.3278 µs)
+consistent: per call / attention 16 x 32 accumulate_gradient_batch b512 / rust +4.8% (4059 -> 4253 µs)
+consistent: per call / dense 10 x 30 accumulate_gradient_batch b512 / rust +3.8% (32.65 -> 33.88 µs)
+consistent: per call / dense 10 x 30 accumulate_gradient_batch b32 / rust -2.2% (1.944 -> 1.901 µs)
+consistent, small: per call / conv 26x26x8/2, 8 ch accumulate_gradient_batch b512 / rust +1.2% (3049 -> 3087 µs)
+51 rows within noise (7 separated inside their spread), max |Δ| 10.5%
