@@ -1,0 +1,13 @@
+2026-10-29-long-k-wrapper-aligned: old 89e88d7 vs new 89e88d7, passes ONNONO (3 old, 3 new), focused_benchmark --op accumulate; crate old be14eac (.so 44f6a8e617ba) vs new 9a448ba (.so d6a56fdf3074)
+profile: identity matches (raspberry-pi-5.json); passes peaked at 56.2-58.4 C; max 1-min load 1.40 (measured just after this run's crate builds); busy processes: none
+controls: none (--control-backend reads the other backend's rows as controls)
+consistent: per call / conv 26x26x8, 8 ch accumulate_gradient_batch b512 / rust -12.8% (6.543e+04 -> 5.706e+04 µs)
+consistent: per call / conv 26x26x8, 8 ch accumulate_gradient / rust -10.0% (72.27 -> 65.02 µs)
+consistent: per call / conv 26x26x8/2, 8 ch accumulate_gradient / rust -9.7% (19.3 -> 17.42 µs)
+consistent: per call / conv 13x13x8, 8 ch accumulate_gradient / rust -9.1% (16.32 -> 14.83 µs)
+consistent: per call / conv 13x13x8, 8 ch accumulate_gradient_batch b512 / rust -5.9% (1.32e+04 -> 1.243e+04 µs)
+consistent: per call / conv 13x13x8, 8 ch accumulate_gradient_batch b32 / rust -5.2% (639.5 -> 606.3 µs)
+consistent: per call / conv 8x8, 8 ch accumulate_gradient / rust -4.8% (2.42 -> 2.304 µs)
+consistent: per call / conv 8x8, 8 ch accumulate_gradient_batch b32 / rust -4.4% (54.29 -> 51.88 µs)
+consistent: per call / conv 28x28, 8 ch accumulate_gradient / rust -4.2% (31.56 -> 30.23 µs)
+61 rows within noise (9 separated inside their spread), max |Δ| 245.3%

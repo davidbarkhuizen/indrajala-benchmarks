@@ -1,0 +1,15 @@
+2026-10-29-a64-align-vector-exp-litshe: old 6dcd34c vs new 6dcd34c, passes ONNONO (3 old, 3 new), focused_benchmark; crate old 0517dc2 (.so 6fc32a9e1378) vs new e7a0cdd (.so e983c73d9b77)
+profile: identity matches (raspberry-pi-5.json); passes peaked at 57.3-58.4 C; max 1-min load 1.12 (measured just after this run's crate builds); busy processes: none
+controls: none (--control-backend reads the other backend's rows as controls)
+consistent: per call / dense 30 x 784 hidden_delta_batch b32 / rust -34.6% (228.8 -> 149.6 µs)
+consistent: per call / conv tail 32 x 5408 downstream_batch b32 / rust -14.0% (1435 -> 1233 µs)
+consistent: per call / dense 10 x 30 forward_batch b512 / rust -12.7% (111.6 -> 97.43 µs)
+consistent: per call / dense 10 x 30 forward_batch b32 / rust -12.2% (7.529 -> 6.609 µs)
+consistent: per call / dense 10 x 30 forward / rust -4.7% (0.6309 -> 0.6009 µs)
+consistent: per call / attention 16 x 32 forward_batch b32 / rust -2.6% (793.8 -> 773.3 µs)
+consistent: per call / dense 10 x 30 downstream / rust +2.3% (0.3944 -> 0.4035 µs)
+consistent: per call / conv 28x28, 8 ch downstream_batch b32 / rust -2.2% (1501 -> 1468 µs)
+consistent: per call / conv 28x28, 8 ch downstream / rust -2.2% (48.69 -> 47.61 µs)
+consistent: per call / dense 30 x 784 forward_batch b32 / rust -2.2% (117.1 -> 114.5 µs)
+consistent, small: per call / attention 16 x 32 hidden_delta_batch b32 / rust -0.2% (766.3 -> 764.9 µs)
+259 rows within noise (39 separated inside their spread), max |Δ| 385.8%

@@ -1,0 +1,265 @@
+{
+ "version": 1,
+ "name": "2026-10-29-a64-align-vector-exp-litshe",
+ "created": "2026-10-29T20:48:13+02:00",
+ "state": "done",
+ "pid": 339733,
+ "repo": "/mnt/data/code/indrajala-ml",
+ "bench": "focused_benchmark",
+ "args": [],
+ "smoke_args": [
+  "--shape",
+  "dense 10 x 30",
+  "--op",
+  "forward",
+  "--batch-sizes",
+  "32",
+  "--passes",
+  "1",
+  "--loops",
+  "1"
+ ],
+ "script_from": "new",
+ "control_backend": null,
+ "order": "ONNONO",
+ "python": "/mnt/data/code/indrajala-ml/.venv/bin/python",
+ "cwd": "/home/david/data/indrajala-ml/runs/ab/runs/2026-10-29-a64-align-vector-exp-litshe",
+ "extension": null,
+ "passes": [
+  {
+   "number": 1,
+   "side": "old",
+   "stem": "pass-01-old",
+   "status": "ok",
+   "start": "2026-10-29T20:50:47+02:00",
+   "load": [
+    1.11279296875,
+    0.82470703125,
+    0.7646484375
+   ],
+   "busy": [],
+   "cooled": {
+    "temp_c": 49.6,
+    "waited_s": 75
+   },
+   "peak_c": 58.4,
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/6dcd34c/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/0517dc2d45da0903c568961b369826829eaf8c1b/site/indrajala_math_rust/indrajala_math_rust.cpython-314-aarch64-linux-gnu.so",
+    "sha256": "6fc32a9e1378ab29d8ac8be696cdaf3581a3895157a2dc08bcd7d3539765875a"
+   },
+   "command": [
+    "/mnt/data/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/6dcd34c/scripts/measurement/focused_benchmark.py",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-10-29-a64-align-vector-exp-litshe/pass-01-old.json"
+   ],
+   "end": "2026-10-29T20:55:55+02:00"
+  },
+  {
+   "number": 2,
+   "side": "new",
+   "stem": "pass-02-new",
+   "status": "ok",
+   "start": "2026-10-29T20:58:55+02:00",
+   "load": [
+    1.43603515625,
+    1.22509765625,
+    0.96240234375
+   ],
+   "busy": [],
+   "cooled": {
+    "temp_c": 49.6,
+    "waited_s": 180
+   },
+   "peak_c": 57.9,
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/6dcd34c/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/e7a0cdda36d29474eb8e54f2adfe02cfd173937c/site/indrajala_math_rust/indrajala_math_rust.cpython-314-aarch64-linux-gnu.so",
+    "sha256": "e983c73d9b772aa9f03e068667943a527bb540f5ba409127b1174cb2ada70548"
+   },
+   "command": [
+    "/mnt/data/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/6dcd34c/scripts/measurement/focused_benchmark.py",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-10-29-a64-align-vector-exp-litshe/pass-02-new.json"
+   ],
+   "end": "2026-10-29T21:04:02+02:00"
+  },
+  {
+   "number": 3,
+   "side": "new",
+   "stem": "pass-03-new",
+   "status": "ok",
+   "start": "2026-10-29T21:05:18+02:00",
+   "load": [
+    2.00390625,
+    1.41943359375,
+    1.07958984375
+   ],
+   "busy": [],
+   "cooled": {
+    "temp_c": 49.05,
+    "waited_s": 75
+   },
+   "peak_c": 58.4,
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/6dcd34c/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/e7a0cdda36d29474eb8e54f2adfe02cfd173937c/site/indrajala_math_rust/indrajala_math_rust.cpython-314-aarch64-linux-gnu.so",
+    "sha256": "e983c73d9b772aa9f03e068667943a527bb540f5ba409127b1174cb2ada70548"
+   },
+   "command": [
+    "/mnt/data/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/6dcd34c/scripts/measurement/focused_benchmark.py",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-10-29-a64-align-vector-exp-litshe/pass-03-new.json"
+   ],
+   "end": "2026-10-29T21:10:23+02:00"
+  },
+  {
+   "number": 4,
+   "side": "old",
+   "stem": "pass-04-old",
+   "status": "ok",
+   "start": "2026-10-29T21:13:53+02:00",
+   "load": [
+    1.4619140625,
+    1.337890625,
+    1.12841796875
+   ],
+   "busy": [],
+   "cooled": {
+    "temp_c": 49.05,
+    "waited_s": 210
+   },
+   "peak_c": 58.4,
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/6dcd34c/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/0517dc2d45da0903c568961b369826829eaf8c1b/site/indrajala_math_rust/indrajala_math_rust.cpython-314-aarch64-linux-gnu.so",
+    "sha256": "6fc32a9e1378ab29d8ac8be696cdaf3581a3895157a2dc08bcd7d3539765875a"
+   },
+   "command": [
+    "/mnt/data/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/6dcd34c/scripts/measurement/focused_benchmark.py",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-10-29-a64-align-vector-exp-litshe/pass-04-old.json"
+   ],
+   "end": "2026-10-29T21:18:58+02:00"
+  },
+  {
+   "number": 5,
+   "side": "new",
+   "stem": "pass-05-new",
+   "status": "ok",
+   "start": "2026-10-29T21:21:43+02:00",
+   "load": [
+    1.583984375,
+    1.20849609375,
+    1.068359375
+   ],
+   "busy": [],
+   "cooled": {
+    "temp_c": 49.6,
+    "waited_s": 165
+   },
+   "peak_c": 57.3,
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/6dcd34c/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/e7a0cdda36d29474eb8e54f2adfe02cfd173937c/site/indrajala_math_rust/indrajala_math_rust.cpython-314-aarch64-linux-gnu.so",
+    "sha256": "e983c73d9b772aa9f03e068667943a527bb540f5ba409127b1174cb2ada70548"
+   },
+   "command": [
+    "/mnt/data/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/6dcd34c/scripts/measurement/focused_benchmark.py",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-10-29-a64-align-vector-exp-litshe/pass-05-new.json"
+   ],
+   "end": "2026-10-29T21:26:49+02:00"
+  },
+  {
+   "number": 6,
+   "side": "old",
+   "stem": "pass-06-old",
+   "status": "ok",
+   "start": "2026-10-29T21:28:49+02:00",
+   "load": [
+    2.04052734375,
+    1.42626953125,
+    1.15185546875
+   ],
+   "busy": [],
+   "cooled": {
+    "temp_c": 49.6,
+    "waited_s": 120
+   },
+   "peak_c": 58.4,
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/6dcd34c/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/0517dc2d45da0903c568961b369826829eaf8c1b/site/indrajala_math_rust/indrajala_math_rust.cpython-314-aarch64-linux-gnu.so",
+    "sha256": "6fc32a9e1378ab29d8ac8be696cdaf3581a3895157a2dc08bcd7d3539765875a"
+   },
+   "command": [
+    "/mnt/data/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/6dcd34c/scripts/measurement/focused_benchmark.py",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-10-29-a64-align-vector-exp-litshe/pass-06-old.json"
+   ],
+   "end": "2026-10-29T21:33:54+02:00"
+  }
+ ],
+ "extends": [],
+ "old": {
+  "ref": "6dcd34c0c6dfba7b87a11703113d7a59389f4e9d",
+  "commit": "6dcd34c0c6dfba7b87a11703113d7a59389f4e9d",
+  "crate": "0517dc2d45da0903c568961b369826829eaf8c1b",
+  "tree": "/home/david/data/indrajala-ml/runs/ab/worktrees/6dcd34c",
+  "site": "/home/david/data/indrajala-ml/runs/ab/wheels/0517dc2d45da0903c568961b369826829eaf8c1b/site",
+  "extension_sha": "6fc32a9e1378ab29d8ac8be696cdaf3581a3895157a2dc08bcd7d3539765875a"
+ },
+ "new": {
+  "ref": "6dcd34c0c6dfba7b87a11703113d7a59389f4e9d",
+  "commit": "6dcd34c0c6dfba7b87a11703113d7a59389f4e9d",
+  "crate": "e7a0cdda36d29474eb8e54f2adfe02cfd173937c",
+  "tree": "/home/david/data/indrajala-ml/runs/ab/worktrees/6dcd34c",
+  "site": "/home/david/data/indrajala-ml/runs/ab/wheels/e7a0cdda36d29474eb8e54f2adfe02cfd173937c/site",
+  "extension_sha": "e983c73d9b772aa9f03e068667943a527bb540f5ba409127b1174cb2ada70548"
+ },
+ "command": "python scripts/measurement/focused_benchmark.py --json <pass output>",
+ "noise_rules": {
+  "shifted_pass": 0.02,
+  "high_load": 1.5,
+  "small_consistent": 0.01
+ },
+ "thermal": {
+  "max_c": 65,
+  "abort_c": 70,
+  "start_below_c": 50,
+  "set_by": "the owner, 2026-10-18, for the Raspberry Pi 5: at most 70 C inclusive, ideally at most 65 C; start_below_c from its idle 44-50 C (the aarch64 workplan, stage 5)"
+ },
+ "preflight": {
+  "at": "2026-10-29T20:49:28+02:00",
+  "load": [
+   1.123046875,
+   0.8212890625,
+   0.76318359375
+  ],
+  "busy": [],
+  "threads": {
+   "OPENBLAS_NUM_THREADS": null,
+   "OMP_NUM_THREADS": null,
+   "MKL_NUM_THREADS": null
+  },
+  "hostname": "litshe",
+  "profile_path": "docs/machine_profiles/raspberry-pi-5.json",
+  "profile_identity": "6b5732880337771e838e99faf9f66444158142d58f2347bc61d410285caead00",
+  "profile": "identity matches",
+  "quiet": {
+   "load": 1.123046875,
+   "waited_s": 0
+  },
+  "after_builds": [
+   "0517dc2d45da0903c568961b369826829eaf8c1b",
+   "e7a0cdda36d29474eb8e54f2adfe02cfd173937c"
+  ]
+ }
+}

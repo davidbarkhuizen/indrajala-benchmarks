@@ -1,0 +1,15 @@
+2026-10-29-codegen-units-1-litshe: old 6dcd34c vs new 6dcd34c, passes ONNONO (3 old, 3 new), focused_benchmark; crate old 10dfec9 (.so dd311e7a023b) vs new 13fe89a (.so ecff7892e7cb)
+profile: identity matches (raspberry-pi-5.json); passes peaked at 57.3-59.0 C; max 1-min load 1.36 (measured just after this run's crate builds); busy processes: none
+controls: none (--control-backend reads the other backend's rows as controls)
+consistent: per call / conv tail 32 x 5408 sgd step / rust +65.2% (120.5 -> 199.1 µs)
+consistent: per call / pool 6x6, 8 ch downstream_batch b32 / rust +21.1% (7.843 -> 9.496 µs)
+consistent: per call / dense 10 x 30 downstream_batch b512 / rust -15.2% (54.69 -> 46.39 µs)
+consistent: per call / dense 10 x 30 bare downstream b512 / rust -14.9% (54.44 -> 46.33 µs)
+consistent: per call / dense 10 x 30 downstream_batch b32 / rust -13.9% (3.767 -> 3.244 µs)
+consistent: per call / dense 10 x 30 bare downstream b32 / rust -13.9% (3.71 -> 3.196 µs)
+consistent: per call / dense 10 x 30 hidden_delta_batch b512 / rust -13.2% (63.26 -> 54.92 µs)
+consistent: per call / conv 8x8, 8 ch forward_batch b512 / rust -12.0% (1916 -> 1687 µs)
+consistent: per call / dense 10 x 30 hidden_delta_batch b32 / rust -11.1% (4.646 -> 4.131 µs)
+consistent: per call / dense 10 x 30 bare accumulate b32 / rust -10.8% (3.25 -> 2.899 µs)
+... 32 more consistent rows (report --md)
+228 rows within noise (26 separated inside their spread), max |Δ| 71.0%

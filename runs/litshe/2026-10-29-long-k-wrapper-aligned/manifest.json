@@ -1,0 +1,279 @@
+{
+ "version": 1,
+ "name": "2026-10-29-long-k-wrapper-aligned",
+ "created": "2026-10-29T17:22:23+02:00",
+ "state": "done",
+ "pid": 139052,
+ "repo": "/mnt/data/code/indrajala-ml",
+ "bench": "focused_benchmark",
+ "args": [
+  "--op",
+  "accumulate"
+ ],
+ "smoke_args": [
+  "--shape",
+  "dense 10 x 30",
+  "--op",
+  "forward",
+  "--batch-sizes",
+  "32",
+  "--passes",
+  "1",
+  "--loops",
+  "1"
+ ],
+ "script_from": "new",
+ "control_backend": null,
+ "order": "ONNONO",
+ "python": "/mnt/data/code/indrajala-ml/.venv/bin/python",
+ "cwd": "/home/david/data/indrajala-ml/runs/ab/runs/2026-10-29-long-k-wrapper-aligned",
+ "extension": null,
+ "passes": [
+  {
+   "number": 1,
+   "side": "old",
+   "stem": "pass-01-old",
+   "status": "ok",
+   "start": "2026-10-29T17:24:26+02:00",
+   "load": [
+    1.53271484375,
+    1.3408203125,
+    1.1865234375
+   ],
+   "busy": [],
+   "cooled": {
+    "temp_c": 48.5,
+    "waited_s": 90
+   },
+   "peak_c": 56.8,
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/89e88d7/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/be14eac21cdb8e9b7d36194b55f5cbcd78670e75/site/indrajala_math_rust/indrajala_math_rust.cpython-314-aarch64-linux-gnu.so",
+    "sha256": "44f6a8e617ba5fdd8353836a4d43444c59fc94d6123eaee16edcc44e4c126d6b"
+   },
+   "command": [
+    "/mnt/data/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/89e88d7/scripts/measurement/focused_benchmark.py",
+    "--op",
+    "accumulate",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-10-29-long-k-wrapper-aligned/pass-01-old.json"
+   ],
+   "end": "2026-10-29T17:25:40+02:00"
+  },
+  {
+   "number": 2,
+   "side": "new",
+   "stem": "pass-02-new",
+   "status": "ok",
+   "start": "2026-10-29T17:27:25+02:00",
+   "load": [
+    1.51220703125,
+    1.240234375,
+    1.1591796875
+   ],
+   "busy": [],
+   "cooled": {
+    "temp_c": 49.6,
+    "waited_s": 105
+   },
+   "peak_c": 57.9,
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/89e88d7/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/9a448bab1ac8c4fc61355309604f97fd4f3f1777/site/indrajala_math_rust/indrajala_math_rust.cpython-314-aarch64-linux-gnu.so",
+    "sha256": "d6a56fdf3074b6aa1dce69b7813bfbb742a26e53afe8b30085749569caa77601"
+   },
+   "command": [
+    "/mnt/data/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/89e88d7/scripts/measurement/focused_benchmark.py",
+    "--op",
+    "accumulate",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-10-29-long-k-wrapper-aligned/pass-02-new.json"
+   ],
+   "end": "2026-10-29T17:28:39+02:00"
+  },
+  {
+   "number": 3,
+   "side": "new",
+   "stem": "pass-03-new",
+   "status": "ok",
+   "start": "2026-10-29T17:29:39+02:00",
+   "load": [
+    1.03564453125,
+    0.986328125,
+    1.056640625
+   ],
+   "busy": [],
+   "cooled": {
+    "temp_c": 49.6,
+    "waited_s": 60
+   },
+   "peak_c": 56.2,
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/89e88d7/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/9a448bab1ac8c4fc61355309604f97fd4f3f1777/site/indrajala_math_rust/indrajala_math_rust.cpython-314-aarch64-linux-gnu.so",
+    "sha256": "d6a56fdf3074b6aa1dce69b7813bfbb742a26e53afe8b30085749569caa77601"
+   },
+   "command": [
+    "/mnt/data/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/89e88d7/scripts/measurement/focused_benchmark.py",
+    "--op",
+    "accumulate",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-10-29-long-k-wrapper-aligned/pass-03-new.json"
+   ],
+   "end": "2026-10-29T17:30:54+02:00"
+  },
+  {
+   "number": 4,
+   "side": "old",
+   "stem": "pass-04-old",
+   "status": "ok",
+   "start": "2026-10-29T17:32:24+02:00",
+   "load": [
+    1.35595703125,
+    1.0029296875,
+    1.041015625
+   ],
+   "busy": [],
+   "cooled": {
+    "temp_c": 49.6,
+    "waited_s": 90
+   },
+   "peak_c": 58.4,
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/89e88d7/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/be14eac21cdb8e9b7d36194b55f5cbcd78670e75/site/indrajala_math_rust/indrajala_math_rust.cpython-314-aarch64-linux-gnu.so",
+    "sha256": "44f6a8e617ba5fdd8353836a4d43444c59fc94d6123eaee16edcc44e4c126d6b"
+   },
+   "command": [
+    "/mnt/data/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/89e88d7/scripts/measurement/focused_benchmark.py",
+    "--op",
+    "accumulate",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-10-29-long-k-wrapper-aligned/pass-04-old.json"
+   ],
+   "end": "2026-10-29T17:33:38+02:00"
+  },
+  {
+   "number": 5,
+   "side": "new",
+   "stem": "pass-05-new",
+   "status": "ok",
+   "start": "2026-10-29T17:35:08+02:00",
+   "load": [
+    1.7060546875,
+    1.0546875,
+    1.03662109375
+   ],
+   "busy": [],
+   "cooled": {
+    "temp_c": 49.05,
+    "waited_s": 90
+   },
+   "peak_c": 56.2,
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/89e88d7/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/9a448bab1ac8c4fc61355309604f97fd4f3f1777/site/indrajala_math_rust/indrajala_math_rust.cpython-314-aarch64-linux-gnu.so",
+    "sha256": "d6a56fdf3074b6aa1dce69b7813bfbb742a26e53afe8b30085749569caa77601"
+   },
+   "command": [
+    "/mnt/data/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/89e88d7/scripts/measurement/focused_benchmark.py",
+    "--op",
+    "accumulate",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-10-29-long-k-wrapper-aligned/pass-05-new.json"
+   ],
+   "end": "2026-10-29T17:36:22+02:00"
+  },
+  {
+   "number": 6,
+   "side": "old",
+   "stem": "pass-06-old",
+   "status": "ok",
+   "start": "2026-10-29T17:37:08+02:00",
+   "load": [
+    1.06591796875,
+    0.90380859375,
+    0.97021484375
+   ],
+   "busy": [],
+   "cooled": {
+    "temp_c": 49.6,
+    "waited_s": 45
+   },
+   "peak_c": 56.2,
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/89e88d7/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/be14eac21cdb8e9b7d36194b55f5cbcd78670e75/site/indrajala_math_rust/indrajala_math_rust.cpython-314-aarch64-linux-gnu.so",
+    "sha256": "44f6a8e617ba5fdd8353836a4d43444c59fc94d6123eaee16edcc44e4c126d6b"
+   },
+   "command": [
+    "/mnt/data/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/89e88d7/scripts/measurement/focused_benchmark.py",
+    "--op",
+    "accumulate",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-10-29-long-k-wrapper-aligned/pass-06-old.json"
+   ],
+   "end": "2026-10-29T17:38:22+02:00"
+  }
+ ],
+ "extends": [],
+ "old": {
+  "ref": "89e88d763d4dec67ae7fa8bc06db24a4b406dec1",
+  "commit": "89e88d763d4dec67ae7fa8bc06db24a4b406dec1",
+  "crate": "be14eac21cdb8e9b7d36194b55f5cbcd78670e75",
+  "tree": "/home/david/data/indrajala-ml/runs/ab/worktrees/89e88d7",
+  "site": "/home/david/data/indrajala-ml/runs/ab/wheels/be14eac21cdb8e9b7d36194b55f5cbcd78670e75/site",
+  "extension_sha": "44f6a8e617ba5fdd8353836a4d43444c59fc94d6123eaee16edcc44e4c126d6b"
+ },
+ "new": {
+  "ref": "89e88d763d4dec67ae7fa8bc06db24a4b406dec1",
+  "commit": "89e88d763d4dec67ae7fa8bc06db24a4b406dec1",
+  "crate": "9a448bab1ac8c4fc61355309604f97fd4f3f1777",
+  "tree": "/home/david/data/indrajala-ml/runs/ab/worktrees/89e88d7",
+  "site": "/home/david/data/indrajala-ml/runs/ab/wheels/9a448bab1ac8c4fc61355309604f97fd4f3f1777/site",
+  "extension_sha": "d6a56fdf3074b6aa1dce69b7813bfbb742a26e53afe8b30085749569caa77601"
+ },
+ "command": "python scripts/measurement/focused_benchmark.py --op accumulate --json <pass output>",
+ "noise_rules": {
+  "shifted_pass": 0.02,
+  "high_load": 1.5,
+  "small_consistent": 0.01
+ },
+ "thermal": {
+  "max_c": 65,
+  "abort_c": 70,
+  "start_below_c": 50,
+  "set_by": "the owner, 2026-10-18, for the Raspberry Pi 5: at most 70 C inclusive, ideally at most 65 C; start_below_c from its idle 44-50 C (the aarch64 workplan, stage 5)"
+ },
+ "preflight": {
+  "at": "2026-10-29T17:22:51+02:00",
+  "load": [
+   1.40478515625,
+   1.3125,
+   1.17626953125
+  ],
+  "busy": [],
+  "threads": {
+   "OPENBLAS_NUM_THREADS": null,
+   "OMP_NUM_THREADS": null,
+   "MKL_NUM_THREADS": null
+  },
+  "hostname": "litshe",
+  "profile_path": "docs/machine_profiles/raspberry-pi-5.json",
+  "profile_identity": "6b5732880337771e838e99faf9f66444158142d58f2347bc61d410285caead00",
+  "profile": "identity matches",
+  "quiet": {
+   "load": 1.40478515625,
+   "waited_s": 0
+  },
+  "after_builds": [
+   "9a448bab1ac8c4fc61355309604f97fd4f3f1777"
+  ]
+ }
+}

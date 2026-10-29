@@ -2,6 +2,13 @@
 
 One line per record, newest first ([FORMAT.md](FORMAT.md)).
 
+- 2026-10-29 · litshe · run · [2026-10-29-align-probe-10dfec9](runs/litshe/2026-10-29-align-probe-10dfec9) · #1088: stage 2's cause (codegen units) and D6, D7, stage 4's vector exp on litshe; the aligned runs separate placement from code
+- 2026-10-29 · litshe · run · [2026-10-29-long-k-wrapper-aligned](runs/litshe/2026-10-29-long-k-wrapper-aligned) · #1088: stage 2's cause (codegen units) and D6, D7, stage 4's vector exp on litshe; the aligned runs separate placement from code
+- 2026-10-29 · litshe · run · [2026-10-29-codegen-units-1-litshe](runs/litshe/2026-10-29-codegen-units-1-litshe) · #1088: stage 2's cause (codegen units) and D6, D7, stage 4's vector exp on litshe; the aligned runs separate placement from code
+- 2026-10-29 · litshe · run · [2026-10-29-vector-exp-cgu1-litshe](runs/litshe/2026-10-29-vector-exp-cgu1-litshe) · #1088: stage 2's cause (codegen units) and D6, D7, stage 4's vector exp on litshe; the aligned runs separate placement from code
+- 2026-10-29 · litshe · run · [2026-10-29-vector-exp-cgu1-window-litshe](runs/litshe/2026-10-29-vector-exp-cgu1-window-litshe) · #1088: stage 2's cause (codegen units) and D6, D7, stage 4's vector exp on litshe; the aligned runs separate placement from code
+- 2026-10-29 · litshe · run · [2026-10-29-a64-align-vector-exp-litshe](runs/litshe/2026-10-29-a64-align-vector-exp-litshe) · #1088: stage 2's cause (codegen units) and D6, D7, stage 4's vector exp on litshe; the aligned runs separate placement from code
+- 2026-10-29 · litshe · run · [2026-10-29-build-settings-litshe](runs/litshe/2026-10-29-build-settings-litshe) · #1088: stage 2's cause (codegen units) and D6, D7, stage 4's vector exp on litshe; the aligned runs separate placement from code
 - 2026-10-29 · jebel · run · [2026-10-29-bump-rust-avx2-transpose-focused_benchmark](runs/jebel/2026-10-29-bump-rust-avx2-transpose-focused_benchmark) · #1089: the AVX2 transpose, no consistent gain (4K aliasing); the aligned run rules out placement
 - 2026-10-29 · jebel · run · [2026-10-29-avx2-transpose-aligned](runs/jebel/2026-10-29-avx2-transpose-aligned) · #1089: the AVX2 transpose, no consistent gain (4K aliasing); the aligned run rules out placement
 - 2026-10-22 · litshe · run · [2026-10-22-neon-transpose](runs/litshe/2026-10-22-neon-transpose) · #926: crate #71, the NEON transpose (aarch64 stage 7)
