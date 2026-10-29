@@ -1,0 +1,15 @@
+2026-10-18-neon-dot-products: old e54cd1d vs new b900778, passes ONNONO (3 old, 3 new), focused_benchmark; crate old 2eb9311 (.so 694886c704e2) vs new 0a6910b (.so efb050f9ebfe)
+profile: identity matches (raspberry-pi-5.json); max 1-min load 0.47 (measured just after this run's crate builds); busy processes: none
+controls: none (--control-backend reads the other backend's rows as controls)
+consistent: per call / dense 30 x 784 forward_batch b32 / rust -83.6% (724.9 -> 118.6 µs)
+consistent: per call / conv tail 32 x 5408 forward_batch b32 / rust -78.8% (5252 -> 1115 µs)
+consistent: per call / dense 30 x 784 forward / rust -72.0% (23.2 -> 6.491 µs)
+consistent: per call / attention 16 x 32 forward_batch b32 / rust -68.9% (2637 -> 818.8 µs)
+consistent: per call / dense 30 x 784 forward_batch b512 / rust -68.8% (3232 -> 1007 µs)
+consistent: per call / conv tail 32 x 5408 forward / rust -55.0% (164.1 -> 73.9 µs)
+consistent: per call / dense 10 x 30 forward_batch b512 / rust -54.0% (233.9 -> 107.6 µs)
+consistent: per call / dense 10 x 30 forward_batch b32 / rust -52.3% (15.28 -> 7.297 µs)
+consistent: per call / conv tail 32 x 5408 forward_batch b512 / rust -45.1% (2.181e+04 -> 1.198e+04 µs)
+consistent: per call / dense 10 x 30 forward / rust -27.4% (0.8632 -> 0.6267 µs)
+... 33 more consistent rows (report --md)
+227 rows within noise (30 separated inside their spread), max |Δ| 406.8%

@@ -1,0 +1,15 @@
+2026-10-18-conv-downstream-per-example: old b900778 vs new 504a1f6, passes ONNONO (3 old, 3 new), focused_benchmark; crate old 0a6910b (.so efb050f9ebfe) vs new 1f798b6 (.so dd53acd61b7c)
+profile: identity matches (raspberry-pi-5.json); passes peaked at 57.9-60.0 C; max 1-min load 1.29 (measured just after this run's crate builds); busy processes: none
+controls: none (--control-backend reads the other backend's rows as controls)
+consistent: per call / conv 13x13x8, 8 ch downstream_batch b512 / rust -86.6% (5.421e+04 -> 7258 µs)
+consistent: per call / conv 28x28, 8 ch downstream_batch b512 / rust -81.4% (5.626e+04 -> 1.045e+04 µs)
+consistent: per call / conv 26x26x8, 8 ch downstream_batch b512 / rust -78.2% (2.563e+05 -> 5.587e+04 µs)
+consistent: per call / conv 26x26x8, 8 ch downstream_batch b32 / rust -72.5% (1.326e+04 -> 3641 µs)
+consistent: per call / conv 26x26x8/2, 8 ch downstream_batch b512 / rust -64.6% (7.156e+04 -> 2.534e+04 µs)
+consistent: per call / conv 28x28, 8 ch downstream_batch b32 / rust -48.8% (2909 -> 1489 µs)
+consistent: per call / pool 6x6, 8 ch downstream_batch b32 / rust -36.0% (12.3 -> 7.865 µs)
+consistent: per call / conv 13x13x8, 8 ch downstream_batch b32 / rust -23.8% (1335 -> 1018 µs)
+consistent: per call / pool 6x6, 8 ch downstream / rust -21.0% (0.8324 -> 0.6577 µs)
+consistent: per call / dense 10 x 30 downstream_batch b512 / rust +17.1% (46.57 -> 54.54 µs)
+... 35 more consistent rows (report --md)
+225 rows within noise (32 separated inside their spread), max |Δ| 406.5%
