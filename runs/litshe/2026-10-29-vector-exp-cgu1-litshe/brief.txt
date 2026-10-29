@@ -1,0 +1,15 @@
+2026-10-29-vector-exp-cgu1-litshe: old 6dcd34c vs new 6dcd34c, passes ONNONO (3 old, 3 new), focused_benchmark; crate old 10dfec9 (.so dd311e7a023b) vs new 4f230a4 (.so c3a83219f593)
+profile: identity matches (raspberry-pi-5.json); passes peaked at 57.9-60.0 C; max 1-min load 1.32 (measured just after this run's crate builds); busy processes: none
+controls: none (--control-backend reads the other backend's rows as controls)
+consistent: per call / dense 10 x 30 bare downstream b512 / rust +28.5% (54.49 -> 70.01 µs)
+consistent: per call / dense 10 x 30 downstream_batch b512 / rust +28.0% (54.76 -> 70.12 µs)
+consistent: per call / conv 28x28, 8 ch accumulate_gradient_batch b32 / rust -21.9% (1473 -> 1150 µs)
+consistent: per call / dense 10 x 30 bare downstream b32 / rust +14.9% (3.709 -> 4.263 µs)
+consistent: per call / dense 10 x 30 downstream_batch b32 / rust +14.6% (3.759 -> 4.309 µs)
+consistent: per call / dense 10 x 30 forward_batch b512 / rust -12.6% (107.1 -> 93.62 µs)
+consistent: per call / dense 10 x 30 forward_batch b32 / rust -12.2% (7.265 -> 6.379 µs)
+consistent: per call / dense 10 x 30 hidden_delta_batch b32 / rust +11.4% (4.657 -> 5.189 µs)
+consistent: per call / conv 26x26x8, 8 ch forward / rust +10.9% (235.4 -> 261.2 µs)
+consistent: per call / conv 13x13x8, 8 ch forward / rust +10.1% (50.61 -> 55.74 µs)
+... 30 more consistent rows (report --md)
+230 rows within noise (38 separated inside their spread), max |Δ| 85.1%

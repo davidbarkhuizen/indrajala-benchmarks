@@ -1,0 +1,50 @@
+{
+ "format": 1,
+ "kind": "run",
+ "host": "litshe",
+ "name": "2026-10-29-codegen-units-1-litshe",
+ "archived_at": "2026-10-29T22:34:35+02:00",
+ "reason": "#1088: stage 2's cause (codegen units) and D6, D7, stage 4's vector exp on litshe; the aligned runs separate placement from code",
+ "replaces": null,
+ "profile": "machines/litshe/20261018T133556Z-profile.json",
+ "profile_source": "checked",
+ "formats": {
+  "ab_manifest": 1,
+  "profile_schema": 5
+ },
+ "rendered_by": {
+  "indrajala_ml": "a0efb7081d4c3186f2bfcb6422427175c0b78ca9"
+ },
+ "files": [
+  "manifest.json",
+  "pass-01-old.json",
+  "pass-01-old.stderr",
+  "pass-01-old.stdout",
+  "pass-02-new.json",
+  "pass-02-new.stderr",
+  "pass-02-new.stdout",
+  "pass-03-new.json",
+  "pass-03-new.stderr",
+  "pass-03-new.stdout",
+  "pass-04-old.json",
+  "pass-04-old.stderr",
+  "pass-04-old.stdout",
+  "pass-05-new.json",
+  "pass-05-new.stderr",
+  "pass-05-new.stdout",
+  "pass-06-old.json",
+  "pass-06-old.stderr",
+  "pass-06-old.stdout",
+  "progress.jsonl",
+  "smoke-new.json",
+  "smoke-new.stderr",
+  "smoke-new.stdout",
+  "smoke-old.json",
+  "smoke-old.stderr",
+  "smoke-old.stdout"
+ ],
+ "reports": [
+  "brief.txt",
+  "report.md"
+ ]
+}
