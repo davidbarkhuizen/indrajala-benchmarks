@@ -2,6 +2,11 @@
 
 One line per record, newest first ([FORMAT.md](FORMAT.md)).
 
+- 2026-10-29 · jebel · run · [2026-10-29-codegen-units-1-jebel](runs/jebel/2026-10-29-codegen-units-1-jebel) · #1088: D6 and D7 on jebel (one codegen unit, x86 branch padding) and stage 4's vector exp; the unpadded combined run shows the placement D7 removes
+- 2026-10-29 · jebel · run · [2026-10-29-vector-exp-cgu1-jebel](runs/jebel/2026-10-29-vector-exp-cgu1-jebel) · #1088: D6 and D7 on jebel (one codegen unit, x86 branch padding) and stage 4's vector exp; the unpadded combined run shows the placement D7 removes
+- 2026-10-29 · jebel · run · [2026-10-29-jcc-base-jebel](runs/jebel/2026-10-29-jcc-base-jebel) · #1088: D6 and D7 on jebel (one codegen unit, x86 branch padding) and stage 4's vector exp; the unpadded combined run shows the placement D7 removes
+- 2026-10-29 · jebel · run · [2026-10-29-jcc-vector-exp-jebel](runs/jebel/2026-10-29-jcc-vector-exp-jebel) · #1088: D6 and D7 on jebel (one codegen unit, x86 branch padding) and stage 4's vector exp; the unpadded combined run shows the placement D7 removes
+- 2026-10-29 · jebel · run · [2026-10-29-settings-vector-exp-window-jebel](runs/jebel/2026-10-29-settings-vector-exp-window-jebel) · #1088: D6 and D7 on jebel (one codegen unit, x86 branch padding) and stage 4's vector exp; the unpadded combined run shows the placement D7 removes
 - 2026-10-29 · litshe · run · [2026-10-29-align-probe-10dfec9](runs/litshe/2026-10-29-align-probe-10dfec9) · #1088: stage 2's cause (codegen units) and D6, D7, stage 4's vector exp on litshe; the aligned runs separate placement from code
 - 2026-10-29 · litshe · run · [2026-10-29-long-k-wrapper-aligned](runs/litshe/2026-10-29-long-k-wrapper-aligned) · #1088: stage 2's cause (codegen units) and D6, D7, stage 4's vector exp on litshe; the aligned runs separate placement from code
 - 2026-10-29 · litshe · run · [2026-10-29-codegen-units-1-litshe](runs/litshe/2026-10-29-codegen-units-1-litshe) · #1088: stage 2's cause (codegen units) and D6, D7, stage 4's vector exp on litshe; the aligned runs separate placement from code

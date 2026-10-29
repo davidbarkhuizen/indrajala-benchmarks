@@ -1,0 +1,230 @@
+{
+ "version": 1,
+ "name": "2026-10-29-jcc-vector-exp-jebel",
+ "created": "2026-10-29T20:17:12+02:00",
+ "state": "done",
+ "pid": 963216,
+ "repo": "/home/david/code/indrajala-ml",
+ "bench": "focused_benchmark",
+ "args": [],
+ "smoke_args": [
+  "--shape",
+  "dense 10 x 30",
+  "--op",
+  "forward",
+  "--batch-sizes",
+  "32",
+  "--passes",
+  "1",
+  "--loops",
+  "1"
+ ],
+ "script_from": "new",
+ "control_backend": null,
+ "order": "ONNONO",
+ "python": "/home/david/code/indrajala-ml/.venv/bin/python",
+ "cwd": "/home/david/data/indrajala-ml/runs/ab/runs/2026-10-29-jcc-vector-exp-jebel",
+ "extension": null,
+ "passes": [
+  {
+   "number": 1,
+   "side": "old",
+   "stem": "pass-01-old",
+   "status": "ok",
+   "start": "2026-10-29T20:17:46+02:00",
+   "load": [
+    0.58935546875,
+    0.1630859375,
+    0.357421875
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/6dcd34c/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/3b5ccd7f3bf4cfc0a14d3ae0eb3f26a0c1aec54a/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "32ad9eba76b4991a04798e2b8312db249b9de19f2e3cf70e83a6bbaa93a2f7ef"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/6dcd34c/scripts/measurement/focused_benchmark.py",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-10-29-jcc-vector-exp-jebel/pass-01-old.json"
+   ],
+   "end": "2026-10-29T20:20:53+02:00"
+  },
+  {
+   "number": 2,
+   "side": "new",
+   "stem": "pass-02-new",
+   "status": "ok",
+   "start": "2026-10-29T20:20:53+02:00",
+   "load": [
+    2.7509765625,
+    1.38330078125,
+    0.80712890625
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/6dcd34c/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/f18ca4a62002848274b87224910580569e7fb49a/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "be447c7907d0f96cec9be86bdd952ec31f42d7682d81f417584777e26cc273e8"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/6dcd34c/scripts/measurement/focused_benchmark.py",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-10-29-jcc-vector-exp-jebel/pass-02-new.json"
+   ],
+   "end": "2026-10-29T20:24:01+02:00"
+  },
+  {
+   "number": 3,
+   "side": "new",
+   "stem": "pass-03-new",
+   "status": "ok",
+   "start": "2026-10-29T20:24:01+02:00",
+   "load": [
+    2.96337890625,
+    2.09326171875,
+    1.19189453125
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/6dcd34c/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/f18ca4a62002848274b87224910580569e7fb49a/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "be447c7907d0f96cec9be86bdd952ec31f42d7682d81f417584777e26cc273e8"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/6dcd34c/scripts/measurement/focused_benchmark.py",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-10-29-jcc-vector-exp-jebel/pass-03-new.json"
+   ],
+   "end": "2026-10-29T20:27:09+02:00"
+  },
+  {
+   "number": 4,
+   "side": "old",
+   "stem": "pass-04-old",
+   "status": "ok",
+   "start": "2026-10-29T20:27:09+02:00",
+   "load": [
+    3.06201171875,
+    2.46142578125,
+    1.50537109375
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/6dcd34c/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/3b5ccd7f3bf4cfc0a14d3ae0eb3f26a0c1aec54a/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "32ad9eba76b4991a04798e2b8312db249b9de19f2e3cf70e83a6bbaa93a2f7ef"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/6dcd34c/scripts/measurement/focused_benchmark.py",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-10-29-jcc-vector-exp-jebel/pass-04-old.json"
+   ],
+   "end": "2026-10-29T20:30:17+02:00"
+  },
+  {
+   "number": 5,
+   "side": "new",
+   "stem": "pass-05-new",
+   "status": "ok",
+   "start": "2026-10-29T20:30:17+02:00",
+   "load": [
+    3.2568359375,
+    2.70849609375,
+    1.76806640625
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/6dcd34c/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/f18ca4a62002848274b87224910580569e7fb49a/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "be447c7907d0f96cec9be86bdd952ec31f42d7682d81f417584777e26cc273e8"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/6dcd34c/scripts/measurement/focused_benchmark.py",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-10-29-jcc-vector-exp-jebel/pass-05-new.json"
+   ],
+   "end": "2026-10-29T20:33:26+02:00"
+  },
+  {
+   "number": 6,
+   "side": "old",
+   "stem": "pass-06-old",
+   "status": "ok",
+   "start": "2026-10-29T20:33:26+02:00",
+   "load": [
+    2.666015625,
+    2.87109375,
+    2.0146484375
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/6dcd34c/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/3b5ccd7f3bf4cfc0a14d3ae0eb3f26a0c1aec54a/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "32ad9eba76b4991a04798e2b8312db249b9de19f2e3cf70e83a6bbaa93a2f7ef"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/6dcd34c/scripts/measurement/focused_benchmark.py",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-10-29-jcc-vector-exp-jebel/pass-06-old.json"
+   ],
+   "end": "2026-10-29T20:36:34+02:00"
+  }
+ ],
+ "extends": [],
+ "old": {
+  "ref": "6dcd34c0c6dfba7b87a11703113d7a59389f4e9d",
+  "commit": "6dcd34c0c6dfba7b87a11703113d7a59389f4e9d",
+  "crate": "3b5ccd7f3bf4cfc0a14d3ae0eb3f26a0c1aec54a",
+  "tree": "/home/david/data/indrajala-ml/runs/ab/worktrees/6dcd34c",
+  "site": "/home/david/data/indrajala-ml/runs/ab/wheels/3b5ccd7f3bf4cfc0a14d3ae0eb3f26a0c1aec54a/site",
+  "extension_sha": "32ad9eba76b4991a04798e2b8312db249b9de19f2e3cf70e83a6bbaa93a2f7ef"
+ },
+ "new": {
+  "ref": "6dcd34c0c6dfba7b87a11703113d7a59389f4e9d",
+  "commit": "6dcd34c0c6dfba7b87a11703113d7a59389f4e9d",
+  "crate": "f18ca4a62002848274b87224910580569e7fb49a",
+  "tree": "/home/david/data/indrajala-ml/runs/ab/worktrees/6dcd34c",
+  "site": "/home/david/data/indrajala-ml/runs/ab/wheels/f18ca4a62002848274b87224910580569e7fb49a/site",
+  "extension_sha": "be447c7907d0f96cec9be86bdd952ec31f42d7682d81f417584777e26cc273e8"
+ },
+ "command": "python scripts/measurement/focused_benchmark.py --json <pass output>",
+ "noise_rules": {
+  "shifted_pass": 0.02,
+  "high_load": 1.5,
+  "small_consistent": 0.02
+ },
+ "thermal": null,
+ "preflight": {
+  "at": "2026-10-29T20:17:43+02:00",
+  "load": [
+   0.58935546875,
+   0.1630859375,
+   0.357421875
+  ],
+  "busy": [],
+  "threads": {
+   "OPENBLAS_NUM_THREADS": null,
+   "OMP_NUM_THREADS": null,
+   "MKL_NUM_THREADS": null
+  },
+  "hostname": "jebel",
+  "profile_path": "docs/machine_profiles/i7-9700k.json",
+  "profile_identity": "4389a39319d7c5026d6575af33cfb98c60719f335a2df4aa956243873897bc21",
+  "profile": "identity matches",
+  "quiet": {
+   "load": 0.58935546875,
+   "waited_s": 0
+  },
+  "after_builds": [
+   "3b5ccd7f3bf4cfc0a14d3ae0eb3f26a0c1aec54a",
+   "f18ca4a62002848274b87224910580569e7fb49a"
+  ]
+ }
+}

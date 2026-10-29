@@ -1,0 +1,15 @@
+2026-10-29-jcc-base-jebel: old 6dcd34c vs new 6dcd34c, passes ONNONO (3 old, 3 new), focused_benchmark; crate old 10dfec9 (.so 7d70efbe6dbd) vs new 3b5ccd7 (.so 32ad9eba76b4)
+profile: identity matches (i7-9700k.json); max 1-min load 2.57 (HIGH); busy processes: none
+controls: none (--control-backend reads the other backend's rows as controls)
+consistent: per call / dense 10 x 30 forward_batch b512 / rust +33.1% (58.92 -> 78.43 µs)
+consistent: per call / pool 6x6, 8 ch downstream_batch b512 / rust -32.3% (180.1 -> 121.9 µs)
+consistent: per call / pool 6x6, 8 ch downstream_batch b32 / rust -31.5% (11.34 -> 7.764 µs)
+consistent: per call / pool 6x6, 8 ch downstream / rust -22.3% (0.5762 -> 0.4478 µs)
+consistent: per call / pool 26x26, 8 ch downstream / rust -19.6% (5.148 -> 4.14 µs)
+consistent: per call / pool 26x26, 8 ch forward_batch b32 / rust -18.5% (112.1 -> 91.41 µs)
+consistent: per call / pool 26x26, 8 ch forward / rust -18.2% (3.708 -> 3.032 µs)
+consistent: per call / dense 30 x 784 forward_batch b512 / rust +18.0% (364.9 -> 430.4 µs)
+consistent: per call / pool 26x26, 8 ch downstream_batch b32 / rust -16.7% (159.3 -> 132.7 µs)
+consistent: per call / pool 6x6, 8 ch forward_batch b32 / rust -16.5% (8.297 -> 6.931 µs)
+... 27 more consistent rows (report --md)
+233 rows within noise (42 separated inside their spread), max |Δ| 31.4%
