@@ -6,7 +6,7 @@ every golden file against its note, INDEX.md, and, given a base commit, that not
 
 PATH is a clone of indrajala-ml with its history: profile schemas are read from it at the commit
 each profile was captured at, and --reproduce re-renders every run's reports with its checked-out
-scripts/ab.py and compares them with the stored ones. Prints one line per problem and exits 1 if
+ab.py (scripts/measurement/ab.py, or scripts/ab.py before indrajala-ml #1076) and compares them with the stored ones. Prints one line per problem and exits 1 if
 there are any.
 """
 
@@ -194,7 +194,9 @@ class Checker:
         manifest = self.json(run / "manifest.json")
         if not isinstance(manifest, dict):
             return
-        ab = self.indrajala_ml / "scripts/ab.py"
+        ab = self.indrajala_ml / "scripts/measurement/ab.py"
+        if not ab.is_file():  # before indrajala-ml #1076 grouped scripts/
+            ab = self.indrajala_ml / "scripts/ab.py"
         env = {"PYTHONPATH": str(self.indrajala_ml), "PATH": "/usr/bin:/bin"}
         brief = subprocess.run(
             [sys.executable, str(ab), "report", str(run), "--brief"],
