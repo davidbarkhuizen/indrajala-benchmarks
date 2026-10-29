@@ -8,6 +8,7 @@ One line per record, newest first ([FORMAT.md](FORMAT.md)).
 - 2026-10-18 · litshe · run · [2026-10-18-neon-tiled-row-range-2](runs/litshe/2026-10-18-neon-tiled-row-range-2) · #869: crate #63-#65's NEON kernels and the alignment probe (aarch64 stage 7)
 - 2026-10-18 · litshe · run · [2026-10-18-neon-dot-products](runs/litshe/2026-10-18-neon-dot-products) · #869: crate #63-#65's NEON kernels and the alignment probe (aarch64 stage 7)
 - 2026-10-18 · litshe · run · [2026-10-18-conv-downstream-per-example](runs/litshe/2026-10-18-conv-downstream-per-example) · #869: crate #63-#65's NEON kernels and the alignment probe (aarch64 stage 7)
+- 2026-10-18 · litshe · run · [2026-10-18-aa-litshe-focused_benchmark](runs/litshe/2026-10-18-aa-litshe-focused_benchmark) · #846: litshe's A/A, the source of its profile's noise rules (aarch64 stage 5)
 - 2026-10-18 · litshe · profile · [20261018T133556Z-profile.json](machines/litshe/20261018T133556Z-profile.json) · cited by a record
 - 2026-10-17 · jebel · golden · [2026-10-17-6a460c0.json.gz](golden/jebel/2026-10-17-6a460c0.json.gz) · material: aarch64 stage 2: correctly rounded exp (CORE-MATH cr_exp) and the scalar rules (relu, softmax max, Adam powi); approved by D1 (measurement.md §8)
 - 2026-10-17 · pyramidon · golden · [2026-10-17-6a460c0.json.gz](golden/pyramidon/2026-10-17-6a460c0.json.gz) · material: aarch64 stage 2: correctly rounded exp (CORE-MATH cr_exp) and the scalar rules (relu, softmax max, Adam powi); approved by D1 (measurement.md §8)

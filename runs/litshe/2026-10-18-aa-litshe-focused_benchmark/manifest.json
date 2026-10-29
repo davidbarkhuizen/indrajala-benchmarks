@@ -1,0 +1,254 @@
+{
+ "version": 1,
+ "name": "2026-10-18-aa-litshe-focused_benchmark",
+ "created": "2026-10-18T15:43:27+02:00",
+ "state": "done",
+ "pid": 5492,
+ "repo": "/mnt/data/code/indrajala-ml",
+ "bench": "focused_benchmark",
+ "args": [],
+ "smoke_args": [
+  "--shape",
+  "dense 10 x 30",
+  "--op",
+  "forward",
+  "--batch-sizes",
+  "32",
+  "--passes",
+  "1",
+  "--loops",
+  "1"
+ ],
+ "script_from": "new",
+ "control_backend": null,
+ "order": "ONNONO",
+ "python": "/mnt/data/code/indrajala-ml/.venv/bin/python",
+ "cwd": "/home/david/code/ab-runs/2026-10-18-aa-litshe-focused_benchmark",
+ "extension": {
+  "file": "/mnt/data/code/indrajala-ml/.venv/lib/python3.14/site-packages/indrajala_math_rust/indrajala_math_rust.cpython-314-aarch64-linux-gnu.so",
+  "sha256": "b307f197fdc71b0bde61f454f6d2dd375e2354f92389a83236ac1eeccf499199"
+ },
+ "passes": [
+  {
+   "number": 1,
+   "side": "old",
+   "stem": "pass-01-old",
+   "status": "ok",
+   "start": "2026-10-18T15:43:33+02:00",
+   "load": [
+    0.1728515625,
+    0.10400390625,
+    0.09521484375
+   ],
+   "busy": [],
+   "cooled": {
+    "temp_c": 49.6,
+    "waited_s": 0
+   },
+   "provenance": {
+    "train": "/home/david/code/ab-worktrees/e9ab957/indrajala_ml/training/train.py",
+    "extension": "/mnt/data/code/indrajala-ml/.venv/lib/python3.14/site-packages/indrajala_math_rust/indrajala_math_rust.cpython-314-aarch64-linux-gnu.so",
+    "sha256": "b307f197fdc71b0bde61f454f6d2dd375e2354f92389a83236ac1eeccf499199"
+   },
+   "command": [
+    "/mnt/data/code/indrajala-ml/.venv/bin/python",
+    "/home/david/code/ab-worktrees/e9ab957/scripts/focused_benchmark.py",
+    "--json",
+    "/home/david/code/ab-runs/2026-10-18-aa-litshe-focused_benchmark/pass-01-old.json"
+   ],
+   "end": "2026-10-18T15:49:04+02:00"
+  },
+  {
+   "number": 2,
+   "side": "new",
+   "stem": "pass-02-new",
+   "status": "ok",
+   "start": "2026-10-18T15:52:50+02:00",
+   "load": [
+    1.904296875,
+    1.287109375,
+    0.63720703125
+   ],
+   "busy": [],
+   "cooled": {
+    "temp_c": 49.6,
+    "waited_s": 225
+   },
+   "provenance": {
+    "train": "/home/david/code/ab-worktrees/e9ab957/indrajala_ml/training/train.py",
+    "extension": "/mnt/data/code/indrajala-ml/.venv/lib/python3.14/site-packages/indrajala_math_rust/indrajala_math_rust.cpython-314-aarch64-linux-gnu.so",
+    "sha256": "b307f197fdc71b0bde61f454f6d2dd375e2354f92389a83236ac1eeccf499199"
+   },
+   "command": [
+    "/mnt/data/code/indrajala-ml/.venv/bin/python",
+    "/home/david/code/ab-worktrees/e9ab957/scripts/focused_benchmark.py",
+    "--json",
+    "/home/david/code/ab-runs/2026-10-18-aa-litshe-focused_benchmark/pass-02-new.json"
+   ],
+   "end": "2026-10-18T15:58:20+02:00"
+  },
+  {
+   "number": 3,
+   "side": "new",
+   "stem": "pass-03-new",
+   "status": "ok",
+   "start": "2026-10-18T16:02:50+02:00",
+   "load": [
+    1.4794921875,
+    1.36474609375,
+    0.8994140625
+   ],
+   "busy": [],
+   "cooled": {
+    "temp_c": 49.6,
+    "waited_s": 270
+   },
+   "provenance": {
+    "train": "/home/david/code/ab-worktrees/e9ab957/indrajala_ml/training/train.py",
+    "extension": "/mnt/data/code/indrajala-ml/.venv/lib/python3.14/site-packages/indrajala_math_rust/indrajala_math_rust.cpython-314-aarch64-linux-gnu.so",
+    "sha256": "b307f197fdc71b0bde61f454f6d2dd375e2354f92389a83236ac1eeccf499199"
+   },
+   "command": [
+    "/mnt/data/code/indrajala-ml/.venv/bin/python",
+    "/home/david/code/ab-worktrees/e9ab957/scripts/focused_benchmark.py",
+    "--json",
+    "/home/david/code/ab-runs/2026-10-18-aa-litshe-focused_benchmark/pass-03-new.json"
+   ],
+   "end": "2026-10-18T16:08:19+02:00"
+  },
+  {
+   "number": 4,
+   "side": "old",
+   "stem": "pass-04-old",
+   "status": "ok",
+   "start": "2026-10-18T16:14:05+02:00",
+   "load": [
+    1.66943359375,
+    1.33935546875,
+    1.0078125
+   ],
+   "busy": [],
+   "cooled": {
+    "temp_c": 49.6,
+    "waited_s": 345
+   },
+   "provenance": {
+    "train": "/home/david/code/ab-worktrees/e9ab957/indrajala_ml/training/train.py",
+    "extension": "/mnt/data/code/indrajala-ml/.venv/lib/python3.14/site-packages/indrajala_math_rust/indrajala_math_rust.cpython-314-aarch64-linux-gnu.so",
+    "sha256": "b307f197fdc71b0bde61f454f6d2dd375e2354f92389a83236ac1eeccf499199"
+   },
+   "command": [
+    "/mnt/data/code/indrajala-ml/.venv/bin/python",
+    "/home/david/code/ab-worktrees/e9ab957/scripts/focused_benchmark.py",
+    "--json",
+    "/home/david/code/ab-runs/2026-10-18-aa-litshe-focused_benchmark/pass-04-old.json"
+   ],
+   "end": "2026-10-18T16:19:33+02:00"
+  },
+  {
+   "number": 5,
+   "side": "new",
+   "stem": "pass-05-new",
+   "status": "ok",
+   "start": "2026-10-18T16:23:04+02:00",
+   "load": [
+    1.5224609375,
+    1.26806640625,
+    1.00830078125
+   ],
+   "busy": [],
+   "cooled": {
+    "temp_c": 49.6,
+    "waited_s": 210
+   },
+   "provenance": {
+    "train": "/home/david/code/ab-worktrees/e9ab957/indrajala_ml/training/train.py",
+    "extension": "/mnt/data/code/indrajala-ml/.venv/lib/python3.14/site-packages/indrajala_math_rust/indrajala_math_rust.cpython-314-aarch64-linux-gnu.so",
+    "sha256": "b307f197fdc71b0bde61f454f6d2dd375e2354f92389a83236ac1eeccf499199"
+   },
+   "command": [
+    "/mnt/data/code/indrajala-ml/.venv/bin/python",
+    "/home/david/code/ab-worktrees/e9ab957/scripts/focused_benchmark.py",
+    "--json",
+    "/home/david/code/ab-runs/2026-10-18-aa-litshe-focused_benchmark/pass-05-new.json"
+   ],
+   "end": "2026-10-18T16:28:35+02:00"
+  },
+  {
+   "number": 6,
+   "side": "old",
+   "stem": "pass-06-old",
+   "status": "ok",
+   "start": "2026-10-18T16:35:36+02:00",
+   "load": [
+    1.4990234375,
+    1.298828125,
+    1.0595703125
+   ],
+   "busy": [],
+   "cooled": {
+    "temp_c": 49.6,
+    "waited_s": 420
+   },
+   "provenance": {
+    "train": "/home/david/code/ab-worktrees/e9ab957/indrajala_ml/training/train.py",
+    "extension": "/mnt/data/code/indrajala-ml/.venv/lib/python3.14/site-packages/indrajala_math_rust/indrajala_math_rust.cpython-314-aarch64-linux-gnu.so",
+    "sha256": "b307f197fdc71b0bde61f454f6d2dd375e2354f92389a83236ac1eeccf499199"
+   },
+   "command": [
+    "/mnt/data/code/indrajala-ml/.venv/bin/python",
+    "/home/david/code/ab-worktrees/e9ab957/scripts/focused_benchmark.py",
+    "--json",
+    "/home/david/code/ab-runs/2026-10-18-aa-litshe-focused_benchmark/pass-06-old.json"
+   ],
+   "end": "2026-10-18T16:41:05+02:00"
+  }
+ ],
+ "extends": [],
+ "old": {
+  "ref": "e9ab957f33bc53580f9568759fd9e5c14a06ca14",
+  "commit": "e9ab957f33bc53580f9568759fd9e5c14a06ca14",
+  "crate": "40a2761cdc907efa28f8707510b3b4969ac1247f",
+  "tree": "/home/david/code/ab-worktrees/e9ab957"
+ },
+ "new": {
+  "ref": "e9ab957f33bc53580f9568759fd9e5c14a06ca14",
+  "commit": "e9ab957f33bc53580f9568759fd9e5c14a06ca14",
+  "crate": "40a2761cdc907efa28f8707510b3b4969ac1247f",
+  "tree": "/home/david/code/ab-worktrees/e9ab957"
+ },
+ "noise_rules": {
+  "shifted_pass": 0.05,
+  "high_load": 1.5,
+  "small_consistent": 0.0
+ },
+ "thermal": {
+  "max_c": 65,
+  "abort_c": 70,
+  "start_below_c": 50,
+  "set_by": "the owner, 2026-10-18, for the Raspberry Pi 5: at most 70 C inclusive, ideally at most 65 C; start_below_c from its idle 44-50 C (the aarch64 workplan, stage 5)"
+ },
+ "preflight": {
+  "at": "2026-10-18T15:43:28+02:00",
+  "load": [
+   0.1005859375,
+   0.0888671875,
+   0.08984375
+  ],
+  "busy": [],
+  "threads": {
+   "OPENBLAS_NUM_THREADS": null,
+   "OMP_NUM_THREADS": null,
+   "MKL_NUM_THREADS": null
+  },
+  "hostname": "litshe",
+  "profile_path": "docs/machine_profiles/raspberry-pi-5.json",
+  "profile_identity": "6b5732880337771e838e99faf9f66444158142d58f2347bc61d410285caead00",
+  "profile": "identity matches",
+  "quiet": {
+   "load": 0.1005859375,
+   "waited_s": 0
+  },
+  "after_builds": []
+ }
+}
