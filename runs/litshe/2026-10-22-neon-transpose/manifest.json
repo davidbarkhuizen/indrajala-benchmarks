@@ -1,0 +1,264 @@
+{
+ "version": 1,
+ "name": "2026-10-22-neon-transpose",
+ "created": "2026-10-22T12:07:31+02:00",
+ "state": "done",
+ "pid": 240476,
+ "repo": "/mnt/data/code/indrajala-ml",
+ "bench": "focused_benchmark",
+ "args": [],
+ "smoke_args": [
+  "--shape",
+  "dense 10 x 30",
+  "--op",
+  "forward",
+  "--batch-sizes",
+  "32",
+  "--passes",
+  "1",
+  "--loops",
+  "1"
+ ],
+ "script_from": "new",
+ "control_backend": null,
+ "order": "ONNONO",
+ "python": "/mnt/data/code/indrajala-ml/.venv/bin/python",
+ "cwd": "/home/david/code/ab-runs/2026-10-22-neon-transpose",
+ "extension": null,
+ "passes": [
+  {
+   "number": 1,
+   "side": "old",
+   "stem": "pass-01-old",
+   "status": "ok",
+   "start": "2026-10-22T12:09:56+02:00",
+   "load": [
+    1.36328125,
+    1.59423828125,
+    1.00439453125
+   ],
+   "busy": [],
+   "cooled": {
+    "temp_c": 38.05,
+    "waited_s": 0
+   },
+   "peak_c": 48.0,
+   "provenance": {
+    "train": "/home/david/code/ab-worktrees/3d6a264/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/ab-runs/wheels/45d6a3745405c5981e3756e4b51766aa9ee33884/site/indrajala_math_rust/indrajala_math_rust.cpython-314-aarch64-linux-gnu.so",
+    "sha256": "00e539bde5d3f7cd5740c1cb8edf80907cef72af55e75a91bc1959fe46ce26c9"
+   },
+   "command": [
+    "/mnt/data/code/indrajala-ml/.venv/bin/python",
+    "/home/david/code/ab-worktrees/3d6a264/scripts/focused_benchmark.py",
+    "--json",
+    "/home/david/code/ab-runs/2026-10-22-neon-transpose/pass-01-old.json"
+   ],
+   "end": "2026-10-22T12:15:13+02:00"
+  },
+  {
+   "number": 2,
+   "side": "new",
+   "stem": "pass-02-new",
+   "status": "ok",
+   "start": "2026-10-22T12:15:13+02:00",
+   "load": [
+    1.59326171875,
+    1.6318359375,
+    1.1953125
+   ],
+   "busy": [],
+   "cooled": {
+    "temp_c": 43.0,
+    "waited_s": 0
+   },
+   "peak_c": 50.7,
+   "provenance": {
+    "train": "/home/david/code/ab-worktrees/3d6a264/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/ab-runs/wheels/df441b349c120c3157aa12e651d5e5fe4419fbe7/site/indrajala_math_rust/indrajala_math_rust.cpython-314-aarch64-linux-gnu.so",
+    "sha256": "d4d6c26f5f509763839f1101924fdf6dbe6abe46a2eb41710682fd2a14a55839"
+   },
+   "command": [
+    "/mnt/data/code/indrajala-ml/.venv/bin/python",
+    "/home/david/code/ab-worktrees/3d6a264/scripts/focused_benchmark.py",
+    "--json",
+    "/home/david/code/ab-runs/2026-10-22-neon-transpose/pass-02-new.json"
+   ],
+   "end": "2026-10-22T12:20:23+02:00"
+  },
+  {
+   "number": 3,
+   "side": "new",
+   "stem": "pass-03-new",
+   "status": "ok",
+   "start": "2026-10-22T12:20:23+02:00",
+   "load": [
+    1.3798828125,
+    1.53662109375,
+    1.28125
+   ],
+   "busy": [],
+   "cooled": {
+    "temp_c": 47.4,
+    "waited_s": 0
+   },
+   "peak_c": 52.4,
+   "provenance": {
+    "train": "/home/david/code/ab-worktrees/3d6a264/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/ab-runs/wheels/df441b349c120c3157aa12e651d5e5fe4419fbe7/site/indrajala_math_rust/indrajala_math_rust.cpython-314-aarch64-linux-gnu.so",
+    "sha256": "d4d6c26f5f509763839f1101924fdf6dbe6abe46a2eb41710682fd2a14a55839"
+   },
+   "command": [
+    "/mnt/data/code/indrajala-ml/.venv/bin/python",
+    "/home/david/code/ab-worktrees/3d6a264/scripts/focused_benchmark.py",
+    "--json",
+    "/home/david/code/ab-runs/2026-10-22-neon-transpose/pass-03-new.json"
+   ],
+   "end": "2026-10-22T12:25:32+02:00"
+  },
+  {
+   "number": 4,
+   "side": "old",
+   "stem": "pass-04-old",
+   "status": "ok",
+   "start": "2026-10-22T12:25:32+02:00",
+   "load": [
+    1.89453125,
+    1.72265625,
+    1.41650390625
+   ],
+   "busy": [],
+   "cooled": {
+    "temp_c": 49.05,
+    "waited_s": 0
+   },
+   "peak_c": 55.1,
+   "provenance": {
+    "train": "/home/david/code/ab-worktrees/3d6a264/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/ab-runs/wheels/45d6a3745405c5981e3756e4b51766aa9ee33884/site/indrajala_math_rust/indrajala_math_rust.cpython-314-aarch64-linux-gnu.so",
+    "sha256": "00e539bde5d3f7cd5740c1cb8edf80907cef72af55e75a91bc1959fe46ce26c9"
+   },
+   "command": [
+    "/mnt/data/code/indrajala-ml/.venv/bin/python",
+    "/home/david/code/ab-worktrees/3d6a264/scripts/focused_benchmark.py",
+    "--json",
+    "/home/david/code/ab-runs/2026-10-22-neon-transpose/pass-04-old.json"
+   ],
+   "end": "2026-10-22T12:30:41+02:00"
+  },
+  {
+   "number": 5,
+   "side": "new",
+   "stem": "pass-05-new",
+   "status": "ok",
+   "start": "2026-10-22T12:30:42+02:00",
+   "load": [
+    1.57275390625,
+    1.671875,
+    1.48291015625
+   ],
+   "busy": [],
+   "cooled": {
+    "temp_c": 49.6,
+    "waited_s": 0
+   },
+   "peak_c": 57.3,
+   "provenance": {
+    "train": "/home/david/code/ab-worktrees/3d6a264/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/ab-runs/wheels/df441b349c120c3157aa12e651d5e5fe4419fbe7/site/indrajala_math_rust/indrajala_math_rust.cpython-314-aarch64-linux-gnu.so",
+    "sha256": "d4d6c26f5f509763839f1101924fdf6dbe6abe46a2eb41710682fd2a14a55839"
+   },
+   "command": [
+    "/mnt/data/code/indrajala-ml/.venv/bin/python",
+    "/home/david/code/ab-worktrees/3d6a264/scripts/focused_benchmark.py",
+    "--json",
+    "/home/david/code/ab-runs/2026-10-22-neon-transpose/pass-05-new.json"
+   ],
+   "end": "2026-10-22T12:35:50+02:00"
+  },
+  {
+   "number": 6,
+   "side": "old",
+   "stem": "pass-06-old",
+   "status": "ok",
+   "start": "2026-10-22T12:36:05+02:00",
+   "load": [
+    1.39697265625,
+    1.57275390625,
+    1.48681640625
+   ],
+   "busy": [],
+   "cooled": {
+    "temp_c": 49.05,
+    "waited_s": 15
+   },
+   "peak_c": 56.8,
+   "provenance": {
+    "train": "/home/david/code/ab-worktrees/3d6a264/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/ab-runs/wheels/45d6a3745405c5981e3756e4b51766aa9ee33884/site/indrajala_math_rust/indrajala_math_rust.cpython-314-aarch64-linux-gnu.so",
+    "sha256": "00e539bde5d3f7cd5740c1cb8edf80907cef72af55e75a91bc1959fe46ce26c9"
+   },
+   "command": [
+    "/mnt/data/code/indrajala-ml/.venv/bin/python",
+    "/home/david/code/ab-worktrees/3d6a264/scripts/focused_benchmark.py",
+    "--json",
+    "/home/david/code/ab-runs/2026-10-22-neon-transpose/pass-06-old.json"
+   ],
+   "end": "2026-10-22T12:41:14+02:00"
+  }
+ ],
+ "extends": [],
+ "old": {
+  "ref": "3d6a264f867aff0f0b25e56ac13b5fda9cd4c0c5",
+  "commit": "3d6a264f867aff0f0b25e56ac13b5fda9cd4c0c5",
+  "crate": "45d6a3745405c5981e3756e4b51766aa9ee33884",
+  "tree": "/home/david/code/ab-worktrees/3d6a264",
+  "site": "/home/david/code/ab-runs/wheels/45d6a3745405c5981e3756e4b51766aa9ee33884/site",
+  "extension_sha": "00e539bde5d3f7cd5740c1cb8edf80907cef72af55e75a91bc1959fe46ce26c9"
+ },
+ "new": {
+  "ref": "3d6a264f867aff0f0b25e56ac13b5fda9cd4c0c5",
+  "commit": "3d6a264f867aff0f0b25e56ac13b5fda9cd4c0c5",
+  "crate": "df441b349c120c3157aa12e651d5e5fe4419fbe7",
+  "tree": "/home/david/code/ab-worktrees/3d6a264",
+  "site": "/home/david/code/ab-runs/wheels/df441b349c120c3157aa12e651d5e5fe4419fbe7/site",
+  "extension_sha": "d4d6c26f5f509763839f1101924fdf6dbe6abe46a2eb41710682fd2a14a55839"
+ },
+ "noise_rules": {
+  "shifted_pass": 0.02,
+  "high_load": 1.5,
+  "small_consistent": 0.01
+ },
+ "thermal": {
+  "max_c": 65,
+  "abort_c": 70,
+  "start_below_c": 50,
+  "set_by": "the owner, 2026-10-18, for the Raspberry Pi 5: at most 70 C inclusive, ideally at most 65 C; start_below_c from its idle 44-50 C (the aarch64 workplan, stage 5)"
+ },
+ "preflight": {
+  "at": "2026-10-22T12:08:36+02:00",
+  "load": [
+   3.16943359375,
+   1.85791015625,
+   1.0322265625
+  ],
+  "busy": [],
+  "threads": {
+   "OPENBLAS_NUM_THREADS": null,
+   "OMP_NUM_THREADS": null,
+   "MKL_NUM_THREADS": null
+  },
+  "hostname": "litshe",
+  "profile_path": "docs/machine_profiles/raspberry-pi-5.json",
+  "profile_identity": "6b5732880337771e838e99faf9f66444158142d58f2347bc61d410285caead00",
+  "profile": "identity matches",
+  "quiet": {
+   "load": 1.39501953125,
+   "waited_s": 75
+  },
+  "after_builds": [
+   "45d6a3745405c5981e3756e4b51766aa9ee33884",
+   "df441b349c120c3157aa12e651d5e5fe4419fbe7"
+  ]
+ }
+}
