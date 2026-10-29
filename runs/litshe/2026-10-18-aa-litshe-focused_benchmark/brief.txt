@@ -1,0 +1,6 @@
+2026-10-18-aa-litshe-focused_benchmark: old e9ab957 vs new e9ab957, passes ONNONO (3 old, 3 new), focused_benchmark
+profile: identity matches (raspberry-pi-5.json); max 1-min load 0.10; busy processes: none
+controls: none (--control-backend reads the other backend's rows as controls)
+consistent: per call / dense 30 x 784 apply_accumulated_gradient / rust -0.2% (36.64 -> 36.55 µs)
+consistent: per call / conv 13x13x8, 8 ch forward / rust -0.2% (82.05 -> 81.89 µs)
+268 rows within noise (29 separated inside their spread), max |Δ| 74.4%
