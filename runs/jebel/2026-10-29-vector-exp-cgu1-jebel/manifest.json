@@ -1,0 +1,229 @@
+{
+ "version": 1,
+ "name": "2026-10-29-vector-exp-cgu1-jebel",
+ "created": "2026-10-29T19:21:13+02:00",
+ "state": "done",
+ "pid": 400258,
+ "repo": "/home/david/code/indrajala-ml",
+ "bench": "focused_benchmark",
+ "args": [],
+ "smoke_args": [
+  "--shape",
+  "dense 10 x 30",
+  "--op",
+  "forward",
+  "--batch-sizes",
+  "32",
+  "--passes",
+  "1",
+  "--loops",
+  "1"
+ ],
+ "script_from": "new",
+ "control_backend": null,
+ "order": "ONNONO",
+ "python": "/home/david/code/indrajala-ml/.venv/bin/python",
+ "cwd": "/home/david/data/indrajala-ml/runs/ab/runs/2026-10-29-vector-exp-cgu1-jebel",
+ "extension": null,
+ "passes": [
+  {
+   "number": 1,
+   "side": "old",
+   "stem": "pass-01-old",
+   "status": "ok",
+   "start": "2026-10-29T19:21:27+02:00",
+   "load": [
+    0.2216796875,
+    0.04931640625,
+    0.30859375
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/6dcd34c/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/10dfec9ea8539c4798c82321f7449b438dbb664f/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "7d70efbe6dbd605f2cccd65685af6bddd7beceef6945379c83af9a5a9246c849"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/6dcd34c/scripts/measurement/focused_benchmark.py",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-10-29-vector-exp-cgu1-jebel/pass-01-old.json"
+   ],
+   "end": "2026-10-29T19:24:35+02:00"
+  },
+  {
+   "number": 2,
+   "side": "new",
+   "stem": "pass-02-new",
+   "status": "ok",
+   "start": "2026-10-29T19:24:35+02:00",
+   "load": [
+    3.123046875,
+    1.45458984375,
+    0.818359375
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/6dcd34c/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/4f230a4d9a591d91ce99188a199e8fdb5175dc50/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "403e794b8b56c2bcf1a867c79f555e5c82bdaad40a317d54348e771bb7992d0a"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/6dcd34c/scripts/measurement/focused_benchmark.py",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-10-29-vector-exp-cgu1-jebel/pass-02-new.json"
+   ],
+   "end": "2026-10-29T19:27:43+02:00"
+  },
+  {
+   "number": 3,
+   "side": "new",
+   "stem": "pass-03-new",
+   "status": "ok",
+   "start": "2026-10-29T19:27:43+02:00",
+   "load": [
+    2.47509765625,
+    1.97607421875,
+    1.14404296875
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/6dcd34c/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/4f230a4d9a591d91ce99188a199e8fdb5175dc50/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "403e794b8b56c2bcf1a867c79f555e5c82bdaad40a317d54348e771bb7992d0a"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/6dcd34c/scripts/measurement/focused_benchmark.py",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-10-29-vector-exp-cgu1-jebel/pass-03-new.json"
+   ],
+   "end": "2026-10-29T19:30:51+02:00"
+  },
+  {
+   "number": 4,
+   "side": "old",
+   "stem": "pass-04-old",
+   "status": "ok",
+   "start": "2026-10-29T19:30:51+02:00",
+   "load": [
+    3.099609375,
+    2.48779296875,
+    1.49658203125
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/6dcd34c/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/10dfec9ea8539c4798c82321f7449b438dbb664f/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "7d70efbe6dbd605f2cccd65685af6bddd7beceef6945379c83af9a5a9246c849"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/6dcd34c/scripts/measurement/focused_benchmark.py",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-10-29-vector-exp-cgu1-jebel/pass-04-old.json"
+   ],
+   "end": "2026-10-29T19:34:00+02:00"
+  },
+  {
+   "number": 5,
+   "side": "new",
+   "stem": "pass-05-new",
+   "status": "ok",
+   "start": "2026-10-29T19:34:00+02:00",
+   "load": [
+    3.0810546875,
+    2.54736328125,
+    1.6923828125
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/6dcd34c/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/4f230a4d9a591d91ce99188a199e8fdb5175dc50/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "403e794b8b56c2bcf1a867c79f555e5c82bdaad40a317d54348e771bb7992d0a"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/6dcd34c/scripts/measurement/focused_benchmark.py",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-10-29-vector-exp-cgu1-jebel/pass-05-new.json"
+   ],
+   "end": "2026-10-29T19:37:08+02:00"
+  },
+  {
+   "number": 6,
+   "side": "old",
+   "stem": "pass-06-old",
+   "status": "ok",
+   "start": "2026-10-29T19:37:08+02:00",
+   "load": [
+    2.74853515625,
+    2.5478515625,
+    1.8447265625
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/6dcd34c/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/10dfec9ea8539c4798c82321f7449b438dbb664f/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "7d70efbe6dbd605f2cccd65685af6bddd7beceef6945379c83af9a5a9246c849"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/6dcd34c/scripts/measurement/focused_benchmark.py",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-10-29-vector-exp-cgu1-jebel/pass-06-old.json"
+   ],
+   "end": "2026-10-29T19:40:17+02:00"
+  }
+ ],
+ "extends": [],
+ "old": {
+  "ref": "6dcd34c0c6dfba7b87a11703113d7a59389f4e9d",
+  "commit": "6dcd34c0c6dfba7b87a11703113d7a59389f4e9d",
+  "crate": "10dfec9ea8539c4798c82321f7449b438dbb664f",
+  "tree": "/home/david/data/indrajala-ml/runs/ab/worktrees/6dcd34c",
+  "site": "/home/david/data/indrajala-ml/runs/ab/wheels/10dfec9ea8539c4798c82321f7449b438dbb664f/site",
+  "extension_sha": "7d70efbe6dbd605f2cccd65685af6bddd7beceef6945379c83af9a5a9246c849"
+ },
+ "new": {
+  "ref": "6dcd34c0c6dfba7b87a11703113d7a59389f4e9d",
+  "commit": "6dcd34c0c6dfba7b87a11703113d7a59389f4e9d",
+  "crate": "4f230a4d9a591d91ce99188a199e8fdb5175dc50",
+  "tree": "/home/david/data/indrajala-ml/runs/ab/worktrees/6dcd34c",
+  "site": "/home/david/data/indrajala-ml/runs/ab/wheels/4f230a4d9a591d91ce99188a199e8fdb5175dc50/site",
+  "extension_sha": "403e794b8b56c2bcf1a867c79f555e5c82bdaad40a317d54348e771bb7992d0a"
+ },
+ "command": "python scripts/measurement/focused_benchmark.py --json <pass output>",
+ "noise_rules": {
+  "shifted_pass": 0.02,
+  "high_load": 1.5,
+  "small_consistent": 0.02
+ },
+ "thermal": null,
+ "preflight": {
+  "at": "2026-10-29T19:21:25+02:00",
+  "load": [
+   0.15380859375,
+   0.033203125,
+   0.3046875
+  ],
+  "busy": [],
+  "threads": {
+   "OPENBLAS_NUM_THREADS": null,
+   "OMP_NUM_THREADS": null,
+   "MKL_NUM_THREADS": null
+  },
+  "hostname": "jebel",
+  "profile_path": "docs/machine_profiles/i7-9700k.json",
+  "profile_identity": "4389a39319d7c5026d6575af33cfb98c60719f335a2df4aa956243873897bc21",
+  "profile": "identity matches",
+  "quiet": {
+   "load": 0.15380859375,
+   "waited_s": 0
+  },
+  "after_builds": [
+   "4f230a4d9a591d91ce99188a199e8fdb5175dc50"
+  ]
+ }
+}

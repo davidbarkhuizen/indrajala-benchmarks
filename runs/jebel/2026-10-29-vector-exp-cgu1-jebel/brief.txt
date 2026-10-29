@@ -1,0 +1,15 @@
+2026-10-29-vector-exp-cgu1-jebel: old 6dcd34c vs new 6dcd34c, passes ONNONO (3 old, 3 new), focused_benchmark; crate old 10dfec9 (.so 7d70efbe6dbd) vs new 4f230a4 (.so 403e794b8b56)
+profile: identity matches (i7-9700k.json); max 1-min load 0.15 (measured just after this run's crate builds); busy processes: none
+controls: none (--control-backend reads the other backend's rows as controls)
+consistent: per call / dense 30 x 784 bare downstream b32 / rust +34.6% (29.44 -> 39.62 µs)
+consistent: per call / dense 10 x 30 forward_batch b512 / rust -33.5% (58.27 -> 38.74 µs)
+consistent: per call / pool 6x6, 8 ch downstream_batch b32 / rust -32.5% (11.37 -> 7.671 µs)
+consistent: per call / pool 6x6, 8 ch downstream_batch b512 / rust -32.5% (178.9 -> 120.7 µs)
+consistent: per call / dense 10 x 30 forward_batch b32 / rust -31.3% (3.992 -> 2.744 µs)
+consistent: per call / dense 30 x 784 downstream_batch b32 / rust +28.8% (31.92 -> 41.1 µs)
+consistent: per call / conv tail 32 x 5408 bare accumulate b32 / rust +24.8% (240 -> 299.4 µs)
+consistent: per call / conv tail 32 x 5408 downstream_batch b32 / rust +23.4% (246.7 -> 304.4 µs)
+consistent: per call / dense 30 x 784 bare accumulate b32 / rust +22.9% (32.81 -> 40.31 µs)
+consistent: per call / dense 30 x 784 hidden_delta_batch b32 / rust +21.5% (42.21 -> 51.3 µs)
+... 43 more consistent rows (report --md)
+217 rows within noise (43 separated inside their spread), max |Δ| 11.3%

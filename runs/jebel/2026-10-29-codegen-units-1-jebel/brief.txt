@@ -1,0 +1,15 @@
+2026-10-29-codegen-units-1-jebel: old 6dcd34c vs new 6dcd34c, passes ONNONO (3 old, 3 new), focused_benchmark; crate old 10dfec9 (.so 7d70efbe6dbd) vs new 13fe89a (.so 8223780c5791)
+profile: identity matches (i7-9700k.json); max 1-min load 0.69 (measured just after this run's crate builds); busy processes: none
+controls: none (--control-backend reads the other backend's rows as controls)
+consistent: per call / dense 10 x 30 forward_batch b512 / rust +37.3% (59.62 -> 81.85 µs)
+consistent: per call / dense 10 x 30 forward_batch b32 / rust +34.7% (4.049 -> 5.456 µs)
+consistent: per call / pool 6x6, 8 ch downstream_batch b512 / rust -32.3% (178.5 -> 120.9 µs)
+consistent: per call / pool 6x6, 8 ch downstream_batch b32 / rust -32.3% (11.3 -> 7.658 µs)
+consistent: per call / pool 6x6, 8 ch downstream / rust -22.7% (0.5728 -> 0.4429 µs)
+consistent: per call / dense 30 x 784 forward_batch b512 / rust +21.5% (363.5 -> 441.5 µs)
+consistent: per call / pool 26x26, 8 ch downstream / rust -18.1% (5.119 -> 4.194 µs)
+consistent: per call / dense 10 x 30 sum_axis0 b512 / rust +17.4% (2.565 -> 3.012 µs)
+consistent: per call / pool 26x26, 8 ch downstream_batch b32 / rust -17.0% (159.5 -> 132.4 µs)
+consistent: per call / attention 16 x 32 forward_batch b32 / rust +15.6% (364.1 -> 420.8 µs)
+... 27 more consistent rows (report --md)
+233 rows within noise (52 separated inside their spread), max |Δ| 14.1%
