@@ -2,6 +2,7 @@
 
 One line per record, newest first ([FORMAT.md](FORMAT.md)).
 
+- 2026-10-22 · litshe · run · [2026-10-22-neon-transpose](runs/litshe/2026-10-22-neon-transpose) · #926: crate #71, the NEON transpose (aarch64 stage 7)
 - 2026-10-21 · jebel · run · [2026-10-21-stage6-baseline-jebel-focused_benchmark](runs/jebel/2026-10-21-stage6-baseline-jebel-focused_benchmark) · aarch64 workplan stage 6: the crate-over-numpy baseline (indrajala-ml #902)
 - 2026-10-21 · litshe · run · [2026-10-21-stage6-baseline-litshe-focused_benchmark](runs/litshe/2026-10-21-stage6-baseline-litshe-focused_benchmark) · aarch64 workplan stage 6: the crate-over-numpy baseline (indrajala-ml #902)
 - 2026-10-19 · litshe · run · [2026-10-19-align-probe](runs/litshe/2026-10-19-align-probe) · #869: crate #63-#65's NEON kernels and the alignment probe (aarch64 stage 7)

@@ -1,0 +1,15 @@
+2026-10-22-neon-transpose: old 3d6a264 vs new 3d6a264, passes ONNONO (3 old, 3 new), focused_benchmark; crate old 45d6a37 (.so 00e539bde5d3) vs new df441b3 (.so d4d6c26f5f50)
+profile: identity matches (raspberry-pi-5.json); passes peaked at 48.0-57.3 C; max 1-min load 3.17 (HIGH) (measured just after this run's crate builds); busy processes: none
+controls: none (--control-backend reads the other backend's rows as controls)
+consistent: per call / conv tail 32 x 5408 transpose b512 / rust -58.4% (26.58 -> 11.05 µs)
+consistent: per call / dense 30 x 784 transpose b512 / rust -57.0% (24.78 -> 10.67 µs)
+consistent: per call / conv tail 32 x 5408 transpose b32 / rust -56.6% (1.879 -> 0.8155 µs)
+consistent: per call / dense 10 x 30 transpose b512 / rust -55.4% (8.568 -> 3.821 µs)
+consistent: per call / dense 30 x 784 transpose b32 / rust -54.1% (1.818 -> 0.834 µs)
+consistent: per call / dense 10 x 30 bare downstream b512 / rust +41.8% (46.03 -> 65.29 µs)
+consistent: per call / dense 10 x 30 downstream_batch b512 / rust +41.0% (46.32 -> 65.3 µs)
+consistent: per call / dense 10 x 30 transpose b32 / rust -37.1% (0.8001 -> 0.503 µs)
+consistent: per call / dense 10 x 30 hidden_delta_batch b512 / rust +34.8% (54.76 -> 73.8 µs)
+consistent: per call / dense 10 x 30 downstream_batch b32 / rust +21.2% (3.225 -> 3.908 µs)
+... 17 more consistent rows (report --md)
+243 rows within noise (37 separated inside their spread), max |Δ| 95.7%
