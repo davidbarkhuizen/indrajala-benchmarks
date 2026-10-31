@@ -2,6 +2,7 @@
 
 One line per record, newest first ([FORMAT.md](FORMAT.md)).
 
+- 2026-10-31 · pyramidon · golden · [2026-10-31-6aae149.json.gz](golden/pyramidon/2026-10-31-6aae149.json.gz) · new-functionality: training recipe stage 6 (#1156): numpy cosine sequence model and the recipe models in three implementations; no earlier entry moved
 - 2026-10-29 · jebel · run · [2026-10-29-codegen-units-1-jebel](runs/jebel/2026-10-29-codegen-units-1-jebel) · #1088: D6 and D7 on jebel (one codegen unit, x86 branch padding) and stage 4's vector exp; the unpadded combined run shows the placement D7 removes
 - 2026-10-29 · jebel · run · [2026-10-29-vector-exp-cgu1-jebel](runs/jebel/2026-10-29-vector-exp-cgu1-jebel) · #1088: D6 and D7 on jebel (one codegen unit, x86 branch padding) and stage 4's vector exp; the unpadded combined run shows the placement D7 removes
 - 2026-10-29 · jebel · run · [2026-10-29-jcc-base-jebel](runs/jebel/2026-10-29-jcc-base-jebel) · #1088: D6 and D7 on jebel (one codegen unit, x86 branch padding) and stage 4's vector exp; the unpadded combined run shows the placement D7 removes
@@ -47,6 +48,7 @@ One line per record, newest first ([FORMAT.md](FORMAT.md)).
 - 2026-10-09 · pyramidon · golden · [2026-10-09-13db8dd.json.gz](golden/pyramidon/2026-10-09-13db8dd.json.gz) · new-functionality: #612: a multi-head patch model per implementation (four heads of 3 over 4-wide tokens, under Adam), the multi-head attention workplan, stage 6; the 106 earlier entries unchanged
 - 2026-10-09 · jebel · golden · [2026-10-09-13db8dd.json.gz](golden/jebel/2026-10-09-13db8dd.json.gz) · new-functionality: #612: a multi-head patch model per implementation (four heads of 3 over 4-wide tokens, under Adam), the multi-head attention workplan, stage 6; the 106 earlier entries unchanged
 - 2026-10-09 · pyramidon · golden · [2026-10-09-3f681e6.json.gz](golden/pyramidon/2026-10-09-3f681e6.json.gz) · material: pyramidon's first archived golden run, recorded at 3f681e6 as it became the development host (benchmark archive workplan, stage 5); byte-identical to jebel's 2026-10-07-46adf46
+- 2026-10-08 · pyramidon · profile · [20261008T171257Z-2-profile.json](machines/pyramidon/20261008T171257Z-2-profile.json) · cited by a record
 - 2026-10-08 · jebel · profile · [20261008T062106Z-2-profile.json](machines/jebel/20261008T062106Z-2-profile.json) · cited by a record
 - 2026-10-08 · pyramidon · profile · [20261008T171257Z-profile.json](machines/pyramidon/20261008T171257Z-profile.json) · cited by a record
 - 2026-10-08 · jebel · run · [2026-10-08-baseline-aa-prepared_dataset_timing-pl1-reset](runs/jebel/2026-10-08-baseline-aa-prepared_dataset_timing-pl1-reset) · failed: the first record of ab.py's per-pass policy check catching a PL1 reset mid-run (benchmark machine workplan, stage 4)
