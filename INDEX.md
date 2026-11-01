@@ -2,6 +2,7 @@
 
 One line per record, newest first ([FORMAT.md](FORMAT.md)).
 
+- 2026-11-01 · jebel · golden · [2026-11-01-1f70731.json.gz](golden/jebel/2026-11-01-1f70731.json.gz) · material: Context length stage 5 (#1172, D3, D12): the crate tiled attention and the Rust layers on it; the 9 Rust entries with attention move, the other 122 bit-identical
 - 2026-11-01 · pyramidon · golden · [2026-11-01-1f70731-2.json.gz](golden/pyramidon/2026-11-01-1f70731-2.json.gz) · material: Context length stage 5 (#1172, D3, D12): the crate's tiled attention and the Rust layers on it; the 9 Rust entries with attention move, the other 122 bit-identical. Corrects 2026-11-01-1f70731, recorded with the next stage's uncommitted pure-Python changes in the tree
 - 2026-11-01 · pyramidon · golden · [2026-11-01-1f70731.json.gz](golden/pyramidon/2026-11-01-1f70731.json.gz) · material: Context length stage 5 (#1172, D3, D12): the crate's tiled attention and the Rust layers on it; the 9 Rust entries with attention move, the other 122 bit-identical
 - 2026-11-01 · jebel · run · [2026-11-01-tiled-numpy-b16](runs/jebel/2026-11-01-tiled-numpy-b16) · #1171: tiled attention in numpy; forward faster at every T, backward +43-47% at T=64, memory -93% at T=1024
