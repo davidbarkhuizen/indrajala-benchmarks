@@ -2,7 +2,9 @@
 
 One line per record, newest first ([FORMAT.md](FORMAT.md)).
 
+- 2026-11-01 · jebel · golden · [2026-11-01-1407699.json.gz](golden/jebel/2026-11-01-1407699.json.gz) · new-functionality: training recipe stage 6 (#1156): numpy cosine sequence model and the recipe models in three implementations, recorded at main after #1158 once the training-recipe study freed jebel; no earlier entry moved
 - 2026-10-31 · pyramidon · golden · [2026-10-31-6aae149.json.gz](golden/pyramidon/2026-10-31-6aae149.json.gz) · new-functionality: training recipe stage 6 (#1156): numpy cosine sequence model and the recipe models in three implementations; no earlier entry moved
+- 2026-10-30 · jebel · profile · [20261030T140425Z-profile.json](machines/jebel/20261030T140425Z-profile.json) · cited by a record
 - 2026-10-29 · jebel · run · [2026-10-29-codegen-units-1-jebel](runs/jebel/2026-10-29-codegen-units-1-jebel) · #1088: D6 and D7 on jebel (one codegen unit, x86 branch padding) and stage 4's vector exp; the unpadded combined run shows the placement D7 removes
 - 2026-10-29 · jebel · run · [2026-10-29-vector-exp-cgu1-jebel](runs/jebel/2026-10-29-vector-exp-cgu1-jebel) · #1088: D6 and D7 on jebel (one codegen unit, x86 branch padding) and stage 4's vector exp; the unpadded combined run shows the placement D7 removes
 - 2026-10-29 · jebel · run · [2026-10-29-jcc-base-jebel](runs/jebel/2026-10-29-jcc-base-jebel) · #1088: D6 and D7 on jebel (one codegen unit, x86 branch padding) and stage 4's vector exp; the unpadded combined run shows the placement D7 removes
