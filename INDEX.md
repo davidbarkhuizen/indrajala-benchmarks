@@ -2,6 +2,7 @@
 
 One line per record, newest first ([FORMAT.md](FORMAT.md)).
 
+- 2026-11-01 · jebel · golden · [2026-11-01-3df73d8.json.gz](golden/jebel/2026-11-01-3df73d8.json.gz) · material: Context length stage 2 (#1169, D11): the end-of-paragraph token's target counts; the three packed entries move, the other 128 bit-identical
 - 2026-11-01 · pyramidon · golden · [2026-11-01-3df73d8.json.gz](golden/pyramidon/2026-11-01-3df73d8.json.gz) · material: Context length stage 2 (#1169, D11): the end-of-paragraph token's target counts; the three packed entries move, the other 128 bit-identical
 - 2026-11-01 · jebel · golden · [2026-11-01-69e2e93.json.gz](golden/jebel/2026-11-01-69e2e93.json.gz) · new-functionality: segments stage 9 (#1166): a packed sequence model with segments in each implementation; no earlier entry moved
 - 2026-11-01 · pyramidon · golden · [2026-11-01-69e2e93.json.gz](golden/pyramidon/2026-11-01-69e2e93.json.gz) · new-functionality: segments stage 9 (#1166): a packed sequence model with segments in each implementation; no earlier entry moved
