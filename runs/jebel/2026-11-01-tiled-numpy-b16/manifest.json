@@ -1,0 +1,237 @@
+{
+ "version": 1,
+ "name": "2026-11-01-tiled-numpy-b16",
+ "created": "2026-11-01T06:56:10+02:00",
+ "state": "done",
+ "pid": 3090998,
+ "repo": "/home/david/code/indrajala-ml",
+ "bench": "attention_timing",
+ "args": [
+  "--repeats",
+  "5"
+ ],
+ "smoke_args": [
+  "--tokens",
+  "64",
+  "--masks",
+  "causal",
+  "--repeats",
+  "1"
+ ],
+ "script_from": "new",
+ "control_backend": "rust",
+ "order": "ONNONO",
+ "python": "/home/david/code/indrajala-ml/.venv/bin/python",
+ "cwd": "/home/david/data/indrajala-ml/runs/ab/runs/2026-11-01-tiled-numpy-b16",
+ "extension": {
+  "file": "/home/david/code/indrajala-ml/.venv/lib/python3.14/site-packages/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+  "sha256": "9e2f1c5564f51e0ef9baebb28ffb0d11aefda0608a3451ec92bedcc85f2b53a1"
+ },
+ "passes": [
+  {
+   "number": 1,
+   "side": "old",
+   "stem": "pass-01-old",
+   "status": "ok",
+   "start": "2026-11-01T06:56:12+02:00",
+   "load": [
+    0.080078125,
+    0.04248046875,
+    0.0458984375
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/b1e92b9/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/indrajala-ml/.venv/lib/python3.14/site-packages/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "9e2f1c5564f51e0ef9baebb28ffb0d11aefda0608a3451ec92bedcc85f2b53a1"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/7a121c1/scripts/measurement/attention_timing.py",
+    "--repeats",
+    "5",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-11-01-tiled-numpy-b16/pass-01-old.json"
+   ],
+   "end": "2026-11-01T06:56:26+02:00"
+  },
+  {
+   "number": 2,
+   "side": "new",
+   "stem": "pass-02-new",
+   "status": "ok",
+   "start": "2026-11-01T06:56:26+02:00",
+   "load": [
+    0.35205078125,
+    0.10595703125,
+    0.0673828125
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/7a121c1/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/indrajala-ml/.venv/lib/python3.14/site-packages/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "9e2f1c5564f51e0ef9baebb28ffb0d11aefda0608a3451ec92bedcc85f2b53a1"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/7a121c1/scripts/measurement/attention_timing.py",
+    "--repeats",
+    "5",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-11-01-tiled-numpy-b16/pass-02-new.json"
+   ],
+   "end": "2026-11-01T06:56:38+02:00"
+  },
+  {
+   "number": 3,
+   "side": "new",
+   "stem": "pass-03-new",
+   "status": "ok",
+   "start": "2026-11-01T06:56:38+02:00",
+   "load": [
+    0.4521484375,
+    0.1357421875,
+    0.078125
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/7a121c1/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/indrajala-ml/.venv/lib/python3.14/site-packages/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "9e2f1c5564f51e0ef9baebb28ffb0d11aefda0608a3451ec92bedcc85f2b53a1"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/7a121c1/scripts/measurement/attention_timing.py",
+    "--repeats",
+    "5",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-11-01-tiled-numpy-b16/pass-03-new.json"
+   ],
+   "end": "2026-11-01T06:56:51+02:00"
+  },
+  {
+   "number": 4,
+   "side": "old",
+   "stem": "pass-04-old",
+   "status": "ok",
+   "start": "2026-11-01T06:56:51+02:00",
+   "load": [
+    0.57373046875,
+    0.1787109375,
+    0.09423828125
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/b1e92b9/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/indrajala-ml/.venv/lib/python3.14/site-packages/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "9e2f1c5564f51e0ef9baebb28ffb0d11aefda0608a3451ec92bedcc85f2b53a1"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/7a121c1/scripts/measurement/attention_timing.py",
+    "--repeats",
+    "5",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-11-01-tiled-numpy-b16/pass-04-old.json"
+   ],
+   "end": "2026-11-01T06:57:05+02:00"
+  },
+  {
+   "number": 5,
+   "side": "new",
+   "stem": "pass-05-new",
+   "status": "ok",
+   "start": "2026-11-01T06:57:05+02:00",
+   "load": [
+    0.6689453125,
+    0.21923828125,
+    0.10888671875
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/7a121c1/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/indrajala-ml/.venv/lib/python3.14/site-packages/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "9e2f1c5564f51e0ef9baebb28ffb0d11aefda0608a3451ec92bedcc85f2b53a1"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/7a121c1/scripts/measurement/attention_timing.py",
+    "--repeats",
+    "5",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-11-01-tiled-numpy-b16/pass-05-new.json"
+   ],
+   "end": "2026-11-01T06:57:18+02:00"
+  },
+  {
+   "number": 6,
+   "side": "old",
+   "stem": "pass-06-old",
+   "status": "ok",
+   "start": "2026-11-01T06:57:18+02:00",
+   "load": [
+    0.72021484375,
+    0.24560546875,
+    0.11865234375
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/b1e92b9/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/indrajala-ml/.venv/lib/python3.14/site-packages/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "9e2f1c5564f51e0ef9baebb28ffb0d11aefda0608a3451ec92bedcc85f2b53a1"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/7a121c1/scripts/measurement/attention_timing.py",
+    "--repeats",
+    "5",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-11-01-tiled-numpy-b16/pass-06-old.json"
+   ],
+   "end": "2026-11-01T06:57:32+02:00"
+  }
+ ],
+ "extends": [],
+ "old": {
+  "ref": "b1e92b99f3037ad26cf5daa82d1a067c930f6a0d",
+  "commit": "b1e92b99f3037ad26cf5daa82d1a067c930f6a0d",
+  "crate": "28c4762db7cd56c04cdbcc53b750f88665b55106",
+  "tree": "/home/david/data/indrajala-ml/runs/ab/worktrees/b1e92b9"
+ },
+ "new": {
+  "ref": "7a121c1980d73140ef2381b12b1a5ef6581f7130",
+  "commit": "7a121c1980d73140ef2381b12b1a5ef6581f7130",
+  "crate": "28c4762db7cd56c04cdbcc53b750f88665b55106",
+  "tree": "/home/david/data/indrajala-ml/runs/ab/worktrees/7a121c1"
+ },
+ "command": "python scripts/measurement/attention_timing.py --repeats 5 --json <pass output>",
+ "noise_rules": {
+  "shifted_pass": 0.02,
+  "high_load": 1.5,
+  "small_consistent": 0.02
+ },
+ "thermal": null,
+ "preflight": {
+  "at": "2026-11-01T06:56:10+02:00",
+  "load": [
+   0.080078125,
+   0.04248046875,
+   0.0458984375
+  ],
+  "busy": [],
+  "threads": {
+   "OPENBLAS_NUM_THREADS": null,
+   "OMP_NUM_THREADS": null,
+   "MKL_NUM_THREADS": null
+  },
+  "hostname": "jebel",
+  "profile_path": "docs/machine_profiles/i7-9700k.json",
+  "profile_identity": "bee079bd48d1966608041f5cdbd5950843ff711f22d43991179c1a30624471e6",
+  "profile": "identity matches",
+  "quiet": {
+   "load": 0.080078125,
+   "waited_s": 0
+  },
+  "after_builds": []
+ }
+}

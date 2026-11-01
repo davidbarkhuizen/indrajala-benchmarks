@@ -1,0 +1,15 @@
+2026-11-01-tiled-numpy-b16: old b1e92b9 vs new 7a121c1, passes ONNONO (3 old, 3 new), attention_timing --repeats 5
+profile: identity matches (i7-9700k.json); max 1-min load 0.08; busy processes: none
+CONTROL MOVED: 2 of 18 control rows consistent, e.g. forward / T=256 B=8 causal / rust +18.0%: changes about that size can't be resolved here (next: epoch_op_profile.py)
+consistent: tracemalloc peak / T=1024 B=2 packed / numpy -94.4% (397.3 -> 22.17 MB)
+consistent: tracemalloc peak / T=1024 B=2 causal / numpy -94.4% (397.2 -> 22.44 MB)
+consistent: peak RSS / T=1024 B=2 packed / numpy -93.0% (404.1 -> 28.47 MB)
+consistent: peak RSS / T=1024 B=2 causal / numpy -92.8% (403.9 -> 29.07 MB)
+consistent: tracemalloc peak / T=256 B=8 causal / numpy -79.5% (108.2 -> 22.2 MB)
+consistent: tracemalloc peak / T=256 B=8 packed / numpy -79.4% (108.2 -> 22.27 MB)
+consistent: peak RSS / T=256 B=8 causal / numpy -78.2% (125.2 -> 27.32 MB)
+consistent: peak RSS / T=256 B=8 packed / numpy -78.2% (125.3 -> 27.33 MB)
+consistent: backward / T=64 B=32 packed / numpy +47.4% (0.013 -> 0.019 s)
+consistent: forward / T=1024 B=2 packed / numpy -45.0% (0.190 -> 0.104 s)
+... 13 more consistent rows (report --md)
+1 rows within noise (1 separated inside their spread), max |Δ| 3.4%
