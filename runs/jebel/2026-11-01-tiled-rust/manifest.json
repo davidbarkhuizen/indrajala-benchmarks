@@ -1,0 +1,240 @@
+{
+ "version": 1,
+ "name": "2026-11-01-tiled-rust",
+ "created": "2026-11-01T07:39:27+02:00",
+ "state": "done",
+ "pid": 3150419,
+ "repo": "/home/david/code/indrajala-ml",
+ "bench": "attention_timing",
+ "args": [
+  "--repeats",
+  "5"
+ ],
+ "smoke_args": [
+  "--tokens",
+  "64",
+  "--masks",
+  "causal",
+  "--repeats",
+  "1"
+ ],
+ "script_from": "new",
+ "control_backend": "numpy",
+ "order": "ONNONO",
+ "python": "/home/david/code/indrajala-ml/.venv/bin/python",
+ "cwd": "/home/david/data/indrajala-ml/runs/ab/runs/2026-11-01-tiled-rust",
+ "extension": null,
+ "passes": [
+  {
+   "number": 1,
+   "side": "old",
+   "stem": "pass-01-old",
+   "status": "ok",
+   "start": "2026-11-01T07:39:44+02:00",
+   "load": [
+    0.2216796875,
+    0.04931640625,
+    0.01611328125
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/5b95176/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/28c4762db7cd56c04cdbcc53b750f88665b55106/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "9e2f1c5564f51e0ef9baebb28ffb0d11aefda0608a3451ec92bedcc85f2b53a1"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/ccc46d1/scripts/measurement/attention_timing.py",
+    "--repeats",
+    "5",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-11-01-tiled-rust/pass-01-old.json"
+   ],
+   "end": "2026-11-01T07:39:56+02:00"
+  },
+  {
+   "number": 2,
+   "side": "new",
+   "stem": "pass-02-new",
+   "status": "ok",
+   "start": "2026-11-01T07:39:56+02:00",
+   "load": [
+    0.39453125,
+    0.0966796875,
+    0.0322265625
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/ccc46d1/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/20e87c31a7ae3a0eafb3a9208999230ae5dae84d/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "8c77a876795f00d75251a92759b4b437509a004baa513b46687c0d136fa23905"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/ccc46d1/scripts/measurement/attention_timing.py",
+    "--repeats",
+    "5",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-11-01-tiled-rust/pass-02-new.json"
+   ],
+   "end": "2026-11-01T07:40:06+02:00"
+  },
+  {
+   "number": 3,
+   "side": "new",
+   "stem": "pass-03-new",
+   "status": "ok",
+   "start": "2026-11-01T07:40:06+02:00",
+   "load": [
+    0.48828125,
+    0.126953125,
+    0.04296875
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/ccc46d1/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/20e87c31a7ae3a0eafb3a9208999230ae5dae84d/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "8c77a876795f00d75251a92759b4b437509a004baa513b46687c0d136fa23905"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/ccc46d1/scripts/measurement/attention_timing.py",
+    "--repeats",
+    "5",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-11-01-tiled-rust/pass-03-new.json"
+   ],
+   "end": "2026-11-01T07:40:15+02:00"
+  },
+  {
+   "number": 4,
+   "side": "old",
+   "stem": "pass-04-old",
+   "status": "ok",
+   "start": "2026-11-01T07:40:15+02:00",
+   "load": [
+    0.5673828125,
+    0.15625,
+    0.0537109375
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/5b95176/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/28c4762db7cd56c04cdbcc53b750f88665b55106/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "9e2f1c5564f51e0ef9baebb28ffb0d11aefda0608a3451ec92bedcc85f2b53a1"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/ccc46d1/scripts/measurement/attention_timing.py",
+    "--repeats",
+    "5",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-11-01-tiled-rust/pass-04-old.json"
+   ],
+   "end": "2026-11-01T07:40:28+02:00"
+  },
+  {
+   "number": 5,
+   "side": "new",
+   "stem": "pass-05-new",
+   "status": "ok",
+   "start": "2026-11-01T07:40:28+02:00",
+   "load": [
+    0.5537109375,
+    0.16748046875,
+    0.05859375
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/ccc46d1/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/20e87c31a7ae3a0eafb3a9208999230ae5dae84d/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "8c77a876795f00d75251a92759b4b437509a004baa513b46687c0d136fa23905"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/ccc46d1/scripts/measurement/attention_timing.py",
+    "--repeats",
+    "5",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-11-01-tiled-rust/pass-05-new.json"
+   ],
+   "end": "2026-11-01T07:40:38+02:00"
+  },
+  {
+   "number": 6,
+   "side": "old",
+   "stem": "pass-06-old",
+   "status": "ok",
+   "start": "2026-11-01T07:40:38+02:00",
+   "load": [
+    0.623046875,
+    0.1953125,
+    0.0693359375
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/5b95176/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/28c4762db7cd56c04cdbcc53b750f88665b55106/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "9e2f1c5564f51e0ef9baebb28ffb0d11aefda0608a3451ec92bedcc85f2b53a1"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/ccc46d1/scripts/measurement/attention_timing.py",
+    "--repeats",
+    "5",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-11-01-tiled-rust/pass-06-old.json"
+   ],
+   "end": "2026-11-01T07:40:51+02:00"
+  }
+ ],
+ "extends": [],
+ "old": {
+  "ref": "5b95176704f4042640aeb69642d817c6ccb0897b",
+  "commit": "5b95176704f4042640aeb69642d817c6ccb0897b",
+  "crate": "28c4762db7cd56c04cdbcc53b750f88665b55106",
+  "tree": "/home/david/data/indrajala-ml/runs/ab/worktrees/5b95176",
+  "site": "/home/david/data/indrajala-ml/runs/ab/wheels/28c4762db7cd56c04cdbcc53b750f88665b55106/site",
+  "extension_sha": "9e2f1c5564f51e0ef9baebb28ffb0d11aefda0608a3451ec92bedcc85f2b53a1"
+ },
+ "new": {
+  "ref": "ccc46d1611f0e5459b76c33e9d4c075548a90013",
+  "commit": "ccc46d1611f0e5459b76c33e9d4c075548a90013",
+  "crate": "20e87c31a7ae3a0eafb3a9208999230ae5dae84d",
+  "tree": "/home/david/data/indrajala-ml/runs/ab/worktrees/ccc46d1",
+  "site": "/home/david/data/indrajala-ml/runs/ab/wheels/20e87c31a7ae3a0eafb3a9208999230ae5dae84d/site",
+  "extension_sha": "8c77a876795f00d75251a92759b4b437509a004baa513b46687c0d136fa23905"
+ },
+ "command": "python scripts/measurement/attention_timing.py --repeats 5 --json <pass output>",
+ "noise_rules": {
+  "shifted_pass": 0.02,
+  "high_load": 1.5,
+  "small_consistent": 0.02
+ },
+ "thermal": null,
+ "preflight": {
+  "at": "2026-11-01T07:39:41+02:00",
+  "load": [
+   0.2216796875,
+   0.04931640625,
+   0.01611328125
+  ],
+  "busy": [],
+  "threads": {
+   "OPENBLAS_NUM_THREADS": null,
+   "OMP_NUM_THREADS": null,
+   "MKL_NUM_THREADS": null
+  },
+  "hostname": "jebel",
+  "profile_path": "docs/machine_profiles/i7-9700k.json",
+  "profile_identity": "bee079bd48d1966608041f5cdbd5950843ff711f22d43991179c1a30624471e6",
+  "profile": "identity matches",
+  "quiet": {
+   "load": 0.2216796875,
+   "waited_s": 0
+  },
+  "after_builds": [
+   "20e87c31a7ae3a0eafb3a9208999230ae5dae84d"
+  ]
+ }
+}
