@@ -1,0 +1,68 @@
+{
+ "T=64 B=32 causal / numpy": {
+  "forward": 0.012256316957063973,
+  "backward": 0.017766191042028368,
+  "peak RSS": 27.1796875,
+  "tracemalloc peak": 21.791452407836914
+ },
+ "T=64 B=32 packed / numpy": {
+  "forward": 0.01243931904900819,
+  "backward": 0.018282516044564545,
+  "peak RSS": 26.62890625,
+  "tracemalloc peak": 21.861918449401855
+ },
+ "T=256 B=8 causal / numpy": {
+  "forward": 0.03259596391580999,
+  "backward": 0.03853082295972854,
+  "peak RSS": 27.3203125,
+  "tracemalloc peak": 22.195229530334473
+ },
+ "T=256 B=8 packed / numpy": {
+  "forward": 0.031559200026094913,
+  "backward": 0.039234485011547804,
+  "peak RSS": 27.34375,
+  "tracemalloc peak": 22.27459716796875
+ },
+ "T=1024 B=2 causal / numpy": {
+  "forward": 0.10484053799882531,
+  "backward": 0.11665252305101603,
+  "peak RSS": 28.8671875,
+  "tracemalloc peak": 22.440689086914062
+ },
+ "T=1024 B=2 packed / numpy": {
+  "forward": 0.10282845993060619,
+  "backward": 0.1135543790878728,
+  "peak RSS": 28.4609375,
+  "tracemalloc peak": 22.172330856323242
+ },
+ "T=64 B=32 causal / rust": {
+  "forward": 0.006796571076847613,
+  "backward": 0.012226546998135746,
+  "peak RSS": 21.73828125
+ },
+ "T=64 B=32 packed / rust": {
+  "forward": 0.006774461013264954,
+  "backward": 0.012261177995242178,
+  "peak RSS": 22.32421875
+ },
+ "T=256 B=8 causal / rust": {
+  "forward": 0.01667969301342964,
+  "backward": 0.026724412105977535,
+  "peak RSS": 21.96875
+ },
+ "T=256 B=8 packed / rust": {
+  "forward": 0.016144669032655656,
+  "backward": 0.025258328998461366,
+  "peak RSS": 22.49609375
+ },
+ "T=1024 B=2 causal / rust": {
+  "forward": 0.0547669279621914,
+  "backward": 0.08336438902188092,
+  "peak RSS": 23.65625
+ },
+ "T=1024 B=2 packed / rust": {
+  "forward": 0.04765275202225894,
+  "backward": 0.06898250500671566,
+  "peak RSS": 24.171875
+ }
+}
