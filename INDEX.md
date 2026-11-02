@@ -2,6 +2,7 @@
 
 One line per record, newest first ([FORMAT.md](FORMAT.md)).
 
+- 2026-11-02 · pyramidon · golden · [2026-11-02-7f268a2.json.gz](golden/pyramidon/2026-11-02-7f268a2.json.gz) · new-functionality: #1186: the FFN activations' GELU and SwiGLU entries (6 added)
 - 2026-11-01 · jebel · golden · [2026-11-01-4f92f67.json.gz](golden/jebel/2026-11-01-4f92f67.json.gz) · material: Context length stage 7 (#1173, D3, D12): tiled attention in pure Python; the 9 pure-Python entries with attention move, the other 122 bit-identical
 - 2026-11-01 · pyramidon · golden · [2026-11-01-4f92f67.json.gz](golden/pyramidon/2026-11-01-4f92f67.json.gz) · material: Context length stage 7 (#1173, D3, D12): tiled attention in pure Python; the 9 pure-Python entries with attention move, the other 122 bit-identical
 - 2026-11-01 · jebel · run · [2026-11-01-tiled-rust](runs/jebel/2026-11-01-tiled-rust) · #1172: tiled attention in the crate; Rust forward faster at every T, forward+backward -60% at T=1024, memory -89%
