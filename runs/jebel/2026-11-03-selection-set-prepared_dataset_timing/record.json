@@ -1,0 +1,44 @@
+{
+ "format": 1,
+ "kind": "run",
+ "host": "jebel",
+ "name": "2026-11-03-selection-set-prepared_dataset_timing",
+ "archived_at": "2026-11-03T06:23:06+02:00",
+ "reason": "#1209: a selection set for the pocket; every row within noise",
+ "replaces": null,
+ "profile": "machines/jebel/20261030T140425Z-profile.json",
+ "profile_source": "checked",
+ "formats": {
+  "ab_manifest": 1,
+  "profile_schema": 5
+ },
+ "rendered_by": {
+  "indrajala_ml": "d2eacb940129e32f415345d36dc52a0594724444"
+ },
+ "files": [
+  "manifest.json",
+  "pass-01-old.json",
+  "pass-01-old.stderr",
+  "pass-01-old.stdout",
+  "pass-02-new.json",
+  "pass-02-new.stderr",
+  "pass-02-new.stdout",
+  "pass-03-new.json",
+  "pass-03-new.stderr",
+  "pass-03-new.stdout",
+  "pass-04-old.json",
+  "pass-04-old.stderr",
+  "pass-04-old.stdout",
+  "progress.jsonl",
+  "smoke-new.json",
+  "smoke-new.stderr",
+  "smoke-new.stdout",
+  "smoke-old.json",
+  "smoke-old.stderr",
+  "smoke-old.stdout"
+ ],
+ "reports": [
+  "brief.txt",
+  "report.md"
+ ]
+}

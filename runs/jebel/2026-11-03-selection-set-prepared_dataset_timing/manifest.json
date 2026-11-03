@@ -1,0 +1,185 @@
+{
+ "version": 1,
+ "name": "2026-11-03-selection-set-prepared_dataset_timing",
+ "created": "2026-11-03T06:10:35+02:00",
+ "state": "done",
+ "pid": 6958,
+ "repo": "/home/david/code/indrajala-ml",
+ "bench": "prepared_dataset_timing",
+ "args": [
+  "--repeats",
+  "5"
+ ],
+ "smoke_args": [
+  "--configs",
+  "conv B=32",
+  "--repeats",
+  "1"
+ ],
+ "script_from": "new",
+ "control_backend": null,
+ "order": "ONNO",
+ "python": "/home/david/code/indrajala-ml/.venv/bin/python",
+ "cwd": "/home/david/data/indrajala-ml/runs/ab/runs/2026-11-03-selection-set-prepared_dataset_timing",
+ "extension": {
+  "file": "/home/david/code/indrajala-ml/.venv/lib/python3.14/site-packages/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+  "sha256": "18304f7c5a63a6dab193a82c2260156f777a64d10c81ffaefdbd5c271da1bb21"
+ },
+ "passes": [
+  {
+   "number": 1,
+   "side": "old",
+   "stem": "pass-01-old",
+   "status": "ok",
+   "start": "2026-11-03T06:10:40+02:00",
+   "load": [
+    0.1435546875,
+    0.62744140625,
+    0.5634765625
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/d2eacb9/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/indrajala-ml/.venv/lib/python3.14/site-packages/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "18304f7c5a63a6dab193a82c2260156f777a64d10c81ffaefdbd5c271da1bb21"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/0447c1f/scripts/measurement/prepared_dataset_timing.py",
+    "time",
+    "--repeats",
+    "5",
+    "--out",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-11-03-selection-set-prepared_dataset_timing/pass-01-old.json"
+   ],
+   "end": "2026-11-03T06:13:32+02:00"
+  },
+  {
+   "number": 2,
+   "side": "new",
+   "stem": "pass-02-new",
+   "status": "ok",
+   "start": "2026-11-03T06:13:32+02:00",
+   "load": [
+    1.23681640625,
+    1.08642578125,
+    0.775390625
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/0447c1f/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/indrajala-ml/.venv/lib/python3.14/site-packages/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "18304f7c5a63a6dab193a82c2260156f777a64d10c81ffaefdbd5c271da1bb21"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/0447c1f/scripts/measurement/prepared_dataset_timing.py",
+    "time",
+    "--repeats",
+    "5",
+    "--out",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-11-03-selection-set-prepared_dataset_timing/pass-02-new.json"
+   ],
+   "end": "2026-11-03T06:16:26+02:00"
+  },
+  {
+   "number": 3,
+   "side": "new",
+   "stem": "pass-03-new",
+   "status": "ok",
+   "start": "2026-11-03T06:16:26+02:00",
+   "load": [
+    1.45849609375,
+    1.2109375,
+    0.88232421875
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/0447c1f/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/indrajala-ml/.venv/lib/python3.14/site-packages/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "18304f7c5a63a6dab193a82c2260156f777a64d10c81ffaefdbd5c271da1bb21"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/0447c1f/scripts/measurement/prepared_dataset_timing.py",
+    "time",
+    "--repeats",
+    "5",
+    "--out",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-11-03-selection-set-prepared_dataset_timing/pass-03-new.json"
+   ],
+   "end": "2026-11-03T06:19:18+02:00"
+  },
+  {
+   "number": 4,
+   "side": "old",
+   "stem": "pass-04-old",
+   "status": "ok",
+   "start": "2026-11-03T06:19:18+02:00",
+   "load": [
+    1.65673828125,
+    1.47021484375,
+    1.04248046875
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/d2eacb9/indrajala_ml/training/train.py",
+    "extension": "/home/david/code/indrajala-ml/.venv/lib/python3.14/site-packages/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "18304f7c5a63a6dab193a82c2260156f777a64d10c81ffaefdbd5c271da1bb21"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/0447c1f/scripts/measurement/prepared_dataset_timing.py",
+    "time",
+    "--repeats",
+    "5",
+    "--out",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-11-03-selection-set-prepared_dataset_timing/pass-04-old.json"
+   ],
+   "end": "2026-11-03T06:22:11+02:00"
+  }
+ ],
+ "extends": [],
+ "old": {
+  "ref": "d2eacb940129e32f415345d36dc52a0594724444",
+  "commit": "d2eacb940129e32f415345d36dc52a0594724444",
+  "crate": "857aff8c4433969b537c3d4ff07bc20d2310d7c7",
+  "tree": "/home/david/data/indrajala-ml/runs/ab/worktrees/d2eacb9"
+ },
+ "new": {
+  "ref": "0447c1fdad5ee37d6779a389fbe7f5b51bea8a7c",
+  "commit": "0447c1fdad5ee37d6779a389fbe7f5b51bea8a7c",
+  "crate": "857aff8c4433969b537c3d4ff07bc20d2310d7c7",
+  "tree": "/home/david/data/indrajala-ml/runs/ab/worktrees/0447c1f"
+ },
+ "command": "python scripts/measurement/prepared_dataset_timing.py time --repeats 5 --out <pass output>",
+ "noise_rules": {
+  "shifted_pass": 0.02,
+  "high_load": 1.5,
+  "small_consistent": 0.02
+ },
+ "thermal": null,
+ "preflight": {
+  "at": "2026-11-03T06:10:35+02:00",
+  "load": [
+   0.06884765625,
+   0.62109375,
+   0.56103515625
+  ],
+  "busy": [],
+  "threads": {
+   "OPENBLAS_NUM_THREADS": null,
+   "OMP_NUM_THREADS": null,
+   "MKL_NUM_THREADS": null
+  },
+  "hostname": "jebel",
+  "profile_path": "docs/machine_profiles/i7-9700k.json",
+  "profile_identity": "bee079bd48d1966608041f5cdbd5950843ff711f22d43991179c1a30624471e6",
+  "profile": "identity matches",
+  "quiet": {
+   "load": 0.06884765625,
+   "waited_s": 0
+  },
+  "after_builds": []
+ }
+}
