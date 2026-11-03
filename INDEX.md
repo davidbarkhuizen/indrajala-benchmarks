@@ -2,6 +2,7 @@
 
 One line per record, newest first ([FORMAT.md](FORMAT.md)).
 
+- 2026-11-03 · jebel · run · [2026-11-03-film-state-input-cmd](runs/jebel/2026-11-03-film-state-input-cmd) · #1212: the FiLM state input; within noise
 - 2026-11-03 · jebel · run · [2026-11-03-selection-set-prepared_dataset_timing](runs/jebel/2026-11-03-selection-set-prepared_dataset_timing) · #1209: a selection set for the pocket; every row within noise
 - 2026-11-03 · jebel · run · [2026-11-03-codebook-rate-prepared_dataset_timing](runs/jebel/2026-11-03-codebook-rate-prepared_dataset_timing) · #1207: a codebook learning-rate scale; no row slower beyond noise
 - 2026-11-02 · pyramidon · golden · [2026-11-02-d92e695.json.gz](golden/pyramidon/2026-11-02-d92e695.json.gz) · new-functionality: GQA workplan stage 7: grouped and multi-query entries added (143); no earlier entry moved
