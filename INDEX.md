@@ -2,6 +2,7 @@
 
 One line per record, newest first ([FORMAT.md](FORMAT.md)).
 
+- 2026-11-03 · pyramidon · golden · [2026-11-03-ee4397c.json.gz](golden/pyramidon/2026-11-03-ee4397c.json.gz) · new-functionality: the cross-attention workplan, stage 9 (#1235): three encoder-decoder entries, one per implementation; the 161 earlier entries unchanged
 - 2026-11-03 · jebel · golden · [2026-11-03-ee4397c.json.gz](golden/jebel/2026-11-03-ee4397c.json.gz) · new-functionality: the cross-attention workplan, stage 9 (#1235): three encoder-decoder entries, one per implementation; the 161 earlier entries unchanged
 - 2026-11-03 · jebel · golden · [2026-11-03-24d4188.json.gz](golden/jebel/2026-11-03-24d4188.json.gz) · new-functionality: jebel catch-up: the 30 entries (10 models x 3 implementations) added since its last version, recorded at 24d4188 from a clean tree; the 131 earlier entries unchanged, and all 161 bit-identical to pyramidon's
 - 2026-11-03 · jebel · run · [2026-11-03-film-state-input-window](runs/jebel/2026-11-03-film-state-input-window) · #1212: the FiLM state input; within noise
