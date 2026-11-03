@@ -1,0 +1,5 @@
+2026-11-03-film-state-input-cmd: old 7837558 vs new 8bb8977, passes ONNO (2 old, 2 new), /home/david/code/indrajala-studies/scripts/measurement/window_study_timing.py; crate old 857aff8 (.so 18304f7c5a63) vs new bb05ca1 (.so 5f29e9f8c99e)
+profile: identity matches (i7-9700k.json); max 1-min load 0.31 (measured just after this run's crate builds); busy processes: none
+CONTROL MOVED: 1 of 1 control rows consistent, e.g. per step / matmul 256 -22.9%: changes about that size can't be resolved here (next: epoch_op_profile.py)
+shifted: pass 1 (old, fast -3.3%), pass 2 (new, fast -2.6%); balanced
+1 rows within noise, max |Δ| 0.0%
