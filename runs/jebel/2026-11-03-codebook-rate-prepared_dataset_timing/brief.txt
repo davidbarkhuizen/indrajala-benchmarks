@@ -1,0 +1,10 @@
+2026-11-03-codebook-rate-prepared_dataset_timing: old 751d1d2 vs new 675df54, passes ONNO (2 old, 2 new), prepared_dataset_timing --repeats 5
+profile: identity matches (i7-9700k.json); max 1-min load 0.05; busy processes: none
+CONTROL MOVED: 1 of 8 control rows consistent, e.g. prepare / dense B=32 / rust +0.5%: changes about that size can't be resolved here (next: epoch_op_profile.py)
+consistent: epoch, loader / dense single / rust -2.9% (1.252 -> 1.215 s)
+consistent: epoch, loader / dense single / numpy -2.9% (6.124 -> 5.946 s)
+consistent, small: epoch / dense single / rust -2.0% (1.448 -> 1.419 s)
+consistent, small: epoch / conv B=32 / rust -0.8% (0.313 -> 0.310 s)
+consistent, small: epoch / dense single / numpy +0.8% (7.099 -> 7.156 s)
+consistent, small: epoch / conv B=32 / numpy -0.7% (0.410 -> 0.407 s)
+10 rows within noise (1 separated inside their spread), max |Δ| 1.9%

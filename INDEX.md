@@ -2,6 +2,7 @@
 
 One line per record, newest first ([FORMAT.md](FORMAT.md)).
 
+- 2026-11-03 · jebel · run · [2026-11-03-codebook-rate-prepared_dataset_timing](runs/jebel/2026-11-03-codebook-rate-prepared_dataset_timing) · #1207: a codebook learning-rate scale; no row slower beyond noise
 - 2026-11-02 · pyramidon · golden · [2026-11-02-d92e695.json.gz](golden/pyramidon/2026-11-02-d92e695.json.gz) · new-functionality: GQA workplan stage 7: grouped and multi-query entries added (143); no earlier entry moved
 - 2026-11-02 · pyramidon · golden · [2026-11-02-7f268a2.json.gz](golden/pyramidon/2026-11-02-7f268a2.json.gz) · new-functionality: #1186: the FFN activations' GELU and SwiGLU entries (6 added)
 - 2026-11-01 · jebel · golden · [2026-11-01-4f92f67.json.gz](golden/jebel/2026-11-01-4f92f67.json.gz) · material: Context length stage 7 (#1173, D3, D12): tiled attention in pure Python; the 9 pure-Python entries with attention move, the other 122 bit-identical
