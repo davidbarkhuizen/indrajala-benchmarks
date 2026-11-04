@@ -1,0 +1,8 @@
+2026-11-04-k28-focused: old 5cf590a vs new 5cf590a, passes ONNONO (3 old, 3 new), focused_benchmark --shape 5408 --shape 784 --shape attention --op forward_batch --op downstream_batch --op accumulate_gradient_batch; crate old 238a017 (.so bb3d5611c37d) vs new 18ce111 (.so bc8a4a1fc83d)
+profile: identity matches (i7-9700k.json); max 1-min load 0.85; busy processes: none
+controls: none (--control-backend reads the other backend's rows as controls)
+consistent: per call / attention 16 x 32 forward_batch b512 / rust -17.6% (5091 -> 4193 µs)
+consistent: per call / attention 16 x 32 forward_batch b32 / rust -17.5% (325.5 -> 268.5 µs)
+consistent: per call / relu 30 x 784 forward_batch b512 / rust -5.9% (212.7 -> 200.1 µs)
+consistent: per call / dense 30 x 784 forward_batch b512 / rust -5.2% (262.7 -> 249 µs)
+32 rows within noise (3 separated inside their spread), max |Δ| 3.9%

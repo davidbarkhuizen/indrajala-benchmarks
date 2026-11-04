@@ -1,0 +1,5 @@
+2026-11-04-k28-sequence-2: old 5cf590a vs new 5cf590a, passes ONNONO (3 old, 3 new), scripts/measurement/sequence_training_timing.py --windows 1024 --repeats 2; crate old 238a017 (.so bb3d5611c37d) vs new 18ce111 (.so bc8a4a1fc83d)
+profile: identity matches (i7-9700k.json); max 1-min load 0.66; busy processes: none
+controls: none (a probe row can carry "control": true)
+consistent: epoch / 2-layer rotary rust W=1024 -7.0% (1.604 -> 1.493 s)
+3 rows within noise, max |Δ| 0.1%

@@ -1,0 +1,8 @@
+2026-11-04-k28-focused-1b: old 5cf590a vs new 5cf590a, passes ONNONO (3 old, 3 new), focused_benchmark --shape attention --op accumulate_gradient_batch --op forward_batch --rust-threads 1 --openblas-threads 1; crate old 238a017 (.so bb3d5611c37d) vs new 18ce111 (.so bc8a4a1fc83d)
+profile: identity matches (i7-9700k.json); max 1-min load 0.95; busy processes: none
+controls: none (--control-backend reads the other backend's rows as controls)
+consistent: per call / attention 16 x 32 forward_batch b32 / rust -17.1% (315.3 -> 261.5 µs)
+consistent: per call / attention 16 x 32 forward_batch b512 / rust -13.0% (5829 -> 5070 µs)
+consistent: per call / attention 16 x 32 accumulate_gradient_batch b32 / rust +5.3% (108.2 -> 114 µs)
+consistent: per call / attention 16 x 32 accumulate_gradient_batch b512 / rust -3.1% (2135 -> 2069 µs)
+4 rows within noise, max |Δ| 1.3%
