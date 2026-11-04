@@ -2,6 +2,23 @@
 
 One line per record, newest first ([FORMAT.md](FORMAT.md)).
 
+- 2026-11-04 · jebel · run · [2026-11-04-k30-window](runs/jebel/2026-11-04-k30-window) · Crate performance workplan, stage 7: K30 (crate #111) and K31 (crate #112), and the two merged
+- 2026-11-04 · jebel · run · [2026-11-04-k30f-sequence-d512](runs/jebel/2026-11-04-k30f-sequence-d512) · Crate performance workplan, stage 7: K30 (crate #111) and K31 (crate #112), and the two merged
+- 2026-11-04 · jebel · run · [2026-11-04-k30f-attention-d512](runs/jebel/2026-11-04-k30f-attention-d512) · Crate performance workplan, stage 7: K30 (crate #111) and K31 (crate #112), and the two merged
+- 2026-11-04 · jebel · run · [2026-11-04-k30f-focused-1](runs/jebel/2026-11-04-k30f-focused-1) · Crate performance workplan, stage 7: K30 (crate #111) and K31 (crate #112), and the two merged
+- 2026-11-04 · jebel · run · [2026-11-04-k30f-focused](runs/jebel/2026-11-04-k30f-focused) · Crate performance workplan, stage 7: K30 (crate #111) and K31 (crate #112), and the two merged
+- 2026-11-04 · jebel · run · [2026-11-04-k30f-epochs](runs/jebel/2026-11-04-k30f-epochs) · Crate performance workplan, stage 7: K30 (crate #111) and K31 (crate #112), and the two merged
+- 2026-11-04 · jebel · run · [2026-11-04-k30f-window](runs/jebel/2026-11-04-k30f-window) · Crate performance workplan, stage 7: K30 (crate #111) and K31 (crate #112), and the two merged
+- 2026-11-04 · jebel · run · [2026-11-04-k30g-sequence](runs/jebel/2026-11-04-k30g-sequence) · Crate performance workplan, stage 7: K30 (crate #111) and K31 (crate #112), and the two merged
+- 2026-11-04 · jebel · run · [2026-11-04-k31-attention](runs/jebel/2026-11-04-k31-attention) · Crate performance workplan, stage 7: K30 (crate #111) and K31 (crate #112), and the two merged
+- 2026-11-04 · jebel · run · [2026-11-04-k31f-sequence-d512](runs/jebel/2026-11-04-k31f-sequence-d512) · Crate performance workplan, stage 7: K30 (crate #111) and K31 (crate #112), and the two merged
+- 2026-11-04 · jebel · run · [2026-11-04-k31f-attention-d512](runs/jebel/2026-11-04-k31f-attention-d512) · Crate performance workplan, stage 7: K30 (crate #111) and K31 (crate #112), and the two merged
+- 2026-11-04 · jebel · run · [2026-11-04-k31f-focused-1](runs/jebel/2026-11-04-k31f-focused-1) · Crate performance workplan, stage 7: K30 (crate #111) and K31 (crate #112), and the two merged
+- 2026-11-04 · jebel · run · [2026-11-04-k31f-focused](runs/jebel/2026-11-04-k31f-focused) · Crate performance workplan, stage 7: K30 (crate #111) and K31 (crate #112), and the two merged
+- 2026-11-04 · jebel · run · [2026-11-04-k31f-epochs](runs/jebel/2026-11-04-k31f-epochs) · Crate performance workplan, stage 7: K30 (crate #111) and K31 (crate #112), and the two merged
+- 2026-11-04 · jebel · run · [2026-11-04-k31f-window](runs/jebel/2026-11-04-k31f-window) · Crate performance workplan, stage 7: K30 (crate #111) and K31 (crate #112), and the two merged
+- 2026-11-04 · jebel · run · [2026-11-04-k31g-sequence](runs/jebel/2026-11-04-k31g-sequence) · Crate performance workplan, stage 7: K30 (crate #111) and K31 (crate #112), and the two merged
+- 2026-11-04 · jebel · run · [2026-11-04-k3031-window](runs/jebel/2026-11-04-k3031-window) · Crate performance workplan, stage 7: K30 (crate #111) and K31 (crate #112), and the two merged
 - 2026-11-04 · jebel · run · [2026-11-04-k7a-attention](runs/jebel/2026-11-04-k7a-attention) · crate #101 (K7a): matmul_2d in slabs
 - 2026-11-04 · jebel · run · [2026-11-04-k7a-attention-d512](runs/jebel/2026-11-04-k7a-attention-d512) · crate #101 (K7a): matmul_2d in slabs
 - 2026-11-04 · jebel · run · [2026-11-04-k7a-epochs](runs/jebel/2026-11-04-k7a-epochs) · crate #101 (K7a): matmul_2d in slabs

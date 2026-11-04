@@ -1,0 +1,4 @@
+2026-11-04-k30f-focused-1: old 515849f vs new 515849f, passes ONNONO (3 old, 3 new), focused_benchmark --shape 5408 --shape 784 --shape attention --op forward_batch --op downstream_batch --op accumulate_gradient_batch --rust-threads 1 --openblas-threads 1; crate old cba601e (.so bc8a4a1fc83d) vs new dc571a0 (.so 1cebe6ff7934)
+profile: identity matches (i7-9700k.json); max 1-min load 1.59 (HIGH); busy processes: none
+controls: none (--control-backend reads the other backend's rows as controls)
+36 rows within noise (6 separated inside their spread), max |Δ| 2.1%

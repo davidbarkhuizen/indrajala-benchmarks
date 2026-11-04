@@ -1,0 +1,4 @@
+2026-11-04-k31f-attention-d512: old 515849f vs new 515849f, passes ONNONO (3 old, 3 new), attention_timing --no-memory --repeats 2 --tokens 256 --features 512 --heads 8 --masks causal; crate old cba601e (.so bc8a4a1fc83d) vs new 480cebc (.so 5b3d1d17cea4)
+profile: identity matches (i7-9700k.json); max 1-min load 2.10 (HIGH); busy processes: none
+controls: none (--control-backend reads the other backend's rows as controls)
+4 rows within noise, max |Δ| 0.7%

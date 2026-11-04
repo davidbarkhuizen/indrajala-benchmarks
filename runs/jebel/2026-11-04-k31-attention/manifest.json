@@ -1,0 +1,261 @@
+{
+ "version": 1,
+ "name": "2026-11-04-k31-attention",
+ "created": "2026-11-04T17:33:37+02:00",
+ "state": "done",
+ "pid": 183661,
+ "repo": "/home/david/code/indrajala-ml",
+ "bench": "attention_timing",
+ "args": [
+  "--no-memory",
+  "--repeats",
+  "2",
+  "--masks",
+  "causal"
+ ],
+ "smoke_args": [
+  "--tokens",
+  "64",
+  "--masks",
+  "causal",
+  "--repeats",
+  "1"
+ ],
+ "script_from": "new",
+ "control_backend": null,
+ "order": "ONNONO",
+ "python": "/home/david/code/indrajala-ml/.venv/bin/python",
+ "cwd": "/home/david/data/indrajala-ml/runs/ab/runs/2026-11-04-k31-attention",
+ "extension": null,
+ "passes": [
+  {
+   "number": 1,
+   "side": "old",
+   "stem": "pass-01-old",
+   "status": "ok",
+   "start": "2026-11-04T17:33:58+02:00",
+   "load": [
+    0.34375,
+    0.08154296875,
+    0.07177734375
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/515849f/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/cba601e8d86ecd68426c16bda1dce841c59b8715/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "bc8a4a1fc83dadb68b0a760273085669aa60713681dc9271ae52d30ef37f59ad"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/515849f/scripts/measurement/attention_timing.py",
+    "--no-memory",
+    "--repeats",
+    "2",
+    "--masks",
+    "causal",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-11-04-k31-attention/pass-01-old.json"
+   ],
+   "end": "2026-11-04T17:34:01+02:00"
+  },
+  {
+   "number": 2,
+   "side": "new",
+   "stem": "pass-02-new",
+   "status": "ok",
+   "start": "2026-11-04T17:34:01+02:00",
+   "load": [
+    0.34375,
+    0.08154296875,
+    0.07177734375
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/515849f/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/db91879ff17e0d6924c9e8c9c14313a916c9a4a2/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "5b3d1d17cea4d10c569b8f57680ad4ee6f6a91490bafae72b4e76c0a519646f1"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/515849f/scripts/measurement/attention_timing.py",
+    "--no-memory",
+    "--repeats",
+    "2",
+    "--masks",
+    "causal",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-11-04-k31-attention/pass-02-new.json"
+   ],
+   "end": "2026-11-04T17:34:03+02:00"
+  },
+  {
+   "number": 3,
+   "side": "new",
+   "stem": "pass-03-new",
+   "status": "ok",
+   "start": "2026-11-04T17:34:03+02:00",
+   "load": [
+    0.34375,
+    0.08154296875,
+    0.07177734375
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/515849f/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/db91879ff17e0d6924c9e8c9c14313a916c9a4a2/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "5b3d1d17cea4d10c569b8f57680ad4ee6f6a91490bafae72b4e76c0a519646f1"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/515849f/scripts/measurement/attention_timing.py",
+    "--no-memory",
+    "--repeats",
+    "2",
+    "--masks",
+    "causal",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-11-04-k31-attention/pass-03-new.json"
+   ],
+   "end": "2026-11-04T17:34:05+02:00"
+  },
+  {
+   "number": 4,
+   "side": "old",
+   "stem": "pass-04-old",
+   "status": "ok",
+   "start": "2026-11-04T17:34:05+02:00",
+   "load": [
+    0.31591796875,
+    0.080078125,
+    0.0712890625
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/515849f/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/cba601e8d86ecd68426c16bda1dce841c59b8715/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "bc8a4a1fc83dadb68b0a760273085669aa60713681dc9271ae52d30ef37f59ad"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/515849f/scripts/measurement/attention_timing.py",
+    "--no-memory",
+    "--repeats",
+    "2",
+    "--masks",
+    "causal",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-11-04-k31-attention/pass-04-old.json"
+   ],
+   "end": "2026-11-04T17:34:08+02:00"
+  },
+  {
+   "number": 5,
+   "side": "new",
+   "stem": "pass-05-new",
+   "status": "ok",
+   "start": "2026-11-04T17:34:08+02:00",
+   "load": [
+    0.31591796875,
+    0.080078125,
+    0.0712890625
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/515849f/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/db91879ff17e0d6924c9e8c9c14313a916c9a4a2/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "5b3d1d17cea4d10c569b8f57680ad4ee6f6a91490bafae72b4e76c0a519646f1"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/515849f/scripts/measurement/attention_timing.py",
+    "--no-memory",
+    "--repeats",
+    "2",
+    "--masks",
+    "causal",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-11-04-k31-attention/pass-05-new.json"
+   ],
+   "end": "2026-11-04T17:34:10+02:00"
+  },
+  {
+   "number": 6,
+   "side": "old",
+   "stem": "pass-06-old",
+   "status": "ok",
+   "start": "2026-11-04T17:34:10+02:00",
+   "load": [
+    0.931640625,
+    0.2119140625,
+    0.1142578125
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/515849f/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/cba601e8d86ecd68426c16bda1dce841c59b8715/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "bc8a4a1fc83dadb68b0a760273085669aa60713681dc9271ae52d30ef37f59ad"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/515849f/scripts/measurement/attention_timing.py",
+    "--no-memory",
+    "--repeats",
+    "2",
+    "--masks",
+    "causal",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-11-04-k31-attention/pass-06-old.json"
+   ],
+   "end": "2026-11-04T17:34:12+02:00"
+  }
+ ],
+ "extends": [],
+ "old": {
+  "ref": "515849f16563b5e91b690dda53e583ee4726a238",
+  "commit": "515849f16563b5e91b690dda53e583ee4726a238",
+  "crate": "cba601e8d86ecd68426c16bda1dce841c59b8715",
+  "tree": "/home/david/data/indrajala-ml/runs/ab/worktrees/515849f",
+  "site": "/home/david/data/indrajala-ml/runs/ab/wheels/cba601e8d86ecd68426c16bda1dce841c59b8715/site",
+  "extension_sha": "bc8a4a1fc83dadb68b0a760273085669aa60713681dc9271ae52d30ef37f59ad"
+ },
+ "new": {
+  "ref": "515849f16563b5e91b690dda53e583ee4726a238",
+  "commit": "515849f16563b5e91b690dda53e583ee4726a238",
+  "crate": "db91879ff17e0d6924c9e8c9c14313a916c9a4a2",
+  "tree": "/home/david/data/indrajala-ml/runs/ab/worktrees/515849f",
+  "site": "/home/david/data/indrajala-ml/runs/ab/wheels/db91879ff17e0d6924c9e8c9c14313a916c9a4a2/site",
+  "extension_sha": "5b3d1d17cea4d10c569b8f57680ad4ee6f6a91490bafae72b4e76c0a519646f1"
+ },
+ "command": "python scripts/measurement/attention_timing.py --no-memory --repeats 2 --masks causal --json <pass output>",
+ "noise_rules": {
+  "shifted_pass": 0.02,
+  "high_load": 1.5,
+  "small_consistent": 0.02
+ },
+ "thermal": null,
+ "preflight": {
+  "at": "2026-11-04T17:33:56+02:00",
+  "load": [
+   0.28662109375,
+   0.06591796875,
+   0.06640625
+  ],
+  "busy": [],
+  "threads": {
+   "OPENBLAS_NUM_THREADS": null,
+   "OMP_NUM_THREADS": null,
+   "MKL_NUM_THREADS": null
+  },
+  "hostname": "jebel",
+  "profile_path": "docs/machine_profiles/i7-9700k.json",
+  "profile_identity": "9cd7aecd7bed736fe7284d597cb63d26520df361edb38568dd8eb6980e119d02",
+  "profile": "identity matches",
+  "quiet": {
+   "load": 0.28662109375,
+   "waited_s": 0
+  },
+  "after_builds": [
+   "db91879ff17e0d6924c9e8c9c14313a916c9a4a2"
+  ]
+ }
+}

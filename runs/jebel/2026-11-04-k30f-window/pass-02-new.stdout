@@ -1,0 +1,21 @@
+{"case": "k1 s4 m16 B32 W12", "metric": "per step", "value": 0.0030619693500000267, "unit": "s"}
+{"case": "k1 s4 m16 B32 W12", "metric": "per step", "value": 0.003065625499999669, "unit": "s"}
+{"case": "k1 s4 m16 B32 W12", "metric": "per step", "value": 0.0030653973999996255, "unit": "s"}
+{"case": "k4 s4 m16 B32 W5", "metric": "per step", "value": 0.0034833720499996444, "unit": "s"}
+{"case": "k4 s4 m16 B32 W5", "metric": "per step", "value": 0.003482937000000419, "unit": "s"}
+{"case": "k4 s4 m16 B32 W5", "metric": "per step", "value": 0.0035196019499998954, "unit": "s"}
+{"case": "learn linear k1 s16 m16 B64 W19", "metric": "per step", "value": 0.002221925299999583, "unit": "s"}
+{"case": "learn linear k1 s16 m16 B64 W19", "metric": "per step", "value": 0.002226446249999725, "unit": "s"}
+{"case": "learn linear k1 s16 m16 B64 W19", "metric": "per step", "value": 0.00222636375000036, "unit": "s"}
+{"case": "learn family p7 f32 B64 W16", "metric": "per step", "value": 0.017627536599999872, "unit": "s"}
+{"case": "learn family p7 f32 B64 W16", "metric": "per step", "value": 0.017627726199999926, "unit": "s"}
+{"case": "learn family p7 f32 B64 W16", "metric": "per step", "value": 0.017611418799999966, "unit": "s"}
+{"case": "forward linear k1 s16 m16 n1024", "metric": "per step", "value": 0.8909316850000124, "unit": "s"}
+{"case": "forward linear k1 s16 m16 n1024", "metric": "per step", "value": 0.8900592579999937, "unit": "s"}
+{"case": "forward linear k1 s16 m16 n1024", "metric": "per step", "value": 0.8888282220000008, "unit": "s"}
+{"case": "forward family p7 f32 n1024", "metric": "per step", "value": 2.3720063159999967, "unit": "s"}
+{"case": "forward family p7 f32 n1024", "metric": "per step", "value": 2.3735015609999977, "unit": "s"}
+{"case": "forward family p7 f32 n1024", "metric": "per step", "value": 2.3734759789999913, "unit": "s"}
+{"case": "matmul 256", "metric": "per step", "value": 0.00036390424999979134, "unit": "s", "control": true}
+{"case": "matmul 256", "metric": "per step", "value": 0.00028930275000007557, "unit": "s", "control": true}
+{"case": "matmul 256", "metric": "per step", "value": 0.00027648424999995316, "unit": "s", "control": true}

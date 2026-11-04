@@ -1,0 +1,4 @@
+2026-11-04-k31-attention: old 515849f vs new 515849f, passes ONNONO (3 old, 3 new), attention_timing --no-memory --repeats 2 --masks causal; crate old cba601e (.so bc8a4a1fc83d) vs new db91879 (.so 5b3d1d17cea4)
+profile: identity matches (i7-9700k.json); max 1-min load 0.29 (measured just after this run's crate builds); busy processes: none
+controls: none (--control-backend reads the other backend's rows as controls)
+12 rows within noise, max |Δ| 1.6%
