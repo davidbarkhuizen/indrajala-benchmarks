@@ -1,0 +1,5 @@
+2026-11-04-k12-sequence: old 3332480 vs new 3332480, passes ONNONO (3 old, 3 new), scripts/measurement/sequence_training_timing.py --windows 1024 --repeats 2; crate old 7fffc49 (.so 21b07c2bef84) vs new a4c4379 (.so ccd720475df3)
+profile: identity matches (i7-9700k.json); max 1-min load 0.83; busy processes: none
+controls: none (a probe row can carry "control": true)
+consistent: epoch / 2-layer rotary rust W=1024 -2.8% (1.797 -> 1.746 s)
+3 rows within noise, max |Δ| 0.2%

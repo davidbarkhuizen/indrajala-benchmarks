@@ -2,6 +2,11 @@
 
 One line per record, newest first ([FORMAT.md](FORMAT.md)).
 
+- 2026-11-04 · jebel · run · [2026-11-04-k12-attention](runs/jebel/2026-11-04-k12-attention) · crate #103 (K12, K28): tiled attend reuses buffers
+- 2026-11-04 · jebel · run · [2026-11-04-k12-focused](runs/jebel/2026-11-04-k12-focused) · crate #103 (K12, K28): tiled attend reuses buffers
+- 2026-11-04 · jebel · run · [2026-11-04-k12-sequence](runs/jebel/2026-11-04-k12-sequence) · crate #103 (K12, K28): tiled attend reuses buffers
+- 2026-11-04 · jebel · run · [2026-11-04-k12-sequence-d512](runs/jebel/2026-11-04-k12-sequence-d512) · crate #103 (K12, K28): tiled attend reuses buffers
+- 2026-11-04 · jebel · run · [2026-11-04-k12-window](runs/jebel/2026-11-04-k12-window) · crate #103 (K12, K28): tiled attend reuses buffers
 - 2026-11-04 · jebel · run · [2026-11-04-k8b-attention-d512](runs/jebel/2026-11-04-k8b-attention-d512) · crate #106 (K8): matmul_nt in slabs, corrected rule
 - 2026-11-04 · jebel · run · [2026-11-04-k8b-epochs](runs/jebel/2026-11-04-k8b-epochs) · crate #106 (K8): matmul_nt in slabs, corrected rule
 - 2026-11-04 · jebel · run · [2026-11-04-k8b-focused](runs/jebel/2026-11-04-k8b-focused) · crate #106 (K8): matmul_nt in slabs, corrected rule
