@@ -1,0 +1,13 @@
+{
+ "T=64 B=32 causal / numpy": {
+  "forward": 0.01244382000004407,
+  "backward": 0.01827039300042088,
+  "peak RSS": 27.21875,
+  "tracemalloc peak": 22.012837409973145
+ },
+ "T=64 B=32 causal / rust": {
+  "forward": 0.006542654999066144,
+  "backward": 0.010333964999517775,
+  "peak RSS": 21.6328125
+ }
+}

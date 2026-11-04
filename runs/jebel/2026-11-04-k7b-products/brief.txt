@@ -1,0 +1,11 @@
+2026-11-04-k7b-products: old 0d91d1a vs new 0d91d1a, passes ONNONO (3 old, 3 new), focused_benchmark --matmul 2048x512x512 --matmul 2048x2048x512 --matmul 512x2048x2048 --matmul 2048x512x2048 --matmul 2048x256x64 --matmul 2048x2048x64 --matmul 64x256x1024 --matmul 32x512x5408 --matmul 30x512x784 --matmul 8x2048x64 --only-matmul --rust-threads 1 --openblas-threads 1; crate old 6a8190c (.so 84ec4e85d91b) vs new 7b9878f (.so 21b07c2bef84)
+profile: identity matches (i7-9700k.json); max 1-min load 1.80 (HIGH); busy processes: none
+controls: none (--control-backend reads the other backend's rows as controls)
+consistent: per call / matmul 512x2048x2048 bare matmul / rust -68.8% (2.868e+05 -> 8.942e+04 µs)
+consistent: per call / matmul 2048x512x2048 bare matmul / rust -67.7% (3.247e+05 -> 1.048e+05 µs)
+consistent: per call / matmul 2048x2048x512 bare matmul / rust -65.1% (2.53e+05 -> 8.843e+04 µs)
+consistent: per call / matmul 2048x512x512 bare matmul / rust -54.7% (5.346e+04 -> 2.42e+04 µs)
+consistent: per call / matmul 2048x2048x64 bare matmul / rust -50.3% (2.306e+04 -> 1.145e+04 µs)
+consistent: per call / matmul 64x256x1024 bare matmul / rust -46.7% (1415 -> 754.6 µs)
+consistent: per call / matmul 2048x256x64 bare matmul / rust -25.8% (1534 -> 1138 µs)
+13 rows within noise (3 separated inside their spread), max |Δ| 1.2%

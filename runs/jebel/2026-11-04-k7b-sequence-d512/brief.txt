@@ -1,0 +1,5 @@
+2026-11-04-k7b-sequence-d512: old 0d91d1a vs new 0d91d1a, passes ONNONO (3 old, 3 new), scripts/measurement/sequence_training_timing.py --windows 256 --repeats 1 --features 512 --heads 8; crate old 6a8190c (.so 84ec4e85d91b) vs new 7b9878f (.so 21b07c2bef84)
+profile: identity matches (i7-9700k.json); max 1-min load 0.44 (measured just after this run's crate builds); busy processes: none
+controls: none (a probe row can carry "control": true)
+consistent: epoch / 2-layer rotary d=512 rust W=256 -22.2% (9.632 -> 7.489 s)
+3 rows within noise, max |Δ| 1.0%
