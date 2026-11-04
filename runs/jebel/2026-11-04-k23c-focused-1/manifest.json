@@ -1,0 +1,340 @@
+{
+ "version": 1,
+ "name": "2026-11-04-k23c-focused-1",
+ "created": "2026-11-04T13:51:46+02:00",
+ "state": "done",
+ "pid": 35789,
+ "repo": "/home/david/code/indrajala-ml",
+ "bench": "focused_benchmark",
+ "args": [
+  "--shape",
+  "5408",
+  "--shape",
+  "784",
+  "--shape",
+  "attention",
+  "--op",
+  "forward_batch",
+  "--op",
+  "downstream_batch",
+  "--op",
+  "accumulate_gradient_batch",
+  "--rust-threads",
+  "1",
+  "--openblas-threads",
+  "1"
+ ],
+ "smoke_args": [
+  "--shape",
+  "dense 10 x 30",
+  "--op",
+  "forward",
+  "--batch-sizes",
+  "32",
+  "--passes",
+  "1",
+  "--loops",
+  "1"
+ ],
+ "script_from": "new",
+ "control_backend": null,
+ "order": "ONNONO",
+ "python": "/home/david/code/indrajala-ml/.venv/bin/python",
+ "cwd": "/home/david/data/indrajala-ml/runs/ab/runs/2026-11-04-k23c-focused-1",
+ "extension": null,
+ "passes": [
+  {
+   "number": 1,
+   "side": "old",
+   "stem": "pass-01-old",
+   "status": "ok",
+   "start": "2026-11-04T13:51:49+02:00",
+   "load": [
+    1.19482421875,
+    1.13818359375,
+    0.57470703125
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/bb60c11/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/10aa3e566ce59e3cbb3ac6334bb9d8007b0e329d/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "24bdf26aceef925762ea85ec4c477bdbfaf63c41b8fda2733b198686e5f6bab8"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/bb60c11/scripts/measurement/focused_benchmark.py",
+    "--shape",
+    "5408",
+    "--shape",
+    "784",
+    "--shape",
+    "attention",
+    "--op",
+    "forward_batch",
+    "--op",
+    "downstream_batch",
+    "--op",
+    "accumulate_gradient_batch",
+    "--rust-threads",
+    "1",
+    "--openblas-threads",
+    "1",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-11-04-k23c-focused-1/pass-01-old.json"
+   ],
+   "end": "2026-11-04T13:52:14+02:00"
+  },
+  {
+   "number": 2,
+   "side": "new",
+   "stem": "pass-02-new",
+   "status": "ok",
+   "start": "2026-11-04T13:52:14+02:00",
+   "load": [
+    2.11865234375,
+    1.353515625,
+    0.66162109375
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/bb60c11/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/3bb2a40997b526077f2128fef53e56931a0a2bac/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "bb3d5611c37df32fc509864d95a0db4942b1aa23b4e7d342f426186b607d4803"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/bb60c11/scripts/measurement/focused_benchmark.py",
+    "--shape",
+    "5408",
+    "--shape",
+    "784",
+    "--shape",
+    "attention",
+    "--op",
+    "forward_batch",
+    "--op",
+    "downstream_batch",
+    "--op",
+    "accumulate_gradient_batch",
+    "--rust-threads",
+    "1",
+    "--openblas-threads",
+    "1",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-11-04-k23c-focused-1/pass-02-new.json"
+   ],
+   "end": "2026-11-04T13:52:39+02:00"
+  },
+  {
+   "number": 3,
+   "side": "new",
+   "stem": "pass-03-new",
+   "status": "ok",
+   "start": "2026-11-04T13:52:39+02:00",
+   "load": [
+    1.73583984375,
+    1.32373046875,
+    0.67138671875
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/bb60c11/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/3bb2a40997b526077f2128fef53e56931a0a2bac/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "bb3d5611c37df32fc509864d95a0db4942b1aa23b4e7d342f426186b607d4803"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/bb60c11/scripts/measurement/focused_benchmark.py",
+    "--shape",
+    "5408",
+    "--shape",
+    "784",
+    "--shape",
+    "attention",
+    "--op",
+    "forward_batch",
+    "--op",
+    "downstream_batch",
+    "--op",
+    "accumulate_gradient_batch",
+    "--rust-threads",
+    "1",
+    "--openblas-threads",
+    "1",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-11-04-k23c-focused-1/pass-03-new.json"
+   ],
+   "end": "2026-11-04T13:53:05+02:00"
+  },
+  {
+   "number": 4,
+   "side": "old",
+   "stem": "pass-04-old",
+   "status": "ok",
+   "start": "2026-11-04T13:53:05+02:00",
+   "load": [
+    2.044921875,
+    1.4130859375,
+    0.71875
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/bb60c11/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/10aa3e566ce59e3cbb3ac6334bb9d8007b0e329d/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "24bdf26aceef925762ea85ec4c477bdbfaf63c41b8fda2733b198686e5f6bab8"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/bb60c11/scripts/measurement/focused_benchmark.py",
+    "--shape",
+    "5408",
+    "--shape",
+    "784",
+    "--shape",
+    "attention",
+    "--op",
+    "forward_batch",
+    "--op",
+    "downstream_batch",
+    "--op",
+    "accumulate_gradient_batch",
+    "--rust-threads",
+    "1",
+    "--openblas-threads",
+    "1",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-11-04-k23c-focused-1/pass-04-old.json"
+   ],
+   "end": "2026-11-04T13:53:30+02:00"
+  },
+  {
+   "number": 5,
+   "side": "new",
+   "stem": "pass-05-new",
+   "status": "ok",
+   "start": "2026-11-04T13:53:30+02:00",
+   "load": [
+    2.640625,
+    1.6044921875,
+    0.80224609375
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/bb60c11/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/3bb2a40997b526077f2128fef53e56931a0a2bac/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "bb3d5611c37df32fc509864d95a0db4942b1aa23b4e7d342f426186b607d4803"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/bb60c11/scripts/measurement/focused_benchmark.py",
+    "--shape",
+    "5408",
+    "--shape",
+    "784",
+    "--shape",
+    "attention",
+    "--op",
+    "forward_batch",
+    "--op",
+    "downstream_batch",
+    "--op",
+    "accumulate_gradient_batch",
+    "--rust-threads",
+    "1",
+    "--openblas-threads",
+    "1",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-11-04-k23c-focused-1/pass-05-new.json"
+   ],
+   "end": "2026-11-04T13:53:55+02:00"
+  },
+  {
+   "number": 6,
+   "side": "old",
+   "stem": "pass-06-old",
+   "status": "ok",
+   "start": "2026-11-04T13:53:55+02:00",
+   "load": [
+    2.07958984375,
+    1.5546875,
+    0.8095703125
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/bb60c11/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/10aa3e566ce59e3cbb3ac6334bb9d8007b0e329d/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "24bdf26aceef925762ea85ec4c477bdbfaf63c41b8fda2733b198686e5f6bab8"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/bb60c11/scripts/measurement/focused_benchmark.py",
+    "--shape",
+    "5408",
+    "--shape",
+    "784",
+    "--shape",
+    "attention",
+    "--op",
+    "forward_batch",
+    "--op",
+    "downstream_batch",
+    "--op",
+    "accumulate_gradient_batch",
+    "--rust-threads",
+    "1",
+    "--openblas-threads",
+    "1",
+    "--json",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-11-04-k23c-focused-1/pass-06-old.json"
+   ],
+   "end": "2026-11-04T13:54:20+02:00"
+  }
+ ],
+ "extends": [],
+ "old": {
+  "ref": "bb60c1192599f26c474cb2d9babfa2898d2b103f",
+  "commit": "bb60c1192599f26c474cb2d9babfa2898d2b103f",
+  "crate": "10aa3e566ce59e3cbb3ac6334bb9d8007b0e329d",
+  "tree": "/home/david/data/indrajala-ml/runs/ab/worktrees/bb60c11",
+  "site": "/home/david/data/indrajala-ml/runs/ab/wheels/10aa3e566ce59e3cbb3ac6334bb9d8007b0e329d/site",
+  "extension_sha": "24bdf26aceef925762ea85ec4c477bdbfaf63c41b8fda2733b198686e5f6bab8"
+ },
+ "new": {
+  "ref": "bb60c1192599f26c474cb2d9babfa2898d2b103f",
+  "commit": "bb60c1192599f26c474cb2d9babfa2898d2b103f",
+  "crate": "3bb2a40997b526077f2128fef53e56931a0a2bac",
+  "tree": "/home/david/data/indrajala-ml/runs/ab/worktrees/bb60c11",
+  "site": "/home/david/data/indrajala-ml/runs/ab/wheels/3bb2a40997b526077f2128fef53e56931a0a2bac/site",
+  "extension_sha": "bb3d5611c37df32fc509864d95a0db4942b1aa23b4e7d342f426186b607d4803"
+ },
+ "command": "python scripts/measurement/focused_benchmark.py --shape 5408 --shape 784 --shape attention --op forward_batch --op downstream_batch --op accumulate_gradient_batch --rust-threads 1 --openblas-threads 1 --json <pass output>",
+ "noise_rules": {
+  "shifted_pass": 0.02,
+  "high_load": 1.5,
+  "small_consistent": 0.02
+ },
+ "thermal": null,
+ "preflight": {
+  "at": "2026-11-04T13:51:46+02:00",
+  "load": [
+   1.29931640625,
+   1.15771484375,
+   0.578125
+  ],
+  "busy": [],
+  "threads": {
+   "OPENBLAS_NUM_THREADS": null,
+   "OMP_NUM_THREADS": null,
+   "MKL_NUM_THREADS": null
+  },
+  "hostname": "jebel",
+  "profile_path": "docs/machine_profiles/i7-9700k.json",
+  "profile_identity": "9cd7aecd7bed736fe7284d597cb63d26520df361edb38568dd8eb6980e119d02",
+  "profile": "identity matches",
+  "quiet": {
+   "load": 1.19482421875,
+   "waited_s": 0
+  },
+  "after_builds": []
+ }
+}

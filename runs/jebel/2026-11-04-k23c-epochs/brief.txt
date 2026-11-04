@@ -1,0 +1,6 @@
+2026-11-04-k23c-epochs: old bb60c11 vs new bb60c11, passes ONNONO (3 old, 3 new), prepared_dataset_timing --configs conv B=32 conv B=512 dense B=32 dense B=512 --repeats 2; crate old 10aa3e5 (.so 24bdf26aceef) vs new 3bb2a40 (.so bb3d5611c37d)
+profile: identity matches (i7-9700k.json); max 1-min load 3.22 (HIGH); busy processes: none
+controls: 8 rows, all within noise
+consistent: epoch, loader / dense B=512 / rust +3.4% (0.389 -> 0.402 s)
+consistent: epoch, loader / conv B=512 / rust +2.5% (0.319 -> 0.328 s)
+14 rows within noise (2 separated inside their spread), max |Δ| 2.0%
