@@ -1,0 +1,225 @@
+{
+ "version": 1,
+ "name": "2026-11-04-pool-window",
+ "created": "2026-11-04T22:35:22+02:00",
+ "state": "done",
+ "pid": 2557,
+ "repo": "/home/david/code/indrajala-ml",
+ "bench": "cmd",
+ "args": [
+  "scripts/measurement/window_recurrent_timing.py",
+  "--repeats",
+  "3"
+ ],
+ "smoke_args": [
+  "scripts/measurement/window_recurrent_timing.py",
+  "--repeats",
+  "3"
+ ],
+ "script_from": "new",
+ "control_backend": null,
+ "order": "ONNONO",
+ "python": "/home/david/code/indrajala-ml/.venv/bin/python",
+ "cwd": "/home/david/data/indrajala-ml/runs/ab/runs/2026-11-04-pool-window",
+ "extension": null,
+ "passes": [
+  {
+   "number": 1,
+   "side": "old",
+   "stem": "pass-01-old",
+   "status": "ok",
+   "start": "2026-11-04T22:35:54+02:00",
+   "load": [
+    0.90771484375,
+    0.28466796875,
+    0.10107421875
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/0b17d22/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/edce2de58ea084a9192f16e54eda2a5d6bdecdbe/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "f72612f402e8e08008ec3b1c305f7059d0b2839ac76d746ef55ff3f60de0519c"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/0b17d22/scripts/measurement/window_recurrent_timing.py",
+    "--repeats",
+    "3"
+   ],
+   "end": "2026-11-04T22:36:11+02:00"
+  },
+  {
+   "number": 2,
+   "side": "new",
+   "stem": "pass-02-new",
+   "status": "ok",
+   "start": "2026-11-04T22:36:11+02:00",
+   "load": [
+    0.9287109375,
+    0.3203125,
+    0.11572265625
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/0b17d22/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/51a2bafff203998a54ff7615eb2380cd57ca363a/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "7194f34f6ce999557e4d3def8c23f1f3fca2c102f8bf25a8b16b7c430a612023"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/0b17d22/scripts/measurement/window_recurrent_timing.py",
+    "--repeats",
+    "3"
+   ],
+   "end": "2026-11-04T22:36:27+02:00"
+  },
+  {
+   "number": 3,
+   "side": "new",
+   "stem": "pass-03-new",
+   "status": "ok",
+   "start": "2026-11-04T22:36:27+02:00",
+   "load": [
+    0.94482421875,
+    0.3544921875,
+    0.13037109375
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/0b17d22/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/51a2bafff203998a54ff7615eb2380cd57ca363a/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "7194f34f6ce999557e4d3def8c23f1f3fca2c102f8bf25a8b16b7c430a612023"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/0b17d22/scripts/measurement/window_recurrent_timing.py",
+    "--repeats",
+    "3"
+   ],
+   "end": "2026-11-04T22:36:43+02:00"
+  },
+  {
+   "number": 4,
+   "side": "old",
+   "stem": "pass-04-old",
+   "status": "ok",
+   "start": "2026-11-04T22:36:43+02:00",
+   "load": [
+    0.9580078125,
+    0.38671875,
+    0.14501953125
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/0b17d22/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/edce2de58ea084a9192f16e54eda2a5d6bdecdbe/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "f72612f402e8e08008ec3b1c305f7059d0b2839ac76d746ef55ff3f60de0519c"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/0b17d22/scripts/measurement/window_recurrent_timing.py",
+    "--repeats",
+    "3"
+   ],
+   "end": "2026-11-04T22:37:00+02:00"
+  },
+  {
+   "number": 5,
+   "side": "new",
+   "stem": "pass-05-new",
+   "status": "ok",
+   "start": "2026-11-04T22:37:00+02:00",
+   "load": [
+    0.90771484375,
+    0.4111328125,
+    0.15869140625
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/0b17d22/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/51a2bafff203998a54ff7615eb2380cd57ca363a/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "7194f34f6ce999557e4d3def8c23f1f3fca2c102f8bf25a8b16b7c430a612023"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/0b17d22/scripts/measurement/window_recurrent_timing.py",
+    "--repeats",
+    "3"
+   ],
+   "end": "2026-11-04T22:37:16+02:00"
+  },
+  {
+   "number": 6,
+   "side": "old",
+   "stem": "pass-06-old",
+   "status": "ok",
+   "start": "2026-11-04T22:37:16+02:00",
+   "load": [
+    0.9287109375,
+    0.44091796875,
+    0.17333984375
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/0b17d22/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/edce2de58ea084a9192f16e54eda2a5d6bdecdbe/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "f72612f402e8e08008ec3b1c305f7059d0b2839ac76d746ef55ff3f60de0519c"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/0b17d22/scripts/measurement/window_recurrent_timing.py",
+    "--repeats",
+    "3"
+   ],
+   "end": "2026-11-04T22:37:32+02:00"
+  }
+ ],
+ "extends": [],
+ "old": {
+  "ref": "0b17d22b0a14785456ee2c1de016fafc925868a5",
+  "commit": "0b17d22b0a14785456ee2c1de016fafc925868a5",
+  "crate": "edce2de58ea084a9192f16e54eda2a5d6bdecdbe",
+  "tree": "/home/david/data/indrajala-ml/runs/ab/worktrees/0b17d22",
+  "site": "/home/david/data/indrajala-ml/runs/ab/wheels/edce2de58ea084a9192f16e54eda2a5d6bdecdbe/site",
+  "extension_sha": "f72612f402e8e08008ec3b1c305f7059d0b2839ac76d746ef55ff3f60de0519c"
+ },
+ "new": {
+  "ref": "0b17d22b0a14785456ee2c1de016fafc925868a5",
+  "commit": "0b17d22b0a14785456ee2c1de016fafc925868a5",
+  "crate": "51a2bafff203998a54ff7615eb2380cd57ca363a",
+  "tree": "/home/david/data/indrajala-ml/runs/ab/worktrees/0b17d22",
+  "site": "/home/david/data/indrajala-ml/runs/ab/wheels/51a2bafff203998a54ff7615eb2380cd57ca363a/site",
+  "extension_sha": "7194f34f6ce999557e4d3def8c23f1f3fca2c102f8bf25a8b16b7c430a612023"
+ },
+ "noise_rules": {
+  "shifted_pass": 0.02,
+  "high_load": 1.5,
+  "small_consistent": 0.02
+ },
+ "thermal": null,
+ "preflight": {
+  "at": "2026-11-04T22:35:22+02:00",
+  "load": [
+   0.83203125,
+   0.19384765625,
+   0.064453125
+  ],
+  "busy": [
+   "python(2318) 12%"
+  ],
+  "threads": {
+   "OPENBLAS_NUM_THREADS": null,
+   "OMP_NUM_THREADS": null,
+   "MKL_NUM_THREADS": null
+  },
+  "hostname": "jebel",
+  "profile_path": "docs/machine_profiles/i7-9700k.json",
+  "profile_identity": "9cd7aecd7bed736fe7284d597cb63d26520df361edb38568dd8eb6980e119d02",
+  "profile": "identity matches",
+  "quiet": {
+   "load": 0.83203125,
+   "waited_s": 0
+  },
+  "after_builds": []
+ }
+}

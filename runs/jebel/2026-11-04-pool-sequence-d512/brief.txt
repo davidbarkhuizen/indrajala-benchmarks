@@ -1,0 +1,4 @@
+2026-11-04-pool-sequence-d512: old 0b17d22 vs new 0b17d22, passes ONNONO (3 old, 3 new), scripts/measurement/sequence_training_timing.py --windows 256 --repeats 1 --features 512 --heads 8; crate old edce2de (.so f72612f402e8) vs new 51a2baf (.so 7194f34f6ce9)
+profile: identity matches (i7-9700k.json); max 1-min load 0.57 (measured just after this run's crate builds); busy processes: none
+controls: none (a probe row can carry "control": true)
+4 rows within noise, max |Δ| 3.2%
