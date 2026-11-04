@@ -1,0 +1,81 @@
+{
+ "settings": {
+  "shape": [
+   "dense 10 x 30"
+  ],
+  "op": [
+   "forward"
+  ],
+  "batch": [],
+  "batch_sizes": [
+   32
+  ],
+  "matmul": [],
+  "only_matmul": false,
+  "backend": [],
+  "passes": 1,
+  "loops": 1,
+  "target_ms": 20.0,
+  "rust_threads": null,
+  "openblas_threads": null,
+  "kernel_overrides": null,
+  "malloc": "default",
+  "json": "/home/david/data/indrajala-ml/runs/ab/runs/2026-11-04-k23c-focused/smoke-new.json",
+  "worker": null,
+  "backend_to_run": null
+ },
+ "results": [
+  {
+   "pass": 1,
+   "shape": "dense 10 x 30",
+   "op": "forward",
+   "batch": null,
+   "backend": "numpy",
+   "malloc": "default",
+   "calls": 4449,
+   "median_us": 4.48113643519691,
+   "min_us": 4.48113643519691,
+   "max_us": 4.48113643519691,
+   "faults_per_call": 0.0
+  },
+  {
+   "pass": 1,
+   "shape": "dense 10 x 30",
+   "op": "forward",
+   "batch": null,
+   "backend": "rust",
+   "malloc": "default",
+   "calls": 57190,
+   "median_us": 0.3268743661478482,
+   "min_us": 0.3268743661478482,
+   "max_us": 0.3268743661478482,
+   "faults_per_call": 0.0
+  },
+  {
+   "pass": 1,
+   "shape": "dense 10 x 30",
+   "op": "forward_batch",
+   "batch": 32,
+   "backend": "numpy",
+   "malloc": "default",
+   "calls": 2039,
+   "median_us": 9.758958803335679,
+   "min_us": 9.758958803335679,
+   "max_us": 9.758958803335679,
+   "faults_per_call": 0.0
+  },
+  {
+   "pass": 1,
+   "shape": "dense 10 x 30",
+   "op": "forward_batch",
+   "batch": 32,
+   "backend": "rust",
+   "malloc": "default",
+   "calls": 7935,
+   "median_us": 2.518473724035018,
+   "min_us": 2.518473724035018,
+   "max_us": 2.518473724035018,
+   "faults_per_call": 0.0
+  }
+ ]
+}

@@ -1,0 +1,8 @@
+2026-11-04-k8b-epochs: old f59388b vs new f59388b, passes ONNONO (3 old, 3 new), prepared_dataset_timing --configs conv B=32 conv B=512 dense B=32 dense B=512 --repeats 2; crate old 4dba70e (.so f5c8b6404a1d) vs new ce5a267 (.so 24bdf26aceef)
+profile: identity matches (i7-9700k.json); max 1-min load 3.29 (HIGH); busy processes: none
+CONTROL MOVED: 4 of 8 control rows consistent, e.g. prepare / conv B=32 / rust -6.3%: changes about that size can't be resolved here (next: epoch_op_profile.py)
+consistent: epoch, loader / dense B=512 / rust -8.6% (0.429 -> 0.392 s)
+consistent: epoch, loader / dense B=32 / rust -8.5% (0.556 -> 0.509 s)
+consistent: epoch / dense B=32 / rust -7.8% (0.763 -> 0.703 s)
+consistent: epoch / dense B=512 / rust -6.0% (0.640 -> 0.602 s)
+12 rows within noise (3 separated inside their spread), max |Δ| 1.7%

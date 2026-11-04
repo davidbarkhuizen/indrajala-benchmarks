@@ -1,0 +1,7 @@
+# k1 s4 m16 B32 W12: median 0.003320 s per step
+# k4 s4 m16 B32 W5: median 0.004009 s per step
+# learn linear k1 s16 m16 B64 W19: median 0.002614 s per step
+# learn family p7 f32 B64 W16: median 0.020323 s per step
+# forward linear k1 s16 m16 n1024: median 1.132758 s per step
+# forward family p7 f32 n1024: median 3.132146 s per step
+# matmul 256: median 0.000312 s per step

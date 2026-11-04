@@ -1,0 +1,6 @@
+2026-11-04-k23c-focused-1: old bb60c11 vs new bb60c11, passes ONNONO (3 old, 3 new), focused_benchmark --shape 5408 --shape 784 --shape attention --op forward_batch --op downstream_batch --op accumulate_gradient_batch --rust-threads 1 --openblas-threads 1; crate old 10aa3e5 (.so 24bdf26aceef) vs new 3bb2a40 (.so bb3d5611c37d)
+profile: identity matches (i7-9700k.json); max 1-min load 1.30; busy processes: none
+controls: none (--control-backend reads the other backend's rows as controls)
+consistent: per call / attention 16 x 32 accumulate_gradient_batch b32 / rust -34.8% (166.4 -> 108.6 µs)
+consistent: per call / attention 16 x 32 accumulate_gradient_batch b512 / rust -33.2% (3191 -> 2131 µs)
+34 rows within noise (7 separated inside their spread), max |Δ| 2.9%

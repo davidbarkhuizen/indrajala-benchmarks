@@ -10,6 +10,33 @@ One line per record, newest first ([FORMAT.md](FORMAT.md)).
 - 2026-11-04 · jebel · run · [2026-11-04-k7b-sequence](runs/jebel/2026-11-04-k7b-sequence) · crate #102 (K7b): long-k products packed
 - 2026-11-04 · jebel · run · [2026-11-04-k7b-sequence-d512](runs/jebel/2026-11-04-k7b-sequence-d512) · crate #102 (K7b): long-k products packed
 - 2026-11-04 · jebel · run · [2026-11-04-k7b-window](runs/jebel/2026-11-04-k7b-window) · crate #102 (K7b): long-k products packed
+- 2026-11-04 · jebel · run · [2026-11-04-k12-attention](runs/jebel/2026-11-04-k12-attention) · crate #103 (K12, K28): tiled attend reuses buffers
+- 2026-11-04 · jebel · run · [2026-11-04-k12-focused](runs/jebel/2026-11-04-k12-focused) · crate #103 (K12, K28): tiled attend reuses buffers
+- 2026-11-04 · jebel · run · [2026-11-04-k12-sequence](runs/jebel/2026-11-04-k12-sequence) · crate #103 (K12, K28): tiled attend reuses buffers
+- 2026-11-04 · jebel · run · [2026-11-04-k12-sequence-d512](runs/jebel/2026-11-04-k12-sequence-d512) · crate #103 (K12, K28): tiled attend reuses buffers
+- 2026-11-04 · jebel · run · [2026-11-04-k12-window](runs/jebel/2026-11-04-k12-window) · crate #103 (K12, K28): tiled attend reuses buffers
+- 2026-11-04 · jebel · run · [2026-11-04-k8b-attention-d512](runs/jebel/2026-11-04-k8b-attention-d512) · crate #106 (K8): matmul_nt in slabs, corrected rule
+- 2026-11-04 · jebel · run · [2026-11-04-k8b-epochs](runs/jebel/2026-11-04-k8b-epochs) · crate #106 (K8): matmul_nt in slabs, corrected rule
+- 2026-11-04 · jebel · run · [2026-11-04-k8b-focused](runs/jebel/2026-11-04-k8b-focused) · crate #106 (K8): matmul_nt in slabs, corrected rule
+- 2026-11-04 · jebel · run · [2026-11-04-k8b-focused-1](runs/jebel/2026-11-04-k8b-focused-1) · crate #106 (K8): matmul_nt in slabs, corrected rule
+- 2026-11-04 · jebel · run · [2026-11-04-k8b-sequence](runs/jebel/2026-11-04-k8b-sequence) · crate #106 (K8): matmul_nt in slabs, corrected rule
+- 2026-11-04 · jebel · run · [2026-11-04-k8b-sequence-d512](runs/jebel/2026-11-04-k8b-sequence-d512) · crate #106 (K8): matmul_nt in slabs, corrected rule
+- 2026-11-04 · jebel · run · [2026-11-04-k8b-window](runs/jebel/2026-11-04-k8b-window) · crate #106 (K8): matmul_nt in slabs, corrected rule
+- 2026-11-04 · jebel · run · [2026-11-04-k23c-attention-d512](runs/jebel/2026-11-04-k23c-attention-d512) · crate #107 (K23): accumulate without its transpose
+- 2026-11-04 · jebel · run · [2026-11-04-k23c-epochs](runs/jebel/2026-11-04-k23c-epochs) · crate #107 (K23): accumulate without its transpose
+- 2026-11-04 · jebel · run · [2026-11-04-k23c-focused](runs/jebel/2026-11-04-k23c-focused) · crate #107 (K23): accumulate without its transpose
+- 2026-11-04 · jebel · run · [2026-11-04-k23c-focused-1](runs/jebel/2026-11-04-k23c-focused-1) · crate #107 (K23): accumulate without its transpose
+- 2026-11-04 · jebel · run · [2026-11-04-k23c-sequence](runs/jebel/2026-11-04-k23c-sequence) · crate #107 (K23): accumulate without its transpose
+- 2026-11-04 · jebel · run · [2026-11-04-k23c-sequence-d512](runs/jebel/2026-11-04-k23c-sequence-d512) · crate #107 (K23): accumulate without its transpose
+- 2026-11-04 · jebel · run · [2026-11-04-k23c-window](runs/jebel/2026-11-04-k23c-window) · crate #107 (K23): accumulate without its transpose
+- 2026-11-04 · jebel · run · [2026-11-04-k28-attention-d512](runs/jebel/2026-11-04-k28-attention-d512) · crate #108 (K28): layer norm and dense add
+- 2026-11-04 · jebel · run · [2026-11-04-k28-epochs](runs/jebel/2026-11-04-k28-epochs) · crate #108 (K28): layer norm and dense add
+- 2026-11-04 · jebel · run · [2026-11-04-k28-focused](runs/jebel/2026-11-04-k28-focused) · crate #108 (K28): layer norm and dense add
+- 2026-11-04 · jebel · run · [2026-11-04-k28-focused-1](runs/jebel/2026-11-04-k28-focused-1) · crate #108 (K28): layer norm and dense add
+- 2026-11-04 · jebel · run · [2026-11-04-k28-focused-1b](runs/jebel/2026-11-04-k28-focused-1b) · crate #108 (K28): layer norm and dense add
+- 2026-11-04 · jebel · run · [2026-11-04-k28-sequence-2](runs/jebel/2026-11-04-k28-sequence-2) · crate #108 (K28): layer norm and dense add
+- 2026-11-04 · jebel · run · [2026-11-04-k28-sequence-d512](runs/jebel/2026-11-04-k28-sequence-d512) · crate #108 (K28): layer norm and dense add
+- 2026-11-04 · jebel · run · [2026-11-04-k28-window](runs/jebel/2026-11-04-k28-window) · crate #108 (K28): layer norm and dense add
 - 2026-11-03 · pyramidon · golden · [2026-11-03-ee4397c.json.gz](golden/pyramidon/2026-11-03-ee4397c.json.gz) · new-functionality: the cross-attention workplan, stage 9 (#1235): three encoder-decoder entries, one per implementation; the 161 earlier entries unchanged
 - 2026-11-03 · jebel · golden · [2026-11-03-ee4397c.json.gz](golden/jebel/2026-11-03-ee4397c.json.gz) · new-functionality: the cross-attention workplan, stage 9 (#1235): three encoder-decoder entries, one per implementation; the 161 earlier entries unchanged
 - 2026-11-03 · jebel · golden · [2026-11-03-24d4188.json.gz](golden/jebel/2026-11-03-24d4188.json.gz) · new-functionality: jebel catch-up: the 30 entries (10 models x 3 implementations) added since its last version, recorded at 24d4188 from a clean tree; the 131 earlier entries unchanged, and all 161 bit-identical to pyramidon's
@@ -34,6 +61,7 @@ One line per record, newest first ([FORMAT.md](FORMAT.md)).
 - 2026-11-01 · pyramidon · golden · [2026-11-01-69e2e93.json.gz](golden/pyramidon/2026-11-01-69e2e93.json.gz) · new-functionality: segments stage 9 (#1166): a packed sequence model with segments in each implementation; no earlier entry moved
 - 2026-11-01 · jebel · golden · [2026-11-01-1407699.json.gz](golden/jebel/2026-11-01-1407699.json.gz) · new-functionality: training recipe stage 6 (#1156): numpy cosine sequence model and the recipe models in three implementations, recorded at main after #1158 once the training-recipe study freed jebel; no earlier entry moved
 - 2026-10-31 · pyramidon · golden · [2026-10-31-6aae149.json.gz](golden/pyramidon/2026-10-31-6aae149.json.gz) · new-functionality: training recipe stage 6 (#1156): numpy cosine sequence model and the recipe models in three implementations; no earlier entry moved
+- 2026-10-30 · jebel · profile · [20261030T140425Z-2-profile.json](machines/jebel/20261030T140425Z-2-profile.json) · cited by a record
 - 2026-10-30 · jebel · profile · [20261030T140425Z-profile.json](machines/jebel/20261030T140425Z-profile.json) · cited by a record
 - 2026-10-29 · jebel · run · [2026-10-29-codegen-units-1-jebel](runs/jebel/2026-10-29-codegen-units-1-jebel) · #1088: D6 and D7 on jebel (one codegen unit, x86 branch padding) and stage 4's vector exp; the unpadded combined run shows the placement D7 removes
 - 2026-10-29 · jebel · run · [2026-10-29-vector-exp-cgu1-jebel](runs/jebel/2026-10-29-vector-exp-cgu1-jebel) · #1088: D6 and D7 on jebel (one codegen unit, x86 branch padding) and stage 4's vector exp; the unpadded combined run shows the placement D7 removes
