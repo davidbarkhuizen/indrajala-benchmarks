@@ -1,0 +1,5 @@
+2026-11-04-k28-attention-d512: old 5cf590a vs new 5cf590a, passes ONNONO (3 old, 3 new), attention_timing --no-memory --repeats 2 --tokens 256 --features 512 --heads 8 --masks causal; crate old 238a017 (.so bb3d5611c37d) vs new 18ce111 (.so bc8a4a1fc83d)
+profile: identity matches (i7-9700k.json); max 1-min load 2.02 (HIGH); busy processes: none
+controls: none (--control-backend reads the other backend's rows as controls)
+consistent: forward / d=512 T=256 B=8 causal / rust -4.8% (0.079 -> 0.076 s)
+3 rows within noise, max |Δ| 0.9%
