@@ -1,0 +1,75 @@
+18 cases x 2 backends x 2 passes, rust threads default, OpenBLAS threads default, malloc default, kernel overrides default
+median (min-max) µs per call over 9 loops of ~20 ms; faults = minor page faults per call
+pass shape                op                         batch backend malloc     median           min-max  faults
+   1 conv tail 32 x 5408  forward_batch                 32 numpy   default     149.8       149.5-150.3     0.0
+   1 conv tail 32 x 5408  forward_batch                 32 rust    default     378.2       377.7-378.3     0.0
+   1 conv tail 32 x 5408  forward_batch                512 numpy   default    1061.4     1058.1-1070.7     0.0
+   1 conv tail 32 x 5408  forward_batch                512 rust    default    1709.0     1541.1-1813.7     0.0
+   1 conv tail 32 x 5408  downstream_batch              32 numpy   default      78.2         76.7-78.3     0.0
+   1 conv tail 32 x 5408  downstream_batch              32 rust    default     237.8       237.4-238.0     0.0
+   1 conv tail 32 x 5408  downstream_batch             512 numpy   default    3150.4     3144.5-3167.6     0.0
+   1 conv tail 32 x 5408  downstream_batch             512 rust    default    2254.4     2232.2-2311.6     0.0
+   1 conv tail 32 x 5408  accumulate_gradient_batch     32 numpy   default     160.5       159.5-161.5     0.0
+   1 conv tail 32 x 5408  accumulate_gradient_batch     32 rust    default     275.8       275.3-276.5     0.0
+   1 conv tail 32 x 5408  accumulate_gradient_batch    512 numpy   default    1766.1     1634.4-1781.0     0.0
+   1 conv tail 32 x 5408  accumulate_gradient_batch    512 rust    default    1988.3     1882.9-2606.7     1.2
+   1 dense 30 x 784       forward_batch                 32 numpy   default      38.0         37.9-38.1     0.0
+   1 dense 30 x 784       forward_batch                 32 rust    default      46.0         46.0-46.1     0.0
+   1 dense 30 x 784       forward_batch                512 numpy   default     268.1       227.5-268.7     0.0
+   1 dense 30 x 784       forward_batch                512 rust    default     290.9       281.7-338.0     0.0
+   1 dense 30 x 784       downstream_batch              32 numpy   default      24.0         24.0-24.5     0.0
+   1 dense 30 x 784       downstream_batch              32 rust    default      32.0         32.0-32.1     0.0
+   1 dense 30 x 784       downstream_batch             512 numpy   default     139.3       107.1-142.2     0.0
+   1 dense 30 x 784       downstream_batch             512 rust    default     242.3       229.3-253.1     0.0
+   1 dense 30 x 784       accumulate_gradient_batch     32 numpy   default      39.2         39.2-39.3     0.0
+   1 dense 30 x 784       accumulate_gradient_batch     32 rust    default      40.2         40.2-40.2     0.0
+   1 dense 30 x 784       accumulate_gradient_batch    512 numpy   default     221.5       189.9-222.3     0.0
+   1 dense 30 x 784       accumulate_gradient_batch    512 rust    default     252.2       250.1-264.7     0.0
+   1 relu 30 x 784        forward_batch                 32 numpy   default      30.0         29.9-30.1     0.0
+   1 relu 30 x 784        forward_batch                 32 rust    default      42.5         42.5-42.6     0.0
+   1 relu 30 x 784        forward_batch                512 numpy   default     157.7       131.7-158.9     0.0
+   1 relu 30 x 784        forward_batch                512 rust    default     243.2       234.4-250.1     0.0
+   1 attention 16 x 32    forward_batch                 32 numpy   default     361.2       360.8-362.3     0.0
+   1 attention 16 x 32    forward_batch                 32 rust    default     316.4       316.0-316.9     0.0
+   1 attention 16 x 32    forward_batch                512 numpy   default    5562.3     5140.4-5647.5     0.1
+   1 attention 16 x 32    forward_batch                512 rust    default    5129.5     4995.2-5299.1   496.0
+   1 attention 16 x 32    accumulate_gradient_batch     32 numpy   default     242.9       242.8-243.4     0.0
+   1 attention 16 x 32    accumulate_gradient_batch     32 rust    default     165.6       165.3-165.8     0.0
+   1 attention 16 x 32    accumulate_gradient_batch    512 numpy   default    5466.2     5448.6-5632.1     0.0
+   1 attention 16 x 32    accumulate_gradient_batch    512 rust    default    3017.2     2995.7-3253.2     0.0
+   2 conv tail 32 x 5408  forward_batch                 32 rust    default     348.5       347.9-351.7     0.0
+   2 conv tail 32 x 5408  forward_batch                 32 numpy   default     150.3       148.7-158.7     0.0
+   2 conv tail 32 x 5408  forward_batch                512 rust    default    1740.4     1545.6-1838.6     0.0
+   2 conv tail 32 x 5408  forward_batch                512 numpy   default    1161.0     1111.4-1168.5     0.0
+   2 conv tail 32 x 5408  downstream_batch              32 rust    default     231.9       231.7-232.0     0.0
+   2 conv tail 32 x 5408  downstream_batch              32 numpy   default      77.3         63.8-77.8     0.0
+   2 conv tail 32 x 5408  downstream_batch             512 rust    default    2236.2     2220.7-2359.6     0.0
+   2 conv tail 32 x 5408  downstream_batch             512 numpy   default    3176.8     3168.2-3183.7     0.0
+   2 conv tail 32 x 5408  accumulate_gradient_batch     32 rust    default     271.4       266.9-275.6     0.0
+   2 conv tail 32 x 5408  accumulate_gradient_batch     32 numpy   default     161.5       148.5-229.6     0.0
+   2 conv tail 32 x 5408  accumulate_gradient_batch    512 rust    default    1947.5     1850.2-2453.1     1.3
+   2 conv tail 32 x 5408  accumulate_gradient_batch    512 numpy   default    1853.1     1833.2-1857.4     0.0
+   2 dense 30 x 784       forward_batch                 32 rust    default      45.4         45.4-46.2     0.0
+   2 dense 30 x 784       forward_batch                 32 numpy   default      38.3         38.2-38.4     0.0
+   2 dense 30 x 784       forward_batch                512 rust    default     285.7       279.8-318.8     0.0
+   2 dense 30 x 784       forward_batch                512 numpy   default     263.9       259.1-264.4     0.0
+   2 dense 30 x 784       downstream_batch              32 rust    default      32.7         32.2-32.9     0.0
+   2 dense 30 x 784       downstream_batch              32 numpy   default      23.5         23.4-23.5     0.0
+   2 dense 30 x 784       downstream_batch             512 rust    default     238.9       232.9-243.4     0.0
+   2 dense 30 x 784       downstream_batch             512 numpy   default     131.4       127.4-137.2     0.0
+   2 dense 30 x 784       accumulate_gradient_batch     32 rust    default      39.8         39.7-40.1     0.0
+   2 dense 30 x 784       accumulate_gradient_batch     32 numpy   default      40.8         40.8-41.3     0.0
+   2 dense 30 x 784       accumulate_gradient_batch    512 rust    default     251.4       241.5-267.4     0.0
+   2 dense 30 x 784       accumulate_gradient_batch    512 numpy   default     222.5       216.8-224.2     0.0
+   2 relu 30 x 784        forward_batch                 32 rust    default      42.8         42.7-43.4     0.0
+   2 relu 30 x 784        forward_batch                 32 numpy   default      29.6         29.5-29.7     0.0
+   2 relu 30 x 784        forward_batch                512 rust    default     235.9       230.2-264.2     0.0
+   2 relu 30 x 784        forward_batch                512 numpy   default     155.9       152.8-156.7     0.0
+   2 attention 16 x 32    forward_batch                 32 rust    default     314.8       314.4-315.0     0.0
+   2 attention 16 x 32    forward_batch                 32 numpy   default     369.6       369.4-371.3     0.0
+   2 attention 16 x 32    forward_batch                512 rust    default    5020.8     4879.1-5320.0   496.0
+   2 attention 16 x 32    forward_batch                512 numpy   default    5551.5     5117.0-5647.4     0.1
+   2 attention 16 x 32    accumulate_gradient_batch     32 rust    default     165.9       165.6-166.2     0.0
+   2 attention 16 x 32    accumulate_gradient_batch     32 numpy   default     254.4       254.3-255.9     0.0
+   2 attention 16 x 32    accumulate_gradient_batch    512 rust    default    3042.5     2906.9-3402.1     0.1
+   2 attention 16 x 32    accumulate_gradient_batch    512 numpy   default    5486.5     5466.3-6153.5     0.0

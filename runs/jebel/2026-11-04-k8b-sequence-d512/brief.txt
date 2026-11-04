@@ -1,0 +1,4 @@
+2026-11-04-k8b-sequence-d512: old f59388b vs new f59388b, passes ONNONO (3 old, 3 new), scripts/measurement/sequence_training_timing.py --windows 256 --repeats 1 --features 512 --heads 8; crate old 4dba70e (.so f5c8b6404a1d) vs new ce5a267 (.so 24bdf26aceef)
+profile: identity matches (i7-9700k.json); max 1-min load 0.47 (measured just after this run's crate builds); busy processes: none
+controls: none (a probe row can carry "control": true)
+4 rows within noise, max |Δ| 0.6%

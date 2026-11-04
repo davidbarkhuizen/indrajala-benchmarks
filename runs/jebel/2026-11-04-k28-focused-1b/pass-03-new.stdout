@@ -1,0 +1,19 @@
+4 cases x 2 backends x 2 passes, rust threads 1, OpenBLAS threads 1, malloc default, kernel overrides default
+median (min-max) µs per call over 9 loops of ~20 ms; faults = minor page faults per call
+pass shape                op                         batch backend malloc     median           min-max  faults
+   1 attention 16 x 32    forward_batch                 32 numpy   default     398.3       397.4-399.8     0.0
+   1 attention 16 x 32    forward_batch                 32 rust    default     261.0       260.4-263.6     0.0
+   1 attention 16 x 32    forward_batch                512 numpy   default    6199.0     6162.8-6222.7     0.1
+   1 attention 16 x 32    forward_batch                512 rust    default    5035.7     5018.0-5057.8   735.0
+   1 attention 16 x 32    accumulate_gradient_batch     32 numpy   default     287.0       286.6-288.8     0.0
+   1 attention 16 x 32    accumulate_gradient_batch     32 rust    default     113.7       113.5-113.8     0.0
+   1 attention 16 x 32    accumulate_gradient_batch    512 numpy   default    5577.4     5568.5-5587.6     0.0
+   1 attention 16 x 32    accumulate_gradient_batch    512 rust    default    2048.6     2044.2-2087.7     0.0
+   2 attention 16 x 32    forward_batch                 32 rust    default     261.4       260.8-262.0     0.0
+   2 attention 16 x 32    forward_batch                 32 numpy   default     396.8       395.8-397.5     0.0
+   2 attention 16 x 32    forward_batch                512 rust    default    5084.2     5066.3-5222.8   735.0
+   2 attention 16 x 32    forward_batch                512 numpy   default    6114.8     6096.4-6149.9     0.1
+   2 attention 16 x 32    accumulate_gradient_batch     32 rust    default     114.2       114.0-114.3     0.0
+   2 attention 16 x 32    accumulate_gradient_batch     32 numpy   default     275.2       274.7-276.3     0.0
+   2 attention 16 x 32    accumulate_gradient_batch    512 rust    default    2071.6     2063.6-2127.1     0.0
+   2 attention 16 x 32    accumulate_gradient_batch    512 numpy   default    5581.8     5561.3-5617.0     0.0

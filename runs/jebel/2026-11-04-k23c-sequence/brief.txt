@@ -1,0 +1,5 @@
+2026-11-04-k23c-sequence: old bb60c11 vs new bb60c11, passes ONNONO (3 old, 3 new), scripts/measurement/sequence_training_timing.py --windows 1024 --repeats 2; crate old 10aa3e5 (.so 24bdf26aceef) vs new 3bb2a40 (.so bb3d5611c37d)
+profile: identity matches (i7-9700k.json); max 1-min load 1.98 (HIGH); busy processes: none
+controls: none (a probe row can carry "control": true)
+consistent: epoch / 2-layer rotary rust W=1024 -8.2% (1.749 -> 1.607 s)
+3 rows within noise, max |Δ| 0.1%
