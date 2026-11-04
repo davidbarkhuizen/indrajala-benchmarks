@@ -2,6 +2,14 @@
 
 One line per record, newest first ([FORMAT.md](FORMAT.md)).
 
+- 2026-11-04 · jebel · run · [2026-11-04-k7b-attention](runs/jebel/2026-11-04-k7b-attention) · crate #102 (K7b): long-k products packed
+- 2026-11-04 · jebel · run · [2026-11-04-k7b-attention-d512](runs/jebel/2026-11-04-k7b-attention-d512) · crate #102 (K7b): long-k products packed
+- 2026-11-04 · jebel · run · [2026-11-04-k7b-epochs](runs/jebel/2026-11-04-k7b-epochs) · crate #102 (K7b): long-k products packed
+- 2026-11-04 · jebel · run · [2026-11-04-k7b-focused](runs/jebel/2026-11-04-k7b-focused) · crate #102 (K7b): long-k products packed
+- 2026-11-04 · jebel · run · [2026-11-04-k7b-products](runs/jebel/2026-11-04-k7b-products) · crate #102 (K7b): long-k products packed
+- 2026-11-04 · jebel · run · [2026-11-04-k7b-sequence](runs/jebel/2026-11-04-k7b-sequence) · crate #102 (K7b): long-k products packed
+- 2026-11-04 · jebel · run · [2026-11-04-k7b-sequence-d512](runs/jebel/2026-11-04-k7b-sequence-d512) · crate #102 (K7b): long-k products packed
+- 2026-11-04 · jebel · run · [2026-11-04-k7b-window](runs/jebel/2026-11-04-k7b-window) · crate #102 (K7b): long-k products packed
 - 2026-11-04 · jebel · run · [2026-11-04-k12-attention](runs/jebel/2026-11-04-k12-attention) · crate #103 (K12, K28): tiled attend reuses buffers
 - 2026-11-04 · jebel · run · [2026-11-04-k12-focused](runs/jebel/2026-11-04-k12-focused) · crate #103 (K12, K28): tiled attend reuses buffers
 - 2026-11-04 · jebel · run · [2026-11-04-k12-sequence](runs/jebel/2026-11-04-k12-sequence) · crate #103 (K12, K28): tiled attend reuses buffers

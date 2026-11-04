@@ -1,0 +1,4 @@
+2026-11-04-k7b-sequence: old 0d91d1a vs new 0d91d1a, passes ONNONO (3 old, 3 new), scripts/measurement/sequence_training_timing.py --windows 1024 --repeats 2; crate old 6a8190c (.so 84ec4e85d91b) vs new 7b9878f (.so 21b07c2bef84)
+profile: identity matches (i7-9700k.json); max 1-min load 3.56 (HIGH); busy processes: none
+controls: none (a probe row can carry "control": true)
+4 rows within noise (1 separated inside their spread), max |Δ| 0.7%

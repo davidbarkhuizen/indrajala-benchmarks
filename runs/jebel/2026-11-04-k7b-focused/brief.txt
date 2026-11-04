@@ -1,0 +1,4 @@
+2026-11-04-k7b-focused: old 0d91d1a vs new 0d91d1a, passes ONNONO (3 old, 3 new), focused_benchmark --shape 5408 --shape 784 --shape attention --op forward_batch --op downstream_batch --op accumulate_gradient_batch; crate old 6a8190c (.so 84ec4e85d91b) vs new 7b9878f (.so 21b07c2bef84)
+profile: identity matches (i7-9700k.json); max 1-min load 1.15; busy processes: none
+controls: none (--control-backend reads the other backend's rows as controls)
+36 rows within noise (3 separated inside their spread), max |Δ| 2.0%
