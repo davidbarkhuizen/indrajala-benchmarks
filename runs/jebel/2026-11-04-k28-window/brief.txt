@@ -1,0 +1,8 @@
+2026-11-04-k28-window: old 5cf590a vs new 5cf590a, passes ONNONO (3 old, 3 new), scripts/measurement/window_recurrent_timing.py --repeats 3; crate old 238a017 (.so bb3d5611c37d) vs new 18ce111 (.so bc8a4a1fc83d)
+profile: identity matches (i7-9700k.json); max 1-min load 0.69; busy processes: none
+controls: 1 rows, all within noise
+consistent: per step / forward family p7 f32 n1024 -22.6% (3.164 -> 2.449 s)
+consistent: per step / forward linear k1 s16 m16 n1024 -15.6% (1.144 -> 0.966 s)
+consistent: per step / learn family p7 f32 B64 W16 -8.7% (0.019 -> 0.018 s)
+consistent: per step / learn linear k1 s16 m16 B64 W19 -7.2% (0.002 -> 0.002 s)
+2 rows within noise (1 separated inside their spread), max |Δ| 9.8%
