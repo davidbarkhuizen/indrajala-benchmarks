@@ -2,6 +2,14 @@
 
 One line per record, newest first ([FORMAT.md](FORMAT.md)).
 
+- 2026-11-04 · jebel · run · [2026-11-04-k7a-attention](runs/jebel/2026-11-04-k7a-attention) · crate #101 (K7a): matmul_2d in slabs
+- 2026-11-04 · jebel · run · [2026-11-04-k7a-attention-d512](runs/jebel/2026-11-04-k7a-attention-d512) · crate #101 (K7a): matmul_2d in slabs
+- 2026-11-04 · jebel · run · [2026-11-04-k7a-epochs](runs/jebel/2026-11-04-k7a-epochs) · crate #101 (K7a): matmul_2d in slabs
+- 2026-11-04 · jebel · run · [2026-11-04-k7a-focused](runs/jebel/2026-11-04-k7a-focused) · crate #101 (K7a): matmul_2d in slabs
+- 2026-11-04 · jebel · run · [2026-11-04-k7a-focused-1](runs/jebel/2026-11-04-k7a-focused-1) · crate #101 (K7a): matmul_2d in slabs
+- 2026-11-04 · jebel · run · [2026-11-04-k7a-sequence](runs/jebel/2026-11-04-k7a-sequence) · crate #101 (K7a): matmul_2d in slabs
+- 2026-11-04 · jebel · run · [2026-11-04-k7a-sequence-d512](runs/jebel/2026-11-04-k7a-sequence-d512) · crate #101 (K7a): matmul_2d in slabs
+- 2026-11-04 · jebel · run · [2026-11-04-k7a-window](runs/jebel/2026-11-04-k7a-window) · crate #101 (K7a): matmul_2d in slabs
 - 2026-11-03 · pyramidon · golden · [2026-11-03-ee4397c.json.gz](golden/pyramidon/2026-11-03-ee4397c.json.gz) · new-functionality: the cross-attention workplan, stage 9 (#1235): three encoder-decoder entries, one per implementation; the 161 earlier entries unchanged
 - 2026-11-03 · jebel · golden · [2026-11-03-ee4397c.json.gz](golden/jebel/2026-11-03-ee4397c.json.gz) · new-functionality: the cross-attention workplan, stage 9 (#1235): three encoder-decoder entries, one per implementation; the 161 earlier entries unchanged
 - 2026-11-03 · jebel · golden · [2026-11-03-24d4188.json.gz](golden/jebel/2026-11-03-24d4188.json.gz) · new-functionality: jebel catch-up: the 30 entries (10 models x 3 implementations) added since its last version, recorded at 24d4188 from a clean tree; the 131 earlier entries unchanged, and all 161 bit-identical to pyramidon's
