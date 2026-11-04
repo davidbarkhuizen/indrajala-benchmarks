@@ -1,0 +1,10 @@
+2026-11-04-k8b-focused-1: old f59388b vs new f59388b, passes ONNONO (3 old, 3 new), focused_benchmark --shape 5408 --shape 784 --shape attention --op forward_batch --op downstream_batch --op accumulate_gradient_batch --rust-threads 1 --openblas-threads 1; crate old 4dba70e (.so f5c8b6404a1d) vs new ce5a267 (.so 24bdf26aceef)
+profile: identity matches (i7-9700k.json); max 1-min load 2.03 (HIGH); busy processes: none
+controls: none (--control-backend reads the other backend's rows as controls)
+consistent: per call / conv tail 32 x 5408 forward_batch b32 / rust -32.7% (344.8 -> 231.9 µs)
+consistent: per call / conv tail 32 x 5408 forward_batch b512 / rust -29.1% (6391 -> 4530 µs)
+consistent: per call / relu 30 x 784 forward_batch b32 / rust -24.4% (42.48 -> 32.11 µs)
+consistent: per call / relu 30 x 784 forward_batch b512 / rust -24.3% (675.1 -> 510.8 µs)
+consistent: per call / dense 30 x 784 forward_batch b512 / rust -23.1% (712.6 -> 547.9 µs)
+consistent: per call / dense 30 x 784 forward_batch b32 / rust -21.6% (46.02 -> 36.06 µs)
+30 rows within noise (1 separated inside their spread), max |Δ| 2.0%

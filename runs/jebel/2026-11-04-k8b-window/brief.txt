@@ -1,0 +1,4 @@
+2026-11-04-k8b-window: old f59388b vs new f59388b, passes ONNONO (3 old, 3 new), scripts/measurement/window_recurrent_timing.py --repeats 3; crate old 4dba70e (.so f5c8b6404a1d) vs new ce5a267 (.so 24bdf26aceef)
+profile: identity matches (i7-9700k.json); max 1-min load 1.29; busy processes: none
+controls: 1 rows, all within noise
+6 rows within noise (2 separated inside their spread), max |Δ| 4.4%

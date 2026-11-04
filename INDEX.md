@@ -2,6 +2,13 @@
 
 One line per record, newest first ([FORMAT.md](FORMAT.md)).
 
+- 2026-11-04 · jebel · run · [2026-11-04-k8b-attention-d512](runs/jebel/2026-11-04-k8b-attention-d512) · crate #106 (K8): matmul_nt in slabs, corrected rule
+- 2026-11-04 · jebel · run · [2026-11-04-k8b-epochs](runs/jebel/2026-11-04-k8b-epochs) · crate #106 (K8): matmul_nt in slabs, corrected rule
+- 2026-11-04 · jebel · run · [2026-11-04-k8b-focused](runs/jebel/2026-11-04-k8b-focused) · crate #106 (K8): matmul_nt in slabs, corrected rule
+- 2026-11-04 · jebel · run · [2026-11-04-k8b-focused-1](runs/jebel/2026-11-04-k8b-focused-1) · crate #106 (K8): matmul_nt in slabs, corrected rule
+- 2026-11-04 · jebel · run · [2026-11-04-k8b-sequence](runs/jebel/2026-11-04-k8b-sequence) · crate #106 (K8): matmul_nt in slabs, corrected rule
+- 2026-11-04 · jebel · run · [2026-11-04-k8b-sequence-d512](runs/jebel/2026-11-04-k8b-sequence-d512) · crate #106 (K8): matmul_nt in slabs, corrected rule
+- 2026-11-04 · jebel · run · [2026-11-04-k8b-window](runs/jebel/2026-11-04-k8b-window) · crate #106 (K8): matmul_nt in slabs, corrected rule
 - 2026-11-04 · jebel · run · [2026-11-04-k23c-attention-d512](runs/jebel/2026-11-04-k23c-attention-d512) · crate #107 (K23): accumulate without its transpose
 - 2026-11-04 · jebel · run · [2026-11-04-k23c-epochs](runs/jebel/2026-11-04-k23c-epochs) · crate #107 (K23): accumulate without its transpose
 - 2026-11-04 · jebel · run · [2026-11-04-k23c-focused](runs/jebel/2026-11-04-k23c-focused) · crate #107 (K23): accumulate without its transpose
