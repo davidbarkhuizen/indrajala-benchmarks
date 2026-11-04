@@ -1,0 +1,277 @@
+{
+ "version": 1,
+ "name": "2026-11-04-k8b-epochs",
+ "created": "2026-11-04T10:52:45+02:00",
+ "state": "done",
+ "pid": 4186789,
+ "repo": "/home/david/code/indrajala-ml",
+ "bench": "prepared_dataset_timing",
+ "args": [
+  "--configs",
+  "conv B=32",
+  "conv B=512",
+  "dense B=32",
+  "dense B=512",
+  "--repeats",
+  "2"
+ ],
+ "smoke_args": [
+  "--configs",
+  "conv B=32",
+  "--repeats",
+  "1"
+ ],
+ "script_from": "new",
+ "control_backend": null,
+ "order": "ONNONO",
+ "python": "/home/david/code/indrajala-ml/.venv/bin/python",
+ "cwd": "/home/david/data/indrajala-ml/runs/ab/runs/2026-11-04-k8b-epochs",
+ "extension": null,
+ "passes": [
+  {
+   "number": 1,
+   "side": "old",
+   "stem": "pass-01-old",
+   "status": "ok",
+   "start": "2026-11-04T10:53:50+02:00",
+   "load": [
+    1.1884765625,
+    2.17919921875,
+    2.080078125
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/f59388b/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/4dba70e77dce929d1a829dcc1c821a564235a92f/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "f5c8b6404a1d0779c9af7f4c2a369122cb7663266bcc681ab11c46ad39088c1f"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/f59388b/scripts/measurement/prepared_dataset_timing.py",
+    "time",
+    "--configs",
+    "conv B=32",
+    "conv B=512",
+    "dense B=32",
+    "dense B=512",
+    "--repeats",
+    "2",
+    "--out",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-11-04-k8b-epochs/pass-01-old.json"
+   ],
+   "end": "2026-11-04T10:54:30+02:00"
+  },
+  {
+   "number": 2,
+   "side": "new",
+   "stem": "pass-02-new",
+   "status": "ok",
+   "start": "2026-11-04T10:54:30+02:00",
+   "load": [
+    1.58056640625,
+    2.1552734375,
+    2.076171875
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/f59388b/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/ce5a267f288fb390030abc81f3d1fb2a9dd45787/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "24bdf26aceef925762ea85ec4c477bdbfaf63c41b8fda2733b198686e5f6bab8"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/f59388b/scripts/measurement/prepared_dataset_timing.py",
+    "time",
+    "--configs",
+    "conv B=32",
+    "conv B=512",
+    "dense B=32",
+    "dense B=512",
+    "--repeats",
+    "2",
+    "--out",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-11-04-k8b-epochs/pass-02-new.json"
+   ],
+   "end": "2026-11-04T10:55:09+02:00"
+  },
+  {
+   "number": 3,
+   "side": "new",
+   "stem": "pass-03-new",
+   "status": "ok",
+   "start": "2026-11-04T10:55:09+02:00",
+   "load": [
+    2.11181640625,
+    2.25537109375,
+    2.11376953125
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/f59388b/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/ce5a267f288fb390030abc81f3d1fb2a9dd45787/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "24bdf26aceef925762ea85ec4c477bdbfaf63c41b8fda2733b198686e5f6bab8"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/f59388b/scripts/measurement/prepared_dataset_timing.py",
+    "time",
+    "--configs",
+    "conv B=32",
+    "conv B=512",
+    "dense B=32",
+    "dense B=512",
+    "--repeats",
+    "2",
+    "--out",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-11-04-k8b-epochs/pass-03-new.json"
+   ],
+   "end": "2026-11-04T10:55:48+02:00"
+  },
+  {
+   "number": 4,
+   "side": "old",
+   "stem": "pass-04-old",
+   "status": "ok",
+   "start": "2026-11-04T10:55:48+02:00",
+   "load": [
+    2.3623046875,
+    2.30126953125,
+    2.13427734375
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/f59388b/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/4dba70e77dce929d1a829dcc1c821a564235a92f/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "f5c8b6404a1d0779c9af7f4c2a369122cb7663266bcc681ab11c46ad39088c1f"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/f59388b/scripts/measurement/prepared_dataset_timing.py",
+    "time",
+    "--configs",
+    "conv B=32",
+    "conv B=512",
+    "dense B=32",
+    "dense B=512",
+    "--repeats",
+    "2",
+    "--out",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-11-04-k8b-epochs/pass-04-old.json"
+   ],
+   "end": "2026-11-04T10:56:28+02:00"
+  },
+  {
+   "number": 5,
+   "side": "new",
+   "stem": "pass-05-new",
+   "status": "ok",
+   "start": "2026-11-04T10:56:28+02:00",
+   "load": [
+    2.44677734375,
+    2.35107421875,
+    2.15966796875
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/f59388b/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/ce5a267f288fb390030abc81f3d1fb2a9dd45787/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "24bdf26aceef925762ea85ec4c477bdbfaf63c41b8fda2733b198686e5f6bab8"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/f59388b/scripts/measurement/prepared_dataset_timing.py",
+    "time",
+    "--configs",
+    "conv B=32",
+    "conv B=512",
+    "dense B=32",
+    "dense B=512",
+    "--repeats",
+    "2",
+    "--out",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-11-04-k8b-epochs/pass-05-new.json"
+   ],
+   "end": "2026-11-04T10:57:07+02:00"
+  },
+  {
+   "number": 6,
+   "side": "old",
+   "stem": "pass-06-old",
+   "status": "ok",
+   "start": "2026-11-04T10:57:07+02:00",
+   "load": [
+    2.0703125,
+    2.27294921875,
+    2.14208984375
+   ],
+   "busy": [],
+   "provenance": {
+    "train": "/home/david/data/indrajala-ml/runs/ab/worktrees/f59388b/indrajala_ml/training/train.py",
+    "extension": "/home/david/data/indrajala-ml/runs/ab/wheels/4dba70e77dce929d1a829dcc1c821a564235a92f/site/indrajala_math_rust/indrajala_math_rust.cpython-314-x86_64-linux-gnu.so",
+    "sha256": "f5c8b6404a1d0779c9af7f4c2a369122cb7663266bcc681ab11c46ad39088c1f"
+   },
+   "command": [
+    "/home/david/code/indrajala-ml/.venv/bin/python",
+    "/home/david/data/indrajala-ml/runs/ab/worktrees/f59388b/scripts/measurement/prepared_dataset_timing.py",
+    "time",
+    "--configs",
+    "conv B=32",
+    "conv B=512",
+    "dense B=32",
+    "dense B=512",
+    "--repeats",
+    "2",
+    "--out",
+    "/home/david/data/indrajala-ml/runs/ab/runs/2026-11-04-k8b-epochs/pass-06-old.json"
+   ],
+   "end": "2026-11-04T10:57:47+02:00"
+  }
+ ],
+ "extends": [],
+ "old": {
+  "ref": "f59388b287fc0c9c2e3b79c1eff18f3213c91082",
+  "commit": "f59388b287fc0c9c2e3b79c1eff18f3213c91082",
+  "crate": "4dba70e77dce929d1a829dcc1c821a564235a92f",
+  "tree": "/home/david/data/indrajala-ml/runs/ab/worktrees/f59388b",
+  "site": "/home/david/data/indrajala-ml/runs/ab/wheels/4dba70e77dce929d1a829dcc1c821a564235a92f/site",
+  "extension_sha": "f5c8b6404a1d0779c9af7f4c2a369122cb7663266bcc681ab11c46ad39088c1f"
+ },
+ "new": {
+  "ref": "f59388b287fc0c9c2e3b79c1eff18f3213c91082",
+  "commit": "f59388b287fc0c9c2e3b79c1eff18f3213c91082",
+  "crate": "ce5a267f288fb390030abc81f3d1fb2a9dd45787",
+  "tree": "/home/david/data/indrajala-ml/runs/ab/worktrees/f59388b",
+  "site": "/home/david/data/indrajala-ml/runs/ab/wheels/ce5a267f288fb390030abc81f3d1fb2a9dd45787/site",
+  "extension_sha": "24bdf26aceef925762ea85ec4c477bdbfaf63c41b8fda2733b198686e5f6bab8"
+ },
+ "command": "python scripts/measurement/prepared_dataset_timing.py time --configs conv B=32 conv B=512 dense B=32 dense B=512 --repeats 2 --out <pass output>",
+ "noise_rules": {
+  "shifted_pass": 0.02,
+  "high_load": 1.5,
+  "small_consistent": 0.02
+ },
+ "thermal": null,
+ "preflight": {
+  "at": "2026-11-04T10:52:45+02:00",
+  "load": [
+   3.28662109375,
+   2.69189453125,
+   2.228515625
+  ],
+  "busy": [],
+  "threads": {
+   "OPENBLAS_NUM_THREADS": null,
+   "OMP_NUM_THREADS": null,
+   "MKL_NUM_THREADS": null
+  },
+  "hostname": "jebel",
+  "profile_path": "docs/machine_profiles/i7-9700k.json",
+  "profile_identity": "bee079bd48d1966608041f5cdbd5950843ff711f22d43991179c1a30624471e6",
+  "profile": "identity matches",
+  "quiet": {
+   "load": 1.205078125,
+   "waited_s": 60
+  },
+  "after_builds": []
+ }
+}

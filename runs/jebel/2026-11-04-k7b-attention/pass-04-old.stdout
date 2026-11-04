@@ -1,0 +1,20 @@
+{"case": "T=64 B=32 causal / rust", "metric": "forward", "value": 0.0067036450000159675, "unit": "s"}
+{"case": "T=64 B=32 causal / rust", "metric": "backward", "value": 0.010159859999475884, "unit": "s"}
+{"case": "T=64 B=32 packed / rust", "metric": "forward", "value": 0.007222006001029513, "unit": "s"}
+{"case": "T=64 B=32 packed / rust", "metric": "backward", "value": 0.010846717999811517, "unit": "s"}
+{"case": "T=256 B=8 causal / rust", "metric": "forward", "value": 0.01643136399979994, "unit": "s"}
+{"case": "T=256 B=8 causal / rust", "metric": "backward", "value": 0.023166091999883065, "unit": "s"}
+{"case": "T=256 B=8 packed / rust", "metric": "forward", "value": 0.016240435999861802, "unit": "s"}
+{"case": "T=256 B=8 packed / rust", "metric": "backward", "value": 0.022674482999718748, "unit": "s"}
+{"case": "T=1024 B=2 causal / rust", "metric": "forward", "value": 0.05361396199987212, "unit": "s"}
+{"case": "T=1024 B=2 causal / rust", "metric": "backward", "value": 0.0730120589996659, "unit": "s"}
+{"case": "T=1024 B=2 packed / rust", "metric": "forward", "value": 0.047614623999834293, "unit": "s"}
+{"case": "T=1024 B=2 packed / rust", "metric": "backward", "value": 0.06271565800125245, "unit": "s"}
+
+case                                 forward s  backward s  peak RSS MB  tracemalloc MB
+T=64 B=32 causal / rust                0.00670     0.01016          nan             nan
+T=64 B=32 packed / rust                0.00722     0.01085          nan             nan
+T=256 B=8 causal / rust                0.01643     0.02317          nan             nan
+T=256 B=8 packed / rust                0.01624     0.02267          nan             nan
+T=1024 B=2 causal / rust               0.05361     0.07301          nan             nan
+T=1024 B=2 packed / rust               0.04761     0.06272          nan             nan

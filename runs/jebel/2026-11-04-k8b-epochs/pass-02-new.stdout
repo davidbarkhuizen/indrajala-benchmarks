@@ -1,0 +1,14 @@
+trainers: /home/david/data/indrajala-ml/runs/ab/worktrees/f59388b/indrajala_ml/training/train.py; prepared path: True; epochs per run: 1
+
+median of 2, seconds (one process per measurement)
+
+| config | backend | epoch | prepare | epoch, loader |
+|---|---|---|---|---|
+| conv B=32 | numpy | 0.406 | 0.037 | 0.374 |
+| conv B=32 | rust | 0.322 | 0.006 | 0.312 |
+| conv B=512 | numpy | 0.401 | 0.038 | 0.366 |
+| conv B=512 | rust | 0.353 | 0.007 | 0.331 |
+| dense B=32 | numpy | 1.674 | 1.080 | 0.599 |
+| dense B=32 | rust | 0.707 | 0.198 | 0.511 |
+| dense B=512 | numpy | 1.438 | 1.075 | 0.358 |
+| dense B=512 | rust | 0.602 | 0.199 | 0.393 |

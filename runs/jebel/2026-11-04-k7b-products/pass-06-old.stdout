@@ -1,0 +1,43 @@
+10 cases x 2 backends x 2 passes, rust threads 1, OpenBLAS threads 1, malloc default, kernel overrides default
+median (min-max) µs per call over 9 loops of ~20 ms; faults = minor page faults per call
+pass shape                op                         batch backend malloc     median           min-max  faults
+   1 matmul 2048x512x512  bare matmul                    - numpy   default   17056.5   16738.5-17183.7     0.0
+   1 matmul 2048x512x512  bare matmul                    - rust    default   56178.8   56112.1-56284.7     0.0
+   1 matmul 2048x2048x512 bare matmul                    - numpy   default   66466.5   66258.5-66652.7     0.0
+   1 matmul 2048x2048x512 bare matmul                    - rust    default  259347.9 258776.3-259803.7     0.0
+   1 matmul 512x2048x2048 bare matmul                    - numpy   default   67335.5   66713.1-67489.5     0.0
+   1 matmul 512x2048x2048 bare matmul                    - rust    default  276739.8 276529.1-277603.2     0.0
+   1 matmul 2048x512x2048 bare matmul                    - numpy   default   68148.1   67766.8-68424.8   528.0
+   1 matmul 2048x512x2048 bare matmul                    - rust    default  323010.7 322650.2-323465.3 16385.0
+   1 matmul 2048x256x64   bare matmul                    - numpy   default    1174.0     1172.2-1200.7     0.0
+   1 matmul 2048x256x64   bare matmul                    - rust    default    1542.8     1540.6-1543.6     0.0
+   1 matmul 2048x2048x64  bare matmul                    - numpy   default   10081.8   10067.3-10132.8     0.0
+   1 matmul 2048x2048x64  bare matmul                    - rust    default   23117.5   23029.0-23269.3     0.0
+   1 matmul 64x256x1024   bare matmul                    - numpy   default     603.7       599.3-613.9     0.0
+   1 matmul 64x256x1024   bare matmul                    - rust    default    1431.0     1428.6-1440.2     0.0
+   1 matmul 32x512x5408   bare matmul                    - numpy   default    3819.9     3812.0-3833.7     0.0
+   1 matmul 32x512x5408   bare matmul                    - rust    default    4930.0     4917.0-5017.7     0.0
+   1 matmul 30x512x784    bare matmul                    - numpy   default     584.8       583.9-585.6     0.0
+   1 matmul 30x512x784    bare matmul                    - rust    default     532.2       531.4-535.9     0.0
+   1 matmul 8x2048x64     bare matmul                    - numpy   default      73.1         73.0-73.2     0.0
+   1 matmul 8x2048x64     bare matmul                    - rust    default      55.1         55.0-55.3     0.0
+   2 matmul 2048x512x512  bare matmul                    - rust    default   53095.4   53068.1-53186.4     0.0
+   2 matmul 2048x512x512  bare matmul                    - numpy   default   17003.5   16715.1-17267.3     0.0
+   2 matmul 2048x2048x512 bare matmul                    - rust    default  251050.3 250577.9-259653.1     0.0
+   2 matmul 2048x2048x512 bare matmul                    - numpy   default   66414.3   66107.1-66844.7     0.0
+   2 matmul 512x2048x2048 bare matmul                    - rust    default  307679.9 307617.8-308119.8     0.0
+   2 matmul 512x2048x2048 bare matmul                    - numpy   default   66317.4   66088.4-66526.6     0.0
+   2 matmul 2048x512x2048 bare matmul                    - rust    default  351158.4 350978.6-351828.7 16385.0
+   2 matmul 2048x512x2048 bare matmul                    - numpy   default   68059.1   67367.5-68332.3   528.0
+   2 matmul 2048x256x64   bare matmul                    - rust    default    1502.0     1499.4-1503.3     0.0
+   2 matmul 2048x256x64   bare matmul                    - numpy   default    1176.6     1170.6-1195.1     0.0
+   2 matmul 2048x2048x64  bare matmul                    - rust    default   23573.2   23316.5-23658.8     0.0
+   2 matmul 2048x2048x64  bare matmul                    - numpy   default   10169.5   10143.7-10423.3     0.0
+   2 matmul 64x256x1024   bare matmul                    - rust    default    2339.9     2335.9-2345.3     0.0
+   2 matmul 64x256x1024   bare matmul                    - numpy   default     607.4       605.4-622.6     0.0
+   2 matmul 32x512x5408   bare matmul                    - rust    default    4925.1     4910.1-5025.6     0.0
+   2 matmul 32x512x5408   bare matmul                    - numpy   default    3813.2     3808.8-3816.4     0.0
+   2 matmul 30x512x784    bare matmul                    - rust    default     533.1       532.3-535.7     0.0
+   2 matmul 30x512x784    bare matmul                    - numpy   default     593.6       592.8-595.1     0.0
+   2 matmul 8x2048x64     bare matmul                    - rust    default      55.2         55.1-55.2     0.0
+   2 matmul 8x2048x64     bare matmul                    - numpy   default      73.7         73.5-73.9     0.0

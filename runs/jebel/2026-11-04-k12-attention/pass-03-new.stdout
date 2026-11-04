@@ -1,0 +1,38 @@
+{"case": "T=64 B=32 causal / numpy", "metric": "forward", "value": 0.011973575999945751, "unit": "s"}
+{"case": "T=64 B=32 causal / numpy", "metric": "backward", "value": 0.018493782001314685, "unit": "s"}
+{"case": "T=64 B=32 packed / numpy", "metric": "forward", "value": 0.012799118001566967, "unit": "s"}
+{"case": "T=64 B=32 packed / numpy", "metric": "backward", "value": 0.018932152999695973, "unit": "s"}
+{"case": "T=256 B=8 causal / numpy", "metric": "forward", "value": 0.03052740200109838, "unit": "s"}
+{"case": "T=256 B=8 causal / numpy", "metric": "backward", "value": 0.03860849099874031, "unit": "s"}
+{"case": "T=256 B=8 packed / numpy", "metric": "forward", "value": 0.0323663340004714, "unit": "s"}
+{"case": "T=256 B=8 packed / numpy", "metric": "backward", "value": 0.04022506399996928, "unit": "s"}
+{"case": "T=1024 B=2 causal / numpy", "metric": "forward", "value": 0.10473061300035624, "unit": "s"}
+{"case": "T=1024 B=2 causal / numpy", "metric": "backward", "value": 0.12015504599912674, "unit": "s"}
+{"case": "T=1024 B=2 packed / numpy", "metric": "forward", "value": 0.10533385100097803, "unit": "s"}
+{"case": "T=1024 B=2 packed / numpy", "metric": "backward", "value": 0.11752499499925761, "unit": "s"}
+{"case": "T=64 B=32 causal / rust", "metric": "forward", "value": 0.0065666050013533095, "unit": "s"}
+{"case": "T=64 B=32 causal / rust", "metric": "backward", "value": 0.009991899998567533, "unit": "s"}
+{"case": "T=64 B=32 packed / rust", "metric": "forward", "value": 0.006894520998685039, "unit": "s"}
+{"case": "T=64 B=32 packed / rust", "metric": "backward", "value": 0.01053213400155073, "unit": "s"}
+{"case": "T=256 B=8 causal / rust", "metric": "forward", "value": 0.01636687900099787, "unit": "s"}
+{"case": "T=256 B=8 causal / rust", "metric": "backward", "value": 0.022632221000094432, "unit": "s"}
+{"case": "T=256 B=8 packed / rust", "metric": "forward", "value": 0.016250074999334174, "unit": "s"}
+{"case": "T=256 B=8 packed / rust", "metric": "backward", "value": 0.022190325000337907, "unit": "s"}
+{"case": "T=1024 B=2 causal / rust", "metric": "forward", "value": 0.05475119299990183, "unit": "s"}
+{"case": "T=1024 B=2 causal / rust", "metric": "backward", "value": 0.07300624000163225, "unit": "s"}
+{"case": "T=1024 B=2 packed / rust", "metric": "forward", "value": 0.047909642999002244, "unit": "s"}
+{"case": "T=1024 B=2 packed / rust", "metric": "backward", "value": 0.06205311099984101, "unit": "s"}
+
+case                                 forward s  backward s  peak RSS MB  tracemalloc MB
+T=64 B=32 causal / numpy               0.01197     0.01849          nan             nan
+T=64 B=32 packed / numpy               0.01280     0.01893          nan             nan
+T=256 B=8 causal / numpy               0.03053     0.03861          nan             nan
+T=256 B=8 packed / numpy               0.03237     0.04023          nan             nan
+T=1024 B=2 causal / numpy              0.10473     0.12016          nan             nan
+T=1024 B=2 packed / numpy              0.10533     0.11752          nan             nan
+T=64 B=32 causal / rust                0.00657     0.00999          nan             nan
+T=64 B=32 packed / rust                0.00689     0.01053          nan             nan
+T=256 B=8 causal / rust                0.01637     0.02263          nan             nan
+T=256 B=8 packed / rust                0.01625     0.02219          nan             nan
+T=1024 B=2 causal / rust               0.05475     0.07301          nan             nan
+T=1024 B=2 packed / rust               0.04791     0.06205          nan             nan

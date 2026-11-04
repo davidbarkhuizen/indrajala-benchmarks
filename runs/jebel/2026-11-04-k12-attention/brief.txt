@@ -1,0 +1,8 @@
+2026-11-04-k12-attention: old 0d91d1a vs new 0d91d1a, passes ONNONO (3 old, 3 new), attention_timing --no-memory --repeats 3; crate old 7fffc49 (.so 21b07c2bef84) vs new a4c4379 (.so ccd720475df3)
+profile: identity matches (i7-9700k.json); max 1-min load 0.88; busy processes: none
+controls: none (--control-backend reads the other backend's rows as controls)
+consistent: backward / T=64 B=32 causal / rust -5.5% (0.011 -> 0.010 s)
+consistent: forward / T=64 B=32 causal / rust -4.1% (0.007 -> 0.007 s)
+consistent: backward / T=256 B=8 causal / rust -3.1% (0.023 -> 0.023 s)
+consistent: forward / T=256 B=8 causal / rust -2.0% (0.017 -> 0.016 s)
+20 rows within noise (5 separated inside their spread), max |Δ| 4.5%
