@@ -1,0 +1,4 @@
+2026-11-04-k31f-sequence-d512: old 515849f vs new 515849f, passes ONNONO (3 old, 3 new), scripts/measurement/sequence_training_timing.py --windows 256 --repeats 1 --features 512 --heads 8; crate old cba601e (.so bc8a4a1fc83d) vs new 480cebc (.so 5b3d1d17cea4)
+profile: identity matches (i7-9700k.json); max 1-min load 0.29 (measured just after this run's crate builds); busy processes: none
+controls: none (a probe row can carry "control": true)
+4 rows within noise, max |Δ| 0.7%
