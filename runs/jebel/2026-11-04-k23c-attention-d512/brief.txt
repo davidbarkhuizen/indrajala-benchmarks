@@ -1,0 +1,4 @@
+2026-11-04-k23c-attention-d512: old bb60c11 vs new bb60c11, passes ONNONO (3 old, 3 new), attention_timing --no-memory --repeats 2 --tokens 256 --features 512 --heads 8 --masks causal; crate old 10aa3e5 (.so 24bdf26aceef) vs new 3bb2a40 (.so bb3d5611c37d)
+profile: identity matches (i7-9700k.json); max 1-min load 2.34 (HIGH); busy processes: none
+controls: none (--control-backend reads the other backend's rows as controls)
+4 rows within noise, max |Δ| 0.7%

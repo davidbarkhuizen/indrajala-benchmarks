@@ -1,0 +1,6 @@
+2026-11-04-k23c-window: old bb60c11 vs new bb60c11, passes ONNONO (3 old, 3 new), scripts/measurement/window_recurrent_timing.py --repeats 3; crate old 10aa3e5 (.so 24bdf26aceef) vs new 3bb2a40 (.so bb3d5611c37d)
+profile: identity matches (i7-9700k.json); max 1-min load 1.31; busy processes: none
+controls: 1 rows, all within noise
+consistent: per step / learn linear k1 s16 m16 B64 W19 -6.0% (0.003 -> 0.002 s)
+consistent: per step / learn family p7 f32 B64 W16 -5.2% (0.021 -> 0.019 s)
+4 rows within noise (3 separated inside their spread), max |Δ| 9.4%

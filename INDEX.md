@@ -2,6 +2,13 @@
 
 One line per record, newest first ([FORMAT.md](FORMAT.md)).
 
+- 2026-11-04 · jebel · run · [2026-11-04-k23c-attention-d512](runs/jebel/2026-11-04-k23c-attention-d512) · crate #107 (K23): accumulate without its transpose
+- 2026-11-04 · jebel · run · [2026-11-04-k23c-epochs](runs/jebel/2026-11-04-k23c-epochs) · crate #107 (K23): accumulate without its transpose
+- 2026-11-04 · jebel · run · [2026-11-04-k23c-focused](runs/jebel/2026-11-04-k23c-focused) · crate #107 (K23): accumulate without its transpose
+- 2026-11-04 · jebel · run · [2026-11-04-k23c-focused-1](runs/jebel/2026-11-04-k23c-focused-1) · crate #107 (K23): accumulate without its transpose
+- 2026-11-04 · jebel · run · [2026-11-04-k23c-sequence](runs/jebel/2026-11-04-k23c-sequence) · crate #107 (K23): accumulate without its transpose
+- 2026-11-04 · jebel · run · [2026-11-04-k23c-sequence-d512](runs/jebel/2026-11-04-k23c-sequence-d512) · crate #107 (K23): accumulate without its transpose
+- 2026-11-04 · jebel · run · [2026-11-04-k23c-window](runs/jebel/2026-11-04-k23c-window) · crate #107 (K23): accumulate without its transpose
 - 2026-11-04 · jebel · run · [2026-11-04-k28-attention-d512](runs/jebel/2026-11-04-k28-attention-d512) · crate #108 (K28): layer norm and dense add
 - 2026-11-04 · jebel · run · [2026-11-04-k28-epochs](runs/jebel/2026-11-04-k28-epochs) · crate #108 (K28): layer norm and dense add
 - 2026-11-04 · jebel · run · [2026-11-04-k28-focused](runs/jebel/2026-11-04-k28-focused) · crate #108 (K28): layer norm and dense add
