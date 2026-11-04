@@ -1,0 +1,4 @@
+2026-11-04-pool-window: old 0b17d22 vs new 0b17d22, passes ONNONO (3 old, 3 new), scripts/measurement/window_recurrent_timing.py --repeats 3; crate old edce2de (.so f72612f402e8) vs new 51a2baf (.so 7194f34f6ce9)
+profile: identity matches (i7-9700k.json); max 1-min load 0.83; busy processes: python
+CONTROL MOVED: 1 of 1 control rows consistent, e.g. per step / matmul 256 -40.4%: changes about that size can't be resolved here (next: epoch_op_profile.py)
+6 rows within noise, max |Δ| 2.8%

@@ -1,0 +1,5 @@
+2026-11-04-pool-epochs: old 0b17d22 vs new 0b17d22, passes ONNONO (3 old, 3 new), prepared_dataset_timing --configs conv B=32 conv B=512 dense B=32 dense B=512 --repeats 2; crate old edce2de (.so f72612f402e8) vs new 51a2baf (.so 7194f34f6ce9)
+profile: identity matches (i7-9700k.json); max 1-min load 3.94 (HIGH); busy processes: none
+CONTROL MOVED: 3 of 8 control rows consistent, e.g. prepare / conv B=32 / rust +5.1%: changes about that size can't be resolved here (next: epoch_op_profile.py)
+consistent: epoch, loader / dense B=512 / rust -4.9% (0.407 -> 0.387 s)
+15 rows within noise (3 separated inside their spread), max |Δ| 5.8%

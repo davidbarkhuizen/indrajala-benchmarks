@@ -1,0 +1,12 @@
+2026-11-04-pool-focused: old 0b17d22 vs new 0b17d22, passes ONNONO (3 old, 3 new), focused_benchmark --shape 5408 --shape 784 --shape attention --op forward_batch --op downstream_batch --op accumulate_gradient_batch; crate old edce2de (.so f72612f402e8) vs new 51a2baf (.so 7194f34f6ce9)
+profile: identity matches (i7-9700k.json); max 1-min load 1.75 (HIGH); busy processes: none
+controls: none (--control-backend reads the other backend's rows as controls)
+consistent: per call / relu 30 x 784 forward_batch b512 / rust -38.2% (206.1 -> 127.3 µs)
+consistent: per call / dense 30 x 784 forward_batch b512 / rust -30.0% (258.4 -> 180.9 µs)
+consistent: per call / dense 30 x 784 downstream_batch b512 / rust -26.4% (242.3 -> 178.2 µs)
+consistent: per call / dense 30 x 784 accumulate_gradient_batch b512 / rust -23.1% (252.2 -> 193.9 µs)
+consistent: per call / attention 16 x 32 accumulate_gradient_batch b512 / rust -12.8% (1633 -> 1424 µs)
+consistent: per call / conv tail 32 x 5408 downstream_batch b512 / rust -12.6% (2421 -> 2116 µs)
+consistent: per call / conv tail 32 x 5408 forward_batch b512 / rust -9.6% (1128 -> 1020 µs)
+consistent: per call / attention 16 x 32 forward_batch b512 / rust -6.3% (4261 -> 3991 µs)
+28 rows within noise (4 separated inside their spread), max |Δ| 4.5%
