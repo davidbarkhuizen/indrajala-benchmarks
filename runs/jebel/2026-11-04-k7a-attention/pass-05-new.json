@@ -1,0 +1,50 @@
+{
+ "T=64 B=32 causal / numpy": {
+  "forward": 0.011778101001254981,
+  "backward": 0.018357664999712142
+ },
+ "T=64 B=32 packed / numpy": {
+  "forward": 0.01263323999955901,
+  "backward": 0.01854123900011473
+ },
+ "T=256 B=8 causal / numpy": {
+  "forward": 0.031131251998886,
+  "backward": 0.03795102600088285
+ },
+ "T=256 B=8 packed / numpy": {
+  "forward": 0.03204373700100405,
+  "backward": 0.04016445600063889
+ },
+ "T=1024 B=2 causal / numpy": {
+  "forward": 0.106903837999198,
+  "backward": 0.11756654599957983
+ },
+ "T=1024 B=2 packed / numpy": {
+  "forward": 0.1040522229995986,
+  "backward": 0.1185066599991842
+ },
+ "T=64 B=32 causal / rust": {
+  "forward": 0.006852555001387373,
+  "backward": 0.010544679998929496
+ },
+ "T=64 B=32 packed / rust": {
+  "forward": 0.007064661000185879,
+  "backward": 0.010922706000201288
+ },
+ "T=256 B=8 causal / rust": {
+  "forward": 0.016617121000308543,
+  "backward": 0.02315415599878179
+ },
+ "T=256 B=8 packed / rust": {
+  "forward": 0.016370159999496536,
+  "backward": 0.0222483640009159
+ },
+ "T=1024 B=2 causal / rust": {
+  "forward": 0.05337223500100663,
+  "backward": 0.07287777599958645
+ },
+ "T=1024 B=2 packed / rust": {
+  "forward": 0.047528331000648905,
+  "backward": 0.06292534000021988
+ }
+}

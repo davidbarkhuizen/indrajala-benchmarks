@@ -1,0 +1,4 @@
+2026-11-04-k7a-epochs: old cb31225 vs new cb31225, passes ONNONO (3 old, 3 new), prepared_dataset_timing --configs conv B=32 conv B=512 dense B=32 dense B=512 --repeats 2; crate old 690bce8 (.so 7ba3057a73f7) vs new 5a19b18 (.so 84ec4e85d91b)
+profile: identity matches (i7-9700k.json); max 1-min load 1.76 (HIGH); busy processes: none
+CONTROL MOVED: 3 of 8 control rows consistent, e.g. prepare / dense B=512 / rust +6.3%: changes about that size can't be resolved here (next: epoch_op_profile.py)
+16 rows within noise (2 separated inside their spread), max |Δ| 3.0%

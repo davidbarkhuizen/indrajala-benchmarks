@@ -1,0 +1,5 @@
+2026-11-04-k7a-window: old 1854b89 vs new 1854b89, passes ONNONO (3 old, 3 new), scripts/measurement/window_recurrent_timing.py --repeats 3; crate old 690bce8 (.so 7ba3057a73f7) vs new 5a19b18 (.so 84ec4e85d91b)
+profile: identity matches (i7-9700k.json); max 1-min load 3.10 (HIGH); busy processes: none
+CONTROL MOVED: 1 of 1 control rows consistent, e.g. per step / matmul 256 -46.9%: changes about that size can't be resolved here (next: epoch_op_profile.py)
+consistent, small: per step / learn family p7 f32 B64 W16 +1.0% (0.022 -> 0.023 s)
+5 rows within noise (2 separated inside their spread), max |Δ| 3.4%

@@ -2,6 +2,14 @@
 
 One line per record, newest first ([FORMAT.md](FORMAT.md)).
 
+- 2026-11-04 · jebel · run · [2026-11-04-k7a-attention](runs/jebel/2026-11-04-k7a-attention) · crate #101 (K7a): matmul_2d in slabs
+- 2026-11-04 · jebel · run · [2026-11-04-k7a-attention-d512](runs/jebel/2026-11-04-k7a-attention-d512) · crate #101 (K7a): matmul_2d in slabs
+- 2026-11-04 · jebel · run · [2026-11-04-k7a-epochs](runs/jebel/2026-11-04-k7a-epochs) · crate #101 (K7a): matmul_2d in slabs
+- 2026-11-04 · jebel · run · [2026-11-04-k7a-focused](runs/jebel/2026-11-04-k7a-focused) · crate #101 (K7a): matmul_2d in slabs
+- 2026-11-04 · jebel · run · [2026-11-04-k7a-focused-1](runs/jebel/2026-11-04-k7a-focused-1) · crate #101 (K7a): matmul_2d in slabs
+- 2026-11-04 · jebel · run · [2026-11-04-k7a-sequence](runs/jebel/2026-11-04-k7a-sequence) · crate #101 (K7a): matmul_2d in slabs
+- 2026-11-04 · jebel · run · [2026-11-04-k7a-sequence-d512](runs/jebel/2026-11-04-k7a-sequence-d512) · crate #101 (K7a): matmul_2d in slabs
+- 2026-11-04 · jebel · run · [2026-11-04-k7a-window](runs/jebel/2026-11-04-k7a-window) · crate #101 (K7a): matmul_2d in slabs
 - 2026-11-04 · jebel · run · [2026-11-04-k7b-attention](runs/jebel/2026-11-04-k7b-attention) · crate #102 (K7b): long-k products packed
 - 2026-11-04 · jebel · run · [2026-11-04-k7b-attention-d512](runs/jebel/2026-11-04-k7b-attention-d512) · crate #102 (K7b): long-k products packed
 - 2026-11-04 · jebel · run · [2026-11-04-k7b-epochs](runs/jebel/2026-11-04-k7b-epochs) · crate #102 (K7b): long-k products packed

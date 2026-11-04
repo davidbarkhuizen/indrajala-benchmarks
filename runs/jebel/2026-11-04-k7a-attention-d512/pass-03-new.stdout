@@ -1,0 +1,8 @@
+{"case": "d=512 T=256 B=8 causal / numpy", "metric": "forward", "value": 0.1702502749994892, "unit": "s"}
+{"case": "d=512 T=256 B=8 causal / numpy", "metric": "backward", "value": 0.27555296850096056, "unit": "s"}
+{"case": "d=512 T=256 B=8 causal / rust", "metric": "forward", "value": 0.07875491499999043, "unit": "s"}
+{"case": "d=512 T=256 B=8 causal / rust", "metric": "backward", "value": 0.18091290649954317, "unit": "s"}
+
+case                                 forward s  backward s  peak RSS MB  tracemalloc MB
+d=512 T=256 B=8 causal / numpy         0.17025     0.27555          nan             nan
+d=512 T=256 B=8 causal / rust          0.07875     0.18091          nan             nan

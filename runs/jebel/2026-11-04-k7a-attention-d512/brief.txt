@@ -1,0 +1,6 @@
+2026-11-04-k7a-attention-d512: old cb31225 vs new cb31225, passes ONNONO (3 old, 3 new), attention_timing --no-memory --repeats 2 --tokens 256 --features 512 --heads 8 --masks causal; crate old 690bce8 (.so 7ba3057a73f7) vs new 5a19b18 (.so 84ec4e85d91b)
+profile: identity matches (i7-9700k.json); max 1-min load 1.01; busy processes: none
+controls: none (--control-backend reads the other backend's rows as controls)
+shifted: pass 6 (old, slow +2.2%); unbalanced, next: ab.py extend --order NO
+consistent: backward / d=512 T=256 B=8 causal / rust -39.7% (0.300 -> 0.181 s)
+3 rows within noise (1 separated inside their spread), max |Δ| 0.8%
