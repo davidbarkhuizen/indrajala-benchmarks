@@ -1,0 +1,155 @@
+📦 Built wheel for CPython 3.14 to /home/david/data/indrajala-ml/runs/census-stag
+=== d512
+kernel           seconds
+matmul_2d           1.372
+matmul_nt           1.042
+attend_forward      0.294
+attend_backward     0.259
+transpose           0.237
+exp                 0.094
+
+kernel                     m      k      n      calls   seconds  of kernel  us a call
+matmul_nt              2048   2048    512         16     0.370        35%    23094.1
+matmul_2d               512   2048   2048          8     0.355        26%    44385.3
+matmul_nt              2048    512   2048         16     0.347        33%    21684.0
+matmul_2d              2048   2048    512         16     0.323        24%    20190.7
+matmul_nt              2048    512    512         64     0.317        30%     4957.4
+attend_forward         2048      8     64         16     0.294       100%    18387.2
+attend_backward        2048      8     64          8     0.259       100%    32373.8
+matmul_2d              2048    512   2048          8     0.235        17%    29319.3
+matmul_2d              2048    512    512         32     0.177        13%     5525.5
+matmul_2d               512   2048    512         32     0.152        11%     4762.9
+transpose              2048   2048      0          8     0.122        52%    15306.3
+exp                      16      0      0     983040     0.091        97%        0.1
+transpose              2048    512      0         40     0.078        33%     1960.1
+transpose                16     64      0      32768     0.026        11%        0.8
+=== sequence
+kernel           seconds
+attend_backward     0.463
+attend_forward      0.430
+matmul_2d           0.362
+exp                 0.289
+matmul_nt           0.180
+transpose           0.059
+dot_products        0.004
+
+kernel                     m      k      n      calls   seconds  of kernel  us a call
+attend_backward        2048      4     16         64     0.463       100%     7233.7
+attend_forward         2048      4     16         80     0.430       100%     5378.8
+exp                      16      0      0    2949120     0.273        94%        0.1
+matmul_nt              2048     64     64        320     0.073        41%      227.7
+matmul_2d                64   2048     64        256     0.061        17%      238.1
+matmul_2d              2048     64     64        256     0.052        14%      203.4
+matmul_nt              2048     64    256         80     0.048        27%      595.9
+matmul_nt              2048    256     64         80     0.034        19%      428.1
+matmul_2d                64   2048    256         64     0.034         9%      531.2
+matmul_2d               256   2048     64         64     0.033         9%      518.2
+matmul_2d              2048     64    256         64     0.032         9%      496.2
+matmul_2d                64     16     16      45056     0.031         9%        0.7
+matmul_2d              2048    256     64         64     0.028         8%      439.7
+transpose                16     16      0     122880     0.028        47%        0.2
+=== window
+# k1 s4 m16 B32 W12: median 0.005918 s per step
+# k4 s4 m16 B32 W5: median 0.005373 s per step
+# learn linear k1 s16 m16 B64 W19: median 0.003005 s per step
+# learn family p7 f32 B64 W16: median 0.028795 s per step
+# forward linear k1 s16 m16 n1024: median 1.488234 s per step
+# forward family p7 f32 n1024: median 4.369525 s per step
+# matmul 256: median 0.000290 s per step
+kernel           seconds
+attend_forward      3.608
+matmul_nt           2.136
+exp                 1.217
+matmul_2d           0.845
+attend_backward     0.538
+transpose           0.272
+dot_products        0.106
+
+kernel                     m      k      n      calls   seconds  of kernel  us a call
+attend_forward           96      2      8      61500     3.126        87%       50.8
+exp                       3      0      0   17724230     0.640        53%        0.0
+matmul_nt                96     16     16     246000     0.541        25%        2.2
+attend_backward         192      2      8       1920     0.374        70%      194.9
+exp                     512      0      0     313650     0.358        29%        1.1
+matmul_2d                 3      8      3    4931580     0.301        36%        0.1
+matmul_nt                96     16     32      61500     0.270        13%        4.4
+matmul_2d                 3      3      8    5177340     0.253        30%        0.0
+matmul_nt                32     16     48     104550     0.237        11%        2.3
+transpose                 3      8      0    4931580     0.234        86%        0.0
+matmul_nt                32     16      3      64030     0.216        10%        3.4
+attend_forward           63      2      8       6150     0.208         6%       33.8
+attend_forward          192      2      8       1920     0.195         5%      101.3
+matmul_nt                32     16     16     237410     0.193         9%        0.8
+=== attention
+kernel           seconds
+attend_backward     0.456
+attend_forward      0.376
+exp                 0.181
+matmul_2d           0.117
+transpose           0.037
+matmul_nt           0.013
+
+kernel                     m      k      n      calls   seconds  of kernel  us a call
+attend_backward        2048      4     16         12     0.456       100%    37963.3
+attend_forward         2048      4     16         12     0.376       100%    31335.3
+exp                      16      0      0    2535168     0.181       100%        0.1
+matmul_nt              2048     64     64         48     0.013       100%      262.7
+matmul_2d                64   2048     64         48     0.012        10%      254.8
+matmul_2d              2048     64     64         48     0.012        10%      252.3
+transpose                16     16      0      19776     0.004        12%        0.2
+matmul_2d                64     16     16       3240     0.002         2%        0.7
+matmul_2d                48     16     16       3320     0.002         1%        0.5
+matmul_2d               256     16     16        600     0.002         1%        2.7
+matmul_2d               240     16     16        600     0.001         1%        2.5
+matmul_2d               224     16     16        600     0.001         1%        2.3
+matmul_2d               208     16     16        600     0.001         1%        2.2
+matmul_2d               192     16     16        600     0.001         1%        2.0
+=== conv
+repeat 1/1 done
+kernel           seconds
+conv_forward        0.220
+dot_products        0.178
+matmul_2d           0.060
+matmul_long_k       0.044
+matmul_nt           0.032
+exp                 0.002
+transpose           0.001
+
+kernel                     m      k      n      calls   seconds  of kernel  us a call
+dot_products             32   5408      1       8000     0.178       100%       22.2
+conv_forward              1    676      9       8000     0.146        66%       18.2
+conv_forward             32    676      9        124     0.074        33%      593.8
+matmul_2d                32     32   5408        248     0.060        99%      240.2
+matmul_long_k             8  21632      9        124     0.044        99%      351.2
+matmul_nt                32   5408     32        124     0.031        99%      253.3
+exp                      32      0      0       8000     0.001        58%        0.2
+transpose                 8      9      0       8126     0.001        86%        0.1
+dot_products             10     32      1       8000     0.001         0%        0.1
+conv_forward             16    676      9          2     0.001         0%      284.5
+exp                      10      0      0       8000     0.000        23%        0.1
+matmul_long_k             8  10816      9          2     0.000         1%      176.0
+exp                    1024      0      0        124     0.000        15%        2.6
+matmul_2d                32     16   5408          2     0.000         1%      157.2
+=== dense512
+repeat 1/1 done
+kernel           seconds
+matmul_nt           0.317
+matmul_2d           0.067
+exp                 0.035
+transpose           0.003
+
+kernel                     m      k      n      calls   seconds  of kernel  us a call
+matmul_nt                32    784     30       7500     0.254        80%       33.9
+matmul_2d                30    512    784        234     0.058        86%      246.6
+matmul_nt               512    784     30        234     0.052        16%      220.4
+exp                     960      0      0       7502     0.017        48%        2.3
+exp                   15360      0      0        234     0.009        27%       40.5
+matmul_nt                32     30     10       7500     0.008         2%        1.0
+matmul_2d                10    512     30        234     0.006         9%       25.2
+exp                     320      0      0       7500     0.006        16%        0.8
+matmul_nt               512     30     10        234     0.003         1%       15.0
+matmul_2d               512     10     30        234     0.003         5%       14.2
+transpose               512     30      0        234     0.003       100%       14.1
+exp                    5120      0      0        234     0.003         8%       12.3
+matmul_2d                30     96    784          2     0.000         0%      110.9
+matmul_nt                96    784     30          2     0.000         0%      100.8

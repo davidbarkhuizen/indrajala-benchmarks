@@ -73,3 +73,7 @@ One line per record (profile snapshots included), newest first by date:
 ```
 - <date> · <host> · <kind> · [<name>](<path>) · <reason>
 ```
+
+## Readings: `readings/<date>-<name>/`
+
+Tables and logs that informed work without making a claim, with a `README.md` saying what each is. Free-form: the checks don't read inside them.
