@@ -22,7 +22,7 @@ from pathlib import Path
 from typing import Any
 
 ROOT = Path(__file__).resolve().parent.parent
-TOP_LEVEL = {".git", ".github", ".gitignore", "README.md", "FORMAT.md", "INDEX.md", "LICENSE", "tools"}
+TOP_LEVEL = {"readings", ".git", ".github", ".gitignore", "README.md", "FORMAT.md", "INDEX.md", "LICENSE", "tools"}
 RECORD_DIRS = ("machines", "golden", "runs")
 FORMAT = 1
 CAPTURED = re.compile(r"^\d{8}T\d{6}Z(-\d+)?-profile\.json$")

@@ -1,0 +1,287 @@
+cell 1 1
+{"case": "1 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.016965036350302398, "unit": "s"}
+{"case": "1 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.017151282401755452, "unit": "s"}
+{"case": "1 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.017836523603182285, "unit": "s"}
+{"case": "1 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 2.502277079038322, "unit": "s"}
+{"case": "1 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 2.6533949500881135, "unit": "s"}
+{"case": "1 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 2.6658472791314125, "unit": "s"}
+{"case": "1 x 1 thread, matmul 256", "metric": "per step", "value": 0.0008601333945989608, "unit": "s", "control": true}
+{"case": "1 x 1 thread, matmul 256", "metric": "per step", "value": 0.0008576110005378724, "unit": "s", "control": true}
+{"case": "1 x 1 thread, matmul 256", "metric": "per step", "value": 0.0008631419972516596, "unit": "s", "control": true}
+{"case": "the probe", "metric": "peak temperature", "value": 20.0, "unit": "C"}
+cell 1 2
+{"case": "1 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.018081516749225555, "unit": "s"}
+{"case": "1 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.018284811498597266, "unit": "s"}
+{"case": "1 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.018592237599659712, "unit": "s"}
+{"case": "1 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 2.6224909969605505, "unit": "s"}
+{"case": "1 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 2.628040713025257, "unit": "s"}
+{"case": "1 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 2.63103847601451, "unit": "s"}
+{"case": "1 x 1 thread, matmul 256", "metric": "per step", "value": 0.0006994619499891997, "unit": "s", "control": true}
+{"case": "1 x 1 thread, matmul 256", "metric": "per step", "value": 0.0007002379046753049, "unit": "s", "control": true}
+{"case": "1 x 1 thread, matmul 256", "metric": "per step", "value": 0.000696358853019774, "unit": "s", "control": true}
+{"case": "the probe", "metric": "peak temperature", "value": 20.0, "unit": "C"}
+cell 2 1
+{"case": "2 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.019955728901550174, "unit": "s"}
+{"case": "2 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.019946469599381088, "unit": "s"}
+{"case": "2 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.020076353941112755, "unit": "s"}
+{"case": "2 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 2.7862512450665236, "unit": "s"}
+{"case": "2 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 2.7696431619115174, "unit": "s"}
+{"case": "2 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 2.773545335046947, "unit": "s"}
+{"case": "2 x 1 thread, matmul 256", "metric": "per step", "value": 0.0007262815488502383, "unit": "s", "control": true}
+{"case": "2 x 1 thread, matmul 256", "metric": "per step", "value": 0.0007333207526244223, "unit": "s", "control": true}
+{"case": "2 x 1 thread, matmul 256", "metric": "per step", "value": 0.0007015011971816421, "unit": "s", "control": true}
+{"case": "2 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.020591049839276822, "unit": "s"}
+{"case": "2 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.020269440044648944, "unit": "s"}
+{"case": "2 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.020086404809262604, "unit": "s"}
+{"case": "2 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 2.7771245879121125, "unit": "s"}
+{"case": "2 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 2.7572624129243195, "unit": "s"}
+{"case": "2 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 2.763877122895792, "unit": "s"}
+{"case": "2 x 1 thread, matmul 256", "metric": "per step", "value": 0.0006838201545178891, "unit": "s", "control": true}
+{"case": "2 x 1 thread, matmul 256", "metric": "per step", "value": 0.0006909015006385744, "unit": "s", "control": true}
+{"case": "2 x 1 thread, matmul 256", "metric": "per step", "value": 0.0007175761042162776, "unit": "s", "control": true}
+{"case": "the probe", "metric": "peak temperature", "value": 20.0, "unit": "C"}
+cell 2 2
+{"case": "2 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.020435142854694277, "unit": "s"}
+{"case": "2 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.02038054430158809, "unit": "s"}
+{"case": "2 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.020934596948791295, "unit": "s"}
+{"case": "2 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 2.7601265381090343, "unit": "s"}
+{"case": "2 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 2.770188266877085, "unit": "s"}
+{"case": "2 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 2.765054238960147, "unit": "s"}
+{"case": "2 x 1 thread, matmul 256", "metric": "per step", "value": 0.0007688426412642002, "unit": "s", "control": true}
+{"case": "2 x 1 thread, matmul 256", "metric": "per step", "value": 0.0007970339502207935, "unit": "s", "control": true}
+{"case": "2 x 1 thread, matmul 256", "metric": "per step", "value": 0.000788652547635138, "unit": "s", "control": true}
+{"case": "2 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.019975252752192318, "unit": "s"}
+{"case": "2 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.019975153298582883, "unit": "s"}
+{"case": "2 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.020474224351346493, "unit": "s"}
+{"case": "2 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 2.7666282278951257, "unit": "s"}
+{"case": "2 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 2.783234295202419, "unit": "s"}
+{"case": "2 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 2.7734104299452156, "unit": "s"}
+{"case": "2 x 1 thread, matmul 256", "metric": "per step", "value": 0.0007137718494050205, "unit": "s", "control": true}
+{"case": "2 x 1 thread, matmul 256", "metric": "per step", "value": 0.0007091612089425326, "unit": "s", "control": true}
+{"case": "2 x 1 thread, matmul 256", "metric": "per step", "value": 0.0007260306039825082, "unit": "s", "control": true}
+{"case": "the probe", "metric": "peak temperature", "value": 20.0, "unit": "C"}
+cell 4 1
+{"case": "4 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.04506471455097198, "unit": "s"}
+{"case": "4 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.04541412289254367, "unit": "s"}
+{"case": "4 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.04519215405452996, "unit": "s"}
+{"case": "4 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 3.3262697560712695, "unit": "s"}
+{"case": "4 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 2.9982889210805297, "unit": "s"}
+{"case": "4 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 2.805219067959115, "unit": "s"}
+{"case": "4 x 1 thread, matmul 256", "metric": "per step", "value": 0.0007099840440787375, "unit": "s", "control": true}
+{"case": "4 x 1 thread, matmul 256", "metric": "per step", "value": 0.0007482373970560729, "unit": "s", "control": true}
+{"case": "4 x 1 thread, matmul 256", "metric": "per step", "value": 0.0007320292992517352, "unit": "s", "control": true}
+{"case": "4 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.022566955303773284, "unit": "s"}
+{"case": "4 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.022597922303248197, "unit": "s"}
+{"case": "4 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.02257509185001254, "unit": "s"}
+{"case": "4 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 3.118868940975517, "unit": "s"}
+{"case": "4 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 4.019656700082123, "unit": "s"}
+{"case": "4 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 3.075830651912838, "unit": "s"}
+{"case": "4 x 1 thread, matmul 256", "metric": "per step", "value": 0.0007650686078704893, "unit": "s", "control": true}
+{"case": "4 x 1 thread, matmul 256", "metric": "per step", "value": 0.0007872674963437021, "unit": "s", "control": true}
+{"case": "4 x 1 thread, matmul 256", "metric": "per step", "value": 0.000791410356760025, "unit": "s", "control": true}
+{"case": "4 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.04469561295118183, "unit": "s"}
+{"case": "4 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.044764287548605355, "unit": "s"}
+{"case": "4 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.04494693684391678, "unit": "s"}
+{"case": "4 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 6.109986365074292, "unit": "s"}
+{"case": "4 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 2.9251414469908923, "unit": "s"}
+{"case": "4 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 2.7369227630551904, "unit": "s"}
+{"case": "4 x 1 thread, matmul 256", "metric": "per step", "value": 0.0008371277013793588, "unit": "s", "control": true}
+{"case": "4 x 1 thread, matmul 256", "metric": "per step", "value": 0.0008267690893262625, "unit": "s", "control": true}
+{"case": "4 x 1 thread, matmul 256", "metric": "per step", "value": 0.000812559702899307, "unit": "s", "control": true}
+{"case": "4 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.02249042014591396, "unit": "s"}
+{"case": "4 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.02249467254150659, "unit": "s"}
+{"case": "4 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.0224581585964188, "unit": "s"}
+{"case": "4 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 3.147349087987095, "unit": "s"}
+{"case": "4 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 3.2206672749016434, "unit": "s"}
+{"case": "4 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 4.791125291958451, "unit": "s"}
+{"case": "4 x 1 thread, matmul 256", "metric": "per step", "value": 0.000763212249148637, "unit": "s", "control": true}
+{"case": "4 x 1 thread, matmul 256", "metric": "per step", "value": 0.0007525176508352161, "unit": "s", "control": true}
+{"case": "4 x 1 thread, matmul 256", "metric": "per step", "value": 0.0007542965468019247, "unit": "s", "control": true}
+{"case": "the probe", "metric": "peak temperature", "value": 20.0, "unit": "C"}
+cell 4 2
+{"case": "4 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.033094985445495696, "unit": "s"}
+{"case": "4 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.03088109629461542, "unit": "s"}
+{"case": "4 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.022312974149826914, "unit": "s"}
+{"case": "4 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 4.509551151888445, "unit": "s"}
+{"case": "4 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 3.055284189991653, "unit": "s"}
+{"case": "4 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 2.9617270450107753, "unit": "s"}
+{"case": "4 x 1 thread, matmul 256", "metric": "per step", "value": 0.0007402197923511266, "unit": "s", "control": true}
+{"case": "4 x 1 thread, matmul 256", "metric": "per step", "value": 0.0007735976483672858, "unit": "s", "control": true}
+{"case": "4 x 1 thread, matmul 256", "metric": "per step", "value": 0.0008070982526987791, "unit": "s", "control": true}
+{"case": "4 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.022699390444904564, "unit": "s"}
+{"case": "4 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.023198747297283263, "unit": "s"}
+{"case": "4 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.02275048870360479, "unit": "s"}
+{"case": "4 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 3.1102997509296983, "unit": "s"}
+{"case": "4 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 3.115193023113534, "unit": "s"}
+{"case": "4 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 3.0765468371100724, "unit": "s"}
+{"case": "4 x 1 thread, matmul 256", "metric": "per step", "value": 0.0007698890520259738, "unit": "s", "control": true}
+{"case": "4 x 1 thread, matmul 256", "metric": "per step", "value": 0.0007691140519455076, "unit": "s", "control": true}
+{"case": "4 x 1 thread, matmul 256", "metric": "per step", "value": 0.0007748674019239843, "unit": "s", "control": true}
+{"case": "4 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.04584029325051233, "unit": "s"}
+{"case": "4 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.04524830159498379, "unit": "s"}
+{"case": "4 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.045387120998930185, "unit": "s"}
+{"case": "4 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 6.314306392101571, "unit": "s"}
+{"case": "4 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 3.3701429560314864, "unit": "s"}
+{"case": "4 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 2.7241921110544354, "unit": "s"}
+{"case": "4 x 1 thread, matmul 256", "metric": "per step", "value": 0.0007216184050776065, "unit": "s", "control": true}
+{"case": "4 x 1 thread, matmul 256", "metric": "per step", "value": 0.0007403620518743991, "unit": "s", "control": true}
+{"case": "4 x 1 thread, matmul 256", "metric": "per step", "value": 0.0007251948933117092, "unit": "s", "control": true}
+{"case": "4 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.02943925930885598, "unit": "s"}
+{"case": "4 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.024248916644137353, "unit": "s"}
+{"case": "4 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.030290689202956855, "unit": "s"}
+{"case": "4 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 3.1003284889739007, "unit": "s"}
+{"case": "4 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 5.427256915019825, "unit": "s"}
+{"case": "4 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 2.954082817072049, "unit": "s"}
+{"case": "4 x 1 thread, matmul 256", "metric": "per step", "value": 0.0007014536065980792, "unit": "s", "control": true}
+{"case": "4 x 1 thread, matmul 256", "metric": "per step", "value": 0.0007056214031763375, "unit": "s", "control": true}
+{"case": "4 x 1 thread, matmul 256", "metric": "per step", "value": 0.0007027389481663703, "unit": "s", "control": true}
+{"case": "the probe", "metric": "peak temperature", "value": 20.0, "unit": "C"}
+cell 8 1
+{"case": "8 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.05879338150843978, "unit": "s"}
+{"case": "8 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.058340378548018636, "unit": "s"}
+{"case": "8 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.057081708346959206, "unit": "s"}
+{"case": "8 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 7.758537372108549, "unit": "s"}
+{"case": "8 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 3.7256605848670006, "unit": "s"}
+{"case": "8 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 3.2004976531025022, "unit": "s"}
+{"case": "8 x 1 thread, matmul 256", "metric": "per step", "value": 0.0008977393503300845, "unit": "s", "control": true}
+{"case": "8 x 1 thread, matmul 256", "metric": "per step", "value": 0.0008823057520203293, "unit": "s", "control": true}
+{"case": "8 x 1 thread, matmul 256", "metric": "per step", "value": 0.0008753082947805524, "unit": "s", "control": true}
+{"case": "8 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.05903877425007522, "unit": "s"}
+{"case": "8 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.05784301379462704, "unit": "s"}
+{"case": "8 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.05636415929766372, "unit": "s"}
+{"case": "8 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 7.714429845102131, "unit": "s"}
+{"case": "8 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 6.75109848799184, "unit": "s"}
+{"case": "8 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 3.0264480179175735, "unit": "s"}
+{"case": "8 x 1 thread, matmul 256", "metric": "per step", "value": 0.0007466173497959972, "unit": "s", "control": true}
+{"case": "8 x 1 thread, matmul 256", "metric": "per step", "value": 0.0007302309502847492, "unit": "s", "control": true}
+{"case": "8 x 1 thread, matmul 256", "metric": "per step", "value": 0.0007293218048289418, "unit": "s", "control": true}
+{"case": "8 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.05875820715446025, "unit": "s"}
+{"case": "8 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.058301550860051066, "unit": "s"}
+{"case": "8 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.05708048000233248, "unit": "s"}
+{"case": "8 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 7.741381624015048, "unit": "s"}
+{"case": "8 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 6.934531027916819, "unit": "s"}
+{"case": "8 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 3.0617391581181437, "unit": "s"}
+{"case": "8 x 1 thread, matmul 256", "metric": "per step", "value": 0.0009152475511655211, "unit": "s", "control": true}
+{"case": "8 x 1 thread, matmul 256", "metric": "per step", "value": 0.0009405333548784256, "unit": "s", "control": true}
+{"case": "8 x 1 thread, matmul 256", "metric": "per step", "value": 0.0009208312956616282, "unit": "s", "control": true}
+{"case": "8 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.02862779760034755, "unit": "s"}
+{"case": "8 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.028920155251398683, "unit": "s"}
+{"case": "8 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.05674955464201048, "unit": "s"}
+{"case": "8 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 5.17226762091741, "unit": "s"}
+{"case": "8 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 3.935270005138591, "unit": "s"}
+{"case": "8 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 5.286363977007568, "unit": "s"}
+{"case": "8 x 1 thread, matmul 256", "metric": "per step", "value": 0.001905225054360926, "unit": "s", "control": true}
+{"case": "8 x 1 thread, matmul 256", "metric": "per step", "value": 0.0019389564520679414, "unit": "s", "control": true}
+{"case": "8 x 1 thread, matmul 256", "metric": "per step", "value": 0.0019725198508240283, "unit": "s", "control": true}
+{"case": "8 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.05404857374960557, "unit": "s"}
+{"case": "8 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.029798114346340297, "unit": "s"}
+{"case": "8 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.02924774170387536, "unit": "s"}
+{"case": "8 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 3.674423642922193, "unit": "s"}
+{"case": "8 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 3.690670024836436, "unit": "s"}
+{"case": "8 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 5.1194299180060625, "unit": "s"}
+{"case": "8 x 1 thread, matmul 256", "metric": "per step", "value": 0.0009432098479010165, "unit": "s", "control": true}
+{"case": "8 x 1 thread, matmul 256", "metric": "per step", "value": 0.0009179332409985363, "unit": "s", "control": true}
+{"case": "8 x 1 thread, matmul 256", "metric": "per step", "value": 0.0009076918475329876, "unit": "s", "control": true}
+{"case": "8 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.05919122640043497, "unit": "s"}
+{"case": "8 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.058626810647547246, "unit": "s"}
+{"case": "8 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.05732471370138228, "unit": "s"}
+{"case": "8 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 7.752760509960353, "unit": "s"}
+{"case": "8 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 6.947451906977221, "unit": "s"}
+{"case": "8 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 4.329517817823216, "unit": "s"}
+{"case": "8 x 1 thread, matmul 256", "metric": "per step", "value": 0.0006677610101178289, "unit": "s", "control": true}
+{"case": "8 x 1 thread, matmul 256", "metric": "per step", "value": 0.0006569513003341854, "unit": "s", "control": true}
+{"case": "8 x 1 thread, matmul 256", "metric": "per step", "value": 0.0006886817514896393, "unit": "s", "control": true}
+{"case": "8 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.028810702555347234, "unit": "s"}
+{"case": "8 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.029163044749293477, "unit": "s"}
+{"case": "8 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.02997166404966265, "unit": "s"}
+{"case": "8 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 4.28553780913353, "unit": "s"}
+{"case": "8 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 5.133549493039027, "unit": "s"}
+{"case": "8 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 4.358423739904538, "unit": "s"}
+{"case": "8 x 1 thread, matmul 256", "metric": "per step", "value": 0.0008676618919707835, "unit": "s", "control": true}
+{"case": "8 x 1 thread, matmul 256", "metric": "per step", "value": 0.0008634106954559684, "unit": "s", "control": true}
+{"case": "8 x 1 thread, matmul 256", "metric": "per step", "value": 0.0008846136974170804, "unit": "s", "control": true}
+{"case": "8 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.05896006585098803, "unit": "s"}
+{"case": "8 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.0576684309518896, "unit": "s"}
+{"case": "8 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.056322239758446815, "unit": "s"}
+{"case": "8 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 7.620210344903171, "unit": "s"}
+{"case": "8 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 3.3528338039759547, "unit": "s"}
+{"case": "8 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 3.243749971035868, "unit": "s"}
+{"case": "8 x 1 thread, matmul 256", "metric": "per step", "value": 0.0008058148552663625, "unit": "s", "control": true}
+{"case": "8 x 1 thread, matmul 256", "metric": "per step", "value": 0.0008106017950922251, "unit": "s", "control": true}
+{"case": "8 x 1 thread, matmul 256", "metric": "per step", "value": 0.000815982255153358, "unit": "s", "control": true}
+{"case": "the probe", "metric": "peak temperature", "value": 20.0, "unit": "C"}
+cell 8 2
+{"case": "8 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.0593945084954612, "unit": "s"}
+{"case": "8 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.058821414702106264, "unit": "s"}
+{"case": "8 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.057652022852562365, "unit": "s"}
+{"case": "8 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 5.122976040001959, "unit": "s"}
+{"case": "8 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 6.616938464809209, "unit": "s"}
+{"case": "8 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 5.69531761505641, "unit": "s"}
+{"case": "8 x 1 thread, matmul 256", "metric": "per step", "value": 0.001017660996876657, "unit": "s", "control": true}
+{"case": "8 x 1 thread, matmul 256", "metric": "per step", "value": 0.000931023946031928, "unit": "s", "control": true}
+{"case": "8 x 1 thread, matmul 256", "metric": "per step", "value": 0.000897199590690434, "unit": "s", "control": true}
+{"case": "8 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.059440722595900296, "unit": "s"}
+{"case": "8 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.059178684756625445, "unit": "s"}
+{"case": "8 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.057703156699426474, "unit": "s"}
+{"case": "8 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 7.593643416883424, "unit": "s"}
+{"case": "8 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 7.020324797835201, "unit": "s"}
+{"case": "8 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 2.9647545039188117, "unit": "s"}
+{"case": "8 x 1 thread, matmul 256", "metric": "per step", "value": 0.000761606206651777, "unit": "s", "control": true}
+{"case": "8 x 1 thread, matmul 256", "metric": "per step", "value": 0.0007635237532667815, "unit": "s", "control": true}
+{"case": "8 x 1 thread, matmul 256", "metric": "per step", "value": 0.0007619381998665631, "unit": "s", "control": true}
+{"case": "8 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.05925171385752037, "unit": "s"}
+{"case": "8 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.058628730243071914, "unit": "s"}
+{"case": "8 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.0575144846457988, "unit": "s"}
+{"case": "8 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 7.6052225639577955, "unit": "s"}
+{"case": "8 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 5.47086915303953, "unit": "s"}
+{"case": "8 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 3.151463106041774, "unit": "s"}
+{"case": "8 x 1 thread, matmul 256", "metric": "per step", "value": 0.0007397308479994535, "unit": "s", "control": true}
+{"case": "8 x 1 thread, matmul 256", "metric": "per step", "value": 0.000739174906630069, "unit": "s", "control": true}
+{"case": "8 x 1 thread, matmul 256", "metric": "per step", "value": 0.000731598399579525, "unit": "s", "control": true}
+{"case": "8 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.05932876979932189, "unit": "s"}
+{"case": "8 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.059077980206348, "unit": "s"}
+{"case": "8 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.05758253434905782, "unit": "s"}
+{"case": "8 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 3.8787312859203666, "unit": "s"}
+{"case": "8 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 3.704147652024403, "unit": "s"}
+{"case": "8 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 3.6267040071543306, "unit": "s"}
+{"case": "8 x 1 thread, matmul 256", "metric": "per step", "value": 0.0011116800480522216, "unit": "s", "control": true}
+{"case": "8 x 1 thread, matmul 256", "metric": "per step", "value": 0.0011215968988835812, "unit": "s", "control": true}
+{"case": "8 x 1 thread, matmul 256", "metric": "per step", "value": 0.0011001775506883859, "unit": "s", "control": true}
+{"case": "8 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.02895971710095182, "unit": "s"}
+{"case": "8 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.028447081847116352, "unit": "s"}
+{"case": "8 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.02945947014959529, "unit": "s"}
+{"case": "8 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 3.660588974133134, "unit": "s"}
+{"case": "8 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 3.7571287429891527, "unit": "s"}
+{"case": "8 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 3.7460604009684175, "unit": "s"}
+{"case": "8 x 1 thread, matmul 256", "metric": "per step", "value": 0.000912575947586447, "unit": "s", "control": true}
+{"case": "8 x 1 thread, matmul 256", "metric": "per step", "value": 0.0009260147111490369, "unit": "s", "control": true}
+{"case": "8 x 1 thread, matmul 256", "metric": "per step", "value": 0.0009260616498067975, "unit": "s", "control": true}
+{"case": "8 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.05951479014474899, "unit": "s"}
+{"case": "8 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.058954645250923934, "unit": "s"}
+{"case": "8 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.05773229855112731, "unit": "s"}
+{"case": "8 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 7.61081257998012, "unit": "s"}
+{"case": "8 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 7.1608192299027, "unit": "s"}
+{"case": "8 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 3.671775353839621, "unit": "s"}
+{"case": "8 x 1 thread, matmul 256", "metric": "per step", "value": 0.0006613365025259554, "unit": "s", "control": true}
+{"case": "8 x 1 thread, matmul 256", "metric": "per step", "value": 0.0006822198978625238, "unit": "s", "control": true}
+{"case": "8 x 1 thread, matmul 256", "metric": "per step", "value": 0.0006853134487755597, "unit": "s", "control": true}
+{"case": "8 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.05938500934280455, "unit": "s"}
+{"case": "8 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.05918348430423066, "unit": "s"}
+{"case": "8 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.057701794803142546, "unit": "s"}
+{"case": "8 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 6.630562569014728, "unit": "s"}
+{"case": "8 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 3.4723831817973405, "unit": "s"}
+{"case": "8 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 3.369391319109127, "unit": "s"}
+{"case": "8 x 1 thread, matmul 256", "metric": "per step", "value": 0.0008441885933279991, "unit": "s", "control": true}
+{"case": "8 x 1 thread, matmul 256", "metric": "per step", "value": 0.0009014852461405098, "unit": "s", "control": true}
+{"case": "8 x 1 thread, matmul 256", "metric": "per step", "value": 0.0009215863537974656, "unit": "s", "control": true}
+{"case": "8 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.03044234790140763, "unit": "s"}
+{"case": "8 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.029378009389620274, "unit": "s"}
+{"case": "8 x 1 thread, learn family p7 f32 B64 W16", "metric": "per step", "value": 0.03006089914124459, "unit": "s"}
+{"case": "8 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 7.312598049174994, "unit": "s"}
+{"case": "8 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 7.595893329009414, "unit": "s"}
+{"case": "8 x 1 thread, forward family p7 f32 n1024", "metric": "per step", "value": 7.023883635178208, "unit": "s"}
+{"case": "8 x 1 thread, matmul 256", "metric": "per step", "value": 0.0017186570446938276, "unit": "s", "control": true}
+{"case": "8 x 1 thread, matmul 256", "metric": "per step", "value": 0.0017121542012318968, "unit": "s", "control": true}
+{"case": "8 x 1 thread, matmul 256", "metric": "per step", "value": 0.0017105337930843234, "unit": "s", "control": true}
+{"case": "the probe", "metric": "peak temperature", "value": 20.0, "unit": "C"}
+window-ended

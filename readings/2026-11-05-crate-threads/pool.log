@@ -1,0 +1,62 @@
+4 rows within noise, max |Δ| 3.2%
+4 rows within noise (2 separated inside their spread), max |Δ| 7.2%
+36 rows within noise (2 separated inside their spread), max |Δ| 2.4%
+28 rows within noise (4 separated inside their spread), max |Δ| 4.5%
+15 rows within noise (3 separated inside their spread), max |Δ| 5.8%
+ab.py remote: lost the ssh session to jebel; anything detached there carries on: ab.py remote --host jebel wait 2026-11-04-pool-sequence
+6 rows within noise, max |Δ| 2.8%
+2026-11-04-pool-sequence-d512: old 0b17d22 vs new 0b17d22, passes ONNONO (3 old, 3 new), scripts/measurement/sequence_training_timing.py --windows 256 --repeats 1 --
+4 rows within noise, max |Δ| 3.2%
+2026-11-04-pool-attention-d512: old 0b17d22 vs new 0b17d22, passes ONNONO (3 old, 3 new), attention_timing --no-memory --repeats 2 --tokens 256 --features 512 --head
+4 rows within noise (2 separated inside their spread), max |Δ| 7.2%
+2026-11-04-pool-focused-1: old 0b17d22 vs new 0b17d22, passes ONNONO (3 old, 3 new), focused_benchmark --shape 5408 --shape 784 --shape attention --op forward_batch 
+36 rows within noise (2 separated inside their spread), max |Δ| 2.4%
+2026-11-04-pool-focused: old 0b17d22 vs new 0b17d22, passes ONNONO (3 old, 3 new), focused_benchmark --shape 5408 --shape 784 --shape attention --op forward_batch --
+consistent: per call / relu 30 x 784 forward_batch b512 / rust -38.2% (206.1 -> 127.3 µs)
+consistent: per call / dense 30 x 784 forward_batch b512 / rust -30.0% (258.4 -> 180.9 µs)
+consistent: per call / dense 30 x 784 downstream_batch b512 / rust -26.4% (242.3 -> 178.2 µs)
+consistent: per call / dense 30 x 784 accumulate_gradient_batch b512 / rust -23.1% (252.2 -> 193.9 µs)
+consistent: per call / attention 16 x 32 accumulate_gradient_batch b512 / rust -12.8% (1633 -> 1424 µs)
+consistent: per call / conv tail 32 x 5408 downstream_batch b512 / rust -12.6% (2421 -> 2116 µs)
+consistent: per call / conv tail 32 x 5408 forward_batch b512 / rust -9.6% (1128 -> 1020 µs)
+consistent: per call / attention 16 x 32 forward_batch b512 / rust -6.3% (4261 -> 3991 µs)
+28 rows within noise (4 separated inside their spread), max |Δ| 4.5%
+2026-11-04-pool-epochs: old 0b17d22 vs new 0b17d22, passes ONNONO (3 old, 3 new), prepared_dataset_timing --configs conv B=32 conv B=512 dense B=32 dense B=512 --rep
+CONTROL MOVED: 3 of 8 control rows consistent, e.g. prepare / conv B=32 / rust +5.1%: changes about that size can't be resolved here (next: epoch_op_profile.py)
+consistent: epoch, loader / dense B=512 / rust -4.9% (0.407 -> 0.387 s)
+15 rows within noise (3 separated inside their spread), max |Δ| 5.8%
+2026-11-04-pool-sequence: old 0b17d22 vs new 0b17d22, passes  (0 old, 0 new), scripts/measurement/sequence_training_timing.py --windows 1024 --repeats 2; crate old e
+too few complete passes for verdicts: they need 2+ a side (ab.py extend)
+0 rows within noise
+2026-11-04-pool-window: old 0b17d22 vs new 0b17d22, passes ONNONO (3 old, 3 new), scripts/measurement/window_recurrent_timing.py --repeats 3; crate old edce2de (.so 
+CONTROL MOVED: 1 of 1 control rows consistent, e.g. per step / matmul 256 -40.4%: changes about that size can't be resolved here (next: epoch_op_profile.py)
+6 rows within noise, max |Δ| 2.8%
+=== STONE
+2026-11-04-pool-guard-d512: old 0b17d22 vs new 0b17d22, passes ONNONO (3 old, 3 new), scripts/measurement/sequence_training_timing.py --windows 128 --repeats 1 --fea
+4 rows within noise, max |Δ| 3.1%
+2026-11-04-pool-guard-focused: old 0b17d22 vs new 0b17d22, passes ONNONO (3 old, 3 new), focused_benchmark --shape 5408 --shape 784 --shape attention --op forward_ba
+36 rows within noise (4 separated inside their spread), max |Δ| 16.9%
+2026-11-04-pool-guard-epochs: old 0b17d22 vs new 0b17d22, passes ONNONO (3 old, 3 new), prepared_dataset_timing --configs conv B=32 dense B=32 --repeats 2; crate old
+CONTROL MOVED: 1 of 4 control rows consistent, e.g. prepare / dense B=32 / rust +11.2%: changes about that size can't be resolved here (next: epoch_op_profile.py)
+8 rows within noise (1 separated inside their spread), max |Δ| 16.8%
+2026-11-04-pool-guard-window: old 0b17d22 vs new 0b17d22, passes ONNONO (3 old, 3 new), scripts/measurement/window_recurrent_timing.py --repeats 3; crate old edce2de
+CONTROL MOVED: 1 of 1 control rows consistent, e.g. per step / matmul 256 -13.7%: changes about that size can't be resolved here (next: epoch_op_profile.py)
+6 rows within noise, max |Δ| 5.4%
+stone pool ended
+=== KLIP
+2026-11-04-pool-guard-d512: old 0b17d22 vs new 0b17d22, passes ONNONO (3 old, 3 new), scripts/measurement/sequence_training_timing.py --windows 128 --repeats 1 --fea
+consistent: epoch / 2-layer rotary d=512 rust W=128 -5.4% (11.372 -> 10.760 s)
+3 rows within noise, max |Δ| 0.0%
+2026-11-04-pool-guard-focused: old 0b17d22 vs new 0b17d22, passes ONNONO (3 old, 3 new), focused_benchmark --shape 5408 --shape 784 --shape attention --op forward_ba
+consistent, small: per call / dense 30 x 784 forward_batch b32 / rust +0.2% (111.8 -> 112 µs)
+35 rows within noise (4 separated inside their spread), max |Δ| 0.7%
+2026-11-04-pool-guard-window: old 0b17d22 vs new 0b17d22, passes ONNONO (3 old, 3 new), scripts/measurement/window_recurrent_timing.py --repeats 3; crate old edce2de
+CONTROL MOVED: 1 of 1 control rows consistent, e.g. per step / matmul 256 -60.3%: changes about that size can't be resolved here (next: epoch_op_profile.py)
+consistent, small: per step / forward linear k1 s16 m16 n1024 +1.1% (2.209 -> 2.233 s)
+5 rows within noise (1 separated inside their spread), max |Δ| 3.5%
+2026-11-04-pool-guard-sequence: old 0b17d22 vs new 0b17d22, passes ONNONO (3 old, 3 new), scripts/measurement/sequence_training_timing.py --windows 1024 --repeats 2;
+consistent: epoch / 2-layer rotary rust W=1024 -12.7% (4.663 -> 4.070 s)
+3 rows within noise, max |Δ| 0.2%
+klip pool ended
+22:39:45 ended, status 0, peak 53 C
+all pool ended
